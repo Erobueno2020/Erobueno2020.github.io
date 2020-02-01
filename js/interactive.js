@@ -197,6 +197,31 @@ $(".category, .promo").hover(function () {
 });
 
 
+// DROPDOWN MOBILE
+
+$(document).on('click', '.cat-mob, .promo-mob', function (e) {
+    var $this = $(this);
+    var menu;
+    e.preventDefault();
+    if ((width < 1168) && (menu = $this.attr('id'))) {
+        var menuId = menu.split('_');
+        var target = $('#list_' + menuId[1]);
+        target.fadeToggle('fast');
+      };
+});
+
+$(document).on('click', '.sm-li_main', function (e) {
+    var $this = $(this);
+    var menu;
+    e.preventDefault();
+    if ((width < 1168) && (menu = $this.attr('id'))) {
+        var menuId = menu.split('_');
+        var target = $('#test_' + menuId[1]);
+        target.fadeToggle('fast');
+      };
+});
+
+
     // SLICK SLIDERS
     $('.tab-pane').slick({
         variableWidth: false,
