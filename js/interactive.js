@@ -172,7 +172,7 @@ $(document).on('click', '.basket-open', function() {
 
     // SLICK SLIDERS
     $('.tab-pane').slick({
-        variableWidth: true,
+        variableWidth: false,
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
