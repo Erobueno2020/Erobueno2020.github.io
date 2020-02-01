@@ -170,6 +170,33 @@ $(document).on('click', '.basket-open', function() {
 });
 
 
+ // DROPDOWN HEADER
+$(".category, .promo").hover(function () {
+    var $this = $(this);
+    var menu;
+    setTimeout(function () {
+    if ((width > 1169) && (menu = $this.attr('id'))) {
+        var menuId = menu.split('_');
+        var target = $('#aa_' + menuId[1]);
+        target.toggleClass('visible');
+        if (!target.is(":visible")) {
+            $this.removeClass('active');
+            target.unbind('mouseover');
+        } else $this.addClass('active');
+        target.one('mouseover', function () {
+            target.one('mouseout', function mouseout() {
+                if (target.is(':hover')) {
+                    target.one('mouseout', mouseout);
+                    return;
+                }
+                $this.removeClass('active');
+            });
+        });
+      };
+  }, 500);
+});
+
+
     // SLICK SLIDERS
     $('.tab-pane').slick({
         variableWidth: false,
@@ -224,30 +251,5 @@ $(document).on('click', '.basket-open', function() {
             }
         });
 
- // DROPDOWN HEADER
-$(".category, .promo").hover(function () {
-    var $this = $(this);
-    var menu;
-    setTimeout(function () {
-    if ((width > 1169) && (menu = $this.attr('id'))) {
-        var menuId = menu.split('_');
-        var target = $('#aa_' + menuId[1]);
-        target.toggleClass('visible');
-        if (!target.is(":visible")) {
-            $this.removeClass('active');
-            target.unbind('mouseover');
-        } else $this.addClass('active');
-        target.one('mouseover', function () {
-            target.one('mouseout', function mouseout() {
-                if (target.is(':hover')) {
-                    target.one('mouseout', mouseout);
-                    return;
-                }
-                $this.removeClass('active');
-            });
-        });
-      };
-  }, 500);
-});
 
 
