@@ -180,6 +180,39 @@ $(document).on('click', '.basket-open', function() {
         arrows: false,
     });
 
+    // INPUT NUMBER
+    $(document).ready(function () {
+        $('.numb').number_plugin();
+    });
+
+    $("select option").click(function(){
+
+    });    
+
+    // STICKY BLOCK
+    $(document).ready(function(){
+        // Находим плавающий блок и делаем его плавающим
+        $('.item-page__sidebar-container').stick_in_parent({
+            // Отступ сверху
+            offset_top: 10
+        });
+    });
+
+    
+    // HOVER COLORS
+    $('.catalog-filter__colors__color').click(function(){
+        if ($(".catalog-filter__colors__color").hasClass('color-active') ) {
+            $(".catalog-filter__colors__color").removeClass('color-active');
+            $(this).addClass('color-active');
+                //Insert logic if you want a type of optional click/off click code
+            } 
+            else
+            {
+                $(this).addClass('color-active');
+                //Insert event handling logic
+            }
+        });
+
 $(document).on('mouseover', 'a', function () {
     var $this = $(this);
     var menu;
@@ -201,27 +234,5 @@ $(document).on('mouseover', 'a', function () {
         });
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // STICKY BLOCK
-    $(window).scroll(function() {
-      if ($(".item-page__content").scrollTop() >= 5) {
-        $('.item-page__sidebar').addClass('fixed');
-      } else {
-        $('.item-page__sidebar').removeClass('fixed');
-      }
-    });
 
 
