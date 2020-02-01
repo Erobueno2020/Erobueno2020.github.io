@@ -500,5 +500,103 @@
 }
 
 /*CART MEDIA*/
+@media (max-width: 1200px){
+    .item-info__block-images__main-image img {
+        height: 400px;
+        max-width: 370px;
+    }
+    .item-info__block-images-group {
+        flex-wrap: wrap;
+    }
+    .item-info__block-images a {
+        width: auto;
+    }
+    .item-info__block-images {
+        min-width: 370px;
+    }
+    .item-info__block-images-group a {
+        margin-right: 0;
+    }
+    .item-info__block-images-group img {
+        height: 110px;
+        width: 90px;
+    }
+    .item-info__block-text__description-text {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .site-advantages ul {
+        padding: 20px 10px;
+    }
+    .side-advantages__anonim:before {
+        background: url(../img/anonim-icon.svg) no-repeat 50% 50%/80%;
+    }
+    .side-advantages__guarantee:before {
+        background: url(../img/guarantee-icon.svg) no-repeat 50% 50%/80%;
+    }
+    .side-advantages__transportation:before {
+        background: url(../img/transportation-icon.svg) no-repeat 50% 50%/80%;
+    }
+    .site-advantages ul li {
+        margin-bottom: 20px;
+        padding-left: 45px;
+        font-size: 14px;
+    }
+    .item-info__block-text__point {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        font-size: 11px;
+    }
 
+    .item-page__sibebar-block__buttons {
+        padding: 0 10px;
+    }
+
+    .item-page__content {
+        padding: 10px;
+    }
+    .item-page__sidebar-block {
+        padding: 10px;
+    }
+    .item-page__sidebar {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    .item-page__sidebar-block__item-info__price {
+        font-size: 24px;
+    }
+    .item-page__sidebar-block__text {
+        font-size: 14px;
+    }
+    .item-page__sibebar-block__buttons-basket {
+        width: 160px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .item-page__sibebar-block__buttons-buy {
+        font-size: 14px;
+    }
+    .item-page__sidebar-block__buy-counter {
+        font-size: 16px;
+        line-height: 30px;
+        width: 60px;
+        height: 40px;
+    }
+    .item-page__sidebar-block__properties .catalog-filter__brand .select select {
+        width: 108%;
+        margin-left: -10px;
+    }
+    .item-page__sidebar-block-bonus {
+        width: 260px;
+    }
+    .item-page__sidebar-block-bonus span {
+        font-size: 14px;
+    }
+    .item-info__block-text__title {
+        margin-top: 10px;
+        font-size: 22px;
+        line-height: 25px;
+    }
+}
 /*CART MEDIA END*/
