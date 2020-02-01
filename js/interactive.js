@@ -180,6 +180,41 @@ $(document).on('click', '.basket-open', function() {
         arrows: false,
     });
 
+$(document).on('mouseover', 'a', function () {
+    var $this = $(this);
+    var menu;
+    if ((menu = $this.attr('id'))) 
+        var target = menu; {
+        target.toggleClass('visible');
+        if (!target.is(":visible")) {
+            $this.removeClass('active');
+            target.unbind('mouseover');
+        } else $this.addClass('active');
+        target.one('mouseover', function () {
+            target.one('mouseout', function mouseout() {
+                if (target.is(':hover')) {
+                    target.one('mouseout', mouseout);
+                    return;
+                }
+                $this.removeClass('active');
+            });
+        });
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // STICKY BLOCK
     $(window).scroll(function() {
       if ($(".item-page__content").scrollTop() >= 5) {
@@ -188,3 +223,5 @@ $(document).on('click', '.basket-open', function() {
         $('.item-page__sidebar').removeClass('fixed');
       }
     });
+
+
