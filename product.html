@@ -12,6 +12,8 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	
 	<!-- LINKS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<link href="css/number_plugin.css" type="text/css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 	<link rel="stylesheet" href="css/jquery-ui.css">
@@ -72,7 +74,20 @@
 
 	<!-- Here write code -->
 	<div class="item-page">	
-		<div class="container p-0">
+		<div class="container">
+
+			<div class="col-12">
+				<div class="row">
+					<div class="site-tree__block">
+						<button class="site-tree__back">Назад</button>
+						<ul class="site-tree">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Раздел каталога</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
 			<div class="row">
 
@@ -80,12 +95,12 @@
 					<div class="item-page__content">
 						<div class="item-info__block">
 							<div class="item-info__block-images">
-								<a href="#" class="item-info__block-images__main-image"><img src="img/item-image-small.png" alt="img"></a>
+								<a data-fancybox="gallery" href="img/item1.png" class="item-info__block-images__main-image"></a>
 								<div class="item-info__block-images-group">
-									<a href="#"><img src="img/item-image-small.png" height="150" width="110" alt="#"></a>
-									<a href="#"><img src="img/item-image-small.png" alt="#"></a>
-									<a href="#"><img src="img/item-image-small.png" alt="#"></a>
-									<a href="#"><img src="img/item-image-small.png" alt="#"></a>
+									<a data-fancybox="gallery" class="product-photo1" href="img/item1.jpg"></a>
+									<a data-fancybox="gallery" class="product-photo2" href="img/item2.png"></a>
+									<a data-fancybox="gallery" class="product-photo3" href="img/item3.jpg"></a>
+									<a data-fancybox="gallery" class="product-photo4" href="img/item4.jpg"></a>
 								</div>
 							</div>
 							<div class="item-info__block-text">
@@ -112,10 +127,10 @@
 						<div class="item-kit">
 							<div class="item-kit__block item-block-pink">
 								<div class="item-kit__block-image">
-									<a href="#"></a>
+									<a href="#" class="kit-image1"></a>
 								</div>
 								<div class="item-kit__block-content">
-									<span class="item-kit__block-name">Краткое описание товара в две строки</span>
+									<span class="item-kit__block-name">Краткое описание товара в две строкиКраткое описание товара в две строки </span>
 									<div class="item-kit__block-prices">
 										<div class="item-kit__block-prices__price-old">12 900 руб</div>
 										<div class="item-kit__block-prices__price">22 900 руб</div>
@@ -123,18 +138,29 @@
 									<div class="item-kit__block-buttons">
 										<form action="#">
 											<div class="block-select">
-												<select name="color" value="Цвет">
-													<option value="#">Цвет</option>
-													<option value="#">Белый</option>
-													<option value="#">Зелёный</option>
-													<option value="#">Оранжевый</option>
-												</select>
-												<select name="color">
-													<option value="#">Размер</option>
-													<option value="#">Белый</option>
-													<option value="#">Зелёный</option>
-													<option value="#">Оранжевый</option>
-												</select>
+												<div class="block-select__element">
+													<span class="placeholder">Цвет</span>
+													<div class="block-select__element-decor">
+														<select name="color" value="Цвет">
+															<option value="-1" style="display:none;"></option>
+															<option value="#">Белый</option>
+															<option value="#">Зелёный</option>
+															<option value="#">Оранжевый</option>
+														</select>
+													</div>
+												</div>
+												<div class="block-select__element">
+													<span class="placeholder">Размер</span>
+													<div class="block-select__element-decor">
+														<select name="color">
+															<span class="placeholder">Размер</span>
+															<option value="-1" style="display:none;"></option>
+															<option value="#">Белый</option>
+															<option value="#">Зелёный</option>
+															<option value="#">Оранжевый</option>
+														</select>
+													</div>
+												</div>
 											</div>
 											<label>Добавить к покупке<input type="checkbox" class="cart-button-add"></label>											
 										</form>
@@ -144,7 +170,7 @@
 							</div>
 							<div class="item-kit__block item-block-pink">
 								<div class="item-kit__block-image">
-									<a href="#"></a>
+									<a href="#" class="kit-image2"></a>
 								</div>
 								<div class="item-kit__block-content">
 									<span class="item-kit__block-name">Краткое описание товара в две строки</span>
@@ -155,18 +181,31 @@
 									<div class="item-kit__block-buttons">
 										<form action="#">
 											<div class="block-select">
-												<select name="color" value="Цвет">
-													<option value="#">Цвет</option>
-													<option value="#">Белый</option>
-													<option value="#">Зелёный</option>
-													<option value="#">Оранжевый</option>
-												</select>
-												<select name="color">
-													<option value="#">Размер</option>
-													<option value="#">Белый</option>
-													<option value="#">Зелёный</option>
-													<option value="#">Оранжевый</option>
-												</select>
+												
+												<div class="block-select__element">
+													<span class="placeholder">Цена</span>
+
+													<div class="block-select__element-decor">
+														<select name="color" value="Цвет">
+															<option value="-1" style="display:none;"></option>
+															<option value="#">Белый</option>
+															<option value="#">Зелёный</option>
+															<option value="#">Оранжевый</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="block-select__element">
+													<span class="placeholder">Размер</span>
+													<div class="block-select__element-decor">
+														<select name="color">
+															<option value="-1" style="display:none;"></option>
+															<option value="#">Белый</option>
+															<option value="#">Зелёный</option>
+															<option value="#">Оранжевый</option>
+														</select>
+													</div>	
+												</div>
 											</div>
 											<label>Добавить к покупке<input type="checkbox" class="cart-button-add"></label>											
 										</form>
@@ -176,7 +215,7 @@
 							</div>
 							<div class="item-kit__block item-block-pink">
 								<div class="item-kit__block-image">
-									<a href="#"></a>
+									<a href="#" class="kit-image3"></a>
 								</div>
 								<div class="item-kit__block-content">
 									<span class="item-kit__block-name">Краткое описание товара в две строки</span>
@@ -187,18 +226,30 @@
 									<div class="item-kit__block-buttons">
 										<form action="#">
 											<div class="block-select">
-												<select name="color" value="Цвет">
-													<option value="#">Цвет</option>
-													<option value="#">Белый</option>
-													<option value="#">Зелёный</option>
-													<option value="#">Оранжевый</option>
-												</select>
-												<select name="color">
-													<option value="#">Размер</option>
-													<option value="#">Белый</option>
-													<option value="#">Зелёный</option>
-													<option value="#">Оранжевый</option>
-												</select>
+												
+												<div class="block-select__element">
+													<span class="placeholder">Цена</span>
+													<div class="block-select__element-decor">
+														<select name="color" value="Цвет">
+															<option value="-1" style="display:none;"></option>
+															<option value="#">Белый</option>
+															<option value="#">Зелёный</option>
+															<option value="#">Оранжевый</option>
+														</select>
+													</div>
+												</div>
+
+												<div class="block-select__element">
+													<span class="placeholder">Размер</span>
+													<div class="block-select__element-decor">
+														<select name="color">
+															<option value="-1" style="display:none;"></option>
+															<option value="#">Белый</option>
+															<option value="#">Зелёный</option>
+															<option value="#">Оранжевый</option>
+														</select>
+													</div>
+												</div>
 											</div>
 											<label>Добавить к покупке<input type="checkbox" class="cart-button-add"></label>											
 										</form>
@@ -206,52 +257,21 @@
 								</div>
 								<button class="item-info__button-add"></button>
 							</div>
-							<div class="item-kit__block item-block-pink">
-								<div class="item-kit__block-image">
-									<a href="#"></a>
+
+							<div class="item-offer">
+								<div class="item-offer__block item-block-pink">
+									<span class="item-offer__block-title">Купи данный супер комплект из 4 предметов</span>
+									<span class="item-offer__block-price">за 9 900 руб</span>
+									<span class="item-offer__block-text">Скидка составит</span>
+									<span class="item-offer__block-discount">28%</span>
+									<span class="item-offer__block-nodiscount">Цена без скидки:<br><span class="item-offer__block-nodiscount-price">14 900 руб</span></span>
+									<button class="item-offer__block-button">Купить комплект</button>
+									<button class="item-offer__button"></button>
 								</div>
-								<div class="item-kit__block-content">
-									<span class="item-kit__block-name">Краткое описание товара в две строки</span>
-									<div class="item-kit__block-prices">
-										<div class="item-kit__block-prices__price-old">12 900 руб</div>
-										<div class="item-kit__block-prices__price">22 900 руб</div>
-									</div>
-									<div class="item-kit__block-buttons">
-										<form action="#">
-											<div class="block-select">
-												<select name="color" value="Цвет">
-													<option value="#">Цвет</option>
-													<option value="#">Белый</option>
-													<option value="#">Зелёный</option>
-													<option value="#">Оранжевый</option>
-												</select>
-												<select name="color">
-													<option value="#">Размер</option>
-													<option value="#">Белый</option>
-													<option value="#">Зелёный</option>
-													<option value="#">Оранжевый</option>
-												</select>
-											</div>
-											<label>Добавить к покупке<input type="checkbox" class="cart-button-add"></label>											
-										</form>
-									</div>
-								</div>
-								<button class="item-info__button-add"></button>
 							</div>
-						</div>
-						<div class="item-offer">
-							<div class="item-offer__block item-block-pink">
-								<span class="item-offer__block-title">Купи данный супер комплект из 4 предметов</span>
-								<span class="item-offer__block-price">за 9 900 руб</span>
-								<span class="item-offer__block-text">Скидка составит</span>
-								<span class="item-offer__block-discount">28%</span>
-								<span class="item-offer__block-nodiscount">Цена без скидки:<br><span class="item-offer__block-nodiscount-price">14 900 руб</span></span>
-								<button class="item-offer__block-button">Купить комплект</button>
-							</div>
-							<button class="item-offer__button"></button>
 						</div>
 						<div class="site-info">
-							
+
 							<div class="item-nav">
 								<ul>
 									<li><a href="#">Описание</a></li>
@@ -601,82 +621,84 @@
 
 				<div class="col-md-3">
 					<div class="item-page__sidebar">
-						<div class="item-page__sidebar-block">
-							<div class="item-page__sidebar-block__points-block">
-								<span class="points-block__point point-new">Новинка</span>
-								<span class="points-block__point point-hit">Хит продаж</span>
-								<span class="points-block__point">10% Скидка</span>
-								<span class="points-block__point">30% Скидка</span>
-							</div>
-							<div class="item-page__sidebar-block__delivery">
-								<span class="sidebar-pink-text sidebar-delivery-store">В магазинах
-									<span class="item-page__sidebar-block__delivery-data">через 4 дня</span>
-								</span>
-								<span class="sidebar-pink-text sidebar-delivery-home">Доставим на дом
-									<span class="item-page__sidebar-block__delivery-data">через 4 дня</span>
-								</span>
-							</div>
-							<div class="item-page__sidebar-block__item-info">
-								<span class="item-page__sidebar-block__item-info__text">В наличии</span>
-								<div class="item-page__sidebar-block__item-info__price-block">
-									<span class="item-page__sidebar-block__item-info__price-old">26 999 руб</span>
-									<span class="item-page__sidebar-block__item-info__price">25 900 руб</span>
+						<div class="item-page__sidebar-container">
+							<div class="item-page__sidebar-block">
+								<div class="item-page__sidebar-block__points-block">
+									<span class="points-block__point point-new">Новинка</span>
+									<span class="points-block__point point-hit">Хит продаж</span>
+									<span class="points-block__point">10% Скидка</span>
+									<span class="points-block__point">30% Скидка</span>
 								</div>
-							</div>
-							<div class="item-page__sidebar-block__rating">
-								<div class="item-rating">
-									<div class="item-rating__heart"></div>
-									<div class="item-rating__heart"></div>
-									<div class="item-rating__heart"></div>
-									<div class="item-rating__heart"></div>
-									<div class="item-rating__heart"></div>
+								<div class="item-page__sidebar-block__delivery">
+									<span class="sidebar-pink-text sidebar-delivery-store">В магазинах
+										<span class="item-page__sidebar-block__delivery-data">через 4 дня</span>
+									</span>
+									<span class="sidebar-pink-text sidebar-delivery-home">Доставим на дом
+										<span class="item-page__sidebar-block__delivery-data">через 4 дня</span>
+									</span>
 								</div>
-								<a href="#">Отзывы</a>
-							</div>
-							<span class="item-page__sidebar-block__text">Нашли дешевле - снизим цену</span>
-							<div class="item-page__sidebar-block__buy">
-								<input type="number" class="item-page__sidebar-block__buy-counter">
-								<div class="item-page__sibebar-block__buttons">
-									<button class="item-page__sibebar-block__buttons-basket">В корзину</button>
-									<button class="item-page__sibebar-block__buttons-buy">Купить в 1 клик</button>
-								</div>
-							</div>
-							<div class="item-page__sidebar-block__interactive">
-								<button class="sidebar-pink-text heart-icon">Запомнить товар</button>
-								<a href="#" class="sidebar-pink-text analytics-icon">К сравнению</a>
-							</div>
-							<div class="item-page__sidebar-block__properties">
-								<span class="item-page__sidebar-block__text">Выберите свойства товара:</span>
-								<div class="item-page__sidebar-block__properties-block">
-									<div class="catalog-filter__brand">
-										<span class="sidebar-pink-text catalog-filter__title-name">Размер:</span>
-										<div class="select">
-											<select name="select-brand">
-												<option value="1">XL</option>
-												<option value="2">XLL</option>
-												<option value="2">XLLL</option>
-											</select>
-										</div>
-									</div>
-									<div class="catalog-filter__colors">
-										<span class="sidebar-pink-text catalog-filter__title-name">Цвет:</span>
-										<div class="catalog-filter__colors-block">
-											<button class="catalog-filter__colors__color color1 color-active"></button>
-											<button class="catalog-filter__colors__color color2"></button>
-											<button class="catalog-filter__colors__color color3"></button>
-											<button class="catalog-filter__colors__color color4"></button>
-											<button class="catalog-filter__colors__color color5"></button>
-											<button class="catalog-filter__colors__color color6"></button>
-											<button class="catalog-filter__colors__color color7"></button>
-											<button class="catalog-filter__colors__color color8"></button>
-										</div>
+								<div class="item-page__sidebar-block__item-info">
+									<span class="item-page__sidebar-block__item-info__text">В наличии</span>
+									<div class="item-page__sidebar-block__item-info__price-block">
+										<span class="item-page__sidebar-block__item-info__price-old">26 999 руб</span>
+										<span class="item-page__sidebar-block__item-info__price">25 900 руб</span>
 									</div>
 								</div>
+								<div class="item-page__sidebar-block__rating">
+									<div class="item-rating">
+										<div class="item-rating__heart"></div>
+										<div class="item-rating__heart"></div>
+										<div class="item-rating__heart"></div>
+										<div class="item-rating__heart"></div>
+										<div class="item-rating__heart"></div>
+									</div>
+									<a href="#">Отзывы</a>
+								</div>
+								<span class="item-page__sidebar-block__text">Нашли дешевле - снизим цену</span>
+								<div class="item-page__sidebar-block__buy">
+									<input type="number" class="item-page__sidebar-block__buy-counter numb"id="1" value="1">
+									<div class="item-page__sibebar-block__buttons">
+										<button class="item-page__sibebar-block__buttons-basket">В корзину</button>
+										<button class="item-page__sibebar-block__buttons-buy">Купить в 1 клик</button>
+									</div>
+								</div>
+								<div class="item-page__sidebar-block__interactive">
+									<button class="sidebar-pink-text heart-icon">Запомнить товар</button>
+									<a href="#" class="sidebar-pink-text analytics-icon">К сравнению</a>
+								</div>
+								<div class="item-page__sidebar-block__properties">
+									<span class="item-page__sidebar-block__text">Выберите свойства товара:</span>
+									<div class="item-page__sidebar-block__properties-block">
+										<div class="catalog-filter__brand">
+											<span class="sidebar-pink-text catalog-filter__title-name">Размер:</span>
+											<div class="select">
+												<select name="select-brand">
+													<option value="1">XL</option>
+													<option value="2">XLL</option>
+													<option value="2">XLLL</option>
+												</select>
+											</div>
+										</div>
+										<div class="catalog-filter__colors">
+											<span class="sidebar-pink-text catalog-filter__title-name">Цвет:</span>
+											<div class="catalog-filter__colors-block">
+												<button class="catalog-filter__colors__color color1 color-active"></button>
+												<button class="catalog-filter__colors__color color2"></button>
+												<button class="catalog-filter__colors__color color3"></button>
+												<button class="catalog-filter__colors__color color4"></button>
+												<button class="catalog-filter__colors__color color5"></button>
+												<button class="catalog-filter__colors__color color6"></button>
+												<button class="catalog-filter__colors__color color7"></button>
+												<button class="catalog-filter__colors__color color8"></button>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="item-page__sidebar-block-bonus">
-							<span>+90 бонусных рублей</span>
-							<span>3% скидка при оплате онлайн</span>
+							<div class="item-page__sidebar-block-bonus">
+								<span>+90 бонусных рублей</span>
+								<span>3% скидка при оплате онлайн</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -703,10 +725,10 @@
 							<div class="tab-pane fade show active" id="similar" role="tabpanel" aria-labelledby="similar-tab">
 								<div class="item-kit__block item-block-pink">
 									<div class="item-kit__block-image">
-										<a href="#"></a>
+										<a href="#" class="kit-image4"></a>
 									</div>
 									<div class="item-kit__block-content">
-										<span class="item-kit__block-name">Похожие товары</span>
+										<span class="item-kit__block-name">Похожие товарыПохожие товарыПохожие товары</span>
 										<div class="item-kit__block-prices">
 											<div class="item-kit__block-prices__price-old">12 900 руб</div>
 											<div class="item-kit__block-prices__price">22 900 руб</div>
@@ -719,7 +741,7 @@
 								</div>
 								<div class="item-kit__block item-block-pink">
 									<div class="item-kit__block-image">
-										<a href="#"></a>
+										<a href="#" class="kit-image5"></a>
 									</div>
 									<div class="item-kit__block-content">
 										<span class="item-kit__block-name">Похожие товары</span>
@@ -1001,7 +1023,7 @@
 
 						</div>
 					</div>
-					
+
 					<div class="news-mailing">
 						<div class="news-mailing__text">
 							<span class="news-mailing__text-title">Подпишитесь на нашу новостную рассылку</span>
@@ -1023,7 +1045,9 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.sticky-kit.min.js"></script>
+	<script src="js/number_plugin.min.js" type="text/javascript"></script>
 	<script src="js/jquery-ui.js"></script>
 	<script src="js/jquery.ui.touch-punch.min.js"></script>
 	<script src="js/interactive.js"></script>
