@@ -962,6 +962,9 @@ font-family: "ProximaNova-SemiBold";
     width: 100%;
 
   }
+  .small-block-img {
+    display: none;
+  }
   .item-banner-big__text {
     margin-bottom: 130px;
     margin-left: 20px;
@@ -1056,21 +1059,25 @@ font-family: "ProximaNova-SemiBold";
     font-size: 24px;
   }
   .bottom-block {
-    height: max-content;
+    height: 125px;
     flex-wrap: wrap;
   }
   .bottom-block__sub-block {
-    width: 50%;
+    width: 33%;
+    height: 125px;
+  }
+  .mp-items__item {
+    height: max-content;
   }
   .mp-cubes {
-    margin-top: 70px;
+    margin-top: 10px;
   }
   .sub-block__title {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 14px;
   }
   .bottom-block__sub-block:last-child {
-    width: 75%;
+    width: 33%;
     margin: 0 auto;
     max-width: inherit;
   }
@@ -1101,6 +1108,7 @@ font-family: "ProximaNova-SemiBold";
   }
   .top-block-btn__button {
     height: 30px;
+    margin-top: 160px;
   }
   .bottom-block__sub-block {
     line-height: 16px;
@@ -1134,7 +1142,7 @@ font-family: "ProximaNova-SemiBold";
     padding: 10px;
   }
   .margin-top {
-    margin-top: 75px;
+    margin-top: 10px;
   }
   .popular-item__button {
     margin-top: 0;
@@ -1199,11 +1207,15 @@ font-family: "ProximaNova-SemiBold";
    .sponsors__item:nth-child(9) {
     margin-left: 5px;
   }
+
 }
 @media screen and (min-width: 450px) and (max-width: 500px) {
   .item-banner-big {
     height: 260px;
     background-position: 50% 50%;
+  }
+      .small-block-img {
+    display: block;
   }
   .item-banner-big__text {
     margin-bottom: 85px;
@@ -1253,6 +1265,9 @@ font-family: "ProximaNova-SemiBold";
   .item-advantages {
     width: 265px;
   }
+    .small-block-img {
+    display: block;
+  }
     .item-advantages__title {
     padding-left: 10px;
     font-size: 14px;
@@ -1291,7 +1306,7 @@ font-family: "ProximaNova-SemiBold";
     font-size: 17px;
   }
   .mp-cubes {
-    margin-top: -10px;
+    margin-top: 10px;
   }
   .mp-cube {
     height: 240px;
@@ -1342,6 +1357,9 @@ font-family: "ProximaNova-SemiBold";
   .bottom-block__sub-block {
     width: 33%;
   }
+      .small-block-img {
+    display: block;
+  }
   .item-banner-big {
     max-width: 600px;
     height: 300px;
@@ -1365,7 +1383,7 @@ font-family: "ProximaNova-SemiBold";
     font-size: 17px;
   }
   .mp-cubes {
-    margin-top: -10px;
+    margin-top: 10px;
   }
   .mp-cube {
     height: 240px;
@@ -1455,6 +1473,9 @@ font-family: "ProximaNova-SemiBold";
     font-size: 14px;
 
   }
+      .small-block-img {
+    display: block;
+  }
     .banners-bottom {
     padding-left: 5px;
     padding-right: 5px;
@@ -1489,7 +1510,7 @@ font-family: "ProximaNova-SemiBold";
     font-size: 17px;
   }
   .mp-cubes {
-    margin-top: -10px;
+    margin-top: 10px;
   }
   .mp-cube {
     height: 240px;
