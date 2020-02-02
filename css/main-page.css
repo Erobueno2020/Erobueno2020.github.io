@@ -248,7 +248,7 @@ body {
 }
 .bottom-block__sub-block {
   height: inherit;
-  width: 33%;
+  width: 33.3%;
   padding: 15px;
   position: relative;
   line-height: 20px;
@@ -256,6 +256,7 @@ body {
 }
 .bottom-block__sub-block:last-child {
   border-right: none;
+  display: none;
 }
 .sub-block__title {
   font-size: 16px;
@@ -1059,9 +1060,8 @@ font-family: "ProximaNova-SemiBold";
     font-size: 24px;
   }
   .bottom-block {
-    height: 125px;
+    height: max-content;
     flex-wrap: wrap;
-    overflow-y: auto;
   }
   .bottom-block__sub-block {
     width: 50%;
@@ -1078,9 +1078,8 @@ font-family: "ProximaNova-SemiBold";
     line-height: 14px;
   }
   .bottom-block__sub-block:last-child {
-    width: 75%;
-    margin: 0 auto;
-    max-width: inherit;
+    width: 50%;
+    display: block;
   }
   .mp-cube:first-child {
     margin-right: 10px;
@@ -1215,6 +1214,7 @@ font-family: "ProximaNova-SemiBold";
     height: 260px;
     background-position: 50% 50%;
   }
+
       .small-block-img {
     display: block;
   }
@@ -1273,6 +1273,10 @@ font-family: "ProximaNova-SemiBold";
     padding-left: 10px;
     font-size: 14px;
 
+  }
+      .bottom-block__sub-block:last-child {
+    width: 50%;
+    display: none;
   }
     .banners-bottom {
     padding-left: 5px;
@@ -1347,6 +1351,10 @@ font-family: "ProximaNova-SemiBold";
     padding-left: 10px;
     font-size: 14px;
 
+  }
+      .bottom-block__sub-block:last-child {
+    width: 50%;
+    display: none;
   }
     .banners-bottom {
     padding-left: 5px;
@@ -1468,6 +1476,10 @@ font-family: "ProximaNova-SemiBold";
   }
   .buy-onehand {
     font-size: 30px;
+  }
+      .bottom-block__sub-block:last-child {
+    width: 50%;
+    display: none;
   }
     .item-advantages__title {
     padding-left: 10px;
