@@ -221,6 +221,19 @@ $(document).on('click', '.sm-li_main', function (e) {
       };
 });
 
+  $(function() {
+    if (width < 768) {
+    $('.slider-mp').slick({
+    infinite: true,
+    autoplay: true,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    arrows: false,
+    dots: true
+    });
+  };
+});
+
 
     // SLICK SLIDERS
     $('.tab-pane').slick({

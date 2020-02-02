@@ -18,6 +18,8 @@
 		<link rel="stylesheet" href="css/header.css">
 		<link rel="stylesheet" href="css/footer.css">
 		<link rel="stylesheet" href="css/main-page.css">
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 		
 	</head>
 	<body>
@@ -36,7 +38,7 @@
 								<span class="gender gender_female"></span>
 							</div>
 						</div>
-						<div class="banners__top-column banners__top-column_right">
+						<div class="banners__top-column banners__top-column_right slider-mp">
 							<div class="banners__top-item item-banner-white">
 								<h3 class="item-banner-white__title">SVAKOM</h3>
 								<div class="item-banner-white__text">совершенство в каждой детали</div>
@@ -103,13 +105,13 @@
 									</div>
 									<div class="bottom-block">
 										<div class="bottom-block__sub-block">
-											<a href="" class="sub-block__title">Реалистичные вибраторы</a>
+											<div class="sub-block__title"><a href="" class="sub-block__title">Реалистичные<br>вибраторы</a></div>
 											<p class="sub-block__price">от 500 руб.</p>
 											<a class="arrownext-icon" href=""><img src="img/arrow-next-mp.svg" alt="" class=""></a>
 											<img class="small-block-img" src="img/cats-mini-item1.png" alt="">
 										</div>
 										<div class="bottom-block__sub-block">
-											<a href="" class="sub-block__title">Со стимулятором<br>клитора</a>
+											<div class="sub-block__title"><a href="" class="sub-block__title">Со стимулятором<br>клитора</a></div>
 											<p class="sub-block__price">от 500 руб.</p>
 											<a class="arrownext-icon" href=""><img src="img/arrow-next-mp.svg" alt="" class=""></a>
 											<img class="small-block-img" src="img/cats-mini-item2.png" alt="">
@@ -146,7 +148,7 @@
 								</div>
 							</div>
 							<div class="mp-items__right-column">
-								<div class="mp-items__item mp-cubes">
+								<div class="mp-items__item mp-cubes margin-top">
 									<div class="mp-cube purple-cube">
 										<div class="top-block-name block-name-cube">
 											<h3 class="top-block-name__title title-cube">Страпоны<br>для М и Ж</h3>
@@ -613,7 +615,9 @@
 		<script src="js/jquery.ui.touch-punch.min.js"></script>
 		<script src="js/interactive.js"></script>
 		<script src="js/divbox.js" type="text/javascript"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
 		<script type="text/javascript">
+
 		$(document).ready(function(){
 			$('a.lightbox').divbox({caption: false});
 			$('a.lightbox2').divbox({caption: false, width: 600, height: 400});
