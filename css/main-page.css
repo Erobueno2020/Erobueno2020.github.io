@@ -963,7 +963,7 @@ font-family: "ProximaNova-SemiBold";
 
   }
   .small-block-img {
-    display: none;
+    display: block;
   }
   .item-banner-big__text {
     margin-bottom: 130px;
@@ -1061,9 +1061,10 @@ font-family: "ProximaNova-SemiBold";
   .bottom-block {
     height: 125px;
     flex-wrap: wrap;
+    overflow-y: auto;
   }
   .bottom-block__sub-block {
-    width: 33%;
+    width: 50%;
     height: 125px;
   }
   .mp-items__item {
@@ -1077,7 +1078,7 @@ font-family: "ProximaNova-SemiBold";
     line-height: 14px;
   }
   .bottom-block__sub-block:last-child {
-    width: 33%;
+    width: 75%;
     margin: 0 auto;
     max-width: inherit;
   }
