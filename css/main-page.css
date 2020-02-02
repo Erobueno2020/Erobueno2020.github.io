@@ -1044,12 +1044,13 @@ font-family: "ProximaNova-SemiBold";
     width: 100%;
   }
   .big-block-img {
-    width: 70%;
+    width: 60%;
     bottom: 0;
     right: 0px;
     left: 0;
     top: 0;
     margin: auto;
+    margin-right: 30px;
   }
   .top-block-name__title {
     font-size: 24px;
