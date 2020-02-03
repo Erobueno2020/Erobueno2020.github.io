@@ -341,7 +341,7 @@ body {
   background-color: #7594c7;
 }
 .top-block-name__title {
-  z-index: 9999;
+  z-index: 9900;
 }
 .pink-cube {
   background-color: #f4b8c6;
@@ -625,7 +625,7 @@ font-family: "ProximaNova-SemiBold";
   height: max-content;
   top: 0px;
   left: 0px;
-  z-index: 9999;
+  z-index: 9800;
 }
 
 .list-column {
