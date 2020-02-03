@@ -222,14 +222,23 @@ $(document).on('click', '.sm-li_main', function (e) {
 });
 
   $(function() {
-    if (width < 600) {
+    if (width < 815) {
     $('.slider-mp').slick({
     infinite: true,
-    slidesToScroll: 1,
-    slidesToShow: 1,
+    slidesToScroll: 2,
+    slidesToShow: 2,
     autoplay: true,
     arrows: false,
     dots: true,
+    responsive: [
+    {
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+  ]
     });
   };
 });

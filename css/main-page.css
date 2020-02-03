@@ -255,7 +255,6 @@ body {
 }
 .bottom-block__sub-block:last-child {
   border-right: none;
-  display: none;
 }
 .sub-block__title {
   font-size: 16px;
@@ -726,7 +725,9 @@ font-family: "ProximaNova-SemiBold";
 .sponsors-img {
   max-width: 100px;
 }
-
+.slick-track {
+  display: flex !important;
+}
 
 
 
@@ -944,6 +945,9 @@ font-family: "ProximaNova-SemiBold";
     padding-left: 5px !important;
     padding-right: 5px !important;
   }
+  .main-page-items {
+    justify-content: space-around;
+  }
   .container {
     max-width: 780px !important;
     width: 100%;
@@ -1078,8 +1082,9 @@ font-family: "ProximaNova-SemiBold";
     line-height: 14px;
   }
   .bottom-block__sub-block:last-child {
-    width: 50%;
+    width: 60%;
     display: block;
+    margin: 0 auto;
   }
   .mp-cube:first-child {
     margin-right: 10px;
@@ -1311,10 +1316,7 @@ font-family: "ProximaNova-SemiBold";
     font-size: 14px;
 
   }
-      .bottom-block__sub-block:last-child {
-    width: 50%;
-    display: none;
-  }
+
     .banners-bottom {
     padding-left: 5px;
     padding-right: 5px;
@@ -1388,10 +1390,6 @@ font-family: "ProximaNova-SemiBold";
     padding-left: 10px;
     font-size: 14px;
 
-  }
-      .bottom-block__sub-block:last-child {
-    width: 50%;
-    display: none;
   }
     .banners-bottom {
     padding-left: 5px;
@@ -1542,14 +1540,15 @@ font-family: "ProximaNova-SemiBold";
     width: 265px;
   }
   .buy-onehand {
-    font-size: 30px;
+    font-size: 28px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .mar-top {
     margin-top: 140px;
   }
       .bottom-block__sub-block:last-child {
-    width: 50%;
-    display: none;
+    width: 33%;
   }
     .item-advantages__title {
     padding-left: 10px;
@@ -1563,9 +1562,6 @@ font-family: "ProximaNova-SemiBold";
     padding-left: 5px;
     padding-right: 5px;
     justify-content: space-around;
-  }
-  .bottom-block__sub-block:last-child {
-    width: 33%;
   }
   .bottom-block__sub-block {
     width: 33%;
@@ -1588,6 +1584,9 @@ font-family: "ProximaNova-SemiBold";
     -webkit-background-size: cover;
     background-size: cover;
     background-position: 50% 50%;
+  }
+  .item-banner-blue {
+    margin-left: auto;
   }
   .item-banner-white__text, .item-banner-blue__text {
     font-size: 17px;
@@ -1673,7 +1672,7 @@ font-family: "ProximaNova-SemiBold";
     padding-right: 30px;
   }
   .item-banner-white, .item-banner-blue {
-    max-width: 320px;
+    max-width: 310px;
     height: 210px;
     width: 100%;
   }
