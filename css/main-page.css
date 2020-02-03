@@ -111,7 +111,6 @@ body {
   border-radius: 10px;
   background-color: #ffffff;
   background: url("../img/banner-2.jpg") 0 0 no-repeat; }
- 
   .item-banner-white__title {
     max-width: 130px;
     margin: 0px 0px 100px 0px;
@@ -961,7 +960,9 @@ font-family: "ProximaNova-SemiBold";
     background-size: cover;
     max-width: 450px;
     width: 100%;
-
+  }
+  .mar-top {
+    margin-top: 140px;
   }
   .small-block-img {
     display: block;
