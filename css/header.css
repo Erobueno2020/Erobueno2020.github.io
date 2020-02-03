@@ -237,7 +237,7 @@ a {
 	display: none;
 	list-style: none;
 	margin-right: auto;
-	margin-left: 35px;
+	margin-left: 44px;
 }
 .list-mobile.visible {
 	display: block;
@@ -540,7 +540,7 @@ a {
 }
 .category:after{
 	top: 9px;
-	right: -13px;
+	right: -15px;
 	content: ' ';
 	position: absolute;
 	background: url("../img/sidebar-arrow.svg") no-repeat 100% 100%/100%;
@@ -553,7 +553,7 @@ a {
 }
 .promo:after {
 	top: 11px;
-	right: -12px;
+	right: -14px;
 	content: ' ';
 	position: absolute;
 	background: url("../img/sidebar-arrow.svg") no-repeat 100% 100%/100%;

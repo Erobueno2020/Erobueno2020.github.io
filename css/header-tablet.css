@@ -198,7 +198,6 @@
 		background-color: #FDF0E8;
 		top: 0;
 		width: 100%;
-		z-index: 9999;
 	}
 
 	/* BASKET */
@@ -306,4 +305,24 @@
 	.dark-bg-mob-menu {
 		z-index: 999;
 	}
+	.sm-li_main {
+		text-transform: none;
+		position: relative;
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-right: 0;
+	}
+	.sm-li_main:after{
+	top: 8px;
+	right: -14px;
+	content: ' ';
+	position: absolute;
+	background: url("../img/sidebar-arrow.svg") no-repeat 100% 100%/100%;
+	width: 11px;
+	height: 5px;
+	-webkit-transform: translateY(50%);
+	-moz-transform: translateY(50%);
+	-ms-transform: translateY(50%);
+	-o-transform: translateY(50%);
+}
 }
