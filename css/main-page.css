@@ -583,7 +583,6 @@ font-family: "ProximaNova-SemiBold";
   box-shadow: 0 0 14px 0 rgba(100,100,100,.2);
 }
 .bottom-block__sub-block:last-child {
-  max-width: 195px;
   width: 100%;
 }
 .arrownext-icon {
@@ -1287,6 +1286,7 @@ font-family: "ProximaNova-SemiBold";
   margin-left: 15px;
   margin-right: 15px;
 }
+}
 
 
 
@@ -1727,6 +1727,8 @@ font-family: "ProximaNova-SemiBold";
   margin-left: 15px;
   margin-right: 15px;
 }
+}
+
 @media screen and (min-width: 767px) and (max-width: 1169px) {
     .item-banner-white, .item-banner-blue {
     max-width: 375px;
@@ -1780,4 +1782,5 @@ font-family: "ProximaNova-SemiBold";
   width: 100vw;
   margin-left: 15px;
   margin-right: 15px;
+}
 }
