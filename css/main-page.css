@@ -582,7 +582,7 @@ font-family: "ProximaNova-SemiBold";
   box-shadow: 0 0 14px 0 rgba(100,100,100,.2);
 }
 .bottom-block__sub-block:last-child {
-  width: 100%;
+  width: 33.3%;
 }
 .arrownext-icon {
   transition: opacity .2s ease;
@@ -947,6 +947,8 @@ font-family: "ProximaNova-SemiBold";
   }
   .main-page-items {
     justify-content: space-around;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   .container {
     max-width: 780px !important;
@@ -1291,6 +1293,10 @@ font-family: "ProximaNova-SemiBold";
   margin-left: 15px;
   margin-right: 15px;
 }
+  .main-page-items {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 
@@ -1379,6 +1385,10 @@ font-family: "ProximaNova-SemiBold";
   }
   .big-block-img {
     width: 50%;
+  }
+    .main-page-items {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -1531,6 +1541,10 @@ font-family: "ProximaNova-SemiBold";
   margin-left: 15px;
   margin-right: 15px;
 }
+  .main-page-items {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 
@@ -1726,7 +1740,63 @@ font-family: "ProximaNova-SemiBold";
   margin-left: 15px;
   margin-right: 15px;
 }
+  .main-page-items {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
+
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .bottom-block__desc {
+    position: relative;
+    padding-right: 0;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "ProximaNova-Regular";
+  }
+  .main-page__item {
+    position: relative;
+    max-width: 190px;
+  }
+  .main-page-items {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .popular-item {
+    max-width: 500px;
+  }
+  .bottom-block__price {
+    padding-top: 0px;
+    position: absolute;
+    bottom: 48px;
+  }
+  .bottom-block-button__like {
+    display: flex;
+  }
+  .main-page__bottom-block {
+    padding-bottom: 10px;
+    position: absolute;
+    max-height: 100%;
+  }
+  .bottom-block-button__btn {
+    height: 35px;
+    font-size: .75rem;
+    padding: 7px;
+  }
+  .bottom-block-button {
+    position: absolute;
+    bottom: 10px;
+  }
+}
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 767px) and (max-width: 1169px) {
     .item-banner-white, .item-banner-blue {
