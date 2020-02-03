@@ -11,9 +11,7 @@ body {
 
 .footer {
 	font-family: 'ProximaNova-Regular';
-	max-width: 1170px;
-	padding-left: 15px;
-	padding-right: 15px;
+	max-width: 1200px;
 	display: flex;
 	align-items: center;
 	margin: 0 auto;
@@ -104,6 +102,8 @@ body {
 @media screen and (max-width: 1169px) {
 	.footer {
 		flex-direction: column;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 	.footer-block {
 		margin-top: 35px;
