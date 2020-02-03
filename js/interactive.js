@@ -227,9 +227,45 @@ $(document).on('click', '.sm-li_main', function (e) {
     infinite: true,
     slidesToScroll: 1,
     slidesToShow: 1,
+    autoplay: true,
     arrows: false,
     dots: true,
-    })
+    });
+  };
+});
+
+  $(function() {
+    if (width < 1169) {
+    $('.sponsors-upblock').slick({
+    infinite: true,
+    slidesToScroll: 2,
+    slidesToShow: 2,
+    arrows: false,
+    dots: true,
+    responsive: [
+    {
+      breakpoint: 960,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    }
+  ]
+    });
   };
 });
 
