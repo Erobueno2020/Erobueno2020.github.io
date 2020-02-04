@@ -2654,7 +2654,7 @@ label {
 .blue-version .classic .minus_plugin_number {
 	border-top: 7px solid #56b2e4;
 }
-.blue-version .item-page__sidebar-block__buy-counter, .input_plugin_number {
+.blue-version .item-page__sidebar-block__buy-counter, .blue-version .input_plugin_number {
 	color: #56b2e4;
 }
 .blue-version .sidebar-delivery-store:before {
