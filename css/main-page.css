@@ -97,7 +97,7 @@ body {
   margin: 0px 0px 20px 0px;
   padding: 28px 240px 27px 30px;
   max-width: 450px;
-  max-height: 210px;
+  max-height: 200px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -132,7 +132,7 @@ body {
   position: relative;
   padding: 63px 37px 69px 180px;
   max-width: 390px;
-  max-height: 210px;
+  max-height: 200px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -966,16 +966,24 @@ font-family: "ProximaNova-SemiBold";
     max-width: 780px !important;
     width: 100%;
   }
+  .top-block {
+    height: 220px;
+  }
+    .top-block-name__price {
+    z-index: 9900;
+  } 
+
   .banners__top-row {
     flex-direction: column;
     width: 100%;
   }
   .item-banner-big {
-    height: 190px;
+    height: 230px;
     padding: 0;
     -webkit-background-size: cover;
     background-size: cover;
     max-width: 450px;
+    background-position: 65%;
     width: 100%;
   }
   .mar-top {
@@ -985,7 +993,7 @@ font-family: "ProximaNova-SemiBold";
     display: block;
   }
   .item-banner-big__text {
-    margin-bottom: 130px;
+    margin-bottom: 110px;
     margin-left: 20px;
   }
   .button-video {
@@ -1021,7 +1029,7 @@ font-family: "ProximaNova-SemiBold";
     margin-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    max-height: 210px;
+    max-height: 200px;
     height: 100%;
     margin-bottom: 0;
     margin-left: 0;
@@ -1127,7 +1135,7 @@ font-family: "ProximaNova-SemiBold";
   }
   .top-block-btn__button {
     height: 30px;
-    margin-top: 160px;
+    margin-top: 115px;
   }
   .bottom-block__sub-block {
     line-height: 16px;
@@ -1249,6 +1257,9 @@ font-family: "ProximaNova-SemiBold";
   display: flex;
   justify-content: center;
 }
+.item-banner-big__text {
+  margin-bottom: 60px;
+}
 @media screen and (min-width: 450px) and (max-width: 500px) {
   .item-banner-big {
     height: 260px;
@@ -1273,7 +1284,7 @@ font-family: "ProximaNova-SemiBold";
     max-width: 767px;
   }
   .big-block-img {
-    width: 55%;
+    width: 50%;
   }
     .sponsors__item {
     margin-left: 5px;
@@ -1335,6 +1346,7 @@ font-family: "ProximaNova-SemiBold";
 
   }
 
+
     .banners-bottom {
     padding-left: 5px;
     padding-right: 5px;
@@ -1350,7 +1362,7 @@ font-family: "ProximaNova-SemiBold";
     height: 300px;
   }
   .item-banner-big__text {
-    margin-bottom: 130px;
+    margin-bottom: 110px;
   }
   .item-banner-big__title {
     font-size: 30px;
@@ -1396,7 +1408,7 @@ font-family: "ProximaNova-SemiBold";
     max-width: 600px;
   }
   .big-block-img {
-    width: 50%;
+    width: 40%;
   }
     .main-page-items {
     margin-left: 0;
@@ -1477,7 +1489,7 @@ font-family: "ProximaNova-SemiBold";
     max-width: 767px;
   }
     .big-block-img {
-    width: 50%;
+    width: 40%;
   }
   .item-advantages__title {
     font-size: 16px;
@@ -1513,6 +1525,7 @@ font-family: "ProximaNova-SemiBold";
   }
   .top-block-btn__button {
     height: 40px;
+    margin-top: 100px;
   }
   .top-block-name__title {
     font-size: 24px;
@@ -1646,7 +1659,7 @@ font-family: "ProximaNova-SemiBold";
     max-width: 767px;
   }
     .big-block-img {
-    width: 50%;
+    width: 40%;
   }
   .item-advantages__title {
     font-size: 16px;
@@ -1699,8 +1712,11 @@ font-family: "ProximaNova-SemiBold";
   }
   .item-banner-white, .item-banner-blue {
     max-width: 310px;
-    height: 210px;
+    height: 200px;
     width: 100%;
+  }
+  .top-block-btn__button {
+    margin-top: 100px;
   }
   .banners__top-column_right {
     padding-left: 30px;
@@ -1829,7 +1845,7 @@ font-family: "ProximaNova-SemiBold";
 @media screen and (min-width: 767px) and (max-width: 1169px) {
     .item-banner-white, .item-banner-blue {
     max-width: 375px;
-    height: 210px;
+    height: 200px;
     width: 100%;
   }
   .banners__top-column_left {
