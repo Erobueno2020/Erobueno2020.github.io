@@ -295,6 +295,8 @@ a {
 }
 .nickname {
 	display: none;
+	width: 153px;
+	text-align: center;
 }
 
 /* BASKET POPUP */
