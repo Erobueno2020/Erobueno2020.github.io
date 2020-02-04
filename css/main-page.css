@@ -632,6 +632,10 @@ font-family: "ProximaNova-SemiBold";
   top: 0px;
   left: 0px;
   z-index: 9800;
+
+}
+.sale-icon img {
+  margin-right: 5px;
 }
 
 .list-column {
@@ -1755,7 +1759,7 @@ font-family: "ProximaNova-SemiBold";
 }
 
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (min-width: 375px) and (max-width: 500px) {
   .bottom-block__desc {
     position: relative;
     padding-right: 0;
@@ -1765,8 +1769,9 @@ font-family: "ProximaNova-SemiBold";
   }
   .main-page__item {
     position: relative;
-    max-width: 190px;
+    max-width: 175px;
   }
+
   .main-page-items {
     margin-left: 0;
     margin-right: 0;
@@ -1786,6 +1791,7 @@ font-family: "ProximaNova-SemiBold";
     padding-bottom: 10px;
     position: absolute;
     max-height: 100%;
+    padding: 10px;
   }
   .bottom-block-button__btn {
     height: 35px;
