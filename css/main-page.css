@@ -464,6 +464,15 @@ font-family: "ProximaNova-SemiBold";
   width: 16px;
   height: 16px;
 }
+.button-video::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 15px;
+    top: 21px;
+    left: 30px;
+    background: url("../img/button-video.svg") 0 0 no-repeat;
+    }
 
 .main-page__bottom-block {
   background-color: #fff7f2;

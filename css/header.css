@@ -289,6 +289,13 @@ a {
 	font-size: 18px;
 	padding-top: 5px;
 }
+.name {
+	font-family: 'ProximaNova-SemiBold';
+	color: #F6A98F;
+}
+.nickname {
+	display: none;
+}
 
 /* BASKET POPUP */
 .basket-popup {

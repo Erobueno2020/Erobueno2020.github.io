@@ -21,6 +21,9 @@
 	.info {
 		display: none;
 	}
+	.nickname {
+		display: none;
+	}
 	.logo-img {
 		margin-left: 10px;
 		margin-right: 10px;
