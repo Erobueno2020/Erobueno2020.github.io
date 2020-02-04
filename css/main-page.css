@@ -1095,8 +1095,8 @@ font-family: "ProximaNova-SemiBold";
     flex-wrap: wrap;
   }
   .bottom-block__sub-block {
-    width: 50%;
-    height: 105px;
+    width: 33%;
+    height: 115px;
   }
 
   .mp-items__item {
@@ -1110,7 +1110,7 @@ font-family: "ProximaNova-SemiBold";
     line-height: 14px;
   }
   .bottom-block__sub-block:last-child {
-    width: 60%;
+    width: 33%;
     display: block;
     margin: 0 auto;
   }
@@ -1269,14 +1269,20 @@ font-family: "ProximaNova-SemiBold";
 .item-banner-big__text {
   margin-bottom: 60px;
 }
+.small-block-img{
+  display: none;
+}
 @media screen and (min-width: 450px) and (max-width: 500px) {
   .item-banner-big {
     height: 260px;
     background-position: 50% 50%;
   }
+  .bottom-block {
+    height: max-content;
+  }
 
       .small-block-img {
-    display: block;
+    display: none;
   }
   .item-banner-big__text {
     margin-bottom: 85px;
@@ -1843,6 +1849,9 @@ font-family: "ProximaNova-SemiBold";
   }
   .mp-cube {
     height: 190px;
+  }
+    .bottom-block {
+    height: max-content;
   }
 }
 
