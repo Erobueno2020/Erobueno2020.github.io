@@ -333,18 +333,41 @@ $(function() {
         slidesToScroll: 1,
         dots: true,
         arrows: false,
-    });
+        responsive: [ 
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+        } 
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+    } 
+},
+{
+  breakpoint: 750,
+  settings: {
+    slidesToShow: 2,
+    slidesToScroll: 1,
+} 
+},
+]
+});
 
 
 
     // STICKY BLOCK
-    $(window).scroll(function() {
-      if ($(".item-page__content").scrollTop() >= 5) {
-        $('.item-page__sidebar').addClass('fixed');
-      } else {
-        $('.item-page__sidebar').removeClass('fixed');
-      }
-    });
+    // $(window).scroll(function() {
+    //   if ($(".item-page__content").scrollTop() >= 5) {
+    //     $('.item-page__sidebar').addClass('fixed');
+    //   } else {
+    //     $('.item-page__sidebar').removeClass('fixed');
+    //   }
+    // });
 
     // INPUT NUMBER
     $(document).ready(function () {
@@ -381,3 +404,88 @@ $(function() {
 
 
 
+
+    $(document).on('mouseover', 'a', function () {
+        var $this = $(this);
+        var menu;
+        if ((menu = $this.attr('id'))) 
+            var target = menu; {
+                target.toggleClass('visible');
+                if (!target.is(":visible")) {
+                    $this.removeClass('active');
+                    target.unbind('mouseover');
+                } else $this.addClass('active');
+                target.one('mouseover', function () {
+                    target.one('mouseout', function mouseout() {
+                        if (target.is(':hover')) {
+                            target.one('mouseout', mouseout);
+                            return;
+                        }
+                        $this.removeClass('active');
+                    });
+                });
+            }
+        });
+
+
+
+    // MOBILE NAV OPEN
+    $(document).ready(function(){
+        $(".mobile-nav-block__sizes").click(function(){
+            $(".item-sizes").toggleClass("nav-open-class");
+            $(".mobile-nav-block__sizes").toggleClass("nav-open-button");
+
+            if ($(".item-sizes").hasClass("nav-open-class")){
+                $(".mobile-nav-block__sizes span").html("-");
+            } else {
+                $(".mobile-nav-block__sizes span").html("+");
+            };
+        });
+        $(".mobile-nav-block__delivery").click(function(){
+            $(".item-delivery").toggleClass("nav-open-class");
+            $(".mobile-nav-block__delivery").toggleClass("nav-open-button");
+
+            if ($(".item-delivery").hasClass("nav-open-class")){
+                $(".mobile-nav-block__delivery span").html("-");
+            } else {
+                $(".mobile-nav-block__delivery span").html("+");
+            };
+        });
+        $(".mobile-nav-block__guarantee").click(function(){
+            $(".item-guarantee").toggleClass("nav-open-class");
+            $(".mobile-nav-block__guarantee").toggleClass("nav-open-button");
+
+            if ($(".item-guarantee").hasClass("nav-open-class")){
+                $(".mobile-nav-block__guarantee span").html("-");
+            } else {
+                $(".mobile-nav-block__guarantee span").html("+");
+            };
+        });
+    });
+
+    $(document).ready(function () {
+
+        var length = $('.item-info__block-images-group a').length;
+        if (length>6){
+            $(".item-info__block-images-group").addClass("flex-wrap-class");
+        }
+
+    });
+
+    // SELECT FIX
+    $(document).ready(function () {
+        $('select').click(function(){
+            $(this).parent().parent().find( $(".placeholder") ).hide();
+        })
+    });
+
+    // INPUT COLORS OPEN
+    $(".select-block__colors__input").click(function(){
+        $(".select-block__colors").toggleClass("flex");
+    });
+    // COLOR SELECT INPUT
+    $(document).ready(function () {
+        $('.input-color').click(function(){
+            $(".block-input-color .placeholder").css('background', $inputColor);
+        })
+    });
