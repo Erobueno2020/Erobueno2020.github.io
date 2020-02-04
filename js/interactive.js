@@ -261,6 +261,7 @@ $(document).on('click', '.sm-li_main', function (e) {
     slidesToShow: 2,
     arrows: false,
     dots: false,
+    asNavFor: '.sponsors-botblock',
     responsive: [
     {
       breakpoint: 1160,
