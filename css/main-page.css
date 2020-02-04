@@ -616,7 +616,6 @@ font-family: "ProximaNova-SemiBold";
 }
 .sponsors-botblock {
   margin-bottom: 35px;
-  margin-top: 20px;
 }
 .sale-icon {
   position: absolute;
@@ -933,7 +932,7 @@ font-family: "ProximaNova-SemiBold";
 
 .sponsors-upblock {
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 
@@ -1365,7 +1364,7 @@ font-family: "ProximaNova-SemiBold";
     font-size: 20px;
   }
   .cube-img {
-    width: 60%;
+    width: 50%;
   }
   .main-page__item {
     max-width: 240px;
@@ -1446,7 +1445,7 @@ font-family: "ProximaNova-SemiBold";
     font-size: 20px;
   }
   .cube-img {
-    width: 60%;
+    width: 50%;
   }
   .main-page__item {
     max-width: 240px;
@@ -1615,7 +1614,7 @@ font-family: "ProximaNova-SemiBold";
     font-size: 20px;
   }
   .cube-img {
-    width: 60%;
+    width: 50%;
   }
   .main-page__item {
     max-width: 240px;
@@ -1704,7 +1703,7 @@ font-family: "ProximaNova-SemiBold";
     height: 310px;
   }
   .cube-img {
-    width: 60%;
+    width: 50%;
   }
   .main-page-items {
     padding-left: 30px;
@@ -1787,6 +1786,9 @@ font-family: "ProximaNova-SemiBold";
   .bottom-block-button {
     position: absolute;
     bottom: 10px;
+  }
+  .mp-cube {
+    height: 190px;
   }
 }
 
