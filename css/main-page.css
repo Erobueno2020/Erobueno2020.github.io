@@ -1091,8 +1091,9 @@ font-family: "ProximaNova-SemiBold";
   }
   .bottom-block__sub-block {
     width: 50%;
-    height: 125px;
+    height: 105px;
   }
+
   .mp-items__item {
     height: max-content;
   }
@@ -1156,7 +1157,10 @@ font-family: "ProximaNova-SemiBold";
   }
   .small-block-img {
     top: 7px;
-    height: 100px;
+    height: 90px;
+  }
+  .sub-block__price {
+    margin-bottom: 7px;
   }
   .mp-items__right-column {
     display: flex;
@@ -1775,7 +1779,7 @@ font-family: "ProximaNova-SemiBold";
 }
 
 
-@media screen and (min-width: 375px) and (max-width: 500px) {
+@media screen and (min-width: 360px) and (max-width: 500px) {
   .bottom-block__desc {
     position: relative;
     padding-right: 0;
@@ -1788,7 +1792,7 @@ font-family: "ProximaNova-SemiBold";
   }
   .main-page__item {
     position: relative;
-    max-width: 175px;
+    max-width: 170px;
   }
 .main-page-items__banner-text__readmore::before {
   left: 128px;
