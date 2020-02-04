@@ -1771,10 +1771,18 @@ font-family: "ProximaNova-SemiBold";
     position: relative;
     max-width: 175px;
   }
-
+.main-page-items__banner-text__readmore::before {
+  left: 128px;
+}
+.main-page-items__banner-text__readmore {
+  font-size: 15px;
+}
   .main-page-items {
     margin-left: 0;
     margin-right: 0;
+  }
+  .main-page-items__banner-text__name {
+    font-size: 17px;
   }
   .popular-item {
     max-width: 500px;
