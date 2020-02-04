@@ -421,6 +421,12 @@ body {
   padding-top: 72px;
   font-family: "ProximaNova-SemiBold";
 }
+.bottom-block__price-sale {
+  font-size: 18px;
+  color: #ef86a3 ;
+  padding-top: 72px;
+  font-family: "ProximaNova-SemiBold";
+}
 .bottom-block-button__btn {
 border-radius: 20px;
 border: 2px solid #eccdba;
@@ -660,6 +666,15 @@ font-family: "ProximaNova-SemiBold";
 }
 .list-column_li:hover {
   color: #000;
+}
+.block-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.line-over {
+  text-decoration: line-through;
+  font-size: 16px;
 }
 .double {
   line-height: 20px;
@@ -1806,9 +1821,15 @@ font-family: "ProximaNova-SemiBold";
   .item-image {
     height: 202px;
   }
+  .main-page-items__banner {
+    padding: 12px;
+  }
   .main-page__item {
     position: relative;
     max-width: 165px;
+  }
+  .main-page-items__banner-text__name {
+    line-height: 18px;
   }
 .main-page-items__banner-text__readmore::before {
   left: 128px;
@@ -1817,7 +1838,7 @@ font-family: "ProximaNova-SemiBold";
   font-size: 15px;
 }
 .sale-icon img {
-  margin-right: 1px;
+  margin-right: 0px;
 }
   .main-page-items {
     margin-left: 0;
@@ -1829,11 +1850,7 @@ font-family: "ProximaNova-SemiBold";
   .popular-item {
     max-width: 500px;
   }
-  .bottom-block__price {
-    padding-top: 0px;
-    position: absolute;
-    bottom: 48px;
-  }
+
   .bottom-block-button__like {
     display: flex;
   }
@@ -1857,6 +1874,22 @@ font-family: "ProximaNova-SemiBold";
   }
     .bottom-block {
     height: max-content;
+  }
+  .bottom-block__price-sale {
+    padding-top: 0px;
+    position: absolute;
+    bottom: 48px;
+    right: 10px;
+    font-size: 15px;
+  }
+    .bottom-block__price {
+    padding-top: 0px;
+    position: absolute;
+    bottom: 48px;
+
+  }
+  .line-over {
+    font-size: 13px;
   }
 }
 
