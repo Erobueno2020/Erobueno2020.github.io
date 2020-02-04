@@ -1800,6 +1800,9 @@ font-family: "ProximaNova-SemiBold";
 .main-page-items__banner-text__readmore {
   font-size: 15px;
 }
+.sale-icon img {
+  margin-right: 1px;
+}
   .main-page-items {
     margin-left: 0;
     margin-right: 0;
