@@ -1767,6 +1767,9 @@ font-family: "ProximaNova-SemiBold";
     line-height: 14px;
     font-family: "ProximaNova-Regular";
   }
+  .item-image {
+    height: 218px;
+  }
   .main-page__item {
     position: relative;
     max-width: 175px;
