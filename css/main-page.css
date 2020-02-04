@@ -972,7 +972,8 @@ font-family: "ProximaNova-SemiBold";
     width: 100%;
   }
   .top-block {
-    height: 220px;
+    height: 170px;
+    padding: 15px;
   }
     .top-block-name__price {
     z-index: 9900;
@@ -1089,6 +1090,7 @@ font-family: "ProximaNova-SemiBold";
   }
   .top-block-name__title {
     font-size: 24px;
+    line-height: 18px;
   }
   .bottom-block {
     height: max-content;
@@ -1119,11 +1121,11 @@ font-family: "ProximaNova-SemiBold";
   }
   .mp-cube {
     width: 50%;
-    height: 150px;
+    height: 140px;
     padding: 10px;
   }
   .top-block-name__title {
-    font-size: 16px;
+    font-size: 18px;
   }
   .cube-img {
     width: 50%;
@@ -1141,7 +1143,7 @@ font-family: "ProximaNova-SemiBold";
   }
   .top-block-btn__button {
     height: 30px;
-    margin-top: 115px;
+    margin-top: 85px;
   }
   .bottom-block__sub-block {
     line-height: 16px;
@@ -1398,7 +1400,7 @@ font-family: "ProximaNova-SemiBold";
     margin-top: 10px;
   }
   .mp-cube {
-    height: 240px;
+    height: 220px;
   }
   .top-block-name__title {
     font-size: 20px;
@@ -1479,7 +1481,7 @@ font-family: "ProximaNova-SemiBold";
     margin-top: 10px;
   }
   .mp-cube {
-    height: 240px;
+    height: 220px;
   }
   .top-block-name__title {
     font-size: 20px;
@@ -1540,7 +1542,7 @@ font-family: "ProximaNova-SemiBold";
   }
   .top-block-btn__button {
     height: 40px;
-    margin-top: 100px;
+    margin-top: 70px;
   }
   .top-block-name__title {
     font-size: 24px;
@@ -1649,7 +1651,7 @@ font-family: "ProximaNova-SemiBold";
     margin-top: 10px;
   }
   .mp-cube {
-    height: 240px;
+    height: 220px;
   }
   .top-block-name__title {
     font-size: 20px;
@@ -1731,7 +1733,7 @@ font-family: "ProximaNova-SemiBold";
     width: 100%;
   }
   .top-block-btn__button {
-    margin-top: 100px;
+    margin-top: 80px;
   }
   .banners__top-column_right {
     padding-left: 30px;
@@ -1744,10 +1746,10 @@ font-family: "ProximaNova-SemiBold";
     padding-right: 30px;
   }
   .mp-cube {
-    height: 310px;
+    height: 250px;
   }
   .cube-img {
-    width: 50%;
+    width: 45%;
   }
   .main-page-items {
     padding-left: 30px;
@@ -1786,6 +1788,9 @@ font-family: "ProximaNova-SemiBold";
   .main-page-items {
     margin-left: 0;
     margin-right: 0;
+  }
+  .top-block {
+    height: 190px
   }
 }
 
@@ -1848,7 +1853,7 @@ font-family: "ProximaNova-SemiBold";
     bottom: 10px;
   }
   .mp-cube {
-    height: 190px;
+    height: 150px;
   }
     .bottom-block {
     height: max-content;
