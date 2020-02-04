@@ -1779,7 +1779,7 @@ font-family: "ProximaNova-SemiBold";
 }
 
 
-@media screen and (min-width: 360px) and (max-width: 500px) {
+@media screen and (min-width: 350px) and (max-width: 500px) {
   .bottom-block__desc {
     position: relative;
     padding-right: 0;
@@ -1788,11 +1788,11 @@ font-family: "ProximaNova-SemiBold";
     font-family: "ProximaNova-Regular";
   }
   .item-image {
-    height: 218px;
+    height: 202px;
   }
   .main-page__item {
     position: relative;
-    max-width: 170px;
+    max-width: 165px;
   }
 .main-page-items__banner-text__readmore::before {
   left: 128px;
@@ -1830,7 +1830,7 @@ font-family: "ProximaNova-SemiBold";
   .bottom-block-button__btn {
     height: 35px;
     font-size: .75rem;
-    padding: 7px;
+    padding: 5px;
   }
   .bottom-block-button {
     position: absolute;
