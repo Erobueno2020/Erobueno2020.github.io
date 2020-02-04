@@ -110,7 +110,10 @@ body {
   flex-direction: column;
   border-radius: 10px;
   background-color: #ffffff;
-  background: url("../img/banner-2.jpg") 0 0 no-repeat; }
+  background: url("../img/banner-2.jpg") 0 0 no-repeat;
+  -webkit-background-size: cover;
+   background-size: cover; 
+ }
   .item-banner-white__title {
     max-width: 130px;
     margin: 0px 0px 100px 0px;
