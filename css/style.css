@@ -2609,12 +2609,9 @@ label {
 	background-color: blue;
 }
 
-.second-bg-sidebar {
-}
-.item-page__sidebar-block__delivery span {
+.blue-version .item-page__sidebar-block__delivery span {
 	color: white;
 }
-
 .blue-version .item-page__sidebar-block {
 	background: linear-gradient(to right top, #7fc7ef, #8dcef3, #9bd6f7, #a8ddfb, #b5e5ff) !important;
 }
@@ -2690,6 +2687,6 @@ label {
 .blue-version .news-mailing__text-title {
 	color: #56b2e4;
 }
-.news-mailing__form-button {
+.blue-version .news-mailing__form-button {
 	background-color: #56b2e4;
 }
