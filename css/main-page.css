@@ -475,6 +475,25 @@ font-family: "ProximaNova-SemiBold";
   width: 16px;
   height: 16px;
 }
+  .sale-count {
+    position: relative;
+    background: url('../img/mp-sale.svg');
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+
+  }
+  .sale {
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 12px;
+    cursor: default;
+
+  }
 .button-video::before {
     content: '';
     position: absolute;
@@ -643,10 +662,11 @@ font-family: "ProximaNova-SemiBold";
   top: 0px;
   left: 0px;
   z-index: 9800;
+  display: flex;
 
 }
 .sale-icon img {
-  margin-right: 3px;
+  margin-right: 4px;
 }
 
 .list-column {
@@ -674,7 +694,7 @@ font-family: "ProximaNova-SemiBold";
 }
 .line-over {
   text-decoration: line-through;
-  font-size: 16px;
+  font-size: 18px;
 }
 .double {
   line-height: 20px;
@@ -1838,7 +1858,7 @@ font-family: "ProximaNova-SemiBold";
   font-size: 15px;
 }
 .sale-icon img {
-  margin-right: 0px;
+  margin-right: 4px;
 }
   .main-page-items {
     margin-left: 0;
@@ -1880,16 +1900,17 @@ font-family: "ProximaNova-SemiBold";
     position: absolute;
     bottom: 48px;
     right: 10px;
-    font-size: 15px;
+    font-size: 14px;
   }
     .bottom-block__price {
     padding-top: 0px;
     position: absolute;
     bottom: 48px;
+    font-size: 14px;
 
   }
   .line-over {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
