@@ -423,7 +423,7 @@ body {
 }
 .bottom-block__price-sale {
   font-size: 18px;
-  color: #ef86a3 ;
+  color: #3f3f3f;
   padding-top: 72px;
   font-family: "ProximaNova-SemiBold";
 }
@@ -485,7 +485,7 @@ font-family: "ProximaNova-SemiBold";
   }
   .sale {
     position: absolute;
-    top: 5px;
+    top: 6px;
     left: 2px;
     right: 0;
     bottom: 0;
@@ -695,6 +695,7 @@ font-family: "ProximaNova-SemiBold";
 .line-over {
   text-decoration: line-through;
   font-size: 18px;
+  color: #ef86a3;
 }
 .double {
   line-height: 20px;
@@ -1901,6 +1902,7 @@ font-family: "ProximaNova-SemiBold";
     bottom: 48px;
     right: 10px;
     font-size: 14px;
+    color: #3f3f3f;
   }
     .bottom-block__price {
     padding-top: 0px;
