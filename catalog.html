@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Сайт от Квинова - Erabueno</title>
+	<title>Erabueno</title>
 
 	<meta name="description" content="Erabueno - Онлайн магазин">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,32 +12,79 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	
 	<!-- LINKS -->
-	<link rel="stylesheet" href="css/header-mobile.css">
-	<link rel="stylesheet" href="css/header-tablet.css">
-	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/jquery-ui.css">
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/header.css">
 
 </head>
 <body>
+	<!-- HEADER -->
+
+	<!-- XL and LG -->
+	<header class="main_header d-none d-lg-block">
+		<div class="container p-md-0">
+			<div class="row">
+				<div class="col-2"><img src="img/logo.png"></div>
+				<div class="col-10">
+					<div class="row">
+						<div class="col-12">menu</div>
+						<div class="col-12">
+							<div class="row">
+								<div class="col">contacts</div>
+								<div class="col">seacrh</div>
+								<div class="col">cart</div>
+							</div>
+						</div>
+					</div>
+				</div><!--/col 10-->
+			</div>
+		</div> 
+	</header>
+
+	<!-- SM and MD -->
+	<header class="main_header main_header d-sm-block d-md-block d-none d-lg-none">
+		<div class="container p-md-0">
+			<div class="row">
+				<div class="col-12">top</div>
+				<div class="col-12">
+					<div class="row">
+						<div class="col">burger</div>
+						<div class="col">logo</div>
+						<div class="col">contacts</div>
+						<div class="col">search</div>
+						<div class="col">cart</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- XL -->
+	<header class="main_header main_header d-block d-sm-none"></header>
+
+
+	<!--/ END HEADER -->
 
 	<!-- Here write code -->
 	<div class="catalog-page">	
-		<div class="container p-md-0">
+		<div class="container p-desktop-0">
 
 			<div class="col-12">
 				<div class="row">
-					<ul class="site-tree">
-						<li><a href="#">Главная</a></li>
-						<li><a href="#">Каталог</a></li>
-						<li><a href="#">Раздел каталога</a></li>
-					</ul>
+					<div class="site-tree__block">
+						<ul class="site-tree">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Раздел каталога</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class="row">
+
+			<div class="row m-0">
 
 				<div class="col-md-12 col-lg-3">
 					<div class="row row-catalog-filter">
@@ -769,6 +816,93 @@
 					</div>
 
 					<p class="catalog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+					<!-- BIG TEASER -->
+					<div class="big-teaser">
+						<div class="big-teaser__content">
+
+							<div class="big-teaser__content-main">
+								<div class="big-teaser__content-main__image-block">
+									<a href="#" class="big-teaser__content-main__image"></a>
+								</div>
+								<div class="big-teaser__content-main__text">
+									<div class="item-info__block-text__description">
+										<span class="item-info__block-text__title">Серебристая алюминиевая пробка с радужным кристаллом - 6 см.</span>
+										<p class="item-info__block-text__description-text">Насладитесь самым глубоким и настоящим оргазмом в вашей жизни вместе с Womanizer DUO. Роскошный бесконтактный клиторальный стимулятор... Подробнее</p>
+
+										<div class="item-kit__block-buttons">
+											<form action="#">
+												<div class="block-select">
+													<div class="block-select__element">
+														<span class="placeholder">Размер</span>
+														<div class="block-select__element-decor">
+															<select name="color">
+																<option value="-1" style="display:none;"></option>
+																<option value="#">XL</option>
+																<option value="#">XLL</option>
+																<option value="#">XLL</option>
+															</select>
+														</div>	
+													</div>
+													<div class="block-select__element block-input-color">
+														<span class="placeholder"></span>
+
+														<div class="block-select__element-decor">
+															<div class="select-block__colors__input"></div>
+															<div class="select-block__colors">
+																<form action="#">
+																	<label class="input-color red">
+																		<input onclick="$inputColor='red'" type="radio" class="input-red" name="input-color">
+																	</label>
+																	<label class="input-color green">
+																		<input onclick="$inputColor='#57d586'" type="radio" class="input-green" name="input-color">
+																	</label>
+																	<label class="input-color blue">
+																		<input onclick="$inputColor='blue'" type="radio" class="input-blue" name="input-color">
+																	</label>
+																</form>
+															</div>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="big-teaser__buttons">
+										<form action="#">
+											<label><input type="checkbox" class="default-checkbox">Добавить к сравнению</label>
+											<label><button class="button-favourite">Добавить в избранное</button></label>
+										</form>
+									</div>
+								</div>
+							</div>
+
+							<div class="big-teaser__content-rating">
+								<div class="item-page__sidebar-block__rating">
+									<div class="item-rating">
+										<div class="item-rating__heart"></div>
+										<div class="item-rating__heart"></div>
+										<div class="item-rating__heart"></div>
+										<div class="item-rating__heart"></div>
+										<div class="item-rating__heart"></div>
+									</div>                     
+									<a href="#">Отзывы</a>
+								</div>
+							</div>
+
+						</div>
+						<div class="big-teaser__info">
+							<div class="big-teaser__info-prices">
+								<span class="item-page__sidebar-block__item-info__price-old">12 900 руб</span>
+								<span class="item-page__sidebar-block__item-info__price">22 900 руб</span>
+							</div>
+							<div class="big-teaser__info-data">
+								<span class="points-block__point">10% Скидка</span>
+								<button class="item-page__sibebar-block__buttons-basket">В корзину</button>
+							</div>
+						</div>
+					</div>
+
 					<div class="catalog-button__block">
 						<button class="catalog-button-load">Загрузить ещё товары</button>
 					</div>
@@ -787,6 +921,7 @@
 					
 				</div>
 			</div>
+			
 		</div>
 	</div>
 

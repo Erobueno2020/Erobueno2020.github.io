@@ -490,3 +490,22 @@ $(function() {
             $(".block-input-color .placeholder").css('background', $inputColor);
         })
     });
+
+    // PRODUCT POPUP
+    $(".product-popup__close").click(function(){
+        $(".product-popup").fadeOut();
+        $("body").css("overflow", "visible");
+    });
+    $(".product-popup__interactive-button").click(function(){
+        $(".product-popup").fadeOut();
+        $("body").css("overflow", "visible");
+    });
+    $(".product-popup__background").click(function(){
+        $(".product-popup").fadeOut();
+        $("body").css("overflow", "visible");
+    });
+    $(".item-page__sibebar-block__buttons-buy").click(function(){
+        $(".product-popup").fadeIn();
+        $(".product-popup").css("display", "flex");
+        $("body").css("overflow", "hidden");
+    });
