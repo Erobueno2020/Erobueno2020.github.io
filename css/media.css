@@ -163,6 +163,9 @@
 }
 
 @media (max-width: 992px) {
+    .item-page__sidebar-block__interactive {
+        border: 0 !important;
+    }
     .item-page__sidebar-block {
         background: #ff98b4;
         background-image: 0;
@@ -1635,7 +1638,7 @@
         width: 30px;
         height: 30px;
         background: url(../img/sd-summa-icon.png) no-repeat 100% 100%/contain;
-        top: 155px;
+        top: 145px;
         left: -15px;
     }
     .item-kit__block-image a {
@@ -1710,7 +1713,10 @@
 @media (max-width: 415px){
     .item-info__block-images-group a {
         height: 90px;
-        width: 27%;
+        width: 17%;
+    }
+    .item-info__block-images-group {
+        margin: 0;
     }
     .item-feedback__select {
         width: 90px;
@@ -1766,6 +1772,10 @@
     }
     .block-input-color .block-select__element-decor::after {
         left: 93px;
+    }
+    .item-kit__block-buttons .block-input-color .block-select__element-decor::after {
+        left: auto;
+        right: 10px;
     }
     .item-kit .item-block-pink {
         width: 45% !important;
