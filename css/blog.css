@@ -6,6 +6,13 @@ a:hover {
 	max-width: 275px;
 	width: 100%;
 }
+.blog-button {
+	color: #7f5c47;
+	border: none;
+	outline: none;
+	background-color: #fff;
+	top: 6px !important;
+}
 
 .double-line {
 	line-height: 18px !important;
@@ -212,7 +219,7 @@ a:hover {
 	}
 	.site-tree__block {
 		width: 100%;
-		padding-left: 15px;
+		padding-left: 0px;
 		padding-right: 15px;
 	}
 	.no-padding {
