@@ -105,6 +105,10 @@ a:hover {
 	margin-right: 5px;
 	font-size: 14px;
 	margin-top: 5px;
+	transition: background .3s ease;
+}
+.tag:hover {
+	background: #CFBAAB;
 }
 .blog-post {
 	background-color: #fff;

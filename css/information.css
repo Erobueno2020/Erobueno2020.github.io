@@ -1,0 +1,112 @@
+.info-main {
+	max-width: 860px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.sub-info {
+	max-width: 860px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+.flex-50 {
+	flex-basis: 49%;
+}
+.info-image {
+	display: flex;
+	justify-content: space-between;
+}
+.info-image__desc {
+	flex-basis: 68%;
+}
+.reverse {
+	flex-direction: row-reverse;
+}
+.info-main__title {
+	font-family: 'ProximaNovaT-Thin', sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 28px;
+	color: #a77a5e;
+	margin-bottom: 15px;
+}
+.info-main__desc {
+	font-family: 'ProximaNova-Light', sans-serif;
+	font-size: 16px;
+	color: #7f5c47;
+	line-height: 25px;
+	margin-bottom: 30px;
+}
+.sub-info__title {
+	font-size: 16px;
+	font-family: 'ProximaNova-SemiBold', sans-serif;
+}
+.sub-info__desc {
+	font-size: 16px;
+	line-height: 25px;
+	color: #7f5c47;
+	font-family: 'ProximaNova-Light', sans-serif;
+	margin-top: 10px;
+}
+.info-image__img {
+	width: 260px;
+	height: 260px;
+}
+.info-image__desc {
+	font-size: 16px;
+	line-height: 22px;
+	color: #7f5c47;
+	font-family: 'ProximaNova-Light', sans-serif;
+}
+
+
+
+.info-links {
+	background: #fff;
+	max-width: 275px;
+	width: 100%;
+	height: max-content;
+	border-radius: 10px;
+	padding: 20px;
+}
+.info-links__title {
+	font-size: 22px;
+	font-family: 'ProximaNova-SemiBold', sans-serif;
+	color: #7f5c47;
+	margin-bottom: 10px;
+}
+.info-links__link {
+	color: #ff98b4;
+	font-size: 16px;
+	font-family: 'ProximaNova-SemiBold', sans-serif;
+	border-bottom: 1px dashed #ff98b4;
+}
+.blog-slider .slick-dots{
+	margin-top: 0;
+}
+.fix {
+	outline: none;
+	border: none !important;
+}
+.slick-dotted.slick-slider {
+	margin-bottom: 0 !important;
+}
+.store-info .item-button-simple {
+	line-height: 38px;
+}
+.item-kit__block-content {
+	padding: 0 10px 0 12px;
+}
+.nav-tabs {
+	border-bottom: none !important;
+	margin-bottom: 0 !important;
+}
+.nav-block-scroll {
+	border-bottom: 1px solid #f3e1d7 !important;
+}
+.blog-scroll {
+	padding-bottom: 0px !important;
+	height: max-content !important;
+}
