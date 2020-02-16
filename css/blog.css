@@ -275,6 +275,10 @@ a:hover {
 	.blog-post {
 		margin-right: 0;
 	}
+			.news-blog {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 }
 @media screen and (min-width: 801px) and (max-width: 900px) {
 	.blog-post {
@@ -290,6 +294,10 @@ a:hover {
 	.blog-post {
 		margin-right: 0;
 	}
+		.news-blog {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
 }
 @media screen and (min-width: 901px) and (max-width: 994px) {
 	.blog-post {
@@ -304,6 +312,10 @@ a:hover {
 	}
 	.blog-post {
 		margin-right: 0;
+	}
+		.news-blog {
+		margin-left: 15px;
+		margin-right: 15px;
 	}
 }
 @media screen and (min-width: 995px) and (max-width: 1169px) {
