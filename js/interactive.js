@@ -406,7 +406,7 @@ $(function() {
 
 
 
-    $(document).on('mouseover', 'a', function () {
+   /* $(document).on('mouseover', 'a', function () {
         var $this = $(this);
         var menu;
         if ((menu = $this.attr('id'))) 
@@ -426,7 +426,7 @@ $(function() {
                     });
                 });
             }
-        });
+        });*/
 
 
 

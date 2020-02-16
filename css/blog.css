@@ -5,6 +5,7 @@ a:hover {
 .mw-275 {
 	max-width: 275px;
 	width: 100%;
+	height: max-content;
 }
 .blog-button {
 	color: #7f5c47;
@@ -163,6 +164,7 @@ a:hover {
 	width: 100%;
 	height: 130px;
 	z-index: 1;
+	border-radius: 10px;
 }
 .blog-post__more {
 	z-index: 500;
@@ -192,12 +194,14 @@ a:hover {
 
 @media screen and (max-width: 995px) {
 	.catalog-filter-mobile {
-		width: 100%;
+		width: 97%;
 		padding: 0;
-		margin: 0;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
 	}
 	.mw-275 {
-		max-width: 767px;
+		max-width: 980px;
 		width: 100%;
 	}
 	.blog-post {
@@ -309,13 +313,24 @@ a:hover {
 	}
 	.blog-wrap {
 		margin-left: 0px;
-		justify-content: flex-end;
+		justify-content: center;
 	}
 	.blog-post {
-		max-width: 260px;
+		max-width: 360px;
 		margin: 0;
 		margin-bottom: 15px;
 	}
 	.blog-right-side {
 		margin-left: 20px;
+	}
+	.blog-menu {
+		display: flex;
+		justify-content: center;
+	}
+	.news-blog {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.site-tree__block {
+		margin-left: 15px;
 	}
