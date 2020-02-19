@@ -29,6 +29,77 @@ a {
 	position: relative
 
 }
+.banner-header {
+	background: url('../img/banner-header.png') no-repeat;
+	height: 140px;
+	width: 100%;
+	position: absolute;
+	border-radius: 10px;
+	transition: box-shadow .3s ease;
+	top: 0;
+	left: 0;
+}
+.banner-header:hover {
+	box-shadow: 0 0 8px 0 rgba(150,150,150,.5);
+}
+.banner-rel {
+	position: relative;
+	max-width: 1180px;
+	margin: 0 auto;
+	height: 140px;
+}
+.banner-header__title {
+	position: absolute;
+	color: #fff;
+	font-size: 25px;
+	font-family: 'ProximaNova-Bold';
+	top: 30px;
+	left: 20px;
+}
+.banner-header__desc {
+	position: absolute;
+	color: #bcd5ff;
+	font-size: 16px;
+	line-height: 20px;
+	font-family: 'ProximaNova-Light';
+	top: 70px;
+	left: 20px;
+}
+.banner-header__price {
+	position: absolute;
+	color: #fff;
+	font-size: 53px;
+	font-family: 'ProximaNova-SemiBold';
+	right: 90px;
+	top: 0px;
+}
+.banner-header__offer {
+	position: absolute;
+	color: #bcd5ff;
+	right: 0;
+	font-size: 12px;
+	font-family: 'ProximaNova-Regular';
+	top: 90px;
+	right: 20px;
+}
+.banner-header__old-price {
+	font-size: 21px;
+	position: absolute;
+	font-family: 'ProximaNova-Light';
+	color: #fff;
+	opacity: .3;
+	right: 15px;
+	top: 15px;
+	text-decoration: line-through;
+}
+.banner-header__rub-text {
+	font-size: 20px;
+	position: absolute;
+	font-family: 'ProximaNova-SemiBold';
+	color: #fff;
+	right: 15px;
+	top: 35px;
+}
 .header-width {
 	display: flex;
 	max-width: 1170px;
@@ -639,4 +710,68 @@ a {
 		opacity: 1;
 	}
 
+}
+
+@media screen and (max-width: 1169px) {
+	.banner-rel {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.banner-header {
+		background-position: 30% 100%;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.banner-rel {
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 100px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1169px) {
+	.banner-rel {
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 130px;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+	.banner-header {
+		background-position: 30% 100%;
+	}
+	.banner-header__title {
+	font-size: 18px;
+	top: 15px;
+	left: 20px;
+	}
+	.banner-header__desc {
+	font-size: 12px;
+	line-height: 18px;
+	top: 40px;
+	left: 20px;
+	}
+	.banner-header__price {
+	font-size: 22px;
+	right: 70px;
+	top: 25px;
+	}
+	.banner-header__offer {
+	right: 0;
+	font-size: 10px;
+	top: 100px;
+	right: 15px;
+	}
+	.banner-header__old-price {
+	font-size: 16px;
+	right: 15px;
+	opacity: .6;
+	top: 28px;
+	}
+	.banner-header__rub-text {
+	font-size: 15px;
+	right: 15px;
+	top: 40px;
+	}
 }

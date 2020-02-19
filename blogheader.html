@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>Сайт от Квинова - Erabueno</title>
+		<title>EroBueno</title>
 		<meta name="description" content="Erabueno - Онлайн магазин">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- FAVICON -->
@@ -16,10 +16,14 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/media.css">
 		<link rel="stylesheet" href="css/header.css">
-		<!--        <link rel="stylesheet" href="css/header-blue.css">    Синий дизайн -->
-		<link rel="stylesheet" href="css/footer.css">
-		<link rel="stylesheet" href="css/header-tablet.css">
 		<link rel="stylesheet" href="css/header-mobile.css">
+		<link rel="stylesheet" href="css/header-tablet.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/main-page.css">
+		<link rel="stylesheet" href="css/blog.css">
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		
 	</head>
 	<body>
 		<header class="header">
@@ -650,14 +654,296 @@
 			</div>
 		</div>
 	</div>
-	<!-- Scripts -->
-	<script
-	src="https://code.jquery.com/jquery-3.4.1.js"
-	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-	crossorigin="anonymous">
-	</script>
-	<script src="js/jquery-ui.js"></script>
-	<script src="js/jquery.ui.touch-punch.min.js"></script>
-	<script src="js/interactive.js"></script>
-</body>
+	<a href=""><div class="banner-rel">
+		<div class="banner-header">
+			<h3 class="banner-header__title">DOCJOHNSON</h3>
+			<p class="banner-header__desc">американские<br>технологии</p>
+			<p class="banner-header__price">18 000</p>
+			<div class="banner-header__sale">
+				<p class="banner-header__old-price">22 000</p>
+				<p class="banner-header__rub-text">рублей</p>
+			</div>
+			<p class="banner-header__offer">Предложение не является публичной афертой.<br>Скидки по акциям не суммируются.</p>
+		</div>
+	</div></a>
+	<div class="container">
+		<div class="col-12">
+			<div class="row">
+				<div class="site-tree__block">
+					<button class="site-tree__back">Назад</button>
+					<ul class="site-tree">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Раздел каталога</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row m-0">
+			<div class="col-md-12 col-lg-3">
+				<div class="row row-catalog-filter">
+					<div class="catalog-filter mw-275">
+						<div class="catalog-filter__title-block">
+							<span class="catalog-filter__title pl-4">Разделы блога</span>
+							<button class="catalog-filter__button">X</button>
+						</div>
+						<div class="catalog-filter__container">
+							<ul class="catalog-filter__nav pl-4">
+								<li>
+									<a href="#" class="child-name pink-color">Акции, конкурсы</a>
+									<ul class="child">
+										<li class="li-items"><a class="li-item" href="#">Акции</a></li>
+										<li class="li-items"><a class="li-item" href="#">Конкурсы</a></li>
+										<li class="li-items"><a class="li-item" href="#">Подарки</a></li>
+										<li class="double-line li-items"><a class="li-item" href="#">Что-нибудь еще в две строки строченьки строки</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="child-name pink-color">На досуге</a>
+									<ul class="child">
+										<li class="li-items"><a class="li-item" href="#">Что-то</a></li>
+										<li class="li-items"><a class="li-item" href="#">Здесь</a></li>
+										<li class="li-items"><a class="li-item" href="#">Будет</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#" class="child-name pink-color">Раздел про BSDM</a>
+									<ul class="child">
+										<li class="li-items"><a class="li-item" href="#">Что-то</a></li>
+										<li class="li-items"><a class="li-item" href="#">Здесь</a></li>
+										<li class="li-items"><a class="li-item" href="#">Будет</a></li>
+									</ul>
+								</li>
+								<li class="double-line pink-color">
+									<a href="#" class="child-name pink-color">Про что-нибудь еще в две строки</a>
+									<ul class="child">
+										<li class="li-items"><a class="li-item" href="#">Что-то</a></li>
+										<li class="li-items"><a class="li-item" href="#">Здесь</a></li>
+										<li class="li-items"><a class="li-item" href="#">Будет</a></li>
+									</ul>
+								</li>
+							</ul>
+							<div class="fresh-posts">
+								<a href=""><span>Свежие статьи</span></a>
+								<div class="fresh-post">
+									<a href=""><img class="fresh-img" src="img/blog-small.png" alt=""></a>
+									<div class="fresh-post__info">
+										<a href=""><p class="fresh-post__info_title">Какое-то название в две строки</p></a>
+										<p class="fresh-post__info_time">10.01.2020</p>
+									</div>
+								</div>
+								<div class="fresh-post">
+									<a href=""><img class="fresh-img" src="img/blog-small.png" alt=""></a>
+									<div class="fresh-post__info">
+										<a href=""><p class="fresh-post__info_title">Какое-то название в две строки</p></a>
+										<p class="fresh-post__info_time">10.01.2020</p>
+									</div>
+								</div>
+								<div class="fresh-post">
+									<a href=""><img class="fresh-img" src="img/blog-small.png" alt=""></a>
+									<div class="fresh-post__info">
+										<a href=""><p class="fresh-post__info_title">Какое-то название в две строки</p></a>
+										<p class="fresh-post__info_time">10.01.2020</p>
+									</div>
+								</div>
+							</div>
+							<div class="cloud-tags">
+								<a href=""><span>Облако тегов</span></a>
+								<div class="tags">
+									<a href=""><p class="tag">Обзор</p></a>
+									<a href=""><p class="tag">Игрушки</p></a>
+									<a href=""><p class="tag">Обзор</p></a>
+									<a href=""><p class="tag">О компании</p></a>
+									<a href=""><p class="tag">Обзор</p></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 col-lg-9 blog-wrap p-0">
+				<div class="blog-left-side">
+					<div class="blog-post">
+						<img class="blog-post__img" src="img/blog_image.png" alt="">
+						<p class="blog-post__time">1 января 2022 г., <span>20:18</span></p>
+						<a href=""><h3 class="blog-post__title">Заголовок статьи блога в две строки
+						для наглядности</h3></a>
+						<div class="tags">
+							<a href=""><p class="tag">Обзор</p></a>
+							<a href=""><p class="tag">Игрушки</p></a>
+						</div>
+						<p class="blog-post__desc">Насладитесь самым глубоким и настоящим оргазмом в вашей жизни вместе с Womanizer DUO. Роскошный бесконтактный клиторальный стимулятор. Насладитесь самым глубоким и настоящим оргазмом в вашей жизни вместе с Womanizer DUO. Роскошный бесконтактный клиторальный стимулятор.</p>
+						<div class="blog-post__hide"></div>
+						<a href=""><p class="blog-post__more">Читать далее...</p></a>
+					</div>
+					<div class="blog-post">
+						<p class="blog-post__time">1 января 2022 г., <span>20:18</span></p>
+						<a href=""><h3 class="blog-post__title">Заголовок статьи блога в две строки
+						для наглядности</h3></a>
+						<div class="tags">
+							<a href=""><p class="tag">Обзор</p></a>
+							<a href=""><p class="tag">Игрушки</p></a>
+						</div>
+						<p class="blog-post__desc">Насладитесь самым глубоким и настоящим оргазмом в вашей жизни вместе с Womanizer DUO. Роскошный бесконтактный клиторальный стимулятор. Насладитесь самым глубоким и настоящим оргазмом в вашей жизни вместе с Womanizer DUO. Роскошный бесконтактный клиторальный стимулятор.</p>
+						<div class="blog-post__hide"></div>
+						<a href=""><p class="blog-post__more">Читать далее...</p></a>
+					</div>
+					<div class="blog-post">
+						<p class="blog-post__time">1 января 2022 г., <span>20:18</span></p>
+						<a href=""><h3 class="blog-post__title">Заголовок статьи блога в две строки
+						для наглядности</h3></a>
+						<div class="tags">
+							<a href=""><p class="tag">Обзор</p></a>
+							<a href=""><p class="tag">Игрушки</p></a>
+						</div>
+						<p class="blog-post__desc">Насладитесь самым глубоким и настоящим оргазмом в вашей жизни вместе с Womanizer DUO. Роскошный бесконтактный клиторальный стимулятор. Насладитесь самым глубоким и настоящим оргазмом в вашей жизни вместе с Womanizer DUO. Роскошный бесконтактный клиторальный стимулятор.</p>
+						<div class="blog-post__hide"></div>
+						<a href=""><p class="blog-post__more">Читать далее...</p></a>
+					</div>
+					<div class="blog-post">
+						<p class="blog-post__time">1 января 2022 г., <span>20:18</span></p>
+						<a href=""><h3 class="blog-post__title">Заголовок статьи блога в две строки
+						для наглядности</h3></a>
+						<div class="tags">
+							<a href=""><p class="tag">Обзор</p></a>
+							<a href=""><p class="tag">Игрушки</p></a>
+						</div>
+						<p class="blog-post__desc">Насладитесь самым глубоким и настоящим оргазмом в вашей жизни вместе с Womanizer DUO. Роскошный бесконтактный клиторальный стимулятор. Насладитесь самым глубоким и настоящим оргазмом в вашей жизни вместе с Womanizer DUO. Роскошный бесконтактный клиторальный стимулятор.</p>
+						<div class="blog-post__hide"></div>
+						<a href=""><p class="blog-post__more">Читать далее...</p></a>
+					</div>
+				</div>
+				<div class="blog-right-side">
+					<div class="blog-post">
+						<p class="blog-post__time">1 января 2022 г., <span>20:18</span></p>
+						<a href=""><h3 class="blog-post__title">Заголовок статьи блога в две строки
+						для наглядности</h3></a>
+						<div class="tags">
+							<a href=""><p class="tag">Обзор</p></a>
+							<a href=""><p class="tag">Игрушки</p></a>
+						</div>
+						<p class="blog-post__desc">Насладитесь самым глубоким и настоящим оргазмом в вашей жизни вместе с Womanizer DUO. Роскошный бесконтактный клиторальный стимулятор. Насладитесь самым глубоким и настоящим оргазмом в вашей жизни вместе с Womanizer DUO. Роскошный бесконтактный клиторальный стимулятор.</p>
+						<div class="blog-post__hide"></div>
+						<a href=""><p class="blog-post__more">Читать далее...</p></a>
+					</div>
+					<div class="blog-post">
+						<img class="blog-post__img" src="img/blog_image.png" alt="">
+						<p class="blog-post__time">1 января 2022 г., <span>20:18</span></p>
+						<a href=""><h3 class="blog-post__title">Заголовок статьи блога в две строки
+						для наглядности</h3></a>
+						<div class="tags">
+							<a href=""><p class="tag">Обзор</p></a>
+							<a href=""><p class="tag">Игрушки</p></a>
+						</div>
+						<p class="blog-post__desc">Насладитесь самым глубоким и настоящим оргазмом в вашей жизни вместе с Womanizer DUO. Роскошный бесконтактный клиторальный стимулятор. Насладитесь самым глубоким и настоящим оргазмом в вашей жизни вместе с Womanizer DUO. Роскошный бесконтактный клиторальный стимулятор.</p>
+						<div class="blog-post__hide"></div>
+						<a href=""><p class="blog-post__more">Читать далее...</p></a>
+					</div>
+					<div class="blog-post">
+						<img class="blog-post__img" src="img/blog_image2.png" alt="">
+						<p class="blog-post__time">1 января 2022 г., <span>20:18</span></p>
+						<a href=""><h3 class="blog-post__title">Заголовок статьи блога в две строки
+						для наглядности</h3></a>
+						<div class="tags">
+							<a href=""><p class="tag">Обзор</p></a>
+							<a href=""><p class="tag">Игрушки</p></a>
+						</div>
+						<p class="blog-post__desc">Насладитесь самым глубоким и настоящим оргазмом в вашей жизни вместе с Womanizer DUO. Роскошный бесконтактный клиторальный стимулятор. Насладитесь самым глубоким и настоящим оргазмом в вашей жизни вместе с Womanizer DUO. Роскошный бесконтактный клиторальный стимулятор.</p>
+						<div class="blog-post__hide"></div>
+						<a href=""><p class="blog-post__more">Читать далее...</p></a>
+					</div>
+				</div>
+			</div>
+			<div class="container pt-5 mt-5 mb-5 news-mailing news-blog">
+				<div class="news-mailing__text">
+					<span class="news-mailing__text-title blue-color">Подпишитесь на нашу новостную рассылку</span>
+					<span class="news-mailing__text-subtitle">Чтобы не упустить все акции нашего интернет магазина.</span>
+				</div>
+				<form action="#" class="news-mailing__form">
+					<input type="text" placeholder="Введите Ваш e-mail">
+					<button class="news-mailing__form-button blue-bg">Подписаться</button>
+				</form>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer-wrap element-one">
+				<div class="footer-block">
+					<img src="img/logo.png" alt="" class="footer-logo">
+					<div class="socials-footer">
+						<a href="" class="icon vk"><img src="img/vk.svg" class="icon" alt="vk"></a>
+						<a href="" class="icon yt"><img src="img/yt.svg" class="icon" alt="youtube"></a>
+						<a href="" class="icon inst"><img src="img/inst.svg" class="icon" alt="instagram"></a>
+					</div>
+				</div>
+				<div class="footer-block mix-width">
+					<div class="footer-mix">
+						Широкий ассортимент
+						товаров от эротического
+						белья до элитных секс-
+						игрушек способен
+						удовлетворить, во всех
+						смыслах этого слова,
+						каждого покупателя.
+					</div>
+				</div>
+			</div>
+			<div class="footer-wrap element-two">
+				<div class="footer-block">
+					<div class="main-categories">
+						<p class="cat-title">Основные разделы:
+						</p>
+						<a href="" class="cat-desc">Девушкам</a>
+						<a href="" class="cat-desc">Парням</a>
+						<a href="" class="cat-desc">Для пар</a>
+						<a href="" class="cat-desc">Все для секса</a>
+						<a href="" class="cat-desc">Эротическая одежда</a>
+					</div>
+				</div>
+				<div class="footer-block">
+					<div class="main-categories">
+						<p class="cat-title">Информация:
+						</p>
+						<a href="" class="cat-desc">О компании</a>
+						<a href="" class="cat-desc">Контакты</a>
+						<a href="" class="cat-desc">Доставка и оплата</a>
+						<a href="" class="cat-desc">Конфиденциальность</a>
+						<a href="" class="cat-desc">Гарантия и возврат</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-block contact-row">
+				<div class="footer-contact">
+					<a href=""><img src="img/phone-circle.png" alt="" class="phone-img contact-img"></a>
+					<div class="info-contact">
+						<a href=""><p class="title font-bold">8 800 775 12 34</p></a>
+						<p class="desc">Бесплатно с телефонов по РФ</p>
+					</div>
+				</div>
+				<div class="footer-contact">
+					<a href=""><img src="img/email-circle.png" alt="" class="email-img contact-img"></a>
+					<div class="info-contact">
+						<a href=""><p class="title">shop@erobueno.ru</p></a>
+						<p class="desc">Круглосуточно</p>
+					</div>
+				</div>
+				<div class="footer-contact">
+					<a href=""><img src="img/geo.png" alt="" class="email-img contact-img"></a>
+					<div class="info-contact">
+						<a href=""><p class="title footer-title">Москва, пр. Мира 145,<br>офис 12</p></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Scripts -->
+		<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous">
+		</script>
+		<script src="https://kit.fontawesome.com/a365e4a8ae.js" crossorigin="anonymous"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/jquery.ui.touch-punch.min.js"></script>
+		<script src="js/interactive.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+	</body>
 </html>

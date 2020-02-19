@@ -1,17 +1,17 @@
 
 
 body {
-  margin: 0
+  margin: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   overflow-x: hidden;
 }
   
-.container {
-  max-width: 1180px;
-  margin: 0 auto;
-  width: 100%; }
+.mp-container {
+  max-width: 1180px !important;
+  margin: 0 auto !important;
+  width: 100% !important; }
 
 .banners__top-row {
   display: -webkit-box;
@@ -994,7 +994,7 @@ font-family: "ProximaNova-SemiBold";
 
 
 @media screen and (max-width: 1169px) {
-  .container {
+  .mp-container {
     padding-left: 5px !important;
     padding-right: 5px !important;
   }
@@ -1003,9 +1003,9 @@ font-family: "ProximaNova-SemiBold";
     margin-right: 10px;
     margin-left: 10px;
   }
-  .container {
+  .mp-container {
     max-width: 780px !important;
-    width: 100%;
+    width: 100% !important;
   }
   .top-block {
     height: 170px;

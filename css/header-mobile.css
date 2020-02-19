@@ -73,9 +73,9 @@
 	}
 	.second-bar {
 		justify-content: center;
-		padding-right: 15px;
-		padding-left: 15px;
-		width: 100vw;
+		padding-right: 15px !important;
+		padding-left: 15px !important;
+		width: 100vw !important;
 	}
 	.search img {
 		padding-left: 5px;
