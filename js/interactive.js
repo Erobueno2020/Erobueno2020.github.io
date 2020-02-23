@@ -58,14 +58,13 @@ $(document).ready(function(){
     // FILTER BUTTON
 
     $(".catalog-filter__button").click(function(){
-        $(".catalog-filter__container").toggleClass("filterOpen");
+        $(".catalog-filter__container, .mw-275, .blog-button, .blog-title").toggleClass("filterOpen");
     });
 
     // FILTER OPEN CHILD
     $(".catalog-filter__nav li").click(function(){
         $(this).find(".child").toggleClass("child-open");
     });
-
 
     // HEADER - BASKET POPUP
     var width = $(window).width();

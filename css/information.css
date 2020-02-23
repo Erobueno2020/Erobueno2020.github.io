@@ -135,7 +135,10 @@
 .margin-right {
 	margin-right: 15px;
 }
-
+.blog-tree {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
 
 
 @media screen and (max-width: 1169px) {
@@ -143,6 +146,11 @@
 		flex-direction: column;
 		padding: 0;
 		margin: 0 auto;
+	}
+	.blog-tree {
+		margin-top: 15px;
+		margin-left: 10px;
+		margin-bottom: 15px;
 	}
 	.info-main__title {
 		font-size: 28px;

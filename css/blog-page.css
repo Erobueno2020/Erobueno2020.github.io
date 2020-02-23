@@ -7,13 +7,21 @@
 	width: 100%;
 
 }
+.blog-tree {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.blogpage-filter {
+	margin-left: 0;
+
+}
 .blogpage-wrap {
 	background-color: #fff;
 	display: flex;
 	justify-content: center;
 	border-radius: 10px;
 	width: 100%;
-	max-width: 885px;
+	max-width: 875px;
 }
 .blogpage__header {
 	font-size: 30px;
@@ -83,6 +91,7 @@
 }
 .blogpage__discount {
 	background-color: #56b2e4 !important;
+	background-image: none;
 }
 .blue-border {
 	border: 1px dashed #56b2e4;
@@ -167,11 +176,18 @@
 	.flex-blogpage {
 		display: flex;
 		justify-content: center;
-
+	}
+	.blog-tree {
+		margin-top: 15px;
+		margin-left: 10px;
+		margin-bottom: 5px;
 	}
 	.blogpage__title {
 		font-size: 20px;
 		line-height: 24px;
+	}
+	.blogpage-filter {
+		margin-left: auto;
 	}
 	.site-tree__block {
 		margin-left: 10px;
