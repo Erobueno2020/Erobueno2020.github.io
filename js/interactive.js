@@ -66,6 +66,12 @@ $(document).ready(function(){
         $(this).find(".child").toggleClass("child-open");
     });
 
+    $('.info-btn').click(function(){
+        $('.links-wrap').toggleClass('opened');
+        $('.info-links__title').toggleClass('opened');
+        $('.info-links').toggleClass('opened');
+    });
+
     // HEADER - BASKET POPUP
     var width = $(window).width();
     $(document).on('click', '#basket-toggle', function(e) {

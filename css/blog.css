@@ -18,8 +18,16 @@ a:hover {
 	content: '•••';
 	color: #f7a98f;
 	top: 7px;
-	right: 50px;
+	right: 49px;
 	opacity: .4;
+}
+.catalog-filter__button {
+	position: relative !important;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+.catalog-pagination__button:hover {
+	color: #fff !important;
 }
 .mw-275 {
 	max-width: 285px;
