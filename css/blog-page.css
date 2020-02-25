@@ -236,6 +236,9 @@
 	.item-kit {
 		justify-content: space-around;
 	}
+	.blogpage__img {
+		max-height: 380px;
+	}
 
 }
 
@@ -263,6 +266,9 @@
 	right: 53px;
 	opacity: .4;
 }
+.blogpage__img {
+		max-height: max-content;
+	}
 }
 
 @media screen and (min-width: 320px) and (max-width: 500px) {
@@ -270,7 +276,7 @@
 		width: 94%;
 	}
 	.blogpage__img {
-		max-height: 250px;
+		max-height: 220px;
 	}
 	.tagcomment {
 		flex-direction: column;
