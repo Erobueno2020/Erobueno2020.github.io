@@ -57,7 +57,7 @@ $(document).ready(function(){
 
     // FILTER BUTTON
 
-    $(".catalog-filter").click(function(){
+    $(".catalog-filter__title").click(function(){
         $(".catalog-filter__container, .mw-275, .blog-button, .blog-title").toggleClass("filterOpen");
     });
 
@@ -66,7 +66,7 @@ $(document).ready(function(){
         $(this).find(".child").toggleClass("child-open");
     });
 
-    $('.links-wrapper').click(function(){
+    $('.info-links__title').click(function(){
         $('.links-wrap, .info-links, .info-links__title, .info-btn').toggleClass('opened');
     });
 
