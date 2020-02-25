@@ -10,16 +10,18 @@ a:hover {
 	content: '•••';
 	color: #f7a98f;
 	top: 7px;
-	left: 42px;
+	left: 89px;
 	opacity: .4;
+	transform: scale(.7);
 }
 .catalog-pagination__list:after {
 	position: absolute;
 	content: '•••';
 	color: #f7a98f;
 	top: 7px;
-	right: 49px;
+	right: 97px;
 	opacity: .4;
+	transform: scale(.7);
 }
 .catalog-filter__button {
 	position: relative !important;
@@ -28,6 +30,9 @@ a:hover {
 }
 .catalog-pagination__button:hover {
 	color: #fff !important;
+}
+.child-open {
+	margin-bottom: 5px;
 }
 .mw-275 {
 	max-width: 285px;
@@ -39,6 +44,7 @@ a:hover {
 .filterOpen {
 	background-color: #fff !important;
 	color: #7F5C47 !important;
+	border-radius: 10px;
 }
 .blog-button {
 	color: #7f5c47;
@@ -257,13 +263,22 @@ a:hover {
 		display: flex;
 		justify-content: center;
 	}
+	.mobile-flex {
+		justify-content: center;
+	}
+	.tags {
+		margin-bottom: 15px;
+	}
+	.blog-description {
+		text-align: center;
+	}
 	.catalog-pagination__list:before {
 	top: 5px;
-	left: 37px;
+	left: 80px;
 	}
 	.catalog-pagination__list:after {
 	top: 5px;
-	right: 44px;
+	right: 87px;
 	}
 	.blog-description {
 		margin-bottom: 0;
@@ -273,7 +288,12 @@ a:hover {
 		max-width: 980px;
 		width: 100%;
 		background-color: #f7a98f;
-		border-radius: 25px;
+		border-radius: 30px;
+		height: 45px;
+		pt: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-top: 6px;
 	}
 	.blog-title {
 		color: #fff;
@@ -297,8 +317,8 @@ a:hover {
 	.blog-wrap {
 		flex-direction: column;
 		flex-wrap: nowrap;
-		margin-left: 10px;
-		margin-right: 10px;
+		width: 96%;
+		margin: 0 auto;
 	}
 	.blog-post__title {
 		font-size: 18px;
@@ -324,12 +344,12 @@ a:hover {
 @media screen and (min-width: 320px) and (max-width: 460px) {
 	.catalog-pagination__list:before {
 		top: 5px;
-		left: 26px;
+		left: 60px;
 		opacity: .4;
 	}
 	.catalog-pagination__list:after {
 		top: 5px;
-		right: 34px;
+		right: 67px;
 		opacity: .4;
 	}
 }
@@ -347,6 +367,16 @@ a:hover {
 	}
 	.blog-post {
 		margin-right: 0;
+	}
+	.catalog-pagination__list:before {
+		top: 5px;
+		left: 60px;
+		opacity: .4;
+	}
+	.catalog-pagination__list:after {
+		top: 5px;
+		right: 67px;
+		opacity: .4;
 	}
 }
 @media screen and (min-width: 601px) and (max-width: 700px) {
@@ -446,3 +476,4 @@ a:hover {
 	.site-tree__block {
 		margin-left: 15px;
 	}
+}

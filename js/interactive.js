@@ -57,7 +57,7 @@ $(document).ready(function(){
 
     // FILTER BUTTON
 
-    $(".catalog-filter__button").click(function(){
+    $(".catalog-filter").click(function(){
         $(".catalog-filter__container, .mw-275, .blog-button, .blog-title").toggleClass("filterOpen");
     });
 
@@ -66,10 +66,8 @@ $(document).ready(function(){
         $(this).find(".child").toggleClass("child-open");
     });
 
-    $('.info-btn').click(function(){
-        $('.links-wrap').toggleClass('opened');
-        $('.info-links__title').toggleClass('opened');
-        $('.info-links').toggleClass('opened');
+    $('.links-wrapper').click(function(){
+        $('.links-wrap, .info-links, .info-links__title, .info-btn').toggleClass('opened');
     });
 
     // HEADER - BASKET POPUP
@@ -274,8 +272,10 @@ $(document).ready(function(){
 
             if ($(".item-sizes").hasClass("nav-open-class")){
                 $(".mobile-nav-block__sizes span").html("-");
+                $('.mobile-nav-block span').addClass('top');
             } else {
                 $(".mobile-nav-block__sizes span").html("+");
+                $('.mobile-nav-block span').removeClass('top');
             };
         });
         $(".mobile-nav-block__delivery").click(function(){

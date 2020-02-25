@@ -179,6 +179,9 @@
 	display: flex;
 	justify-content: space-between;	
 }
+.top {
+	top: -7px !important;
+}
 
 
 
@@ -189,6 +192,9 @@
 		margin-left: 10px;
 		margin-right: 10px;
 		width: 97%;
+	}
+	.placeholder {
+		padding: 5px 11px !important;
 	}
 	.blogpage-menu {
 		width: 100%;
@@ -287,5 +293,9 @@
 	top: 5px;
 	right: 33px;
 	opacity: .4;
+}
+.item-feedback__block-text {
+	line-height: 16px;
+	font-size: 14px;
 }
 }
