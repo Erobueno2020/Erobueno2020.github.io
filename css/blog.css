@@ -185,6 +185,7 @@ button {
 }
 .blog-post__img {
 	max-height: 250px;
+	max-width: -webkit-fill-available;
 }
 .blog-wrap {
 	display: flex;
