@@ -42,10 +42,14 @@ a {
 .banner-header:hover {
 	box-shadow: 0 0 8px 0 rgba(150,150,150,.5);
 }
+.link-banner {
+	margin: 0 auto;
+	max-width: 1180px;
+	display: inherit;
+}
 .banner-rel {
 	position: relative;
 	max-width: 1180px;
-	margin: 0 auto;
 	height: 140px;
 }
 .banner-header__title {
@@ -739,7 +743,16 @@ a {
 
 @media screen and (min-width: 320px) and (max-width: 500px) {
 	.banner-header {
-		background-position: 30% 100%;
+		background-position: 37% 100%;
+		height: 160px;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.banner-rel {
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 130px;
+		height: 160px;
 	}
 	.banner-header__title {
 	font-size: 18px;
@@ -747,7 +760,7 @@ a {
 	left: 20px;
 	}
 	.banner-header__desc {
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 18px;
 	top: 40px;
 	left: 20px;
@@ -755,23 +768,23 @@ a {
 	.banner-header__price {
 	font-size: 22px;
 	right: 70px;
-	top: 25px;
+	top: 11px;
 	}
 	.banner-header__offer {
+	font-size: 13px;
+	top: 115px;
+	left: 10px;
 	right: 0;
-	font-size: 12px;
-	top: 98px;
-	right: 15px;
 	}
 	.banner-header__old-price {
 	font-size: 16px;
 	right: 15px;
 	opacity: .6;
-	top: 28px;
+	top: 15px;
 	}
 	.banner-header__rub-text {
 	font-size: 15px;
 	right: 15px;
-	top: 40px;
+	top: 29px;
 	}
 }

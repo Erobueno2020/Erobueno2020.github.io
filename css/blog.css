@@ -23,6 +23,9 @@ a:hover {
 	opacity: .4;
 	transform: scale(.7);
 }
+button {
+	transition: none;
+}
 .catalog-filter__button {
 	position: relative !important;
 	margin-left: 20px;
@@ -331,7 +334,7 @@ a:hover {
 	.site-tree__block {
 		width: 100%;
 		padding-left: 0px;
-		padding-right: 15px;
+		margin-right: 10px;
 	}
 	.no-padding {
 		padding: 0;
