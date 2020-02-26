@@ -45,7 +45,6 @@ button {
 	padding-bottom: 15px;
 }
 .filterOpen {
-	background-color: #fff !important;
 	color: #7F5C47 !important;
 	border-radius: 10px;
 }
@@ -280,7 +279,7 @@ button {
 		justify-content: center;
 	}
 	.tags {
-		margin-bottom: 15px;
+		margin-bottom: 0px;
 	}
 	.blog-description {
 		text-align: center;
