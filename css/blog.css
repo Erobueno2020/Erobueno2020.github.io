@@ -278,6 +278,9 @@ button {
 	.mobile-flex {
 		justify-content: center;
 	}
+		.catalog-filter__container {
+		padding-bottom: 15px !important;
+	}
 	.tags {
 		margin-bottom: 0px;
 	}
