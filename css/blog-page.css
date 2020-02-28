@@ -188,7 +188,7 @@
 
 @media screen and (max-width: 1169px) {
 	.blogpage-wrap {
-		margin-top: 20px;
+		margin-top: 25px;
 		margin-left: 10px;
 		margin-right: 10px;
 		width: 97%;
@@ -204,9 +204,9 @@
 		justify-content: center;
 	}
 	.blog-tree {
-		margin-top: 15px;
+		margin-top: 25px;
 		margin-left: 10px;
-		margin-bottom: 5px;
+		margin-bottom: 0px;
 	}
 	.blogpage__title {
 		font-size: 20px;
@@ -304,4 +304,10 @@
 	line-height: 16px;
 	font-size: 14px;
 }
+}
+
+@media screen and (min-width: 730px) and (max-width: 1169px) {
+	.top {
+		top: 1px !important;
+	}
 }

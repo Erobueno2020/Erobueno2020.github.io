@@ -757,13 +757,13 @@ a {
 	.banner-header__title {
 	font-size: 18px;
 	top: 15px;
-	left: 20px;
+	left: 10px;
 	}
 	.banner-header__desc {
 	font-size: 16px;
 	line-height: 18px;
 	top: 40px;
-	left: 20px;
+	left: 10px;
 	}
 	.banner-header__price {
 	font-size: 22px;
