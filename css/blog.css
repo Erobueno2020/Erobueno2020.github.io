@@ -284,6 +284,9 @@ button {
 	.pink-color {
 		max-width: 175px;
 	}
+	.blog-description {
+		width: 100%;
+	}
 	.adapt-blog {
 	display: flex !important;
 	margin-top: 25px;
@@ -527,5 +530,8 @@ button {
 	}
 	.site-tree__block {
 		margin-left: 15px;
+	}
+	.pink-color {
+		max-width: 147px;
 	}
 }
