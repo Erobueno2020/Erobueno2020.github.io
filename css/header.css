@@ -57,7 +57,7 @@ a {
 	color: #fff;
 	font-size: 25px;
 	font-family: 'ProximaNova-Bold';
-	top: 30px;
+	top: 20px;
 	left: 20px;
 }
 .banner-header__desc {
@@ -66,7 +66,7 @@ a {
 	font-size: 16px;
 	line-height: 20px;
 	font-family: 'ProximaNova-Light';
-	top: 70px;
+	top: 60px;
 	left: 20px;
 }
 .banner-header__price {
