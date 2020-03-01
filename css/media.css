@@ -173,7 +173,7 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
    .big-teaser .block-select__element:last-child {
     margin-right: 0;
 }

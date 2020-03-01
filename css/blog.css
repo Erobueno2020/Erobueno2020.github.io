@@ -273,7 +273,7 @@ button {
 	display: none !important;
 }
 
-@media screen and (max-width: 993px) {
+@media screen and (max-width: 991px) {
 	.catalog-filter-mobile {
 		width: 97%;
 		padding: 0;
@@ -503,7 +503,7 @@ button {
 		margin-right: 15px;
 	}
 }
-@media screen and (min-width: 993px) and (max-width: 1169px) {
+@media screen and (min-width: 992px) and (max-width: 1169px) {
 
 	.catalog-filter-mobile, .no-padding{
 		width: 210px !important;
