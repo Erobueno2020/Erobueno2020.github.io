@@ -273,7 +273,7 @@ button {
 	display: none !important;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 993px) {
 	.catalog-filter-mobile {
 		width: 97%;
 		padding: 0;
@@ -484,9 +484,9 @@ button {
 		padding-right: 530px;
 	}
 }
-@media screen and (min-width: 901px) and (max-width: 994px) {
+@media screen and (min-width: 901px) and (max-width: 1000px) {
 	.blog-post {
-		max-width: 370px;
+		max-width: 355px;
 	}
 	.blog-wrap {
 		flex-wrap: wrap;
@@ -503,7 +503,7 @@ button {
 		margin-right: 15px;
 	}
 }
-@media screen and (min-width: 995px) and (max-width: 1169px) {
+@media screen and (min-width: 993px) and (max-width: 1169px) {
 
 	.catalog-filter-mobile, .no-padding{
 		width: 210px !important;
