@@ -56,17 +56,14 @@ $(document).ready(function(){
 });
 
 
-<<<<<<< HEAD
     // FILTER BUTTON
     $(".catalog-filter__title-block").click(function(){
        $(".catalog-filter__container").toggleClass("filterOpen");
        $(".catalog-filter__title-block").toggleClass("borderRadiusChange");
    });
-=======
     $(".catalog-filter__title, .blog-button").click(function(){
         $(".catalog-filter__container, .mw-275, .blog-button, .blog-title").toggleClass("filterOpen");
     });
->>>>>>> 142bda772eceb45ce49d9b28bc0a0368b341ccc8
 
     // FILTER OPEN CHILD
     $(".catalog-filter__nav li").click(function(){
