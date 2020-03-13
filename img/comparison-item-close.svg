@@ -1,0 +1,20 @@
+<svg id="Группа_30" data-name="Группа 30" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #ff98b4;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_3_copy" data-name="Ellipse 3 copy" class="cls-1" cx="11.5" cy="11.5" r="11.5"/>
+  <path id="Фигура_25" data-name="Фигура 25" class="cls-2" d="M892.409,648.409l8.182,8.182" transform="translate(-885 -641)"/>
+  <path id="Фигура_26" data-name="Фигура 26" class="cls-2" d="M900.591,648.409l-8.182,8.182" transform="translate(-885 -641)"/>
+</svg>
