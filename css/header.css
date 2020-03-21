@@ -19,7 +19,7 @@ a {
 .header {
 	font-family: 'ProximaNova-Regular';
 	font-size: 15px;
-	max-width: 1170px;
+	max-width: 1180px;
 	margin: 0 auto;
 	margin-top: 32px;
 	padding-bottom: 30px;
@@ -379,7 +379,7 @@ a {
 	display: none;
 	position: absolute;
 	z-index: 9999;
-	right: calc(42% - 485px);
+	right: 0;
 	top: 35px;
 	width: 291px;
 	border-radius: 15px;

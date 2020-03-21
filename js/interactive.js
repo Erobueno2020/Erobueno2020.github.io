@@ -359,7 +359,7 @@ $(".category, .promo").hover(function () {
             });
         });
       };
-  }, 500);
+  }, 0);
 });
 
 
