@@ -48,7 +48,10 @@ body {
   -ms-flex-direction: column;
   flex-direction: column; }
   
- 
+ .row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 
 .item-banner-big {
   position: relative;
@@ -1985,9 +1988,5 @@ font-family: "ProximaNova-SemiBold";
   .col-md-12, .col-lg-12 {
   padding-right: 0 !important;
   padding-left: 0 !important;
-}
-.row {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
 }
 }
