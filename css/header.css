@@ -8,8 +8,8 @@ body {
 	padding: 0;
 }
 
-a {
-	color: #ac8c78 !important;
+a, .simple-menu_li {
+	color: #ac8c78;
 
 }
 .pt-20 {
