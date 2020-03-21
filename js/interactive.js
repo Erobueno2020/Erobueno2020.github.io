@@ -387,7 +387,7 @@ $(document).on('click', '.sm-li_main', function (e) {
       };
 });
 
- /* $(function() {
+  $(function() {
     $('.slider-mp').slick({
     settings: "unslick",
     infinite: true,
@@ -417,7 +417,7 @@ $(document).on('click', '.sm-li_main', function (e) {
     },
   ]
         });
-    });  */
+    });
 
   $(function() {
     if (width < 1169) {
