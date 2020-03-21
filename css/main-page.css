@@ -189,6 +189,10 @@ body {
   .gender_male {
     background: #fff url("../img/male.svg") 20px 20px no-repeat; }
 
+
+.slick-dots {
+  width: 98%;
+}
 .banners-bottom {
   padding: 30px 20px 50px;
   display: -webkit-box;
