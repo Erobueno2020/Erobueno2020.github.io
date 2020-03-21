@@ -3,7 +3,7 @@
 		display: block;
 	}
 	.burger-btn {
-		display: block;
+		display: none;
 		z-index: 1999;
 	}
 	.registration {
