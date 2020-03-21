@@ -322,21 +322,175 @@ $(document).ready(function(){
  }
 });
 
-
-
- $(document).on('click', '.basket-open', function() {
-  if (width < 1170 && $('.basket-mob').hasClass('opened')) {
-   $('.navigation').css({position: 'relative'});
-   $('.header').css({zIndex: 'auto'});
-   window.scrollTo({top: 0, behavior: 'smooth'});
+$(document).on('click', '.basket-open', function() {
+ if (width < 1170 && $('.basket-mob').hasClass('opened')) {
+    $('.navigation').css({position: 'relative'});
+    $('.header').css({zIndex: 'auto'});
+    window.scrollTo({top: 0, behavior: 'smooth'});
  }
- else {
-   if (width < 1170) {
-    $('.navigation').css({position: 'fixed'});
-    $('.header').css({zIndex: '9999'});
-  }   
-}
+    else {
+        if (width < 1170) {
+        $('.navigation').css({position: 'fixed'});
+        $('.header').css({zIndex: '9999'});
+      }   
+    }
 });
+
+  // DROPDOWN HEADER
+$(".category, .promo").hover(function () {
+    var $this = $(this);
+    var menu;
+    setTimeout(function () {
+    if ((width > 1169) && (menu = $this.attr('id'))) {
+        var menuId = menu.split('_');
+        var target = $('#aa_' + menuId[1]);
+        target.toggleClass('visible');
+        if (!target.is(":visible")) {
+            $this.removeClass('active');
+            target.unbind('mouseover');
+        } else $this.addClass('active');
+        target.one('mouseover', function () {
+            target.one('mouseout', function mouseout() {
+                if (target.is(':hover')) {
+                    target.one('mouseout', mouseout);
+                    return;
+                }
+                $this.removeClass('active');
+            });
+        });
+      };
+  }, 500);
+});
+
+
+// DROPDOWN MOBILE
+
+$(document).on('click', '.cat-mob, .promo-mob', function (e) {
+    var $this = $(this);
+    var menu;
+    e.preventDefault();
+    if ((width < 1168) && (menu = $this.attr('id'))) {
+        var menuId = menu.split('_');
+        var target = $('#list_' + menuId[1]);
+        target.fadeToggle('fast');
+      };
+});
+
+$(document).on('click', '.sm-li_main', function (e) {
+    var $this = $(this);
+    var menu;
+    e.preventDefault();
+    if ((width < 1168) && (menu = $this.attr('id'))) {
+        var menuId = menu.split('_');
+        var target = $('#test_' + menuId[1]);
+        target.fadeToggle('fast');
+      };
+});
+
+  $(function() {
+    $('.slider-mp').slick({
+    settings: "unslick",
+    infinite: true,
+    slidesToScroll: 2,
+    slidesToShow: 2,
+    autoplay: true,
+    arrows: false,
+    dots: true,
+    responsive: [
+    {
+      breakpoint: 3000,
+      settings: "unslick"
+    },
+     {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+  ]
+        });
+    });
+
+  $(function() {
+    if (width < 1169) {
+    $('.sponsors-upblock').slick({
+    infinite: true,
+    slidesToScroll: 2,
+    slidesToShow: 2,
+    arrows: false,
+    dots: false,
+    asNavFor: '.sponsors-botblock',
+    responsive: [
+    {
+      breakpoint: 1160,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    }
+  ]
+    });
+  };
+});
+
+$(function() {
+    if (width < 1169) {
+    $('.sponsors-botblock').slick({
+    infinite: true,
+    slidesToScroll: 2,
+    slidesToShow: 2,
+    arrows: false,
+    dots: true,
+    asNavFor: '.sponsors-upblock',
+    responsive: [
+    {
+      breakpoint: 1160,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    }
+  ]
+    });
+  };
+});
+
 
 
 
