@@ -259,6 +259,7 @@
 	}
 	.features-mobile {
 		justify-content: space-between;
+		display: flex;
 		padding-top: 15px;
 		width: 80%;
 		margin: 0 auto;
