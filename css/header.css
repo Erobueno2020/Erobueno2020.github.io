@@ -9,7 +9,7 @@ body {
 }
 
 a {
-	color: #ac8c78;
+	color: #ac8c78 !important;
 
 }
 .pt-20 {
