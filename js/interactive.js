@@ -863,13 +863,32 @@ $(function() {
           ]
           });
 
+
         $('.parameters-slider-mobile1').slick({
+          settings: 'unslick',
           asNavFor: '.comparison-slider-mobile1',
           variableWidth: false,
           infinite: false,
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
+          responsive: [ 
+          {
+          breakpoint: 300,
+          settings: 'unslick'
+          },
+          {
+          breakpoint: 800,
+          settings: {
+          asNavFor: '.comparison-slider-mobile1',
+          variableWidth: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          } 
+          },
+          ]
         });
 
         $('.comparison-slider-mobile2').slick({
@@ -905,16 +924,35 @@ $(function() {
           ]
           });
 
-        });
+        
         $('.parameters-slider-mobile2').slick({
+          settings: 'unslick',
           asNavFor: '.comparison-slider-mobile2',
           variableWidth: false,
           infinite: false,
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
+          responsive: [ 
+          {
+          breakpoint: 300,
+          settings: 'unslick'
+          },
+          {
+          breakpoint: 800,
+          settings: {
+          asNavFor: '.comparison-slider-mobile2',
+          variableWidth: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          } 
+          },
+          ]
         });
 
+      });
    
 
     // СОХРАНЕНИЕ ВЫСОТЫ БЛОКА
