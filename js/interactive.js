@@ -90,7 +90,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 
-  if(width < 800){
+  if(width < 799){
     jQuery(document).ready(function(){
       function itemContentHeightMob(){
         var array33 = jQuery(".comparison-slider-mobile .catalog-items__item-content");
@@ -826,10 +826,12 @@ $(function() {
       $catalogItemWidth = $(".catalog-items__item").css("width");
       $(".comparison-slider-mobile").css("width", $catalogItemWidth);
       $(".comparison-slider-mobile .catalog-items__item").css("width", $catalogItemWidth);
+    });
 
-      if ($(window).width() < 800) {
+    $(function (){
 
         $('.comparison-slider-mobile1').slick({
+          settings: 'unslick',
           asNavFor: '.parameters-slider-mobile1',
           variableWidth: false,
           infinite: false,
@@ -839,7 +841,27 @@ $(function() {
           appendArrows: $('.slider-mobile__arrows1'),
           prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
           nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
-        });
+          responsive: [ 
+          {
+          breakpoint: 300,
+          settings: 'unslick'
+          },
+          {
+          breakpoint: 800,
+          settings: {
+          asNavFor: '.parameters-slider-mobile1',
+          variableWidth: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          appendArrows: $('.slider-mobile__arrows1'),
+          prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
+          nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
+          } 
+          },
+          ]
+          });
 
         $('.parameters-slider-mobile1').slick({
           asNavFor: '.comparison-slider-mobile1',
@@ -851,6 +873,7 @@ $(function() {
         });
 
         $('.comparison-slider-mobile2').slick({
+          settings: 'unslick',
           asNavFor: '.parameters-slider-mobile2',
           variableWidth: false,
           infinite: false,
@@ -860,6 +883,28 @@ $(function() {
           prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
           nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
           appendArrows: $('.slider-mobile__arrows2'),
+          responsive: [ 
+          {
+          breakpoint: 300,
+          settings: 'unslick'
+          },
+          {
+          breakpoint: 800,
+          settings: {
+          asNavFor: '.parameters-slider-mobile2',
+          variableWidth: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
+          nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
+          appendArrows: $('.slider-mobile__arrows2'),
+          } 
+          },
+          ]
+          });
+
         });
         $('.parameters-slider-mobile2').slick({
           asNavFor: '.comparison-slider-mobile2',
@@ -870,8 +915,7 @@ $(function() {
           arrows: false,
         });
 
-      }
-    });
+   
 
     // СОХРАНЕНИЕ ВЫСОТЫ БЛОКА
     $(document).ready(function(){
