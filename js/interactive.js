@@ -39,7 +39,7 @@ $(document).ready(function(){
         }
         jQuery(array).height(height);
       }
-      setTimeout(itemContentHeight, 1000);
+      setTimeout(itemContentHeight, 100);
     });
 
     jQuery(window).resize(function(){
@@ -53,7 +53,7 @@ $(document).ready(function(){
         }
         jQuery(array).height(height);
       }
-      setTimeout(itemContentHeight, 1000);
+      setTimeout(itemContentHeight, 100);
     });
 
     jQuery(document).ready(function(){
@@ -67,7 +67,7 @@ $(document).ready(function(){
         }
         jQuery(array22).height(height22);
       }
-      setTimeout(itemContentHeight222, 1000);
+      setTimeout(itemContentHeight222, 100);
     });
 
     jQuery(window).resize(function(){
@@ -81,7 +81,7 @@ $(document).ready(function(){
         }
         jQuery(array22).height(height22);
       }
-      setTimeout(itemContentHeight222, 1000);
+      setTimeout(itemContentHeight222, 100);
     });
   };
 });
@@ -102,7 +102,7 @@ $(document).ready(function(){
         }
         jQuery(array33).height(height33);
       }
-      setTimeout(itemContentHeightMob, 1100);
+      setTimeout(itemContentHeightMob, 100);
     });
 
     jQuery(window).resize(function(){
@@ -116,7 +116,7 @@ $(document).ready(function(){
         }
         jQuery(array33).height(height33);
       }
-      setTimeout(itemContentHeightMob, 1100);
+      setTimeout(itemContentHeightMob, 100);
     });
 
     jQuery(document).ready(function(){
@@ -130,7 +130,7 @@ $(document).ready(function(){
         }
         jQuery(array23).height(height23);
       }
-      setTimeout(itemContentHeight233, 1000);
+      setTimeout(itemContentHeight233, 100);
     });
     jQuery(window).resize(function(){
       function itemContentHeight233(){
@@ -143,7 +143,7 @@ $(document).ready(function(){
         }
         jQuery(array23).height(height23);
       }
-      setTimeout(itemContentHeight233, 1000);
+      setTimeout(itemContentHeight233, 100);
     });
   };
 });
@@ -880,7 +880,7 @@ $(function() {
    });
     $(window).resize(function(){
      $catalogItemHeight = $(".catalog-items__item").css('height');
-     $(".catalog-items__item-container").css('height', $catalogItemHeight);
+     $(".catalog-items__item-container").css('height', 'max-content');
    });
 
     // TEST
@@ -933,11 +933,11 @@ $(".catalog-items__item-image").click(function(){
       $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
     });
     $(window).resize(function(){
-      $sliderMobileArrowsWidth = $(".comparison-slider-mobile .catalog-items__item").css("width");
+      $sliderMobileArrowsWidth = $(".catalog-items__item").css("width");
       $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
     });
 
       window.addEventListener("orientationchange", function() {
-      $sliderMobileArrowsWidth = $(".comparison-slider-mobile .catalog-items__item").css("width");
+      $sliderMobileArrowsWidth = $(".catalog-items__item").css("width");
       $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
-    }, false);
+    });

@@ -1746,6 +1746,7 @@
     }
     .comparison-slider-mobile .catalog-items__item {
         border-radius: 10px 10px 0 0;
+        height: max-content !important;
     }
     .slider-mobile__arrows .slick-disabled {
         display: flex !important;
@@ -1980,6 +1981,9 @@
     }
     .store-info {
         overflow: hidden;
+    }
+    .catalog-items__item-content {
+        min-height: 150px !important;
     }
 }
 
