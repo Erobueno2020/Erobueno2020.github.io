@@ -1,3 +1,22 @@
+$(document).ready(function(){
+$('a.lightbox').divbox({caption: false});
+$('a.lightbox2').divbox({caption: false, width: 600, height: 400});
+$('a.iframe').divbox({ width: 200, height: 200 , caption: false});
+$('a.ajax').divbox({ type: 'ajax', width: 200, height: 200 , caption: false,api:{
+afterLoad: function(o){
+$(o).find('a.close').click(function(){
+  o.closed();
+  return false;
+});
+
+$(o).find('a.resize').click(function(){
+  o.resize(200,50);
+  return false;
+});
+}
+}});
+});
+
 
 $(document).ready(function(){
   window.onload = function() {
@@ -227,6 +246,9 @@ $(document).ready(function(){
 
 
 
+
+
+
     // HEADER - BASKET POPUP
     var width = $(window).width();
     $(document).on('click', '#basket-toggle', function(e) {
@@ -400,13 +422,6 @@ $(document).on('click', '.sm-li_main', function (e) {
     {
       breakpoint: 3000,
       settings: "unslick"
-    },
-     {
-      breakpoint: 1000,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
     },
     {
       breakpoint: 700,
@@ -583,27 +598,7 @@ $(function() {
               }
             });
 
-    $(document).on('mouseover', 'a', function () {
-     var $this = $(this);
-     var menu;
-     if ((menu = $this.attr('id'))) 
-      var target = menu; {
-       target.toggleClass('visible');
-       if (!target.is(":visible")) {
-        $this.removeClass('active');
-        target.unbind('mouseover');
-      } else $this.addClass('active');
-      target.one('mouseover', function () {
-        target.one('mouseout', function mouseout() {
-         if (target.is(':hover')) {
-          target.one('mouseout', mouseout);
-          return;
-        }
-        $this.removeClass('active');
-      });
-      });
-    }
-  });
+   
 
 
 

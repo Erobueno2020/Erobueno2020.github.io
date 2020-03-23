@@ -351,7 +351,7 @@ button {
 	}
 	.blog-tree {
 		margin-top: 25px;
-		margin-left: 10px;
+		margin-left: 0px !important;
 		margin-bottom: 0px;
 	}
 	.blog-wrap {

@@ -1272,17 +1272,10 @@ font-family: "ProximaNova-SemiBold";
     margin-right: 10px;
   }
     .sponsors__item {
-    margin-left: 5px;
-    margin-right: 5px;
     margin-top: 10px;
     position: relative;
     max-width: 100vw;
-  }
-  .sponsors__item:first-child {
-    margin-left: 5px;
-  }
-   .sponsors__item:nth-child(9) {
-    margin-left: 5px;
+    width: 98% !important;
   }
   .sponsors-img {
     position: absolute;
@@ -1679,7 +1672,7 @@ font-family: "ProximaNova-SemiBold";
     background-position: 50% 50%;
   }
   .item-banner-blue {
-    margin-left: auto;
+    margin-left: 20px;
   }
   .item-banner-white__text, .item-banner-blue__text {
     font-size: 17px;
@@ -1732,8 +1725,9 @@ font-family: "ProximaNova-SemiBold";
   }
   .item-banner-white, .item-banner-blue {
     max-width: 900px;
+    width: 100%;
     max-height: 100%;
-    height: 300px;
+    height: 200px;
   }
   .popular-item {
     max-width: 900px;
@@ -1764,11 +1758,7 @@ font-family: "ProximaNova-SemiBold";
     padding-left: 30px;
     padding-right: 30px;
   }
-  .item-banner-white, .item-banner-blue {
-    max-width: 310px;
-    height: 200px;
-    width: 100%;
-  }
+
   .top-block-btn__button {
     margin-top: 80px;
   }

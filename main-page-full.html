@@ -1285,24 +1285,7 @@
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script src="js/interactive.js"></script>
 	<script type="text/javascript">
-	$(document).ready(function(){
-		$('a.lightbox').divbox({caption: false});
-		$('a.lightbox2').divbox({caption: false, width: 600, height: 400});
-		$('a.iframe').divbox({ width: 200, height: 200 , caption: false});
-		$('a.ajax').divbox({ type: 'ajax', width: 200, height: 200 , caption: false,api:{
-			afterLoad: function(o){
-				$(o).find('a.close').click(function(){
-					o.closed();
-					return false;
-				});
-				
-				$(o).find('a.resize').click(function(){
-					o.resize(200,50);
-					return false;
-				});
-			}
-		}});
-	});
+
 	</script>
 </body>
 </html>

@@ -89,7 +89,7 @@
 	font-family: 'ProximaNova-SemiBold', sans-serif;
 	border-bottom: 1px dashed #ff98b4;
 }
-.opened {
+.opened-bar {
 	background-color: #fff !important;
 	color: #7f5c47 !important;
 	display: flex !important;
@@ -277,10 +277,6 @@
 	}
 	.nav-block-scroll {
 		overflow-y: hidden;
-	}
-	.slick-initialized .slick-slide {
-		display: flex !important;
-		justify-content: center !important;
 	}
 	.item-kit__block-content {
 		padding-left: 5px;
