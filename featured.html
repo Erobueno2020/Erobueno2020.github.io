@@ -682,6 +682,46 @@
 					<p class="favorited-title">Мои избранные товары</p>
 					<a href="" class="favorited-all"><img src="img/all-features.svg" alt="">Все предпочтения</a>
 				</div>
+				<div class="catalog-sort mb-0 mt-3">
+					<div class="catalog-sort__container">
+						<div class="catalog-sort__main">
+							<p class="sort-text">Сортировать:</p>
+							<div class="select border-normal">
+								<select name="catalog-sort__main-sort">
+									<option value="1">Возрастание цены</option>
+									<option value="2">Уменьшение цены</option>
+								</select>
+							</div>
+						</div>
+						<div class="catalog-sort__buttons ">
+							<button class="catalog-sort__buttons-blocks"></button>
+							<button class="catalog-sort__buttons-list sort__button-active"></button>
+						</div>
+						<div class="catalog-sort__numitems">
+							
+							<div class="select">
+								<select class="border-normal" name="catalog-sort__numitems-filter">
+									<option value="1">20</option>
+									<option value="2">30</option>
+								</select>
+							</div>
+						</div>
+						<div class="catalog-pagination">
+							<ul class="catalog-pagination__list">
+								<li><a class="catalog-pagination__button pag-arrow-left mobile450" href="#"></a></li>
+								<li><a class="catalog-pagination__button" href="#">1</a></li>
+								<span class="pag-points">...</span>
+								<li><a class="catalog-pagination__button mobile400" href="#">7</a></li>
+								<li><a class="catalog-pagination__button catalog-pagination__button-active" href="#">8</a></li>
+								<li><a class="catalog-pagination__button mobile400" href="#">9</a></li>
+								<span class="pag-points">...</span>
+								<li><a class="catalog-pagination__button" href="#">22</a></li>
+								<li><a class="catalog-pagination__button pag-arrow-right mobile450" href="#"></a></li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
 				<div class="favorited-items-wrapper">
 					<div class="main-page__item favorited-item">
 						<div class="main-page__top-block">
@@ -797,7 +837,6 @@
 							</div>
 						</div>
 					</div>
-
 					<div class="big-teaser bt3 favorited-big">
 						<div class="big-teaser__content">
 							<div class="big-teaser__content-main">

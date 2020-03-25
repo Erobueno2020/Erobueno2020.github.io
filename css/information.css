@@ -697,6 +697,9 @@
 	.info-main__title {
 		font-size: 22px;
 	}
+	.sort-text {
+		display: none;
+	}
 	.item-block-pink {
 		min-height: 300px;
 	}
@@ -796,6 +799,10 @@
 	}
 	.old-fprice {
 		font-size: 12px;
+	}
+	.border-normal {
+		border-radius: 20px !important;
+		margin-top: 20px;
 	}
 }
 
