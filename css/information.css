@@ -804,6 +804,9 @@
 		border-radius: 20px !important;
 		margin-top: 20px;
 	}
+	.no-mar {
+		margin-top: 0 !important;
+	}
 }
 
 @media screen and (min-width: 501px) and (max-width: 550px) {
