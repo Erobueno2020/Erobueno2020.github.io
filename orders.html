@@ -647,8 +647,8 @@
 		</div>
 	</div>
 	<!-- HEADER END -->
-<a class="link-banner" href="">
-	<div class="banner-rel">
+	<a class="link-banner" href="">
+		<div class="banner-rel">
 			<div class="banner-header">
 				<h3 class="banner-header__title">DOCJOHNSON</h3>
 				<p class="banner-header__desc">американские<br>технологии</p>
@@ -661,11 +661,10 @@
 			</div>
 		</div>
 	</a>
-
 	<div class="container">
 		<div class="col-12 p-0">
 			<div class="flex">
-				<div class="site-tree__block">
+				<div class="site-tree__block orders-breadcrumbs">
 					<button class="site-tree__back">Назад</button>
 					<ul class="site-tree">
 						<li><a href="#">Главная</a></li>
@@ -677,9 +676,8 @@
 		</div>
 	</div>
 	
-
 	<main class="orders">
-		<div class="container flex justify-content-between">
+		<div class="container flex justify-content-between column-mobile">
 			<div class="orders-wrapper">
 				<div class="my-orders">
 					<p class="my-orders__title">Мои заказы</p>
@@ -688,112 +686,618 @@
 				<div class="orders-item-wrapper">
 					<div class="orders__status-wrapper flex justify-content-between">
 						<p class="orders__status-info">Заказ №1198989 от 29.11.2019, 28 товаров на сумму 235 000 рублей</p>
-						<p class="order__status">Не подтвержден</p>
+						<p class="orders__status">Не подтвержден</p>
 					</div>
+					<div class="orders__item">
+						<div class="orders__payment-wrapper">
+							<p class="">Оплата</p>
+							<p class="orders__number">Счет №11855/1 от 29.11.2019</p>
+							<div class="orders__payment-type flex">
+								<p class="orders__type">Наличными</p>
+								<a href="" class="reload-orders"><img src="img/reload_orders.svg" alt="">Изменить</a>
+							</div>
+							<p class="orders__number">Статус оплаты:</p>
+							<p class="orders__in-status">Не оплачено</p>
+							<p class="orders__number">Сумма к оплате по счету:</p>
+							<p class="orders__type">5000 руб.</p>
+						</div>
+						<div class="orders__delivery-wrapper">
+							<p class="">Доставка</p>
+							<p class="orders__number">Отгрузка №11855/2, стоимость доставки 350 рублей</p>
+							<p class="orders__in-status">Не отгружено</p>
+							<p class="orders__number">Статус отгрузки:</p>
+							<p class="orders__type">Ожидает обработки</p>
+							<p class="orders__number">Служба доставки:</p>
+							<p class="orders__type">Терминалы PickPoint</p>
+						</div>
+						
+					</div>
+					<div class="orders__more-wrapper flex justify-content-between">
+						<a href="" class="orders-more"><img src="img/order-more.svg" alt="">Подробнее о заказе</a>
+						<div class="orders-btns flex">
+							<button class="order-button-repeat">Повторить заказ</button>
+							<button class="order-button-cancel">Отменить заказ</button>
+						</div>
+					</div>
+				</div>
+				<div class="orders-item-wrapper confirmed">
+					<div class="orders__status-wrapper flex justify-content-between">
+						<p class="orders__status-info">Заказ №1198989 от 29.11.2019, 28 товаров на сумму 235 000 рублей</p>
+						<p class="orders__status">Не подтвержден</p>
+					</div>
+					<div class="orders__item">
+						<div class="orders__payment-wrapper">
+							<p class="">Оплата</p>
+							<p class="orders__number">Счет №11855/1 от 29.11.2019</p>
+							<div class="orders__payment-type flex">
+								<p class="orders__type">Наличными</p>
+								<a href="" class="reload-orders"><img src="img/reload_orders.svg" alt="">Изменить</a>
+							</div>
+							<p class="orders__number">Статус оплаты:</p>
+							<p class="orders__in-status">Не оплачено</p>
+							<p class="orders__number">Сумма к оплате по счету:</p>
+							<p class="orders__type">5000 руб.</p>
+						</div>
+						<div class="orders__delivery-wrapper">
+							<p class="">Доставка</p>
+							<p class="orders__number">Отгрузка №11855/2, стоимость доставки 350 рублей</p>
+							<p class="orders__in-status accepted">Не отгружено</p>
+							<p class="orders__number">Статус отгрузки:</p>
+							<p class="orders__type">Ожидает обработки</p>
+							<p class="orders__number">Служба доставки:</p>
+							<p class="orders__type">Терминалы PickPoint</p>
+						</div>
+						
+					</div>
+					<div class="orders__more-wrapper flex justify-content-between">
+						<a href="" class="orders-more"><img src="img/order-more.svg" alt="">Подробнее о заказе</a>
+						<div class="orders-btns flex">
+							<button class="order-button-repeat">Повторить заказ</button>
+							<button class="order-button-cancel">Отменить заказ</button>
+						</div>
+					</div>
+				</div>
+				<div class="orders-item-wrapper cancelled">
+					<div class="orders__status-wrapper flex justify-content-between">
+						<p class="orders__status-info">Заказ №1198989 от 29.11.2019, 28 товаров на сумму 235 000 рублей</p>
+						<p class="orders__status">Не подтвержден</p>
+					</div>
+					<div class="orders__item">
+						<div class="orders__payment-wrapper">
+							<p class="">Оплата</p>
+							<p class="orders__number">Счет №11855/1 от 29.11.2019</p>
+							<div class="orders__payment-type flex">
+								<p class="orders__type">Наличными</p>
+								<a href="" class="reload-orders"><img src="img/reload_orders.svg" alt="">Изменить</a>
+							</div>
+							<p class="orders__number">Статус оплаты:</p>
+							<p class="orders__in-status">Не оплачено</p>
+							<p class="orders__number">Сумма к оплате по счету:</p>
+							<p class="orders__type">5000 руб.</p>
+						</div>
+						<div class="orders__delivery-wrapper">
+							<p class="">Доставка</p>
+							<p class="orders__number">Отгрузка №11855/2, стоимость доставки 350 рублей</p>
+							<p class="orders__in-status accepted">Не отгружено</p>
+							<p class="orders__number">Статус отгрузки:</p>
+							<p class="orders__type accepted">Ожидает обработки</p>
+							<p class="orders__number">Служба доставки:</p>
+							<p class="orders__type">Терминалы PickPoint</p>
+						</div>
+						
+					</div>
+					<div class="orders__more-wrapper flex justify-content-between">
+						<a href="" class="orders-more"><img src="img/order-more.svg" alt="">Подробнее о заказе</a>
+						<div class="orders-btns flex">
+							<button class="order-button-repeat">Повторить заказ</button>
+							<button class="order-button-cancel">Отменить заказ</button>
+						</div>
+					</div>
+				</div>
+				<div class="orders-item-wrapper finished">
+					<div class="orders__status-wrapper flex justify-content-between">
+						<p class="orders__status-info">Заказ №1198989 от 29.11.2019, 28 товаров на сумму 235 000 рублей</p>
+						<button class="finished__rate">Оценить</button>
+						<p class="orders__status">Не подтвержден</p>
+					</div>
+					<div class="orders__item">
+						<div class="orders__payment-wrapper">
+							<p class="">Оплата</p>
+							<p class="orders__number">Счет №11855/1 от 29.11.2019</p>
+							<div class="orders__payment-type flex">
+								<p class="orders__type">Наличными</p>
+								<a href="" class="reload-orders"><img src="img/reload_orders.svg" alt="">Изменить</a>
+							</div>
+							<p class="orders__number">Статус оплаты:</p>
+							<p class="orders__in-status accepted">Не оплачено</p>
+							<p class="orders__number">Сумма к оплате по счету:</p>
+							<p class="orders__type">5000 руб.</p>
+						</div>
+						<div class="orders__delivery-wrapper">
+							<p class="">Доставка</p>
+							<p class="orders__number">Отгрузка №11855/2, стоимость доставки 350 рублей</p>
+							<p class="orders__in-status">Не отгружено</p>
+							<p class="orders__number">Статус отгрузки:</p>
+							<p class="orders__type accepted">Ожидает обработки</p>
+							<p class="orders__number">Служба доставки:</p>
+							<p class="orders__type">Терминалы PickPoint</p>
+						</div>
+						
+					</div>
+					<div class="orders__more-wrapper flex justify-content-between">
+						<a href="" class="orders-more"><img src="img/order-more.svg" alt="">Подробнее о заказе</a>
+						<div class="orders-btns flex">
+							<button class="order-button-repeat">Повторить заказ</button>
+							<button class="order-button-cancel">Отменить заказ</button>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="order-sidebar orders-sb">
+				<span class="order-sidebar__title">Личный кабинет</span>
+				<div class="order-sidebar__user-block">
+					<img src="img/user-avatar.png" alt="img" class="order-sidebar__user-image">
+					<span class="order-sidebar__user-text">Привет, <span class="order-sidebar__user-name">Константин</span></span>
+				</div>
+				<div class="order-sidebar__buttons">
+					<button class="order-sidebar__button">Мои заказы</button>
+					<button class="order-sidebar__button">Избранное</button>
+					<button class="order-sidebar__button">Мой профиль</button>
+					<button class="order-sidebar__button">Корзина</button>
+				</div>
+				<button class="order-sidebar__user-exit">Выйти</button>
+			</div>
+		</div>
+
+
+
+				<div class="col-lg-12">
+<div class="container">
+			<div class="store-info">
+				<div class="nav-block-scroll">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<button class="nav-link active" id="similar-tab" data-toggle="tab" href="#similar" role="tab" aria-controls="similar" aria-selected="true">Похожие товары</button>
+						</li>
+						<li class="nav-item">
+							<button class="nav-link" id="hit-tab" data-toggle="tab" href="#hit" role="tab" aria-controls="hit" aria-selected="false">Хиты продаж</button>
+						</li>
+						<li class="nav-item">
+							<button class="nav-link" id="new-tab" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="false">Новинки магазина</button>
+						</li>
+					</ul>
+				</div>
+				<div class="tab-content">
+
+					<div class="tab-pane fade show active" id="similar" role="tabpanel" aria-labelledby="similar-tab">
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a data-fancybox href="img/item6.jpg" class="kit-image4"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Похожие товарыПохожие товарыПохожие товары</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a data-fancybox href="img/item11.jpg" class="kit-image5"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Похожие товары</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Похожие товары</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Похожие товары</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Похожие товары</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Похожие товары</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="hit" role="tabpanel" aria-labelledby="hit-tab">
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Хиты продаж</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Хиты продаж</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Хиты продаж</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Хиты продаж</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Хиты продаж</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Хиты продаж</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="tab-pane fade" id="new" role="tabpanel" aria-labelledby="new-tab">
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Новинки магазина</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Новинки магазина</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Новинки магазина</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Новинки магазина</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Новинки магазина</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Новинки магазина</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
 				</div>
 			</div>
-			<div class="order-sidebar">
-					<span class="order-sidebar__title">Личный кабинет</span>
-					<div class="order-sidebar__user-block">
-						<img src="img/user-avatar.png" alt="img" class="order-sidebar__user-image">
-						<span class="order-sidebar__user-text">Привет, <span class="order-sidebar__user-name">Константин</span></span>
-					</div>
-					<div class="order-sidebar__buttons">
-						<button class="order-sidebar__button">Мои заказы</button>
-						<button class="order-sidebar__button">Избранное</button>
-						<button class="order-sidebar__button">Мой профиль</button>
-						<button class="order-sidebar__button">Корзина</button>
-					</div>
-					<button class="order-sidebar__user-exit">Выйти</button>
+
+			<div class="news-mailing">
+				<div class="news-mailing__text">
+					<span class="news-mailing__text-title">Подпишитесь на нашу новостную рассылку</span>
+					<span class="news-mailing__text-subtitle">Чтобы не упустить все акции нашего интернет магазина.</span>
 				</div>
+				<form action="#" class="news-mailing__form">
+					<input type="text" placeholder="Введите Ваш e-mail">
+					<button class="news-mailing__form-button">Подписаться</button>
+				</form>
+			</div>
+
 		</div>
+	</div>
 	</main>
 
 
 
 
 
-
-
-
-
-
-
-
-
 	<!-- FOOTER START -->
-<footer class="footer">
-	<div class="footer-wrap element-one">
-		<div class="footer-block">
-			<img src="img/logo.png" alt="" class="footer-logo">
-			<div class="socials-footer">
-				<a href="" class="icon vk"><img src="img/vk.svg" class="icon" alt="vk"></a>
-				<a href="" class="icon yt"><img src="img/yt.svg" class="icon" alt="youtube"></a>
-				<a href="" class="icon inst"><img src="img/inst.svg" class="icon" alt="instagram"></a>
+	<footer class="footer">
+		<div class="footer-wrap element-one">
+			<div class="footer-block">
+				<img src="img/logo.png" alt="" class="footer-logo">
+				<div class="socials-footer">
+					<a href="" class="icon vk"><img src="img/vk.svg" class="icon" alt="vk"></a>
+					<a href="" class="icon yt"><img src="img/yt.svg" class="icon" alt="youtube"></a>
+					<a href="" class="icon inst"><img src="img/inst.svg" class="icon" alt="instagram"></a>
+				</div>
+			</div>
+			<div class="footer-block mix-width">
+				<div class="footer-mix">
+					Широкий ассортимент
+					товаров от эротического
+					белья до элитных секс-
+					игрушек способен
+					удовлетворить, во всех
+					смыслах этого слова,
+					каждого покупателя.
+				</div>
 			</div>
 		</div>
-		<div class="footer-block mix-width">
-			<div class="footer-mix">
-				Широкий ассортимент
-				товаров от эротического
-				белья до элитных секс-
-				игрушек способен
-				удовлетворить, во всех
-				смыслах этого слова,
-				каждого покупателя.
+		<div class="footer-wrap element-two">
+			<div class="footer-block">
+				<div class="main-categories">
+					<p class="cat-title">Основные разделы:
+					</p>
+					<a href="" class="cat-desc">Девушкам</a>
+					<a href="" class="cat-desc">Парням</a>
+					<a href="" class="cat-desc">Для пар</a>
+					<a href="" class="cat-desc">Все для секса</a>
+					<a href="" class="cat-desc">Эротическая одежда</a>
+				</div>
+			</div>
+			<div class="footer-block">
+				<div class="main-categories">
+					<p class="cat-title">Информация:
+					</p>
+					<a href="" class="cat-desc">О компании</a>
+					<a href="" class="cat-desc">Контакты</a>
+					<a href="" class="cat-desc">Доставка и оплата</a>
+					<a href="" class="cat-desc">Конфиденциальность</a>
+					<a href="" class="cat-desc">Гарантия и возврат</a>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="footer-wrap element-two">
-		<div class="footer-block">
-			<div class="main-categories">
-				<p class="cat-title">Основные разделы:
-				</p>
-				<a href="" class="cat-desc">Девушкам</a>
-				<a href="" class="cat-desc">Парням</a>
-				<a href="" class="cat-desc">Для пар</a>
-				<a href="" class="cat-desc">Все для секса</a>
-				<a href="" class="cat-desc">Эротическая одежда</a>
+		<div class="footer-block contact-row">
+			<div class="footer-contact">
+				<a href=""><img src="img/phone-circle.png" alt="" class="phone-img contact-img"></a>
+				<div class="info-contact">
+					<a href=""><p class="title font-bold">8 800 775 12 34</p></a>
+					<p class="desc">Бесплатно с телефонов по РФ</p>
+				</div>
+			</div>
+			<div class="footer-contact">
+				<a href=""><img src="img/email-circle.png" alt="" class="email-img contact-img"></a>
+				<div class="info-contact">
+					<a href=""><p class="title">shop@erobueno.ru</p></a>
+					<p class="desc">Круглосуточно</p>
+				</div>
+			</div>
+			<div class="footer-contact">
+				<a href=""><img src="img/geo.png" alt="" class="email-img contact-img"></a>
+				<div class="info-contact">
+					<a href=""><p class="title footer-title">Москва, пр. Мира 145,<br>офис 12</p></a>
+				</div>
 			</div>
 		</div>
-		<div class="footer-block">
-			<div class="main-categories">
-				<p class="cat-title">Информация:
-				</p>
-				<a href="" class="cat-desc">О компании</a>
-				<a href="" class="cat-desc">Контакты</a>
-				<a href="" class="cat-desc">Доставка и оплата</a>
-				<a href="" class="cat-desc">Конфиденциальность</a>
-				<a href="" class="cat-desc">Гарантия и возврат</a>
-			</div>
-		</div>
-	</div>
-	<div class="footer-block contact-row">
-		<div class="footer-contact">
-			<a href=""><img src="img/phone-circle.png" alt="" class="phone-img contact-img"></a>
-			<div class="info-contact">
-				<a href=""><p class="title font-bold">8 800 775 12 34</p></a>
-				<p class="desc">Бесплатно с телефонов по РФ</p>
-			</div>
-		</div>
-		<div class="footer-contact">
-			<a href=""><img src="img/email-circle.png" alt="" class="email-img contact-img"></a>
-			<div class="info-contact">
-				<a href=""><p class="title">shop@erobueno.ru</p></a>
-				<p class="desc">Круглосуточно</p>
-			</div>
-		</div>
-		<div class="footer-contact">
-			<a href=""><img src="img/geo.png" alt="" class="email-img contact-img"></a>
-			<div class="info-contact">
-				<a href=""><p class="title footer-title">Москва, пр. Мира 145,<br>офис 12</p></a>
-			</div>
-		</div>
-	</div>
-</footer>
-
+	</footer>
 	<!-- FOOTER END -->
-
 	<!-- Scripts -->
 	<script
 	src="https://code.jquery.com/jquery-3.4.1.js"

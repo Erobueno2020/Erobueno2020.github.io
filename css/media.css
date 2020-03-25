@@ -2975,7 +2975,8 @@
             width: 135px !important;
         }
         .store-info {
-            margin: 0 -15px;
+            margin: 0 10px;
+            margin-top: 15px;
         }
         .item-kit {
             padding: 0 0px;

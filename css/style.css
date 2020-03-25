@@ -2202,7 +2202,7 @@ ul.info-text li:before {
 }
 .store-info {
 	margin-top: 50px;
-	border-bottom: 1px solid #dee2e6;
+	border-bottom: 1px solid #f3e5dc;
 }
 .store-info .nav-tabs .nav-link {
 	border: 0 !important;
@@ -2218,8 +2218,7 @@ ul.info-text li:before {
 	margin-bottom: 7px;
 }
 .store-info .item-button-simple {
-	width: 160px;
-	margin-left: -12px;
+	width: 140px;
 	line-height: 43px;
 	height: 43px;
 }
@@ -2272,15 +2271,13 @@ ul.info-text li:before {
 	margin-bottom: 0; 
 }
 .tab-content {
-	padding-bottom: 90px;
+	padding-bottom: 30px;
 }
 .news-mailing {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 40px 0;
-	border-top: 1px solid #f2dbce;
-	border-bottom: 1px solid #f2dbce;
+	padding-top: 30px;
 }
 .news-mailing__text {
 	display: flex;
