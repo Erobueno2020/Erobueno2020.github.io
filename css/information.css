@@ -166,6 +166,100 @@
 	margin-bottom: 25px;
 }
 
+/* ORDERS ================================================================= */
+
+.orders-wrapper {
+	background-color: #fff;
+	width: 100%;
+	height: 800px;
+	border-radius: 10px;
+}
+
+
+.my-orders {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px;
+}
+
+.my-orders__title {
+	color: #a77a5e;
+	font-size: 30px;
+    font-weight: 300;
+	font-family: 'ProximaNovaT-Thin', sans-serif;
+	
+}	
+
+.my-orders__all {
+	color: #ff98b4;
+	font-size: 16px;
+	font-family: 'ProximaNova-SemiBold', sans-serif;
+}
+ 	
+.my-orders__all img {
+	margin-right: 5px;
+	margin-bottom: 2px;
+}
+
+.orders-item-wrapper {
+	border-radius: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border: 1px solid #d5d5d5;
+}
+
+.orders__status-wrapper {
+	margin: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1169px) {
 	.flex-row-reverse {
@@ -359,4 +453,27 @@
 		justify-content: space-around !important;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

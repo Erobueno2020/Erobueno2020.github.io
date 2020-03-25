@@ -118,9 +118,8 @@ button {
 .site-tree__block {
 	display: flex;
 	margin-top: 30px;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 	width: 100%;
-	padding: 0 10px;
 }
 .site-tree__back {
 	width: 82px;
