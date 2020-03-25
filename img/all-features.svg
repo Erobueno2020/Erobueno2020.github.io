@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12" width="17" height="12">
+	<defs>
+		<image width="17" height="12" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAMCAYAAACEJVa/AAAAMElEQVQokWNgoBb4P33z0v/TN/8nAy+lriGDD5DgLdzeoIohgxNg8RrpXqCKIaQAAApDxzn4LOUYAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Контент">
+		<use id="Фигура 27" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+	</g>
+</svg>
