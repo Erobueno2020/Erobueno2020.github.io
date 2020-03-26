@@ -504,15 +504,193 @@
 }
 
 
+.profile-wrapper {
+	width: 100%;
+	background-color: #fff;
+	padding: 20px;
+	padding-top: 15px;
+	border-radius: 10px;
+}
+
+.reload-info {
+	color: #ff98b4;
+}
+
+.reload-info img {
+	margin-bottom: 2px;
+	margin-left: 15px;
+	margin-right: 5px;
+}
+
+.form-profile {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 15px;
+}
+
+.form-profile div {
+	width: 100%;
+	max-width: 270px;
+}
+
+.form-profile label {
+	margin-bottom: 0;
+	margin-left: 15px;
+	font-family: 'ProximaNovaT-Thin', sans-serif;
+}
+
+.input-profile {
+	border: 1px solid #eccdba;
+	padding: 10px;
+	padding-left: 20px;
+	border-radius: 25px;
+	max-width: 270px;
+	color: #c4a089;
+	width: 100%;
+}
 
 
+.select-profile {
+	max-width: 270px;
+	width: 100%;
+	background-color: #eccdba;
+	color: #fff;
+	border-radius: 25px;
+	padding: 10px;
+	padding-left: 20px;
+	border: 1px solid #eccdba;
+	position: relative;
+}
 
+.select-prof {
+	position: relative;
+}
 
+.select-prof:after {
+	content: " ";
+	background: url("../img/arrowdown.svg") no-repeat 100% 100%/100%;
+	position: absolute;
+	right: 12px;
+	width: 14px;
+	height: 8px;
+	bottom: 17px;
+}
 
+.checkbox-profile {
+	display: flex;
+	margin-top: 15px;
+	margin-left: 15px;
+}
 
+.label-checkbox {
+	line-height: 18px;
+	color: #919191;
+}
 
+.input-checkbox {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: #f8dbc9;
+	border-radius: 1000%;
+	max-width: 24px;
+	width: 100%;
+	height: 24px;
+	margin-top: 5px;
+}
 
+.input-checkbox:checked {
+	background: url('../img/checkbox.png') no-repeat center;
+	background-position: 50% 70%;
+	background-color: #f8dbc9;
+}
 
+.grey-text {
+	color: #919191;
+	font-size: 14px;
+	font-family: 'ProximaNovaT-Thin', sans-serif;
+}
+
+.point-block {
+	width: 100%;
+	border: 1px solid #eccdba;
+	border-radius: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.type-img {
+	width: 60px;
+	border-top-left-radius: 9px;
+	border-bottom-left-radius: 9px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+
+.address-point {
+	background: url('../img/address_mark.svg') no-repeat center;
+	background-color: #eccdba;
+}
+
+.delivery-point {
+	background: url('../img/delivery_mark.svg') no-repeat center;
+	background-color: #eccdba;
+}
+
+.address-info {
+	color: #ac8c78;
+	font-size: 14px;
+	line-height: 20px;
+	font-family: 'ProximaNova-Regular', sans-serif;
+	padding: 10px;
+	padding-left: 15px;
+	width: max-content;
+	align-self: flex-start;
+}
+
+.street-info, .build-info, .flat-info {
+	width: max-content;
+}
+
+.city-info {
+	max-width: 450px;
+}
+
+.checkbox-adress-block {
+	width: 200px;
+	align-items: center;
+	margin-top: -4px;
+	margin-left: 15px;
+}
+
+.label-checkbox-address {
+	margin-bottom: 0;
+	margin-left: 5px;
+}
+
+.remove-address {
+	color: #ff98b4;
+	position: absolute;
+	right: 15px;
+	align-self: center;
+}
+
+.remove-address img {
+	margin-bottom: 2px;
+	margin-right: 5px;
+	align-self: center;
+}
+
+.flex-dir {
+	margin-left: 60px;
+	display: flex;
+}
 
 
 
@@ -689,6 +867,21 @@
 	.favorited-items-wrapper {
 		justify-content: space-around;
 	}
+	.remove-address {
+		top: 10px;
+		right: 20px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.flex-dir {
+		flex-direction: column;
+		margin-top: 20px;
+	}
+		.remove-address {
+		top: 5px;
+		left: 75px;
+	}
 }
 
 
@@ -699,6 +892,40 @@
 	}
 	.sort-text {
 		display: none;
+	}
+			.address-info {
+		width: auto;
+	}
+	.column-on-mobile {
+		flex-direction: column;
+	}
+	.checkbox-adress-block {
+		margin-left: 0;
+		margin-top: 0px;
+	}
+	.reload-info img {
+		margin-left: 0;
+	}
+	.reload-info {
+ 		font-size: 16px;
+	}
+	.profile-desc {
+		font-size: 16px;
+	}
+	.form-profile div {
+		max-width: 550px;
+	}
+	.input-profile {
+		max-width: 550px;
+	}
+	.select-profile {
+		max-width: 550px;
+	}
+	.address-info {
+		font-size: 12px;
+	}
+	.street-info, .build-info, .flat-info {
+		width: auto;
 	}
 	.item-block-pink {
 		min-height: 300px;
@@ -807,6 +1034,7 @@
 	.no-mar {
 		margin-top: 0 !important;
 	}
+
 }
 
 @media screen and (min-width: 501px) and (max-width: 550px) {
@@ -851,7 +1079,7 @@
 	}
 	.old-fprice {
 		font-size: 18px;
-	} 
+	}
 }
 
 
