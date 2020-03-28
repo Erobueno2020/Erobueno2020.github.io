@@ -582,6 +582,12 @@ $('.tab-pane').slick({
      $(".product-popup").css("display", "flex");
      $("body").css("overflow", "hidden");
    });
+      
+  $(".catalog-items__item-image").click(function(){
+   $(".product-popup").fadeIn();
+   $(".product-popup").css("display", "flex");
+   $("body").css("overflow", "hidden");
+  });
 
 
     document.addEventListener('keydown', function (e) {
@@ -875,15 +881,6 @@ $(".method-payment-input").click(function(){
     });
   }
 });
-
-
-
-$(".catalog-items__item-image").click(function(){
- $(".product-popup").fadeIn();
- $(".product-popup").css("display", "flex");
- $("body").css("overflow", "hidden");
-});
-
 
 });
 
