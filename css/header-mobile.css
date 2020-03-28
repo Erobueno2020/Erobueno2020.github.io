@@ -229,7 +229,7 @@
 		top: 66px;
 	}
 	.menu-categories {
-		max-height: 90vh;
+		max-height: 100vh;
 		overflow-y: visible;
 		overflow-x: hidden;
 	}
