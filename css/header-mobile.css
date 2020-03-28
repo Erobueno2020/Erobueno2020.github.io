@@ -226,7 +226,11 @@
 		position: absolute;
 		background-color: #fe98b3;
 		width: 100%;
-		top: 75px;
+		top: 66px;
+	}
+	.menu-categories {
+		max-height: 100vh;
+		overflow-y: visible;
 	}
 	.basket-mobile {
 		display: block !important;

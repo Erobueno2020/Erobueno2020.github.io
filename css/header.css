@@ -52,6 +52,8 @@ a, .simple-menu_li {
 	max-width: 1180px;
 	height: 140px;
 }
+
+
 .banner-header__title {
 	position: absolute;
 	color: #fff;
@@ -696,6 +698,9 @@ a, .simple-menu_li {
 	list-style: none !important;
 }
 
+.overflow-none {
+	overflow-y: hidden !important;
+}
 
 
 
@@ -734,20 +739,24 @@ a, .simple-menu_li {
 	.banner-header {
 		background-position: 30% 100%;
 	}
+	.menu-fixed {
+		margin-top: 123px;
+	}
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 	.banner-rel {
 		margin-left: 10px;
 		margin-right: 10px;
-		margin-top: 100px;
+	}
+	.menu-fixed {
+		margin-top: 62px;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1169px) {
 	.banner-rel {
 		margin-left: 10px;
 		margin-right: 10px;
-		margin-top: 130px;
 	}
 }
 
@@ -761,7 +770,6 @@ a, .simple-menu_li {
 	.banner-rel {
 		margin-left: 10px;
 		margin-right: 10px;
-		margin-top: 130px;
 		height: 160px;
 	}
 	.banner-header__title {
