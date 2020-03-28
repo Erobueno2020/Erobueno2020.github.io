@@ -228,11 +228,6 @@
 		width: 100%;
 		top: 66px;
 	}
-	.menu-categories {
-		max-height: 100vh;
-		overflow-y: visible;
-		overflow-x: hidden;
-	}
 	.basket-mobile {
 		display: block !important;
 		z-index: 999;

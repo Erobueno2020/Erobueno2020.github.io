@@ -504,6 +504,9 @@ a, .simple-menu_li {
 	display: flex;
 	align-items: center;
 }
+.border-color {
+	box-shadow: 0 8px 36px rgba(255, 99, 0, 0.15);
+}
 .category {
 	color: var(--link);
 	font-size: 18px;
@@ -601,6 +604,7 @@ a, .simple-menu_li {
 	height: max-content;
 	margin-top: -40px;
     padding-top: 25px;
+
 }
 .podborka {
 	left: 550px;

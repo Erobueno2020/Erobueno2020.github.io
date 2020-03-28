@@ -686,23 +686,23 @@
 				<form class="form-profile" action="">
 					<div>
 						<label for="name">Имя:</label>
-						<input class="input-profile" id="name" type="text">
+						<input class="input-profile" id="name" type="text" placeholder="Имя">
 					</div>
 					<div class="">
 						<label for="surname">Фамилия:</label>
-						<input class="input-profile" id="surname" type="text">
+						<input class="input-profile" id="surname" type="text" placeholder="Фамилия">
 					</div>
 					<div>
 						<label for="midname">Отчество:</label>
-						<input class="input-profile" id="midname" type="text">
+						<input class="input-profile" id="midname" type="text" placeholder="Отчество">
 					</div>
 					<div>
 						<label for="mail">Email:</label>
-						<input class="input-profile" id="mail" type="email">
+						<input class="input-profile" id="mail" type="email" placeholder="Email">
 					</div>
 					<div>
 						<label for="phone">Телефон:</label>
-						<input class="input-profile" id="phone" type="text">
+						<input class="input-profile" id="phone" type="text"placeholder="Телефон">
 					</div>
 					<div class="select-prof">
 						<label for="gender">Пол:</label>
@@ -725,15 +725,15 @@
 				<form class="form-profile" action="">
 					<div>
 						<label for="oldpass">Введите старый пароль:</label>
-						<input class="input-profile" id="oldpass" type="password">
+						<input class="input-profile" id="oldpass" type="password" placeholder="Старый пароль">
 					</div>
 					<div class="">
 						<label for="newpass">Введите новый пароль:</label>
-						<input class="input-profile" id="newpass" type="password">
+						<input class="input-profile" id="newpass" type="password" placeholder="Новый пароль">
 					</div>
 					<div>
 						<label for="newpassrep">Повторите новый пароль:</label>
-						<input class="input-profile" id="newpassrep" type="password">
+						<input class="input-profile" id="newpassrep" type="password" placeholder="Повторите пароль">
 					</div>
 				</form>
 				<p class="mt-4 profile-desc">Адреса доставки и пункты выдачи</p>
@@ -766,11 +766,47 @@
 							<a href="" class="remove-address"><img src="img/remove.svg" alt="">Удалить адрес</a>
 						</div>
 					</div>
+					<div class="point-block address-block">
+						<div class="type-img address-point"></div>
+						<div class="flex-dir">
+							<div class="address-info">
+								<p class="city-info">Город: Россия, Ямало-Ненецкий а.о., г. Салехард</p>
+								<p class="street-info">Улица: Имени Василия Подшибякина</p>
+								<p class="build-info">Дом: 21</p>
+								<div class="flex column-on-mobile">
+									<p class="flat-info">Квартира: 303</p>
+									<div class="flex checkbox-adress-block">
+										<input class="input-checkbox mt-0" type="checkbox" id="checkbox-adress">
+										<label class="label-checkbox-address" for="checkbox-adress">Частный дом</label>
+									</div>
+								</div>
+							</div>
+							<div class="address-info">
+								<p class="build-info">Подъезд: 21</p>
+								<p class="build-info">Этаж: 17</p>
+								<p class="build-info">Код домофона: 303</p>
+							</div>
+							<a href="" class="remove-address"><img src="img/remove.svg" alt="">Удалить адрес</a>
+						</div>
+					</div>
 				</div>
 				<div>
 					<div class="flex mt-3 column-on-mobile">
 						<p class="profile-desc">Пункты выдачи</p>
 						<a href="" class="reload-info"><img src="img/plusAdd.svg" alt="">Добавить пункт выдачи</a>
+					</div>
+					<div class="point-block delivery-block">
+						<div class="type-img delivery-point">
+						</div>
+						<div class="flex-dir">
+							<div class="address-info">
+								<p class="city-info">Город: Россия, Ямало-Ненецкий а.о., г. Салехард</p>
+								<p class="street-info">Улица: Имени Василия Подшибякина</p>
+								<p class="build-info">Дом: 21</p>
+								<p class="flat-info">Кварира: 303</p>
+							</div>
+							<a href="" class="remove-address"><img src="img/remove.svg" alt="">Удалить пункт выдачи</a>
+						</div>
 					</div>
 					<div class="point-block delivery-block">
 						<div class="type-img delivery-point">

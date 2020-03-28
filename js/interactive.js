@@ -246,13 +246,11 @@ $(document).ready(function(){
    $('.header').css({zIndex: 'auto'});
    window.scrollTo({top: 0});
    $('.remover').removeClass('menu-fixed');
-   $('body').addClass('overflow-none');
  }
  else {
    $('.navigation').css({position: 'fixed'});
    $('.header').css({zIndex: '9999'});
     $('.remover').addClass('menu-fixed');
-    $('body').removeClass('overflow-none');
  }
 });
 
@@ -572,7 +570,8 @@ $('.tab-pane').slick({
      $(".product-popup").fadeOut();
      $("body").css("overflow", "visible");
    });
-    $(".item-kit .item-kit__block-image").click(function(){
+    $(".item-kit .item-kit__block-image, .main-page-items__item-image, .catalog-items__item-hover, .bottom-block__desc").click(function(e){
+      e.preventDefault();
      $(".product-popup").fadeIn();
      $(".product-popup").css("display", "flex");
      $("body").css("overflow", "hidden");
