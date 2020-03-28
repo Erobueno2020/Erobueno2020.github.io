@@ -588,6 +588,14 @@ $('.tab-pane').slick({
    $("body").css("overflow", "hidden");
   });
 
+$('.remove-address').click(function (e) {
+  e.preventDefault();
+  $(this).closest('.point-block').fadeOut();
+});
+
+ $('.select-profile, .select-filter').select2({
+      minimumResultsForSearch: Infinity
+    });
 
     document.addEventListener('keydown', function (e) {
      if(e.keyCode === 27) $('.product-popup').fadeOut();
