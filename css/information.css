@@ -493,7 +493,13 @@
 }
 
 .favorited-btn-like img {
-	margin-right: 0 !important;
+	margin-right: 3px !important;
+	margin-left: 3px;
+	cursor: pointer;
+}
+.favorited-btn-like {
+	display: flex;
+	flex-direction: row-reverse;
 }
 
 .favorited-price {
@@ -1030,7 +1036,7 @@
 		position: inherit !important;
 	}
 	.bottom-block-button {
-		max-width: 130px;
+		max-width: 150px;
 		width: 100%;
 	}
 	.my-favorited {
