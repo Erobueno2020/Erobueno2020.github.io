@@ -10,6 +10,7 @@
 		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 		
 		<!-- LINKS -->
+		<link rel="stylesheet" href="css/select2.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 		<link href="css/number_plugin.css" type="text/css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
@@ -622,20 +623,26 @@
 								<form action="#">
 									<div class="block-select">
 										<div class="block-select__element">
-											<span class="placeholder">Размер</span>
-											<div class="block-select__element-decor">
+											<!-- <span class="placeholder">Размер</span> -->
+											<div class="block-select__element-decoration select-size">
 												<select name="size">
-													<option value="-1" style="display:none;"></option>
+													<option></option>
 													<option value="#">XL</option>
 													<option value="#">XLL</option>
 													<option value="#">XLL</option>
 												</select>
 											</div>
 										</div>
-										<div class="block-select__element block-input-color">
-											<span class="placeholder"></span>
-											<div class="block-select__element-decor">
-												<div class="select-block__colors__input"></div>
+										<div class="block-select__element">
+											<!-- <span class="placeholder"></span> -->
+											<div class="block-select__element-decoration select-color">
+												<select name="size">
+													<option></option>
+													<option data-color-name="Жёлтый" onclick="$inputColor='yellow'" value="#">Жёлтый</option>
+													<option data-color-name="Красный" onclick="$inputColor='red'" value="#">Красный</option>
+													<option data-color-name="Зелёный" onclick="$inputColor='green'" value="#">Зелёный</option>
+												</select>
+<!-- 												<div class="select-block__colors__input"></div>
 												<div class="select-block__colors">
 													<form action="#">
 														<label class="input-color red">
@@ -648,9 +655,9 @@
 															<input data-color-name="Синий" onclick="$inputColor='blue'" type="radio" class="input-blue" name="input-color">
 														</label>
 													</form>
-												</div>
+												</div> -->
 											</div>
-											<span class="select-block__colors-name">Чёрный</span>
+											<!-- <span class="select-block__colors-name">Чёрный</span> -->
 										</div>
 									</div>
 								</form>
@@ -674,6 +681,7 @@
 		<script src="js/jquery-ui.js"></script>
 		<script src="js/jquery.ui.touch-punch.min.js"></script>
 		<script src="js/jquery.matchHeight-min.js"></script>
+		<script src="js/select2.js"></script>
 		<script src="js/interactive.js"></script>
 
 	</body>

@@ -1,26 +1,47 @@
 $(document).ready(function(){
-$('a.lightbox').divbox({caption: false});
-$('a.lightbox2').divbox({caption: false, width: 600, height: 400});
-$('a.iframe').divbox({ width: 200, height: 200 , caption: false});
-$('a.ajax').divbox({ type: 'ajax', width: 200, height: 200 , caption: false,api:{
-afterLoad: function(o){
-$(o).find('a.close').click(function(){
-  o.closed();
-  return false;
-});
+  $('a.lightbox').divbox({caption: false});
+  $('a.lightbox2').divbox({caption: false, width: 600, height: 400});
+  $('a.iframe').divbox({ width: 200, height: 200 , caption: false});
+  $('a.ajax').divbox({ type: 'ajax', width: 200, height: 200 , caption: false,api:{
+    afterLoad: function(o){
+      $(o).find('a.close').click(function(){
+        o.closed();
+        return false;
+      });
 
-$(o).find('a.resize').click(function(){
-  o.resize(200,50);
-  return false;
+      $(o).find('a.resize').click(function(){
+        o.resize(200,50);
+        return false;
+      });
+    }
+  }});
 });
-}
-}});
-});
-
-
 
 var width = $(window).width();
 $(document).ready(function(){
+
+    // COLOR SELECT INPUT
+    $('.select2-results__option').click(function(){
+      alert("HELO");
+      if ( $(this).html() == "Зелёный" ) {
+        $inputColor == "green";
+      }
+      alert($inputColor);
+      $(this).css('background', $inputColor);
+    });
+
+    $(".select2-selection__rendered").click(function(){
+      alert("XUY");
+    });
+
+    $(".select-size select").select2({
+      placeholder: "Размер",
+      minimumResultsForSearch: -1,
+    });
+    $(".select-color select").select2({
+      placeholder: "Цвет",
+      minimumResultsForSearch: -1,
+    });
 
   // Выравниваем по высоте
   function matchHeight(){
@@ -534,17 +555,6 @@ $('.tab-pane').slick({
    });
 
 
-    // INPUT COLORS OPEN
-    $(".select-block__colors__input").click(function(){
-     $(this).parent().find(".select-block__colors").toggleClass("flex");
-   });
-
-    // COLOR SELECT INPUT
-    $('.input-color').click(function(){
-      $(this).parent().parent().parent().parent().find(".block-input-color .placeholder").css('background', $inputColor);
-      $(this).parent().parent().find(".select-block__colors").toggleClass("flex");
-      $(this).parent().parent().parent().parent().find(".select-block__colors-name").html( $(this).find("input").attr('data-color-name') );
-    })
 
     // SIZE INPUT HIDE PLACEHOLDER
     $('.block-select__element select').click(function(){
@@ -574,12 +584,12 @@ $('.tab-pane').slick({
      $(".product-popup").css("display", "flex");
      $("body").css("overflow", "hidden");
    });
-      
-  $(".catalog-items__item-image").click(function(){
-   $(".product-popup").fadeIn();
-   $(".product-popup").css("display", "flex");
-   $("body").css("overflow", "hidden");
-  });
+
+    $(".catalog-items__item-image").click(function(){
+     $(".product-popup").fadeIn();
+     $(".product-popup").css("display", "flex");
+     $("body").css("overflow", "hidden");
+   });
 
 
     document.addEventListener('keydown', function (e) {
@@ -604,17 +614,17 @@ $('.tab-pane').slick({
   });
 
 
-// Скрываем попап по клику на фон
-$(function($){
-  $(document).mouseup(function (e){ // событие клика по веб-документу
-    var div = $(".product-popup__container-block"); // тут указываем ID элемента
-    if (!div.is(e.target) // если клик был не по нашему блоку
-        && div.has(e.target).length === 0) { // и не по его дочерним элементам
-     $(".product-popup").fadeOut();
-   $("body").css("overflow", "visible");
- }
-});
-}); 
+// Скрываем попап по клику на фон CLOSE
+// $(function($){
+//   $(document).mouseup(function (e){ // событие клика по веб-документу
+//     var div = $(".product-popup__container-block"); // тут указываем ID элемента
+//     if (!div.is(e.target) // если клик был не по нашему блоку
+//         && div.has(e.target).length === 0) { // и не по его дочерним элементам
+//      $(".product-popup").fadeOut();
+//    $("body").css("overflow", "visible");
+//  }
+// });
+// }); 
 
 $(".parameters-cloud-icon").mouseover(function(){
   $(this).parent().find(".parameters-cloud").css("opacity", "1");
@@ -890,3 +900,4 @@ window.addEventListener("orientationchange", function() {
   $sliderMobileArrowsWidth = $(".catalog-items__item").css("width");
   $(".slider-mobile__arrows").css("width", $sliderMobileArrowsWidth);
 });
+

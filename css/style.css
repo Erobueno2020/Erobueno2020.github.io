@@ -86,6 +86,24 @@ button {
 }
 /*STYLES*/
 
+.select2 {
+	font-size: 13px;
+}
+.select2, .select2-selection {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 !important;
+}
+.select2-selection__rendered {
+    padding: 5px 13px !important;
+    border: 1px solid #e4e4e4 !important;
+}
+.select2 * {
+	border-radius: 15px !important;
+	height: 30px;
+}
+
+
 .site-tree {
 	display: flex;
 	margin-bottom: 0;
@@ -3015,7 +3033,7 @@ input[type=checkbox], input[type=radio] {
 	border-radius: 25px;
 }
 .product-popup .block-select {
-	justify-content: normal;
+    justify-content: space-between;
 	margin-top: 20px;
 }
 .product-popup .block-select__element.block-input-color {
@@ -3120,7 +3138,10 @@ input[type=checkbox], input[type=radio] {
 	padding-left: 10px;
 }
 .product-popup .block-select__element {
-	width: 50%;
+	width: 49%;
+}
+.block-select__element * {
+	line-height: unset !important;
 }
 .product-popup .block-select select {
 	width: 100%;
