@@ -2724,10 +2724,11 @@
             padding: 4px 25px 3px 17px;
             margin-top: 1px;
         }
+       /*
         .catalog-sort__numitems span {
             margin-left: 0px;
             margin-right: -5px !important;
-            /*margin-left: 14px;*/
+            margin-left: 14px;
             height: 35px;
             display: inline-block;
             line-height: 35px;
@@ -2735,7 +2736,8 @@
             background-color: #fad1c0 !important;
             padding-left: 15px;
             padding-right: 15px;
-        }
+        } 
+        */
 
 
         .item-sizes__table-data__name {
