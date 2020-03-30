@@ -301,7 +301,7 @@
 		padding-left: 12px;
 	}
 	.menu-adaptive {
-		position: relative;
+		position: absolute;
 		z-index: 3000;
 		background-color: #fff;
 	}

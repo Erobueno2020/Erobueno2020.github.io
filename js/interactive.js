@@ -275,6 +275,23 @@ $(document).ready(function(){
  }
 });
 
+ $('#addAddress').click(function (e) {
+  e.preventDefault();
+  $('.background-dark').fadeIn();
+  $('.address-popup__wrapper').fadeIn();
+ });
+
+ $('#addDelivery').click(function (e) {
+  e.preventDefault();
+  $('.background-dark').fadeIn();
+  $('.delivery-popup__wrapper').fadeIn();
+ });
+
+
+ $('.background-dark').click(function (){
+  $('.address-popup__wrapper, .delivery-popup__wrapper, .background-dark').fadeOut();
+ });
+
 
  $(document).on('click', '.basket-open', function() {
    if (width < 1170 && $('.basket-mob').hasClass('opened')) {
@@ -608,7 +625,7 @@ $('.remove-address').click(function (e) {
     });
 
     document.addEventListener('keydown', function (e) {
-     if(e.keyCode === 27) $('.product-popup').fadeOut();
+     if(e.keyCode === 27) $('.product-popup, .address-popup__wrapper, .background-dark, .delivery-popup__wrapper').fadeOut();
      $("body").css("overflow", "visible");
    }); 
 
