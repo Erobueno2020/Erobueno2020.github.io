@@ -802,7 +802,12 @@
 	overflow-y: auto;
 	scrollbar-width: none;
 }
-
+.input-profile::placeholder {
+	color: #c4a089;
+}
+.address-popup__wrapper::-webkit-scrollbar {
+	width: 0;
+}
 .address-popup__inner {
 	padding: 15px;
 	display: flex;
