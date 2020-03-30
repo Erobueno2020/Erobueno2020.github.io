@@ -387,6 +387,7 @@ a, .simple-menu_li {
 	border-radius: 15px;
 	background-color: #fff;
 	opacity: 0;
+	box-shadow: 0 0 12px 0px rgba(255, 99, 0, 0.1);
 }
 .basket-modal {
 	display: flex;
@@ -491,9 +492,7 @@ a, .simple-menu_li {
 }
 
 .sub-header {
-	max-width: 1170px;
-	padding-left: 5px;
-	padding-right: 15px;
+	max-width: 1180px;
 	margin: 0 auto;
 	margin-top: 36px;
 	margin-bottom: 36px;
@@ -526,11 +525,11 @@ a, .simple-menu_li {
 	font-size: 17px;
 	position: relative;
 	font-family: 'ProximaNova-Light';
-	margin-left: 22px;
+	margin-left: 25px;
 	width: max-content;
 }
 .promo:first-child {
-	margin-left: 28px;
+	margin-left: 12px;
 }
 .basket-mob, .basket-block-mobile {
 	display: none;
@@ -653,7 +652,7 @@ a, .simple-menu_li {
 }
 .promo:after {
 	top: 11px;
-	right: -14px;
+	right: -15px;
 	content: ' ';
 	position: absolute;
 	background: url("../img/sidebar-arrow.svg") no-repeat 100% 100%/100%;
