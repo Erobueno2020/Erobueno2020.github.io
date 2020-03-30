@@ -792,7 +792,7 @@
 	display: none;
 	background-color: #fff;
 	height: 100%;
-	max-height: 500px;
+	max-height: 600px;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%,-50%);
@@ -1096,7 +1096,7 @@
 			.address-info {
 		width: auto;
 	}
-	.address-popup__wrapper {
+	.address-popup__wrapper, .delivery-popup__wrapper {
 		width: 95%;
 	}
 	.column-on-mobile {
