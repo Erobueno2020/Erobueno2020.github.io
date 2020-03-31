@@ -448,8 +448,9 @@
 				</div>
 			</div>
 		</div>
+		<div class="dark-bg-basket"></div>
 		<div class="basket-mob">
-			<div class="dark-bg-basket"></div>
+			
 			<div class="basket-block-mobile">
 				<div class="basket mobile-basket">
 					<div class="basket-number basket-number-popup number-mobile">4</div>
@@ -839,7 +840,7 @@
 						<div>
 							<div class="flex mt-3 column-on-mobile">
 								<p class="profile-desc">Пункты выдачи</p>
-								<a href="" id="addDelivery" class="reload-info"><img src="img/plusAdd.svg"
+								<a href="" id="addDelivery-btn" class="reload-info"><img src="img/plusAdd.svg"
 										alt="">Добавить пункт
 									выдачи</a>
 							</div>
@@ -1263,10 +1264,15 @@
 		</main>
 		<!-- ADDRESS POPUP -->
 		<div class="background-dark"></div>
+		<button class="popup-close-button first-btn"><img src="img/popup-close.png" alt=""></button>
+		<button class="popup-close-button second-btn"><img src="img/popup-close.png" alt=""></button>
 		<div class="address-popup__wrapper">
+
 			<div class="address-popup__inner">
-				<p class="my-orders__title">Какой-то заголовок</p>
-				<p class="mt-2 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, recusandae.</p>
+
+				<p class="my-orders__title pop-title">Какой-то заголовок</p>
+				<p class="mt-2 mb-4 pop-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,
+					recusandae.</p>
 				<form action="">
 					<div class="mb-2">
 						<label class="popup-label" for="index">Почтовый индекс:*</label>
@@ -1309,31 +1315,38 @@
 						<input class="input-profile popup-input" id="foryour" type="text" placeholder="Название адреса">
 					</div>
 					<div class="checkbox-profile">
-						<input class="input-checkbox" name="radio-btn" type="radio" id="radio0" checked="checked">
+						<input class="input-checkbox address-input" name="radio-btn" type="radio" id="radio0"
+							checked="checked">
 						<label class="label-checkbox popup-inner-label" for="radio0">Терминалы PickPoint</label>
 					</div>
+					<button id="addDelivery" class="pickpoint-btn">Выбрать терминал</button>
 					<div class="checkbox-profile">
-						<input class="input-checkbox" name="radio-btn" type="radio" id="radio1">
+						<input class="input-checkbox address-input" name="radio-btn" type="radio" id="radio1">
 						<label class="label-checkbox popup-inner-label" for="radio1">Курьером DPD по
 							России</label>
 					</div>
 					<div class="checkbox-profile">
-						<input class="input-checkbox" name="radio-btn" type="radio" id="radio2">
+						<input class="input-checkbox address-input" name="radio-btn" type="radio" id="radio2">
 						<label class="label-checkbox popup-inner-label" for="radio2">Курьером СДЭК по
 							России</label>
 					</div>
 					<div class="checkbox-profile">
-						<input class="input-checkbox" name="radio-btn" type="radio" id="radio3">
+						<input class="input-checkbox address-input" name="radio-btn" type="radio" id="radio3">
 						<label class="label-checkbox popup-inner-label" for="radio3">Почта России</label>
 					</div>
 					<div class="checkbox-profile">
-						<input class="input-checkbox" name="radio-btn" type="radio" id="radio4">
+						<input class="input-checkbox address-input" name="radio-btn" type="radio" id="radio4">
 						<label class="label-checkbox popup-inner-label" for="radio4">Самовывоз</label>
 					</div>
 					<button type="submit" class="profile-popup-btn">Отправить</button>
 				</form>
 			</div>
-
+		</div>
+		<div class="close-popup-btns">
+			<div class="close-popup-btns__inner">
+				<button class="close-popup-btn select-btn">Выбрать</button>
+				<button class="close-popup-btn">Закрыть</button>
+			</div>
 		</div>
 		<div class="delivery-popup__wrapper">
 			<iframe

@@ -531,7 +531,7 @@ a, .simple-menu_li {
 .promo:first-child {
 	margin-left: 12px;
 }
-.basket-mob, .basket-block-mobile {
+.basket-mob {
 	display: none;
 }
 .focused {
@@ -551,8 +551,20 @@ a, .simple-menu_li {
 	padding-right: 12px;
 	padding-top: 12px;
 }
+
+
+@keyframes opened-anim {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 .opened {
-	
+	animation: opened-anim .3s forwards;
+	display: block !important;
+	z-index: 11000;
 }
 .close-popup:hover {
 	cursor: pointer;

@@ -84,6 +84,8 @@
 		background-color: #fbfbfb;
 		width: 100%;
 		margin-bottom: 20px;
+		position: fixed;
+		top: 122px;
 	}
 	.close-btn {
 		padding-right: 15px;
@@ -190,8 +192,7 @@
 		height: 10000px;
 		top: 0;
 		left: 0;
-		background-color: #000;
-		opacity: .2;
+		background-color: rgba(0,0,0,.3);
 		z-index: 999;
 	}
 	.navigation {
@@ -208,18 +209,19 @@
 		z-index: 1999;
 	}
 	.dark-bg-basket {
-		position: absolute;
+		position: fixed;
 		width: 100%;
-		height: 10000px;
+		height: 100%;
 		top: 0;
 		left: 0;
-		background-color: #000;
-		opacity: .2;
+		background-color: rgba(0,0,0,.3);
+		
+		display: none;
 		z-index: 2002;
 	}
-	.basket-block-mobile {
+	.basket-mob {
 		z-index: 2003;
-		position: absolute;
+		position: fixed;
 		background-color: #fe98b3;
 		width: 40%;
 		top: 122px;
@@ -302,13 +304,19 @@
 		padding-left: 12px;
 	}
 	.menu-adaptive {
-		position: absolute;
 		width: 100%;
 		z-index: 3000;
 		background-color: #fff;
 	}
 	.dark-bg-mob-menu {
 		z-index: 999;
+	}
+	.menu-categories {
+		overflow-y: scroll;
+		position: fixed;
+		background: #fff;
+		height: 60%;
+		width: 100%;
 	}
 	.sm-li_main {
 		text-transform: none;

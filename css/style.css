@@ -2954,6 +2954,7 @@ input[type=checkbox], input[type=radio] {
 	height: 100%;	
 	position: fixed;
 	background: black;
+	z-index: 999;
 }
 .product-popup .item-page__sidebar-block__item-info__price-old {
 	color: #7f5c47;
