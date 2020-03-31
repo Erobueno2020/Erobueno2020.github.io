@@ -1234,11 +1234,11 @@
 	.address-popup__wrapper, .delivery-popup__wrapper {
 		max-height: 500px;
 	}
-	.close-popup-btn {
-		margin-top: 285px;
-	}
 	.popup-close-button {
 		display: none !important;
+	}
+	.close-popup-btns {
+		margin-top: 285px;
 	}
 }
 

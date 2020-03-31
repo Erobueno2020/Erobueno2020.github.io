@@ -640,7 +640,7 @@ $('.address-input').click(function () {
   });
 
   document.addEventListener('keydown', function (e) {
-    if (e.keyCode === 27) $('.product-popup, .address-popup__wrapper, .background-dark, .delivery-popup__wrapper').fadeOut();
+    if (e.keyCode === 27) $('.product-popup, .address-popup__wrapper, .delivery-popup__wrapper, .background-dark, .close-popup-btns, .popup-close-button, .select-btn').fadeOut();
     $("body").css("overflow", "visible");
   });
 
