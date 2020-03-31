@@ -1195,7 +1195,7 @@
         top: 8px !important;
     }
     .catalog-sort .catalog-sort__numitems .select:after {
-        top: 11px !important;
+        top: 13px !important;
     }
     .catalog-pagination__list hr {
         margin-right: 5px;
@@ -1725,7 +1725,7 @@
         height: 35px;
     }
     .catalog-sort .select:after {
-        top: 10px;
+        top: 13px;
     }
     .mobile860 {
         display: none;
