@@ -1020,13 +1020,19 @@
 	color: #fff;
 	transition: opacity .3s ease;
 }
-
-
 .my-order-back a:hover {
 	color: #fff !important;
 	opacity: .8;
 }
-
+.my-order-back img {
+	margin-bottom: 2px;
+	margin-right: 5px;
+	transform: rotate(180deg);
+}
+.sale-order {
+	color: #919191;
+	font-size: 12px;
+}
 
 
 
