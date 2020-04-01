@@ -85,7 +85,6 @@ button {
 	margin: 0 !important;
 }
 /*STYLES*/
-/* ================= Стилизуй локально, мои кнопки затрагиваешь
 .select2-container {
     background-color: white !important;
     width: 100% !important;
@@ -113,8 +112,7 @@ body .product-popup .select2-container--default .select2-selection--single .sele
     border: 1px solid #aaa !important;
     background-color: white !important;
     border-radius: 15px 15px 15px 15px !important;
-	}
-	*/
+    }
 .product-popup .select2-container--default {
     padding: 0px !important;
 }
