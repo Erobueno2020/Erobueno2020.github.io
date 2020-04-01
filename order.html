@@ -718,10 +718,10 @@
 		</div>
 
 		<main class="my-order">
-			<div class="container flex justify-content-between column-mobile">
+			<div class="container flex justify-content-between column-mobile-order">
 				<div class="my-order__wrapper">
-					<p class="my-orders__title mb-2">Мои заказы</p>
-					<div class="order-page__basket my-order-basket" id="order-basket">
+					<p class="my-orders__title mb-2 padding-order">Мои заказы</p>
+					<div class="order-page__basket my-order-basket margin-order" id="order-basket">
 
 						<div class="order-page__basket__content p-3">
 							<div class="order-page__basket__content__tabs my-order-tabs pt-0">
@@ -743,7 +743,7 @@
 									</div>
 									<div class="order-page__basket__content__item-group-content my-group-content">
 										<span
-											class="order-page__basket__content__item-price order-page__basket__content__item-span">
+											class="order-page__basket__content__item-price order-page__basket__content__item-span column-dir">
 											<span>25 000 рублей</span>
 											<span class="sale-order">Скидка 10%</span>
 										</span>
@@ -765,7 +765,7 @@
 									</div>
 									<div class="order-page__basket__content__item-group-content my-group-content">
 										<span
-											class="order-page__basket__content__item-price order-page__basket__content__item-span">
+											class="order-page__basket__content__item-price order-page__basket__content__item-span column-dir">
 											<span>25 000 рублей</span>
 											<span class="sale-order">Скидка 10%</span>
 										</span>
@@ -787,7 +787,7 @@
 									</div>
 									<div class="order-page__basket__content__item-group-content my-group-content">
 										<span
-											class="order-page__basket__content__item-price order-page__basket__content__item-span">
+											class="order-page__basket__content__item-price order-page__basket__content__item-span column-dir">
 											<span>25 000 рублей</span>
 											<span class="sale-order">Скидка 10%</span>
 										</span>
@@ -802,50 +802,538 @@
 								</div>
 							</div>
 						</div>
-						<div class="my-order-back"><a href="" class=""><img src="img/order-more.svg" alt="">Назад к
+						<div class="my-order-back padding-order"><a href="" class=""><img src="img/order-more.svg"
+									alt="">Назад к
 								редактированию заказа</a></div>
 					</div>
-					<p class="grey-text mt-3 mb-3">Если у вас возникли вопросы при оформлении заказа, свяжитесь с нами
+					<p class="grey-text mt-3 mb-3 padding-order">Если у вас возникли вопросы при оформлении заказа,
+						свяжитесь с нами
 						по
 						телефону +7 999 99 99 99</p>
-					<p class="profile-desc">Общая информация</p>
-					<form class="form-profile" action="">
-						<div>
-							<label for="name">Имя:</label>
-							<input class="input-profile" id="name" type="text" placeholder="Имя">
+					<p class="profile-desc padding-order">Общая информация</p>
+					<form class="form-profile padding-order" action="">
+						<div class="mobile-width">
+							<label for="name">Имя:*</label>
+							<input class="input-profile" id="name" type="text" placeholder="Имя" required>
 						</div>
-						<div class="">
+						<div class="mobile-width">
 							<label for="surname">Фамилия:</label>
-							<input class="input-profile" id="surname" type="text" placeholder="Фамилия">
+							<input class="input-profile" id="surname" type="text" placeholder="Фамилия" required>
 						</div>
-						<div>
-							<label for="midname">Отчество:</label>
-							<input class="input-profile" id="midname" type="text" placeholder="Отчество">
+						<div class="mobile-width">
+							<label for="town">Город:*</label>
+							<input class="input-profile" id="town" type="text" placeholder="Город">
 						</div>
-						<div>
-							<label for="mail">Email:</label>
-							<input class="input-profile" id="mail" type="email" placeholder="Email">
+						<div class="mobile-width">
+							<label for="mail">Email:*</label>
+							<input class="input-profile" id="mail" type="email" placeholder="Email" required>
 						</div>
-						<div>
-							<label for="phone">Телефон:</label>
-							<input class="input-profile" id="phone" type="text" placeholder="Телефон">
+						<div class="mobile-width">
+							<label for="phone">Телефон:*</label>
+							<input class="input-profile" id="phone" type="text" placeholder="Телефон" required>
 						</div>
 						<div class="empty"></div>
 					</form>
+					<section class="select-delivery-type">
+						<div class="delivery-type-block">
+							<p class="delivery-type-block__type">Терминалы PickPoint</p>
+							<p class="delivery-type-block__cost">Стоимость: <span class="delivery-cost">300
+									рублей</span></p>
+							<p class="delivery-type-block__cost">Срок доставки: <span class="delivery-cost">300
+									дней</span></p>
+							<div class="checkbox-profile order-check">
+								<input class="input-checkbox order-checkbox" name="order" type="radio"
+									id="order-pickpoint">
+
+							</div>
+							<div class="order-opened order-pick">
+								<hr>
+								<button class="order-select-delivery">Выберите пункт выдачи</button>
+								<p class="order-info">Стоимость: 300 рублей</p>
+								<p class="order-info">Ориентировочная дата доставки: 23.12.2153</p>
+							</div>
+						</div>
+						<div class="delivery-type-block">
+							<p class="delivery-type-block__type">Курьером</p>
+							<p class="delivery-type-block__cost">Стоимость: <span class="delivery-cost">300
+									рублей</span></p>
+							<p class="delivery-type-block__cost">Срок доставки: <span class="delivery-cost">300
+									дней</span></p>
+							<div class="checkbox-profile order-check">
+								<input class="input-checkbox order-checkbox" name="order" type="radio"
+									id="order-courier">
+
+							</div>
+							<div class="order-opened order-cour">
+								<hr>
+								<button class="order-select-delivery">Введите адрес</button>
+								<p class="order-info">Стоимость: 300 рублей</p>
+								<p class="order-info">Ориентировочная дата доставки: 23.12.2153</p>
+							</div>
+						</div>
+						<div class="delivery-type-block">
+							<p class="delivery-type-block__type">Самовывоз</p>
+							<p class="delivery-type-block__cost">Стоимость: <span class="delivery-cost">300
+									рублей</span></p>
+
+							<div class="checkbox-profile order-check">
+								<input class="input-checkbox order-checkbox" name="order" type="radio"
+									id="order-yourself">
+
+							</div>
+						</div>
+
+					</section>
+					<p class="padding-order before-sel">Ранее вы выбирали:</p>
+					<div class="before-selected padding-order">
+						<ul class="w-max">
+							<li class="before-selected-desc">ПВЗ; Ростелеком, Октябрьский рынок 7002-001 634049, Томская
+								область, Томск,
+								Иркутский тракт ул., д. 61, стр. 2</li>
+						</ul>
+						<a href="" class="reload-info order-reload">Доставить сюда</a>
+					</div>
+					<div class="before-selected padding-order">
+						<ul class="w-max">
+							<li class="before-selected-desc">ПВЗ; Ростелеком, Октябрьский рынок 7002-001 634049, Томская
+								область, Томск,
+								Иркутский тракт ул., д. 61, стр. 2</li>
+						</ul>
+						<a href="" class="reload-info order-reload">Доставить сюда</a>
+					</div>
+					<p class="my-orders__title mb-2 padding-order">Способы оплаты</p>
+					<form action="#" method="#" class="order-page__payment-method order-method padding-order">
+						<label>
+							<div class="order-page__payment-method__block">
+								<div class="order-page__payment-method__top">
+									<span class="order-page__payment-method__title">Оплата при получении</span>
+									<input name="method-payment" type="radio"
+										class="default-radio method-payment-input">
+								</div>
+								<p class="order-page__payment-method__text">Наличными курьеру, наложенный платеж на
+									почте, наличными при получении в центре выдачи товаров</p>
+							</div>
+						</label>
+						<label>
+							<div class="order-page__payment-method__block">
+								<div class="order-page__payment-method__top">
+									<span class="order-page__payment-method__title">Оплата онлайн</span>
+									<input name="method-payment" type="radio"
+										class="default-radio method-payment-input">
+								</div>
+								<img src="img/logos-image.png" alt="img" class="logos-image">
+							</div>
+						</label>
+					</form>
+					<p class="order-text-bold padding-order mt-3 mb-2">Скидка 5% при оплате онлайн</p>
+					<p class="padding-order">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi non
+						architecto labore iste aperiam consequatur officia rem quibusdam quidem voluptates officiis ut
+						reiciendis earum, minima et, sapiente reprehenderit aut minus.</p>
 				</div>
-				<div class="col-lg-3 desktop-1">
+				<div class="mobile-margin">
 					<div class="item-page__sidebar">
 						<div class="item-page__sidebar-container">
 							<div class="item-page__sidebar-block my-order-block">
-
-								<p>123123123</p>
-
+								<p class="my-order__total">Итого</p>
+								<p class="my-order__price line-through">27 000 рублей</p>
+								<p class="my-order__price">30 000 рублей</p>
+								<p class="my-order__sale">Ваша скидка: 10%</p>
+								<hr>
+								<p class="my-order__delivery"><span class="variable-delivery">Доставка:</span> 3000
+									рублей</span></p>
+								<p class="my-order__delivery-desc point-delivery mt-2">Терминалы PickPoint</p>
+								<p class="my-order__delivery-desc">
+									ПВЗ; Ростелеком, Октябрьский
+									рынок 7002-001 634049, Томская
+									область, Томск, Иркутский
+									тракт ул., д. 61, стр. 2</p>
+								<hr>
+								<p class="my-order__delivery"><span class="variable-delivery">Оплата:</span> при
+									получении</span></p>
+								<form action="">
+									<button class="my-order-confirm"><img src="img/mark_ok.svg" alt=""> Оформить
+										заказ</button>
+									<div class="checkbox-profile mt-0">
+										<input class="input-checkbox input-order" type="checkbox" id="checkbox-profile"
+											required>
+										<label class="label-checkbox label-order" for="checkbox-profile">Согласен с
+											условиями
+											публичной оферты</label>
+									</div>
+								</form>
 							</div>
-							<div class="item-page__sidebar-block-bonus">
-								<span>+90 бонусных рублей</span>
-								<span>3% скидка при оплате онлайн</span>
+							<div class="item-page__sidebar-block-bonus max-h flex pt-3 pb-3">
+								<input type="text" class="my-order__coupon" placeholder="Промокод">
+								<button class="my-order__coupon-confirm">Применить</button>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-12">
+				<div class="container">
+					<div class="store-info">
+						<div class="nav-block-scroll">
+							<ul class="nav nav-tabs" id="myTab" role="tablist">
+								<li class="nav-item">
+									<button class="nav-link active" id="similar-tab" data-toggle="tab" href="#similar"
+										role="tab" aria-controls="similar" aria-selected="true">Похожие товары</button>
+								</li>
+								<li class="nav-item">
+									<button class="nav-link" id="hit-tab" data-toggle="tab" href="#hit" role="tab"
+										aria-controls="hit" aria-selected="false">Хиты продаж</button>
+								</li>
+								<li class="nav-item">
+									<button class="nav-link" id="new-tab" data-toggle="tab" href="#new" role="tab"
+										aria-controls="new" aria-selected="false">Новинки магазина</button>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-content">
+							<div class="tab-pane fade show active" id="similar" role="tabpanel"
+								aria-labelledby="similar-tab">
+								<div class="item-kit__block item-block-pink">
+									<div class="item-kit__block-image">
+										<a data-fancybox href="img/item6.jpg" class="kit-image4"></a>
+									</div>
+									<div class="item-kit__block-content">
+										<span class="item-kit__block-name">Похожие товарыПохожие товарыПохожие
+											товары</span>
+										<div class="item-kit__block-content__container">
+											<div class="item-kit__block-prices">
+												<div class="item-kit__block-prices__price-old">12 900 руб</div>
+												<div class="item-kit__block-prices__price">22 900 руб</div>
+											</div>
+											<div class="item-kit__block-buttons">
+												<a href="" class="item-button-simple">Подробнее</a>
+												<button class="item-button-like"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-kit__block item-block-pink">
+									<div class="item-kit__block-image">
+										<a data-fancybox href="img/item11.jpg" class="kit-image5"></a>
+									</div>
+									<div class="item-kit__block-content">
+										<span class="item-kit__block-name">Похожие товары</span>
+										<div class="item-kit__block-content__container">
+											<div class="item-kit__block-prices">
+												<div class="item-kit__block-prices__price-old">12 900 руб</div>
+												<div class="item-kit__block-prices__price">22 900 руб</div>
+											</div>
+											<div class="item-kit__block-buttons">
+												<a href="#" class="item-button-simple">Подробнее</a>
+												<button class="item-button-like"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-kit__block item-block-pink">
+									<div class="item-kit__block-image">
+										<a href="#"></a>
+									</div>
+									<div class="item-kit__block-content">
+										<span class="item-kit__block-name">Похожие товары</span>
+										<div class="item-kit__block-content__container">
+											<div class="item-kit__block-prices">
+												<div class="item-kit__block-prices__price-old">12 900 руб</div>
+												<div class="item-kit__block-prices__price">22 900 руб</div>
+											</div>
+											<div class="item-kit__block-buttons">
+												<a href="#" class="item-button-simple">Подробнее</a>
+												<button class="item-button-like"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-kit__block item-block-pink">
+									<div class="item-kit__block-image">
+										<a href="#"></a>
+									</div>
+									<div class="item-kit__block-content">
+										<span class="item-kit__block-name">Похожие товары</span>
+										<div class="item-kit__block-content__container">
+											<div class="item-kit__block-prices">
+												<div class="item-kit__block-prices__price-old">12 900 руб</div>
+												<div class="item-kit__block-prices__price">22 900 руб</div>
+											</div>
+											<div class="item-kit__block-buttons">
+												<a href="#" class="item-button-simple">Подробнее</a>
+												<button class="item-button-like"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-kit__block item-block-pink">
+									<div class="item-kit__block-image">
+										<a href="#"></a>
+									</div>
+									<div class="item-kit__block-content">
+										<span class="item-kit__block-name">Похожие товары</span>
+										<div class="item-kit__block-content__container">
+											<div class="item-kit__block-prices">
+												<div class="item-kit__block-prices__price-old">12 900 руб</div>
+												<div class="item-kit__block-prices__price">22 900 руб</div>
+											</div>
+											<div class="item-kit__block-buttons">
+												<a href="#" class="item-button-simple">Подробнее</a>
+												<button class="item-button-like"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-kit__block item-block-pink">
+									<div class="item-kit__block-image">
+										<a href="#"></a>
+									</div>
+									<div class="item-kit__block-content">
+										<span class="item-kit__block-name">Похожие товары</span>
+										<div class="item-kit__block-content__container">
+											<div class="item-kit__block-prices">
+												<div class="item-kit__block-prices__price-old">12 900 руб</div>
+												<div class="item-kit__block-prices__price">22 900 руб</div>
+											</div>
+											<div class="item-kit__block-buttons">
+												<a href="#" class="item-button-simple">Подробнее</a>
+												<button class="item-button-like"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="hit" role="tabpanel" aria-labelledby="hit-tab">
+								<div class="item-kit__block item-block-pink">
+									<div class="item-kit__block-image">
+										<a href="#"></a>
+									</div>
+									<div class="item-kit__block-content">
+										<span class="item-kit__block-name">Хиты продаж</span>
+										<div class="item-kit__block-content__container">
+											<div class="item-kit__block-prices">
+												<div class="item-kit__block-prices__price-old">12 900 руб</div>
+												<div class="item-kit__block-prices__price">22 900 руб</div>
+											</div>
+											<div class="item-kit__block-buttons">
+												<a href="#" class="item-button-simple">Подробнее</a>
+												<button class="item-button-like"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-kit__block item-block-pink">
+									<div class="item-kit__block-image">
+										<a href="#"></a>
+									</div>
+									<div class="item-kit__block-content">
+										<span class="item-kit__block-name">Хиты продаж</span>
+										<div class="item-kit__block-content__container">
+											<div class="item-kit__block-prices">
+												<div class="item-kit__block-prices__price-old">12 900 руб</div>
+												<div class="item-kit__block-prices__price">22 900 руб</div>
+											</div>
+											<div class="item-kit__block-buttons">
+												<a href="#" class="item-button-simple">Подробнее</a>
+												<button class="item-button-like"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-kit__block item-block-pink">
+									<div class="item-kit__block-image">
+										<a href="#"></a>
+									</div>
+									<div class="item-kit__block-content">
+										<span class="item-kit__block-name">Хиты продаж</span>
+										<div class="item-kit__block-content__container">
+											<div class="item-kit__block-prices">
+												<div class="item-kit__block-prices__price-old">12 900 руб</div>
+												<div class="item-kit__block-prices__price">22 900 руб</div>
+											</div>
+											<div class="item-kit__block-buttons">
+												<a href="#" class="item-button-simple">Подробнее</a>
+												<button class="item-button-like"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-kit__block item-block-pink">
+									<div class="item-kit__block-image">
+										<a href="#"></a>
+									</div>
+									<div class="item-kit__block-content">
+										<span class="item-kit__block-name">Хиты продаж</span>
+										<div class="item-kit__block-content__container">
+											<div class="item-kit__block-prices">
+												<div class="item-kit__block-prices__price-old">12 900 руб</div>
+												<div class="item-kit__block-prices__price">22 900 руб</div>
+											</div>
+											<div class="item-kit__block-buttons">
+												<a href="#" class="item-button-simple">Подробнее</a>
+												<button class="item-button-like"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-kit__block item-block-pink">
+									<div class="item-kit__block-image">
+										<a href="#"></a>
+									</div>
+									<div class="item-kit__block-content">
+										<span class="item-kit__block-name">Хиты продаж</span>
+										<div class="item-kit__block-content__container">
+											<div class="item-kit__block-prices">
+												<div class="item-kit__block-prices__price-old">12 900 руб</div>
+												<div class="item-kit__block-prices__price">22 900 руб</div>
+											</div>
+											<div class="item-kit__block-buttons">
+												<a href="#" class="item-button-simple">Подробнее</a>
+												<button class="item-button-like"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-kit__block item-block-pink">
+									<div class="item-kit__block-image">
+										<a href="#"></a>
+									</div>
+									<div class="item-kit__block-content">
+										<span class="item-kit__block-name">Хиты продаж</span>
+										<div class="item-kit__block-content__container">
+											<div class="item-kit__block-prices">
+												<div class="item-kit__block-prices__price-old">12 900 руб</div>
+												<div class="item-kit__block-prices__price">22 900 руб</div>
+											</div>
+											<div class="item-kit__block-buttons">
+												<a href="#" class="item-button-simple">Подробнее</a>
+												<button class="item-button-like"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="new" role="tabpanel" aria-labelledby="new-tab">
+								<div class="item-kit__block item-block-pink">
+									<div class="item-kit__block-image">
+										<a href="#"></a>
+									</div>
+									<div class="item-kit__block-content">
+										<span class="item-kit__block-name">Новинки магазина</span>
+										<div class="item-kit__block-content__container">
+											<div class="item-kit__block-prices">
+												<div class="item-kit__block-prices__price-old">12 900 руб</div>
+												<div class="item-kit__block-prices__price">22 900 руб</div>
+											</div>
+											<div class="item-kit__block-buttons">
+												<a href="#" class="item-button-simple">Подробнее</a>
+												<button class="item-button-like"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-kit__block item-block-pink">
+									<div class="item-kit__block-image">
+										<a href="#"></a>
+									</div>
+									<div class="item-kit__block-content">
+										<span class="item-kit__block-name">Новинки магазина</span>
+										<div class="item-kit__block-content__container">
+											<div class="item-kit__block-prices">
+												<div class="item-kit__block-prices__price-old">12 900 руб</div>
+												<div class="item-kit__block-prices__price">22 900 руб</div>
+											</div>
+											<div class="item-kit__block-buttons">
+												<a href="#" class="item-button-simple">Подробнее</a>
+												<button class="item-button-like"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-kit__block item-block-pink">
+									<div class="item-kit__block-image">
+										<a href="#"></a>
+									</div>
+									<div class="item-kit__block-content">
+										<span class="item-kit__block-name">Новинки магазина</span>
+										<div class="item-kit__block-content__container">
+											<div class="item-kit__block-prices">
+												<div class="item-kit__block-prices__price-old">12 900 руб</div>
+												<div class="item-kit__block-prices__price">22 900 руб</div>
+											</div>
+											<div class="item-kit__block-buttons">
+												<a href="#" class="item-button-simple">Подробнее</a>
+												<button class="item-button-like"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-kit__block item-block-pink">
+									<div class="item-kit__block-image">
+										<a href="#"></a>
+									</div>
+									<div class="item-kit__block-content">
+										<span class="item-kit__block-name">Новинки магазина</span>
+										<div class="item-kit__block-content__container">
+											<div class="item-kit__block-prices">
+												<div class="item-kit__block-prices__price-old">12 900 руб</div>
+												<div class="item-kit__block-prices__price">22 900 руб</div>
+											</div>
+											<div class="item-kit__block-buttons">
+												<a href="#" class="item-button-simple">Подробнее</a>
+												<button class="item-button-like"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-kit__block item-block-pink">
+									<div class="item-kit__block-image">
+										<a href="#"></a>
+									</div>
+									<div class="item-kit__block-content">
+										<span class="item-kit__block-name">Новинки магазина</span>
+										<div class="item-kit__block-content__container">
+											<div class="item-kit__block-prices">
+												<div class="item-kit__block-prices__price-old">12 900 руб</div>
+												<div class="item-kit__block-prices__price">22 900 руб</div>
+											</div>
+											<div class="item-kit__block-buttons">
+												<a href="#" class="item-button-simple">Подробнее</a>
+												<button class="item-button-like"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-kit__block item-block-pink">
+									<div class="item-kit__block-image">
+										<a href="#"></a>
+									</div>
+									<div class="item-kit__block-content">
+										<span class="item-kit__block-name">Новинки магазина</span>
+										<div class="item-kit__block-content__container">
+											<div class="item-kit__block-prices">
+												<div class="item-kit__block-prices__price-old">12 900 руб</div>
+												<div class="item-kit__block-prices__price">22 900 руб</div>
+											</div>
+											<div class="item-kit__block-buttons">
+												<a href="#" class="item-button-simple">Подробнее</a>
+												<button class="item-button-like"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="news-mailing">
+						<div class="news-mailing__text">
+							<span class="news-mailing__text-title">Подпишитесь на нашу новостную рассылку</span>
+							<span class="news-mailing__text-subtitle">Чтобы не упустить все акции нашего интернет
+								магазина.</span>
+						</div>
+						<form action="#" class="news-mailing__form">
+							<input type="text" placeholder="Введите Ваш e-mail">
+							<button class="news-mailing__form-button">Подписаться</button>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -928,9 +1416,10 @@
 					</div>
 				</div>
 			</div>
-			
+
 		</footer>
-		<p class="container tac">©2012-2020, Секс-шоп "Ero Bueno". Копирование материалов и дизайна сайта запрещено | ОГРН 12345689012 | ООО Эро Буено</p>
+		<p class="container tac">©2012-2020, Секс-шоп "Ero Bueno". Копирование материалов и дизайна сайта запрещено |
+			ОГРН 12345689012 | ООО Эро Буено</p>
 
 		<!-- FOOTER END -->
 
