@@ -937,6 +937,9 @@
     }
 }
 @media (max-width: 400px){
+    .comparison-page .catalog-items__item-content__buttons__analitics {
+        margin-right: 0px !important;
+    }
     .product-popup .parameters-cloud {
         left: 60%;
         width: 217px;
@@ -1154,7 +1157,7 @@
         font-size: 12px;
     }
     body .catalog-items__item-content__buttons .catalog-items__item-content__buttons__basket {
-        width: 90px !important;
+        width: 70px !important;
         padding-right: 0 !important;
     }
     body .catalog-items__item-content__buttons .catalog-items__item-content__buttons__basket::before {
