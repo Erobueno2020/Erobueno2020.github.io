@@ -687,7 +687,18 @@
 	height: 8px;
 	bottom: 17px;
 }
-
+.order-reload {
+	transition: opacity .2s linear;
+}
+.order-reload:hover {
+	cursor: pointer;
+	opacity: .8;
+}
+.delivery-here-selected {
+	text-decoration: underline;
+	text-decoration-style: dashed;
+	color: #8e4357;
+}
 .checkbox-profile {
 	display: flex;
 	margin-top: 15px;
@@ -1095,6 +1106,7 @@
 	font-size: 18px;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	transition: opacity .2s ease-in-out;
 }
 .my-order-confirm img {
 	margin-bottom: 2px;
@@ -1268,8 +1280,18 @@
 	display: flex;
 	flex-direction: column;
 }
-
-
+.my-order-confirm:hover {
+	opacity: .8;
+}
+.main-page-button-load {
+	transition: opacity .2s ease;
+}
+.main-page-button-load:hover {
+	opacity: .85;
+}
+.news-mailing__form-button {
+	transition: opacity .2s ease;
+}
 
 @media screen and (max-width: 1169px) {
 	.flex-row-reverse {

@@ -18,6 +18,13 @@ $(document).ready(function () {
     }
   });
 });
+
+$('.order-reload').click(function () {
+  $('.order-reload').removeClass('delivery-here-selected');
+  $(this).addClass('delivery-here-selected');
+});
+
+
 var width = $(window).width();
 $(document).ready(function () {
 
