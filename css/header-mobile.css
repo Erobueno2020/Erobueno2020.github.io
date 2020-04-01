@@ -116,7 +116,9 @@
 		top: 61px;
 	}
 	.menu-categories {
-		height: 85%;
+		max-height: calc(100vh - 112px);
+		height: 100%;
+		overflow-x: hidden;
 	}
 	.close-btn {
 		padding-right: 15px;

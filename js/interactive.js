@@ -281,23 +281,29 @@ $('.address-input').click(function () {
 
   $('#addAddress').click(function (e) {
     e.preventDefault();
-    $('.address-popup__wrapper, .background-dark, .close-popup-btns, .first-btn').fadeIn();
+    $('.address-popup__wrapper, .background-dark, .close-first-btn, .first-btn').fadeIn();
   });
 
   $('#addDelivery').click(function (e) {
     e.preventDefault();
-    $('.delivery-popup__wrapper, .second-btn, .select-btn').fadeIn();
-    $('.first-btn').hide();
+    $('.delivery-popup__wrapper, .third-btn, .select-btn, .close-second-btn').fadeIn();
+    $('.first-btn, .close-first-btn').hide();
+  });
+
+  $('.third-btn, .close-second-btn').click(function () {
+    $('.delivery-popup__wrapper, .third-btn').fadeOut();
+    $('.first-btn, .close-first-btn').fadeIn();
+    $('.select-btn, .close-second-btn').hide();
   });
 
   $('#addDelivery-btn').click(function (e) {
     e.preventDefault();
-    $('.delivery-popup__wrapper, .second-btn, .background-dark, .close-popup-btns, .select-btn').fadeIn();
+    $('.delivery-popup__wrapper, .second-btn, .background-dark, .select-btn, .close-first-btn').fadeIn();
   });
 
 
-  $('.background-dark, .close-popup-btn, .popup-close-button').click(function () {
-    $('.address-popup__wrapper, .delivery-popup__wrapper, .background-dark, .close-popup-btns, .popup-close-button, .select-btn').fadeOut();
+  $('.background-dark, .first-btn, .second-btn, .first-btn, .close-first-btn').click(function () {
+    $('.address-popup__wrapper, .delivery-popup__wrapper, .background-dark, .popup-close-button, .select-btn, .close-first-btn, .close-second-btn').fadeOut();
   });
 
 
@@ -640,7 +646,7 @@ $('.address-input').click(function () {
   });
 
   document.addEventListener('keydown', function (e) {
-    if (e.keyCode === 27) $('.product-popup, .address-popup__wrapper, .delivery-popup__wrapper, .background-dark, .close-popup-btns, .popup-close-button, .select-btn').fadeOut();
+    if (e.keyCode === 27) $('.product-popup, .address-popup__wrapper, .delivery-popup__wrapper, .background-dark, .popup-close-button, .select-btn, .close-first-btn, .close-second-btn').fadeOut();
     $("body").css("overflow", "visible");
   });
 

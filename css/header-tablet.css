@@ -315,7 +315,7 @@
 		overflow-y: scroll;
 		position: fixed;
 		background: #fff;
-		height: 60%;
+		height: 55vh;
 		width: 100%;
 	}
 	.sm-li_main {

@@ -473,6 +473,7 @@ a, .simple-menu_li {
 	font-size: 16px;
 	font-family: 'ProximaNova-SemiBold';
 	outline: none;
+	transition: opacity .3s ease;
 }
 .cart-btn:hover {
 	opacity: .8;
@@ -486,6 +487,7 @@ a, .simple-menu_li {
 	border: none;
 	font-family: 'ProximaNova-SemiBold';
 	outline: none;
+	transition: opacity .3s ease;
 }
 .buy-btn:hover {
 	opacity: .8;
