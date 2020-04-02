@@ -607,13 +607,13 @@
 
 .select2-container {
 	border: 0 !important;
-	background-color: #eccdba;
 	border-radius: 25px;
 	padding: 9px !important;
 	padding-left: 20px !important;
 	color: #fff;
 	font-family: 'ProximaNova-Regular';
 	font-size: 16px;
+	max-width: 270px;
 }
 
 .catalog-sort span {
@@ -647,25 +647,48 @@
 .select2-dropdown {
 	border: 0 !important;
 	background-color: #eccdba;
-	border-radius: 10px;
+	border-radius: 10px !important;
 	top: 0;
+	box-shadow: 0 0 12px 0px rgba(255, 99, 0, 0.3);
 
+}
+.select-prof span {
+	background-color: #ebc0b0 !important;
+}
+.catalog-sort__main .select2-container {
+	background-color: #f7a98f !important;
+}
+.catalog-sort__numitems .select2-container {
+	background-color: #f7a98f !important;
+}
+.product-popup .select2-container {
+	max-width: 171px !important;
+}
+.product-popup__background {
+	z-index: 999;
+}
+.favorited-big .block-select span {
+	margin-bottom: 0;
+	
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
 	
-	background-color: #eccdba;
-	color: #b14c67;
+	background-color: #fff !important;
+	color: #b14c67 !important;
 	font-family: 'ProximaNova-Semibold';
 }
 .select2-container--default .select2-results__option[aria-selected="true"] {
-	background-color: #eccdba;
-	color: #919191;
+	background-color: #fff !important;
+	color: #000 !important;
 	font-family: 'ProximaNova-Semibold';
+}
+.select2-results__option {
+	color: var(--contact-link) !important;
 }
 
 .select2-container--open .select2-dropdown--below {
-	border-radius: 10px;
+	border-radius: 10px !important;
 }
 
 
@@ -1292,6 +1315,21 @@
 .news-mailing__form-button {
 	transition: opacity .2s ease;
 }
+.favorited-big .selection {
+	border: 1px solid #aaa !important;
+	border-radius: 25px;
+	width: 100% !important;
+	line-height: 25px !important;
+}
+.favorited-big .select2-container {
+	max-width: 100px !important;
+}
+
+.favorited-big .select2-container--default .select2-selection--single .select2-selection__rendered {
+ color: #aaa !important;
+ min-width: 100px;
+}
+
 
 @media screen and (max-width: 1169px) {
 	.flex-row-reverse {

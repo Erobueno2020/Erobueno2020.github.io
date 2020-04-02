@@ -84,7 +84,6 @@ button {
 }
 /*STYLES*/
 .select2-container {
-    background-color: white !important;
     width: 100% !important;
 }
 .select2-container--default .select2-selection--single {
