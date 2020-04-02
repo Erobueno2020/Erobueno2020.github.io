@@ -1151,8 +1151,11 @@
 	flex-direction: row;
 	justify-content: space-between;
 	border-radius: 0;
+	background: url(../img/sd-bg2.png) no-repeat top center !important;
 }
-
+.input-order:checked {
+	background-color: transparent !important;
+}
 .my-order__coupon-confirm {
 	background-color: #ffb8cc;
 	color: #fff;
@@ -1175,9 +1178,13 @@
 .my-order__coupon-confirm:hover {
 	opacity: .8;
 }
+.fz-14 {
+	font-size: 14px;
+}
 
 .select-delivery-type {
 	background-color: #eccdba;
+	background: url('../img/map_bg.jpg') no-repeat center / cover;
 	margin-top: 30px;
 	padding-top: 70px;
 	padding-bottom: 70px;
@@ -1329,7 +1336,9 @@
  color: #aaa !important;
  min-width: 100px;
 }
-
+.item-page__sidebar-block {
+	padding-top: 10px;
+}
 
 @media screen and (max-width: 1169px) {
 	.flex-row-reverse {
@@ -1487,6 +1496,12 @@
 	}
 	.delivery-type-block:last-child {
 		margin-right: 0;
+	}
+	.delivery-type-block__type, .delivery-cost {
+		font-size: 15px;
+	}
+	.my-order__wrapper {
+		padding-top: 0;
 	}
 }
 
