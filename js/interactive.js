@@ -642,11 +642,29 @@ $('.address-input').click(function () {
     $("body").css("overflow", "hidden");
   });
 
+  $(".item-counter-btn").on("click", function () {
+    var $button = $(this);
+    var oldValue = $button.parent().find("input").val();
+    if ($button.text() == "+") {
+        var newVal = parseFloat(oldValue) + 1;
+    } else {
+        if (oldValue > 1) {
+            var newVal = parseFloat(oldValue) - 1;
+        } else {
+            newVal = 1;
+        }
+    }
+    $button.parent().find("input").val(newVal);
+});
+
+
   $('.remove-address').click(function (e) {
     e.preventDefault();
     $(this).closest('.point-block').fadeOut();
   });
-
+  $('.your-order-remove').click(function () {
+    $(this).closest('.your-order__item').fadeOut();
+  });
   $('.select-profile, .select-filter').select2({
     minimumResultsForSearch: Infinity
   });
