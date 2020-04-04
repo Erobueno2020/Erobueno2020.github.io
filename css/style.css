@@ -2923,7 +2923,7 @@ input[type=checkbox], input[type=radio] {
 }
 .product-popup {
 	display: none;
-	z-index: 999;
+	z-index: 99999;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -3096,7 +3096,7 @@ input[type=checkbox], input[type=radio] {
 	border: 2px solid #ffffff;
 }
 .product-popup__interactive {
-	margin: 30px 0 40px 0;
+	margin: 30px 0 100px 0;
 	z-index: 999;
 	display: flex;
 }
