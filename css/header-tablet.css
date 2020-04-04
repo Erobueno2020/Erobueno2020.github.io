@@ -56,13 +56,15 @@
 	.header {
 		border: none;
 		display: flex;
+		position: fixed;
+		top: 0;
 		justify-content: center;
 		width: 100%;
 		margin-top: 0;
 		padding-top: 0px;
 		background-color: #FDF0E8;
 		z-index: 10005;
-		padding-bottom: 0;
+		padding-bottom: 0 !important;
 	}
 	.nav-link {
 		padding-left: 10px;
@@ -85,7 +87,7 @@
 		width: 100%;
 		margin-bottom: 20px;
 		position: fixed;
-		top: 122px;
+		top: 103px;
 	}
 	.close-btn {
 		padding-right: 15px;
@@ -196,11 +198,9 @@
 		z-index: 999;
 	}
 	.navigation {
-		position: fixed;
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 		background-color: #FDF0E8;
-		top: 0;
 		width: 100%;
 	}
 
@@ -224,7 +224,7 @@
 		position: fixed;
 		background-color: #fe98b3;
 		width: 40%;
-		top: 122px;
+		top: 103px;
 		right: 0;
 	}
 	.basket-mobile {

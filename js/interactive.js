@@ -287,6 +287,7 @@ $('.address-input').click(function () {
 
   $('#addAddress').click(function (e) {
     e.preventDefault();
+    $("body").css("overflow", "hidden");
     $('.address-popup__wrapper, .background-dark, .close-first-btn, .first-btn').fadeIn();
   });
 
@@ -304,12 +305,14 @@ $('.address-input').click(function () {
 
   $('#addDelivery-btn').click(function (e) {
     e.preventDefault();
+    $("body").css("overflow", "hidden");
     $('.delivery-popup__wrapper, .second-btn, .background-dark, .select-btn, .close-first-btn').fadeIn();
   });
 
 
   $('.background-dark, .first-btn, .second-btn, .first-btn, .close-first-btn').click(function () {
     $('.address-popup__wrapper, .delivery-popup__wrapper, .background-dark, .popup-close-button, .select-btn, .close-first-btn, .close-second-btn').fadeOut();
+    $("body").css("overflow", "visible");
   });
 
 

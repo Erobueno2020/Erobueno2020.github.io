@@ -1195,10 +1195,10 @@
         margin-right: 0 !important;
     }
     .catalog-sort__numitems .select:after {
-        top: 8px !important;
+        top: 8px;
     }
     .catalog-sort .catalog-sort__numitems .select:after {
-        top: 11px !important;
+        top: 11px;
     }
     .catalog-pagination__list hr {
         margin-right: 5px;
@@ -1522,7 +1522,7 @@
         margin: 10px 0 5px 0;
     }
     body .item-page__sidebar-block {
-        padding: 10px 10px !important;
+        padding: 10px 10px;
     }
     .item-page__sidebar-block__item-info__price-block {
         margin-top: 0;
@@ -2020,8 +2020,6 @@
     body .catalog-sort__numitems {
         margin-top: 20px !important;
     }
-    .comparison-page .catalog-items__item {
-    }
     .result-page__link {
         margin-bottom: 60px;
     }
@@ -2398,8 +2396,6 @@
         }
         .product-popup .item-info__block-images-group a {
             width: 20% !important;
-        }
-        .product-popup .item-info__block-images-group {
         }
         .product-popup .item-info__block-images {
             overflow: hidden !important;
