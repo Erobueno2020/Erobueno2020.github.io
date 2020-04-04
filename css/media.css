@@ -201,6 +201,14 @@
     }
 }
 @media (max-width: 992px) {
+    body .comparison-page__container {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        width: auto;
+    }
+    .news-mailing {
+        margin: 0 10px;
+    }
     .product-popup .parameters-cloud {
         left: 70%;
     }
@@ -2141,6 +2149,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0 3px;
     }
     .comparison-slider .catalog-items__item {
         margin-bottom: 3px;
