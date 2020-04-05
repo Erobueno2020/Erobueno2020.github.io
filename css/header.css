@@ -16,7 +16,10 @@ a, .simple-menu_li {
 .pt-20 {
 	padding-top: 20px !important;
 }
-
+.promo img {
+	box-shadow: var(--box-shadow);
+	border-radius: 100%;
+}
 .header {
 	font-family: 'ProximaNova-Regular';
 	font-size: 15px;
