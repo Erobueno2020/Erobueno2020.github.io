@@ -1534,11 +1534,10 @@ input[type='number'] {
 	height: 30px;
 }
 .your-order__kit-block .select2-container--default .select2-selection--single .select2-selection__rendered {
-	color: #aaa !important;
+	color: #999 !important;
 	max-width: 80px !important;
 	min-width: 80px;
-	line-height: 28px !important;
-	font-size: 14px !important;
+	line-height: 29px !important;
 	width: 100% !important;
    }
 	.your-order__wrapper .block-select__element:after {
@@ -1549,6 +1548,9 @@ input[type='number'] {
 	right: 10px;
 	top: 13px;
 	background: url("../img/select-dropdown.png") no-repeat 100% 100%/contain;
+	}
+	.your-order__kit-block .block-select__element span {
+		font-size: 12px !important;
 	}
 .your-order__add-more {
 	display: flex;

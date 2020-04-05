@@ -314,3 +314,9 @@
 		z-index: 999;
 	}
 }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+_::-webkit-full-page-media, _:future, :root , .menu-categories { 
+	max-height: calc(100vh - 160px);
+} 
+}
