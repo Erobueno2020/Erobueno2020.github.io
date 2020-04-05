@@ -57,6 +57,11 @@ button {
 	padding-bottom: 5px;
 	padding-top: 3px;
 }
+.blog-opened {
+	padding-bottom: 15px;
+	height: max-content;
+	border-radius: 10px;
+}
 .li-items {
 	padding-left: 10px !important;
 }
@@ -257,6 +262,9 @@ button {
 .adapt-blog {
 	display: none !important;
 }
+.no-padding {
+	padding-left: 0 !important;
+}
 
 @media screen and (max-width: 991px) {
 	.catalog-filter-mobile {
@@ -274,11 +282,14 @@ button {
 	}
 	.adapt-blog {
 	display: flex !important;
-	margin-top: 25px;
-
-}
+	padding-bottom: 15px;
+	margin-top: 15px;
+	}
 	.mobile-flex {
 		justify-content: center;
+	}
+	.mobile-catalog {
+		margin-top: 10px;
 	}
 	.tags {
 		margin-bottom: 0px;
@@ -353,7 +364,7 @@ button {
 		margin-right: 10px;
 	}
 	.no-padding {
-		padding: 0;
+		padding: 0 !important;
 	}
 	.catalog-button__block {
 		margin-top: 15px;

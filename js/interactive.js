@@ -268,9 +268,19 @@ $(document).ready(function () {
 
 
   // FOOTER TABLET ADAPTIVE 
+  $(document).ready(function (){
   if (width > 767 && width < 1169) {
     $('.element-one, .element-two').wrapAll('<div class="tablet-adaptive">');
-  };
+  }
+  });
+
+  window.addEventListener("orientationchange", function () {
+    var innerWidth = $(window).width();
+    if (innerWidth > 767 && innerWidth < 1169) {
+      $('.element-one, .element-two').wrapAll('<div class="tablet-adaptive">');
+    }
+    });
+  
 
 
   // POPUPS CLOSE ON BODY CLICK
@@ -299,11 +309,15 @@ $('.address-input').click(function () {
    $('.pickpoint-btn').fadeOut();
  }
 });
-
+  $('.links-wrapper').click(function () {
+    $('.links-wrap').toggleClass('flex');
+  });
   $(".catalog-filter__nav li").click(function () {
     $(this).find(".child").toggleClass("child-open");
   });
-  
+  $('.mobile-blogs').click(function () {
+    $('.mobile-catalog').toggleClass('blog-opened');
+   });
   $('#addAddress').click(function (e) {
     e.preventDefault();
     $("body").css("overflow", "hidden");

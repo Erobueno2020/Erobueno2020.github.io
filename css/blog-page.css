@@ -172,9 +172,6 @@
 
 @media screen and (max-width: 1169px) {
 	.blogpage-wrap {
-		margin-top: 25px;
-		margin-left: 10px;
-		margin-right: 10px;
 		width: 97%;
 	}
 	.placeholder {
@@ -190,7 +187,7 @@
 	.blog-tree {
 		margin-top: 25px;
 		margin-left: 10px;
-		margin-bottom: 0px;
+		margin-bottom: 25px;
 	}
 	.blogpage__title {
 		font-size: 20px;

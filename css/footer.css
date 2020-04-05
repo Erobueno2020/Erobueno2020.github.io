@@ -65,7 +65,6 @@ body {
 .cat-desc {
 	font-size: 16px;
 	font-family: 'ProximaNova-Light';
-	color: #
 }
 .footer-contact {
 	margin-top: 20px;
@@ -194,5 +193,9 @@ body {
 	}
 	.footer-contact {
 		margin-right: 0;
+	}
+	.tablet-adaptive {
+		flex-direction: column;
+		width: 100%;
 	}
 }
