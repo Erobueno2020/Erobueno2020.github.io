@@ -318,5 +318,8 @@
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
 _::-webkit-full-page-media, _:future, :root , .menu-categories { 
 	max-height: calc(100vh - 170px);
+}
+_::-webkit-full-page-media, _:future, :root , .socials-mobile { 
+	margin-bottom: 30px;
 } 
 }
