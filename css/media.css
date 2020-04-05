@@ -265,9 +265,6 @@
     .catalog-sort .select:after {
         top: 13px;
     }
-    .block-select select {
-        padding: 5px 9px;
-    }
     .site-tree__block {
         margin-top: 0px;
         margin-bottom: 20px;
@@ -1951,7 +1948,6 @@
     .item-kit__block-buttons label {
         font-size: 12px;
         line-height: 14px;
-        margin-left: 10px;
     }
     .item-offer__block-title {
         font-size: 16px;
@@ -2276,9 +2272,9 @@
             left: 0px !important;
         }
         .item-feedback__footer .catalog-pagination {
-         margin-top: 0; 
-     }
-     .item-page__sibebar-block__buttons-basket {
+           margin-top: 0; 
+       }
+       .item-page__sibebar-block__buttons-basket {
         width: 120px;
         height: 40px;
         font-size: 14px;
@@ -2725,6 +2721,9 @@
     }
 
     @media (max-width: 450px){
+        .select-block__colors {
+            max-width: 100px;
+        }
         .catalog-pagination {
             width: 100%;
             margin-top: 0;
@@ -3020,7 +3019,6 @@
         .item-kit__block-buttons label {
             font-size: 10px;
             line-height: 10px;
-            margin-left: 3px;
             margin-top: 0;
             margin-bottom: 0;
         }
