@@ -1176,7 +1176,10 @@
 .fz-14 {
 	font-size: 14px;
 }
-
+.fz-small {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 .select-delivery-type {
 	background-color: #eccdba;
 	background: url('../img/map_bg.jpg') no-repeat center / cover;
@@ -1188,6 +1191,9 @@
 	display: flex;
 	justify-content: space-between;
 	
+}
+.orders-breadcrumbs {
+	margin-left: 0;
 }
 .delivery-type-block {
 	background-color: #fdece2;
@@ -1906,6 +1912,7 @@ input {
 	}
 	.fz-small {
 		font-size: 14px !important;
+		padding-bottom: 0;
 	}
 }
 
@@ -2030,6 +2037,7 @@ input {
 	.fz-small {
 		line-height: 14px !important;
 		margin-top: 5px !important;
+		padding-bottom: 0;
 	}
 	.your-order__kit-block .select2-container--default .select2-selection--single .select2-selection__rendered {
 		font-size: 12px !important;
