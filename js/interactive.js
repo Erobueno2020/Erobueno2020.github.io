@@ -28,22 +28,32 @@ $('.order-reload').click(function () {
 var width = $(window).width();
 $(document).ready(function () {
 
-    $(".select-block__colors__input").click(function(){
-     $(this).parent().find(".select-block__colors").toggleClass("flex");
-   });
+  $(".select-block__colors__input").click(function(){
+   $(this).parent().find(".select-block__colors").toggleClass("flex");
+ });
+
+  
+     $(document).mouseup(function (e){ // событие клика по веб-документу
+        var div = $(".block-input-color .block-select__element-decor"); // тут указываем ID элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+          $(this).find(".select-block__colors").toggleClass("flex");
+      }
+    });
+
 
     // COLOR SELECT INPUT
-      $('.input-color').click(function(){
-        $(this).parent().parent().parent().parent().find(".block-input-color .placeholder").css('background', $inputColor);
-        $(this).parent().parent().find(".select-block__colors").toggleClass("flex");
-        $(this).parent().parent().parent().parent().find(".select-block__colors-name").html( $(this).find("input").attr('data-color-name') );
-      });
+    $('.input-color').click(function(){
+      $(this).parent().parent().parent().parent().find(".block-input-color .placeholder").css('background', $inputColor);
+      $(this).parent().parent().find(".select-block__colors").toggleClass("flex");
+      $(this).parent().parent().parent().parent().find(".select-block__colors-name").html( $(this).find("input").attr('data-color-name') );
+    });
 
     // SIZE INPUT HIDE PLACEHOLDER
-      $('.block-select__element select').click(function(){
-        $(this).parent().parent().find(".placeholder").css("opacity","0");
-      });
-      
+    $('.block-select__element select').click(function(){
+      $(this).parent().parent().find(".placeholder").css("opacity","0");
+    });
+
   // COLOR SELECT INPUT
   $('.select2-results__option').click(function () {
     alert("HELO");
@@ -269,9 +279,9 @@ $(document).ready(function () {
 
   // FOOTER TABLET ADAPTIVE 
   $(document).ready(function (){
-  if (width > 767 && width < 1169) {
-    $('.element-one, .element-two').wrapAll('<div class="tablet-adaptive">');
-  }
+    if (width > 767 && width < 1169) {
+      $('.element-one, .element-two').wrapAll('<div class="tablet-adaptive">');
+    }
   });
 
   window.addEventListener("orientationchange", function () {
@@ -279,7 +289,7 @@ $(document).ready(function () {
     if (innerWidth > 767 && innerWidth < 1169) {
       $('.element-one, .element-two').wrapAll('<div class="tablet-adaptive">');
     }
-    });
+  });
   
 
 
@@ -301,14 +311,14 @@ $(document).ready(function () {
   // FIXED HEADER
 
 
-$('.address-input').click(function () {
- if ($('#radio0').is(':checked')) {
-   $('.pickpoint-btn').fadeIn();
- }
- else {
-   $('.pickpoint-btn').fadeOut();
- }
-});
+  $('.address-input').click(function () {
+   if ($('#radio0').is(':checked')) {
+     $('.pickpoint-btn').fadeIn();
+   }
+   else {
+     $('.pickpoint-btn').fadeOut();
+   }
+ });
   $('.links-wrapper').click(function () {
     $('.links-wrap').toggleClass('flex');
   });
@@ -317,7 +327,7 @@ $('.address-input').click(function () {
   });
   $('.mobile-blogs').click(function () {
     $('.mobile-catalog').toggleClass('blog-opened');
-   });
+  });
   $('#addAddress').click(function (e) {
     e.preventDefault();
     $("body").css("overflow", "hidden");
@@ -438,24 +448,24 @@ $('.address-input').click(function () {
       arrows: false,
       dots: true,
       responsive: [
-        {
-          breakpoint: 3000,
-          settings: "unslick"
-        },
-        {
-          breakpoint: 1000,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 700,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
+      {
+        breakpoint: 3000,
+        settings: "unslick"
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
       ]
     });
   });
@@ -470,27 +480,27 @@ $('.address-input').click(function () {
         dots: false,
         asNavFor: '.sponsors-botblock',
         responsive: [
-          {
-            breakpoint: 1160,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 4,
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
+        {
+          breakpoint: 1160,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
           }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        }
         ]
       });
     };
@@ -506,27 +516,27 @@ $('.address-input').click(function () {
         dots: true,
         asNavFor: '.sponsors-upblock',
         responsive: [
-          {
-            breakpoint: 1160,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 4,
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
+        {
+          breakpoint: 1160,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
           }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        }
         ]
       });
     };
@@ -542,27 +552,27 @@ $('.address-input').click(function () {
     dots: true,
     arrows: false,
     responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 750,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        }
-      },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
     ]
   });
 
@@ -682,16 +692,16 @@ $('.address-input').click(function () {
     var $button = $(this);
     var oldValue = $button.parent().find("input").val();
     if ($button.text() == "+") {
-        var newVal = parseFloat(oldValue) + 1;
+      var newVal = parseFloat(oldValue) + 1;
     } else {
-        if (oldValue > 1) {
-            var newVal = parseFloat(oldValue) - 1;
-        } else {
-            newVal = 1;
-        }
+      if (oldValue > 1) {
+        var newVal = parseFloat(oldValue) - 1;
+      } else {
+        newVal = 1;
+      }
     }
     $button.parent().find("input").val(newVal);
-});
+  });
 
 
   $('.remove-address').click(function (e) {
@@ -714,11 +724,11 @@ $('.address-input').click(function () {
     if ($('#order-pickpoint').is(':checked')) {
       $('.order-cour').slideUp();
       $('.delivery-type-block').removeClass('order-block-opened');
-    $('#order-pickpoint').closest('.delivery-type-block').addClass('order-block-opened');
-    $('.order-pick').slideDown('slow');
+      $('#order-pickpoint').closest('.delivery-type-block').addClass('order-block-opened');
+      $('.order-pick').slideDown('slow');
     }
     else {
-    $('.order-pick').slideUp();
+      $('.order-pick').slideUp();
     }
   });
 
@@ -726,19 +736,19 @@ $('.address-input').click(function () {
     if ($('#order-courier').is(':checked')) {
       $('.delivery-type-block').removeClass('order-block-opened');
       $('.order-pick').slideUp();
-    $('#order-courier').closest('.delivery-type-block').addClass('order-block-opened');
-    $('.order-cour').slideDown('slow');
+      $('#order-courier').closest('.delivery-type-block').addClass('order-block-opened');
+      $('.order-cour').slideDown('slow');
     }
     else {
-    $('.order-cour').slideUp();
+      $('.order-cour').slideUp();
     }
   });
 
   $('#order-yourself').click(function () {
     if ($('#order-yourself').is(':checked')) {
-    $('.delivery-type-block').removeClass('order-block-opened');
-    $('.order-pick, .order-cour').slideUp();
-    $('#order-yourself').closest('.delivery-type-block').addClass('order-block-opened');
+      $('.delivery-type-block').removeClass('order-block-opened');
+      $('.order-pick, .order-cour').slideUp();
+      $('#order-yourself').closest('.delivery-type-block').addClass('order-block-opened');
     }
     else {
     }
@@ -801,25 +811,25 @@ $('.address-input').click(function () {
     nextArrow: '<button id="next" class="slick-arrow2" type="button"></button>',
     prevArrow: '<button id="prev" class="slick-arrow2" type="button"></button>',
     responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 4,
-        }
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 2,
-          swipe: false,
-        }
-      },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        swipe: false,
+      }
+    },
 
     ]
   });
@@ -836,24 +846,24 @@ $('.address-input').click(function () {
     arrows: false,
 
     responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 4,
-        }
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
     ]
   });
 
@@ -881,24 +891,24 @@ $('.address-input').click(function () {
       prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
       nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
       responsive: [
-        {
-          breakpoint: 300,
-          settings: 'unslick'
-        },
-        {
-          breakpoint: 800,
-          settings: {
-            asNavFor: '.parameters-slider-mobile1',
-            variableWidth: false,
-            infinite: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            appendArrows: $('.slider-mobile__arrows1'),
-            prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
-            nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
-          }
-        },
+      {
+        breakpoint: 300,
+        settings: 'unslick'
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          asNavFor: '.parameters-slider-mobile1',
+          variableWidth: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          appendArrows: $('.slider-mobile__arrows1'),
+          prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
+          nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
+        }
+      },
       ]
     });
 
@@ -914,21 +924,21 @@ $('.address-input').click(function () {
       slidesToScroll: 1,
       arrows: false,
       responsive: [
-        {
-          breakpoint: 300,
-          settings: 'unslick'
-        },
-        {
-          breakpoint: 800,
-          settings: {
-            asNavFor: '.comparison-slider-mobile1',
-            variableWidth: false,
-            infinite: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-          }
-        },
+      {
+        breakpoint: 300,
+        settings: 'unslick'
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          asNavFor: '.comparison-slider-mobile1',
+          variableWidth: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        }
+      },
       ]
     });
 
@@ -944,24 +954,24 @@ $('.address-input').click(function () {
       nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
       appendArrows: $('.slider-mobile__arrows2'),
       responsive: [
-        {
-          breakpoint: 300,
-          settings: 'unslick'
-        },
-        {
-          breakpoint: 800,
-          settings: {
-            asNavFor: '.parameters-slider-mobile2',
-            variableWidth: false,
-            infinite: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
-            nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
-            appendArrows: $('.slider-mobile__arrows2'),
-          }
-        },
+      {
+        breakpoint: 300,
+        settings: 'unslick'
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          asNavFor: '.parameters-slider-mobile2',
+          variableWidth: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          prevArrow: '<button id="prev-charMobile" class="slider-mobile__arrows__left" type="button"></button>',
+          nextArrow: '<button id="next-charMobile" class="slider-mobile__arrows__right" type="button"></button>',
+          appendArrows: $('.slider-mobile__arrows2'),
+        }
+      },
       ]
     });
 
@@ -975,21 +985,21 @@ $('.address-input').click(function () {
       slidesToScroll: 1,
       arrows: false,
       responsive: [
-        {
-          breakpoint: 300,
-          settings: 'unslick'
-        },
-        {
-          breakpoint: 800,
-          settings: {
-            asNavFor: '.comparison-slider-mobile2',
-            variableWidth: false,
-            infinite: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-          }
-        },
+      {
+        breakpoint: 300,
+        settings: 'unslick'
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          asNavFor: '.comparison-slider-mobile2',
+          variableWidth: false,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        }
+      },
       ]
     });
 

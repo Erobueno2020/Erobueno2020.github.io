@@ -1951,7 +1951,6 @@
     .item-kit__block-buttons label {
         font-size: 12px;
         line-height: 14px;
-        margin-left: 10px;
     }
     .item-offer__block-title {
         font-size: 16px;
@@ -2012,7 +2011,11 @@
         margin-left: 15px;
     }
 }
+
 @media (max-width: 500px){
+    .select-block__colors {
+        max-width: 100px;
+    }
     .catalog-items__item-content__name {
         height: 32px !important;
         overflow: hidden;
@@ -2839,7 +2842,6 @@
         }   
         .item-kit__block-buttons label {
             font-size: 10px;
-            margin-left: 3px;
         }
         .cart-button-add::before {
             width: 25px;
@@ -3020,7 +3022,6 @@
         .item-kit__block-buttons label {
             font-size: 10px;
             line-height: 10px;
-            margin-left: 3px;
             margin-top: 0;
             margin-bottom: 0;
         }
