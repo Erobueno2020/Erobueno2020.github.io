@@ -245,26 +245,30 @@ $(document).ready(function () {
 
   // SEARCH - INPUT FOCUS
   $(".search-input").focus(function () {
-    if (width > 1169) {
+    var innerWidth = $(window).width();
+    if (innerWidth > 1169) {
       $('.contact-block').addClass('focused');
       $('.search').css({ maxWidth: '630' + 'px' });
       $('.info').hide('fast');
     }
   });
   $(".search-input").focusout(function () {
-    if (width > 1169) {
+    var innerWidth = $(window).width();
+    if (innerWidth > 1169) {
       $('.contact-block').removeClass('focused');
       $('.search').css({ maxWidth: '240' + 'px' });
       $('.info').show(500);
     }
   });
   $(".search-input").focus(function () {
-    if (width > 319 && width < 767) {
+    var innerWidth = $(window).width();
+    if (innerWidth > 319 && innerWidth < 767) {
       $('.burger-btn, .logo-btn').hide(150);
     }
   });
   $(".search-input").focusout(function () {
-    if (width > 319 && width < 767) {
+    var innerWidth = $(window).width();
+    if (innerWidth > 319 && innerWidth < 767) {
       $('.burger-btn, .logo-btn').show(150);
     }
   });

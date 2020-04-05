@@ -313,8 +313,6 @@
 	.dark-bg-mob-menu {
 		z-index: 999;
 	}
-<<<<<<< HEAD
-=======
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -324,5 +322,4 @@ _::-webkit-full-page-media, _:future, :root , .menu-categories {
 _::-webkit-full-page-media, _:future, :root , .socials-mobile { 
 	margin-bottom: 30px;
 } 
->>>>>>> b0cc9d2bf0b83d822eae92372f0e30a153622a2f
 }
