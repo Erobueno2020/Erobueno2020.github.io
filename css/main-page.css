@@ -393,8 +393,9 @@ body {
   margin-top: 290px;
 }
 .popular-item__btn {
-  font-family: "ProximaNova-Light";
+  font-family: "ProximaNova-Semibold";
   margin-right: 10px;
+  color: #a77a5e;
 }
 .main-page__top-block {
   margin: 15px;
