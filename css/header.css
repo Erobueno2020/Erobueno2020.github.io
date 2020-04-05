@@ -188,6 +188,8 @@ a, .simple-menu_li {
 }
 .phone-img, .email-img{
 	margin-right: 10px;
+	box-shadow: var(--box-shadow);
+	border-radius: 100%;
 }
 .contact-img {
 	transition: opacity .2s ease;
@@ -240,6 +242,7 @@ a, .simple-menu_li {
 	padding-left: 15px;
 	align-items: center;
 	transition: max-width .4s ease-in-out;
+	box-shadow: var(--box-shadow);
 }
 .search-input {
 	border: none;
