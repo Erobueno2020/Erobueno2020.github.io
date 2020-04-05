@@ -300,7 +300,10 @@ $('.address-input').click(function () {
  }
 });
 
-
+  $(".catalog-filter__nav li").click(function () {
+    $(this).find(".child").toggleClass("child-open");
+  });
+  
   $('#addAddress').click(function (e) {
     e.preventDefault();
     $("body").css("overflow", "hidden");

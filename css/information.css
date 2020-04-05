@@ -533,11 +533,13 @@
 .favorited-price {
 	margin-top: 93px;
 }
-
+.child-name:hover {
+	color: #000 !important;
+}
 .favorited-big {
 	border: 1px solid #fff0e6;
-	margin-bottom: 15px;
-	margin-top: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 	margin-left: 5px;
 	margin-right: 5px;
 }
@@ -604,7 +606,9 @@
 	position: relative;
 }
 
-
+.orders-breadcrumbs {
+	margin-top: 30px;
+}
 
 .select2-container {
 	border: 0 !important;
@@ -1561,6 +1565,7 @@ input[type='number'] {
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 10px;
+	margin-left: 85px;
 }
 .sale-around {
 	border: 1px dashed #56b2e4;
@@ -1742,7 +1747,7 @@ input {
 		margin-right: 0;
 	}
 	.delivery-type-block__type, .delivery-cost {
-		font-size: 15px;
+		font-size: 13px;
 	}
 	.my-order__wrapper {
 		padding-top: 0;
@@ -1754,6 +1759,9 @@ input {
 		padding: 10px !important;
 		padding-top: 5px !important;
 		
+	}
+	.your-order-sale {
+		margin-left: 0;
 	}
 }
 
@@ -1844,9 +1852,10 @@ input {
 	}
 	.address-popup__wrapper, .delivery-popup__wrapper {
 		max-height: 500px;
+		top: 45%;
 	}
 	.close-popup-btns {
-		margin-top: 285px;
+		margin-top: 248px;
 	}
 
 	.my-order-content {
@@ -1961,6 +1970,9 @@ input {
 	.kit-image1 {
 		background-size: cover !important;
 	}
+	.delivery-type-block {
+		padding: 15px 15px;
+	}
 	
 }
 
@@ -1974,6 +1986,7 @@ input {
 	.your-order-main {
 		flex-direction: column;
 	}
+
 	.your-order-info__wrapper {
 		margin-left: 0;
 		margin-top: 10px;
@@ -2024,6 +2037,9 @@ input {
 	.f-bold {
 		font-size: 14px;
 		line-height: 16px;
+	}
+	.sort-text {
+		display: none;
 	}
 }
 

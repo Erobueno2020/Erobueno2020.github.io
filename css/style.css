@@ -86,7 +86,6 @@ button {
 }
 /*STYLES*/
 .select2-container {
-	background-color: white !important;
 	width: 100% !important;
 }
 .select2-container--default .select2-selection--single {
@@ -3099,7 +3098,6 @@ body .select-block__colors-name {
 	}
 }
 .product-popup__interactive-button {
-	text
 	color: #ffffff;
 	font-size: 16px;
 	font-weight: 300;
@@ -3159,9 +3157,6 @@ body .select-block__colors-name {
 }
 .product-popup .block-select__element {
 	width: 49%;
-}
-.block-select__element * {
-	line-height: unset !important;
 }
 .product-popup .block-select select {
 	width: 100%;

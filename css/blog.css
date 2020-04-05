@@ -16,6 +16,9 @@ button {
 .catalog-pagination__button:hover {
 	color: #fff !important;
 }
+.max-width {
+	max-width: 285px;
+}
 .child-open {
 	margin-bottom: 5px;
 }
@@ -277,11 +280,13 @@ button {
 	.mobile-flex {
 		justify-content: center;
 	}
-		.catalog-filter__container {
-		padding-bottom: 15px !important;
-	}
 	.tags {
 		margin-bottom: 0px;
+	}
+	.max-width {
+		max-width: none;
+		width: 100%;
+		margin: 0 !important;
 	}
 	.blog-description {
 		text-align: center;
