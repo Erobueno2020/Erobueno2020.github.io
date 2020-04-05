@@ -416,7 +416,7 @@ body .product-popup .select2-container--default .select2-selection--single .sele
 	padding-bottom: 5px;
 }
 .catalog-items__item-content__buttons__basket {
-	z-index: 999999;
+	z-index: 9999;
 	width: 130px;
 	min-height: 40px;
 	border-radius: 20px;
@@ -755,7 +755,7 @@ body .product-popup .select2-container--default .select2-selection--single .sele
 	top: 20px;
 	line-height: 20px;
 	border-radius: 10px;
-	z-index: 999;
+	z-index: 99999;
 }
 .range-popup span {
 	color: #696969;
