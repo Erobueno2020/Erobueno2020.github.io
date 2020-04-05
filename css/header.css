@@ -1,7 +1,6 @@
 :root {
 	--link: #ac8c78;
 	--contact-link: #7F5C47;
-	--box-shadow: 0 0px 8px 0 rgba(255, 99, 0, 0.07);
 }
 body {
 	box-sizing: border-box;
@@ -188,8 +187,6 @@ a, .simple-menu_li {
 }
 .phone-img, .email-img{
 	margin-right: 10px;
-	box-shadow: var(--box-shadow);
-	border-radius: 100%;
 }
 .contact-img {
 	transition: opacity .2s ease;
@@ -242,7 +239,6 @@ a, .simple-menu_li {
 	padding-left: 15px;
 	align-items: center;
 	transition: max-width .4s ease-in-out;
-	box-shadow: var(--box-shadow);
 }
 .search-input {
 	border: none;
@@ -273,8 +269,6 @@ a, .simple-menu_li {
 	transition: opacity .2s ease;
 	width: 54px;
 	height: 54px;
-	box-shadow: var(--box-shadow);
-	border-radius: 100%;
 }
 .basket-icon:hover {
 	opacity: .8;

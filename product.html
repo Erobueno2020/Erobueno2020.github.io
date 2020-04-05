@@ -1,655 +1,658 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>EroBueno</title>
-<meta name="description" content="Erabueno - Онлайн магазин">
-<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-<!-- FAVICON -->
-<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-<!-- LINKS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-<link href="css/number_plugin.css" type="text/css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-<link rel="stylesheet" href="css/jquery-ui.css">
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet" href="css/fonts.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/media.css">
-<link rel="stylesheet" href="css/number_plugin.css">
-<link rel="stylesheet" href="css/header.css">
-<!-- <link rel="stylesheet" href="css/header-blue.css"> Синий дизайн -->
-<link rel="stylesheet" href="css/header-tablet.css">
-<link rel="stylesheet" href="css/header-mobile.css">
-<link rel="stylesheet" href="css/footer.css">
-<link rel="stylesheet" href="css/main-page.css">
-<link rel="stylesheet" href="css/blog.css">
-<link rel="stylesheet" href="css/blog-page.css">
-<link rel="stylesheet" href="css/information.css">
-</head>
-<body>
-<!-- HEADER START -->
-<header class="header">
-<div class="phone-popup">
-<div class="phone-modal">
-<p class="phone-modal-title">Обратный звонок</p>
-<input type="text" placeholder="Введите номер...">
-<button class="phone-submit" type="submit">Отправить</button>
-</div>
-</div>
-<div class="basket-popup">
-<img id="basket-toggle" src="img/close.png" alt="" class="close-popup">
-<div class="basket-modal">
-<div class="basket-number basket-num-popup"><span class="number-items">4<span></span></span></div>
-<img id="basket-toggle" src="img/basket-red.svg" class="basket-icon icon-mobile" alt="">
-<div class="basket-block">
-<p id="basket-toggle" class="basket-count">В корзине <span>4</span> товара</p>
-<a href=""><p class="basket-featured"><img src="img/hearth.svg" class="feature-icon" alt="">Избранные товары</p></a>
-<a href=""><p class="basket-featured"><img src="img/lines-red.svg" class="feature-icon lines" alt="">Нет товаров для сравнения</p></a>
-</div>
-</div>
-<div class="basket-items">
-<div class="basket-item">
-<img src="img/zaglushka-item.png" alt="" class="basket-item__img">
-<div class="basket-item-block">
-<p class="basket-item__title">Чёрная анальная втулка с синим кристаллом</p>
-<div class="js-spcbtwn">
-<p class="basket-item__count item-info">Кол-во: <span>23</span></p>
-<p class="basket-item__price item-info"><span>33 509</span> руб.</p>
-</div>
-</div>
-</div>
-<div class="basket-item">
-<img src="img/zaglushka-item.png" alt="" class="basket-item__img">
-<div class="basket-item-block">
-<p class="basket-item__title">Чёрная анальная втулка с синим кристаллом</p>
-<div class="js-spcbtwn">
-<p class="basket-item__count item-info">Кол-во: <span>23</span></p>
-<p class="basket-item__price item-info"><span>33 509</span> руб.</p>
-</div>
-</div>
-</div>
-<div class="basket-item">
-<img src="img/zaglushka-item.png" alt="" class="basket-item__img">
-<div class="basket-item-block">
-<p class="basket-item__title">Чёрная анальная втулка с синим кристаллом</p>
-<div class="js-spcbtwn">
-<p class="basket-item__count item-info">Кол-во: <span>23</span></p>
-<p class="basket-item__price item-info"><span>33 509</span> руб.</p>
-</div>
-</div>
-</div>
-<div class="basket-item">
-<img src="img/zaglushka-item.png" alt="" class="basket-item__img">
-<div class="basket-item-block">
-<p class="basket-item__title">Чёрная анальная втулка с синим кристаллом</p>
-<div class="js-spcbtwn">
-<p class="basket-item__count item-info">Кол-во: <span>23</span></p>
-<p class="basket-item__price item-info"><span>33 509</span> руб.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="basket-total">
-<div class="basket-total-price">
-<p class="basket-total__desc">Итого:</p>
-<p class="basket-total__sum"><span>22 900</span> руб</p>
-</div>
-<div class="basket-buttons">
-<button class="cart-btn">В корзину</button>
-<button class="buy-btn"><img src="img/check.svg" alt=""> Оформить</button>
-</div>
-</div>
-</div>
-<a class="header-logo" href=""><img class="header-logo" src="img/logo-small-2.png" alt=""></a>
-<div class="navigation">
-<div class="first-bar">
-<nav class="nav">
-<a href="" class="nav-link">Варианты доставки</a>
-<a href="" class="nav-link">Как оплатить</a>
-<a href="" class="nav-link">Гарантия анонимности</a>
-<a href="" class="nav-link">Контакты</a>
-<a href="" class="nav-link">О магазине</a>
-</nav>
-<div class="socials">
-<a href="" class="icon vk"><img src="img/vk.svg" class="icon" alt="vk"></a>
-<a href="" class="icon yt"><img src="img/yt.svg" class="icon" alt="youtube"></a>
-<a href="" class="icon inst"><img src="img/inst.svg" class="icon" alt="instagram"></a>
-</div>
-<div class="registration">
-<a href="" class="login link">
-<img src="img/sign.svg" class="sign-icon" alt="">
-Вход
-</a>
-<span>/</span>
-<a href="" class="registr link">Регистрация</a>
-</div>
-<div class="nickname">
-<a class="login link">Привет,
-</a>
-<a href="" class="name link">Иван</a>
-</div>
-</div>
-<div class="second-bar">
-<div class="burger-btn menu-toggle">
-<img src="img/burger.svg" alt="" class="burger-img contact-img">
-</div>
-<div class="logo-btn">
-<a href=""><img src="img/logo-small-2.png" alt="" class="logo-img contact-img"></a>
-</div>
-<div class="contact-block">
-<a href="tel:88007761234"><img src="img/phone-circle.svg" alt="" class="phone-img contact-img"></a>
-<div class="info">
-<a class="phone-toggle" href="tel:88007761234"><p class="title font-bold">8 800 775 12 34</p></a>
-<p class="desc">Бесплатно с телефонов по РФ</p>
-</div>
-</div>
-<div class="contact-block">
-<a href="mailto:shop@erobueno.ru"><img src="img/email-circle.svg" alt="" class="email-img contact-img"></a>
-<div class="info">
-<a href="mailto:shop@erobueno.ru"><p class="title">shop@erobueno.ru</p></a>
-<p class="desc">Круглосуточно</p>
-</div>
-</div>
-<div class="search">
-<img src="img/search.svg" alt="">
-<input class="search-input" type="" name="" placeholder="Поиск...">
-</div>
-<div class="basket">
-<div class="basket-number"><span class="number-items">4</span></div>
-<img id="basket-toggle" src="img/basket-circle.svg" class="basket-icon basket-open" alt="">
-<div class="basket-block hide-block">
-<p id="basket-toggle" class="basket-count">В корзине <span>4</span> товара</p>
-<p id="basket" class="basket-featured"><img src="img/hearth.svg" class="feature-icon" alt="">Избранные товары</p>
-</div>
-</div>
-</div>
-</div>
-</header>
-<!-- CATEGORIES -->
-<section class="sub-header">
-<div class="categories">
-<a id="a_1" href="" class="category"><img src="img/cuff.svg" alt="">Все для секса</a>
-<a id="a_2" href="" class="category"><img src="img/female.svg" alt="">Женщинам</a>
-<a id="a_3" href="" class="category"><img src="img/male.svg" alt="">Мужчинам</a>
-<a id="a_4" href="" class="category"><img src="img/para.svg" alt="">Парам</a>
-<a id="a_5" href="" class="category"><img src="img/podborka.svg" alt="">Подборки</a>
-</div>
-<div class="categories">
-<a id="a_6" href="" class="promo"><img src="img/sale-circle.svg" alt="">Распродажа</a>
-<a id="a_7" href="" class="promo"><img src="img/new-circle.svg" alt="">Новинки</a>
-<a id="a_8" href="" class="promo"><img src="img/info-circle.svg" alt="">Информация</a>
-</div>
-</section>
-<!-- MENU MOBILE -->
-<div class="menu-mobile">
-<div class="dark-bg-basket dark-bg-mob-menu"></div>
-<div class="menu-adaptive">
-<div class="registration-mobile">
-<a href="" class="login link mobile">
-<img src="img/sign-mobile.svg" class="sign-icon" alt="">
-Вход
-</a>
-<span>/ </span>
-<a href="" class="registr link mobile">Регистрация</a>
-</div>
-<div class="menu-categories">
-<div class="close-btn"><img src="img/close-menu.png" alt="" class="menu-toggle"></div>
-<div class="categories cats-mobile">
-<a id="l_1" href="" class="category cat-mob"><img src="img/cuff.svg" alt=""><span>Все для секса<span></span></span></a>
-<ul id="list_1" class="simple-menu-list-column list-mobile">
-<li><a class="simple-menu_li" href="">Новичкам в анальном сексе</a></li>
-<li><a class="simple-menu_li" href="">Подарок женщине</a></li>
-<li><a class="simple-menu_li" href="">Новый год</a></li>
-<li><a class="simple-menu_li" href="">День святого валентина</a></li>
-<li><a class="simple-menu_li" href="">Подарки на 23 февраля</a></li>
-<li><a class="simple-menu_li" href="">Подарки на 8 марта</a></li>
-<li><a class="simple-menu_li" href="">Лучший эротический образ</a></li>
-<li><a class="simple-menu_li" href="">Создать романтику</a></li>
-<li><a class="simple-menu_li" href="">Попробовать ролевые игры</a></li>
-<li><a class="simple-menu_li" href="">Нет партнера. Я девушка</a></li>
-<li><a class="simple-menu_li" href="">Нет партнера. Я парень</a></li>
-<li><a class="simple-menu_li" href="">Подарок мужчине</a></li>
-<li><a class="simple-menu_li" href="">Хочу поиметь мужчину</a></li>
-<li><a class="simple-menu_li" href="">Интимные массажеры</a></li>
-<li><a class="simple-menu_li" href="">Подарки и приколы</a></li>
-</ul>
-<a id="l_2" href="" class="category cat-mob"><img src="img/female.svg" alt="" class="female-icon"><span class="female">Женщинам</span></a>
-<div id="list_2" class="dropdown-titles list-mobile">
-<ul class="mar-auto"><a id="t_1" class="sm-li_main mr-auto" href="">Анальные игрушки</a></ul>
-<ul id="test_1" class="simple-menu-list-column list-mobile pb-3 m-0">
-<li><a class="simple-menu_li" href="">Анальные вибраторы</a></li>
-<li><a class="simple-menu_li" href="">Анальные пробки</a></li>
-<li><a class="simple-menu_li" href="">Анальные пробки с хвостами</a></li>
-<li><a class="simple-menu_li" href="">Анальные стимуляторы без вибрации</a></li>
-<li><a class="simple-menu_li" href="">Анальные фаллоимитаторы</a></li>
-<li><a class="simple-menu_li" href="">Анальные шарики, цепочки</a></li>
-<li><a class="simple-menu_li" href="">Надувные расширители</a></li>
-<li><a class="simple-menu_li" href="">Стеклянные и металлические</a></li>
-</ul>
-<ul class="mar-auto"><a id="t_2" class="sm-li_main mr-auto" href="">Вибраторы</a></ul>
-<ul id="test_2" class="simple-menu-list-column list-mobile pb-3 m-0">
-<li><a class="simple-menu_li" href="">Hi-tech</a></li>
-<li><a class="simple-menu_li" href="">Анально-вагинальные</a></li>
-<li><a class="simple-menu_li" href="">Большие вибраторы</a></li>
-<li><a class="simple-menu_li" href="">Вибронаборы</a></li>
-<li><a class="simple-menu_li" href="">Вибростимуляторы, вибропульки</a></li>
-<li><a class="simple-menu_li" href="">Водонепроницаемые</a></li>
-<li><a class="simple-menu_li" href="">Вращающиеся (ротаторы)</a></li>
-<li><a class="simple-menu_li" href="">Двусторонние</a></li>
-<li><a class="simple-menu_li" href="">Для двоих</a></li>
-<li><a class="simple-menu_li" href="">Классические</a></li>
-<li><a class="simple-menu_li" href="">Компьютерного типа</a></li>
-<li><a class="simple-menu_li" href="">Реалистики</a></li>
-<li><a class="simple-menu_li" href="">С радиоуправлением</a></li>
-<li><a class="simple-menu_li" href="">Со стимулятором клитора</a></li>
-<li><a class="simple-menu_li" href="">Стимуляторы G-точки</a></li>
-</ul>
-<ul><a id="t_3" class="sm-li_main mr-auto" href="">Секс-товары для женщин</a></ul>
-<ul id="test_3" class="simple-menu-list-column list-mobile pb-3 m-0">
-<li><a class="simple-menu_li" href="">Вагинальные шарики</a></li>
-<li><a class="simple-menu_li" href="">Виброяйцо</a></li>
-<li><a class="simple-menu_li" href="">Клиторальные стимуляторы</a></li>
-<li><a class="simple-menu_li" href="">Помпы для клитора</a></li>
-<li><a class="simple-menu_li" href="">Помпы и стимуляторы для груди</a></li>
-</ul>
-<ul><a id="t_4" class="sm-li_main mr-auto" href="">Фаллоимитаторы</a></ul>
-<ul id="test_4" class="simple-menu-list-column list-mobile pb-3 m-0">
-<li><a class="simple-menu_li" href="">Анально-вагинальные</a></li>
-<li><a class="simple-menu_li" href="">Вагинальные пробки</a></li>
-<li><a class="simple-menu_li" href="">Гиганты</a></li>
-<li><a class="simple-menu_li" href="">Двусторонние</a></li>
-<li><a class="simple-menu_li" href="">Классические дилдо</a></li>
-<li><a class="simple-menu_li" href="">Реалистичные</a></li>
-<li><a class="simple-menu_li" href="">Стеклянные фаллосы</a></li>
-<li><a class="simple-menu_li" href="">Стимуляторы точки G</a></li>
-</ul>
-</div>
-<a id="l_3" href="" class="category cat-mob"><img src="img/male.svg" alt="" class="male-icon"><span class="male">Мужчинам</span></a>
-<ul id="list_3" class="simple-menu-list-column list-mobile">
-<li><a class="simple-menu_li" href="">Вагины</a></li>
-<li><a class="simple-menu_li" href="">Вакуумные помпы</a></li>
-<li><a class="simple-menu_li" href="">Массажеры простаты</a></li>
-<li><a class="simple-menu_li" href="">Мастурбаторы</a></li>
-<li><a class="simple-menu_li" href="">Насадки и удлинители</a></li>
-<li><a class="simple-menu_li" href="">Секс куклы</a></li>
-<li><a class="simple-menu_li" href="">Эрекционные кольца</a></li>
-</ul>
-<a id="l_4" href="" class="category cat-mob"><img src="img/para.svg" alt="" class="para-icon"><span class="para">Парам</span></a>
-<div id="list_4" class="dropdown-titles list-mobile">
-<ul><a id="t_5" class="sm-li_main" href="">Смазки, лубриканты</a></ul>
-<ul id="test_5" class="simple-menu-list-column list-mobile pb-3 m-0">
-<li><a class="simple-menu_li" href="">Анальные смазки</a></li>
-<li><a class="simple-menu_li" href="">Возбуждающие</a></li>
-<li><a class="simple-menu_li" href="">Массажные масла и свечи</a></li>
-<li><a class="simple-menu_li" href="">На водной основе</a></li>
-<li><a class="simple-menu_li" href="">Анальные фаллоимитаторы</a></li>
-<li><a class="simple-menu_li" href="">На силиконовой основе</a></li>
-<li><a class="simple-menu_li" href="">Пролонгаторы</a></li>
-</ul>
-<ul><a id="t_6" class="sm-li_main" href="">Страпоны, фаллопротезы</a></ul>
-<ul id="test_6" class="simple-menu-list-column list-mobile pb-3 m-0">
-<li><a class="simple-menu_li" href="">Безремневые</a></li>
-<li><a class="simple-menu_li" href="">Женские страпоны</a></li>
-<li><a class="simple-menu_li" href="">Мужские страпоны</a></li>
-<li><a class="simple-menu_li" href="">Трусики и насадки</a></li>
-<li><a class="simple-menu_li" href="">Фаллопротезы</a></li>
-</ul>
-<ul><a id="t_7" class="sm-li_main" href="">Косметика с феромонами</a></ul>
-<ul id="test_7" class="simple-menu-list-column list-mobile pb-3 m-0">
-<li><a class="simple-menu_li" href="">Духи и смазки для женщин</a></li>
-<li><a class="simple-menu_li" href="">Духи и смазки для мужчин</a></li>
-<li><a class="simple-menu_li" href="">Концентраты феромонов</a></li>
-<li><a class="simple-menu_li" href="">Средства по уходу за телом, косметика</a></li>
-</ul>
-<ul><a id="t_8" class="sm-li_main" href="">Приятные мелочи</a></ul>
-<ul id="test_8" class="simple-menu-list-column list-mobile pb-3 m-0">
-<li><a class="simple-menu_li" href="">Вейп</a></li>
-<li><a class="simple-menu_li" href="">Возбуждающие средства (не БАДы)</a></li>
-<li><a class="simple-menu_li" href="">Дарсонваль</a></li>
-<li><a class="simple-menu_li" href="">Ёлочные игрушки</a></li>
-<li><a class="simple-menu_li" href="">Интимная гигиена</a></li>
-<li><a class="simple-menu_li" href="">Презервативы</a></li>
-<li><a class="simple-menu_li" href="">Сувениры</a></li>
-<li><a class="simple-menu_li" href="">Элементы питания и аксессуары</a></li>
-<li><a class="simple-menu_li" href="">Эротическая литература</a></li>
-<li><a class="simple-menu_li" href="">Эротические игры</a></li>
-<li><a class="simple-menu_li" href="">Эротические наборы</a></li>
-</ul>
-<ul><a id="t_9" class="sm-li_main" href="">Секс-мебель и качели</a></ul>
-<ul id="test_9" class="simple-menu-list-column list-mobile pb-3 m-0">
-<li><a class="simple-menu_li" href="">Секс-качели</a></li>
-<li><a class="simple-menu_li" href="">Секс-машины</a></li>
-<li><a class="simple-menu_li" href="">Секс-мебель</a></li>
-</ul>
-<ul><a id="t_10" class="sm-li_main" href="">BDSM, садо-мазо товары</a></ul>
-<ul id="test_10" class="simple-menu-list-column list-mobile pb-3 m-0">
-<li><a class="simple-menu_li" href="">Другие BDSM товары</a></li>
-<li><a class="simple-menu_li" href="">Интимные украшения</a></li>
-<li><a class="simple-menu_li" href="">Кнуты, плётки, хлысты</a></li>
-<li><a class="simple-menu_li" href="">Маски, кляпы</a></li>
-<li><a class="simple-menu_li" href="">Медицинский фетиш</a></li>
-<li><a class="simple-menu_li" href="">Наручники, ошейники</a></li>
-<li><a class="simple-menu_li" href="">Электростимуляторы</a></li>
-</ul>
-</div>
-<a href="" id="l_5" class="category cat-mob"><img src="img/podborka.svg" alt="" class="mokup-icon"><span class="mokup">Подборки</span></a>
-<ul id="list_5" class="simple-menu-list-column list-mobile">
-<li><a class="simple-menu_li" href="">Новичкам в анальном сексе</a></li>
-<li><a class="simple-menu_li" href="">Подарок женщине</a></li>
-<li><a class="simple-menu_li" href="">Новый год</a></li>
-<li><a class="simple-menu_li" href="">День святого валентина</a></li>
-<li><a class="simple-menu_li" href="">Подарки на 23 февраля</a></li>
-<li><a class="simple-menu_li" href="">Подарки на 8 марта</a></li>
-<li><a class="simple-menu_li" href="">Лучший эротический образ</a></li>
-<li><a class="simple-menu_li" href="">Создать романтику</a></li>
-<li><a class="simple-menu_li" href="">Попробовать ролевые игры</a></li>
-<li><a class="simple-menu_li" href="">Нет партнера. Я девушка</a></li>
-<li><a class="simple-menu_li" href="">Нет партнера. Я парень</a></li>
-<li><a class="simple-menu_li" href="">Подарок мужчине</a></li>
-<li><a class="simple-menu_li" href="">Хочу поиметь мужчину</a></li>
-<li><a class="simple-menu_li" href="">Интимные массажеры</a></li>
-<li><a class="simple-menu_li" href="">Подарки и приколы</a></li>
-<li><a class="simple-menu_li" href="">Подборка 50 отенков серого</a></li>
-<li><a class="simple-menu_li" href="">Попробовать БДСМ</a></li>
-<li><a class="simple-menu_li" href="">Разнообразить жизнь парам</a></li>
-<li><a class="simple-menu_li" href="">Секс игрушки для пар</a></li>
-<li><a class="simple-menu_li" href="">Стимуляция груди</a></li>
-<li><a class="simple-menu_li" href="">Стимуляция клитора</a></li>
-<li><a class="simple-menu_li" href="">Увеличение члена</a></li>
-<li><a class="simple-menu_li" href="">Хочу порнозвезду</a></li>
-</ul>
-</div>
-<div class="more-info">
-<a href="" id="l_8" class="promo promo-mob ml-2"><img src="img/mobile-sale.svg" alt="">Распродажа</a>
-<ul id="list_8" class="simple-menu-list-column list-mobile">
-<li><a class="simple-menu_li" href="">Скидки</a></li>
-<li><a class="simple-menu_li" href="">Доставка и оплата</a></li>
-<li><a class="simple-menu_li" href="">Гарантии и возврат</a></li>
-<li><a class="simple-menu_li" href="">Конфиденциальность</a></li>
-<li><a class="simple-menu_li" href="">Читайте наш блог</a></li>
-<li><a class="simple-menu_li" href="">Отзывы о магазине</a></li>
-</ul>
-<a href="" id="l_9" class="promo promo-mob ml-2"><img src="img/mobile-new.svg" alt="">Новинки</a>
-<ul id="list_9" class="simple-menu-list-column list-mobile">
-<li><a class="simple-menu_li" href="">Новинки</a></li>
-<li><a class="simple-menu_li" href="">Доставка и оплата</a></li>
-<li><a class="simple-menu_li" href="">Гарантии и возврат</a></li>
-<li><a class="simple-menu_li" href="">Конфиденциальность</a></li>
-<li><a class="simple-menu_li" href="">Читайте наш блог</a></li>
-<li><a class="simple-menu_li" href="">Отзывы о магазине</a></li>
-</ul>
-</div>
-<nav class="nav navig-mobile">
-<a href="" class="nav-link nav-mobile">Варианты доставки</a>
-<a href="" class="nav-link nav-mobile">Как оплатить</a>
-<a href="" class="nav-link nav-mobile">Гарантия анонимности</a>
-<a href="" class="nav-link nav-mobile">Контакты</a>
-<a href="" class="nav-link nav-mobile">О магазине</a>
-</nav>
-<div class="contact-mobile">
-<div class="contact-block contact-block-mobile">
-<a href=""><img src="img/phone-circle.svg" alt="" class="phone-img contact-img contact-img-mobile"></a>
-<div class="info">
-<a href=""><p class="title font-bold">8 800 775 12 34</p></a>
-<p class="desc">Бесплатно с телефонов по РФ</p>
-</div>
-</div>
-<div class="contact-block contact-block-mobile">
-<a href=""><img src="img/email-circle.svg" alt="" class="email-img contact-img contact-img-mobile"></a>
-<div class="info">
-<a href=""><p class="title">shop@erobueno.ru</p></a>
-<p class="desc">Круглосуточно</p>
-</div>
-</div>
-<div class="socials socials-mobile">
-<a href="" class="icon vk"><img src="img/vk.svg" class="icon" alt="vk"></a>
-<a href="" class="icon yt"><img src="img/yt.svg" class="icon" alt="youtube"></a>
-<a href="" class="icon inst"><img src="img/inst.svg" class="icon" alt="instagram"></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="basket-mob">
-<div class="dark-bg-basket"></div>
-<div class="basket-block-mobile">
-<div class="basket mobile-basket">
-<div class="basket-number basket-number-popup number-mobile">4</div>
-<img id="basket-toggle" src="img/basket-circle.svg" class="basket-icon icon-mobile" alt="">
-<div class="basket-block hide-block basket-mobile">
-<p id="basket-toggle" class="basket-count">В корзине <span>4</span> товара</p>
-<a href=""><p id="basket" class="basket-go">Перейти в корзину</p></a>
-</div>
-<div class="basket-arrow"><img src="img/arrownext.png" alt=""></div>
-</div>
-<div class="features-mobile">
-<p id="basket" class="basket-featured white"><img src="img/hearth-white.svg" class="feature-icon" alt="">В избранное</p>
-<p id="basket" class="basket-featured white"><img src="img/lines-white.png" class="feature-icon" alt="">К сравнению</p>
-</div>
-</div>
-</div>
-<div class="container pos-rel">
-<div id="aa_1" class="submenu for-sex">
-<div class="container">
-<ul class="simple-menu-list-column">
-<li><a class="simple-menu_li" href="">Новичкам в анальном сексе</a></li>
-<li><a class="simple-menu_li" href="">Подарок женщине</a></li>
-<li><a class="simple-menu_li" href="">Новый год</a></li>
-<li><a class="simple-menu_li" href="">День святого валентина</a></li>
-<li><a class="simple-menu_li" href="">Подарки на 23 февраля</a></li>
-<li><a class="simple-menu_li" href="">Подарки на 8 марта</a></li>
-<li><a class="simple-menu_li" href="">Лучший эротический образ</a></li>
-<li><a class="simple-menu_li" href="">Создать романтику</a></li>
-<li><a class="simple-menu_li" href="">Попробовать ролевые игры</a></li>
-<li><a class="simple-menu_li" href="">Нет партнера. Я девушка</a></li>
-<li><a class="simple-menu_li" href="">Нет партнера. Я парень</a></li>
-<li><a class="simple-menu_li" href="">Подарок мужчине</a></li>
-<li><a class="simple-menu_li" href="">Хочу поиметь мужчину</a></li>
-<li><a class="simple-menu_li" href="">Интимные массажеры</a></li>
-<li><a class="simple-menu_li" href="">Подарки и приколы</a></li>
-</ul>
-</div>
-</div>
-<div id="aa_3" class="submenu for-men">
-<div class="container">
-<ul class="simple-menu-list-column">
-<li><a class="simple-menu_li" href="">Вагины</a></li>
-<li><a class="simple-menu_li" href="">Вакуумные помпы</a></li>
-<li><a class="simple-menu_li" href="">Массажеры простаты</a></li>
-<li><a class="simple-menu_li" href="">Мастурбаторы</a></li>
-<li><a class="simple-menu_li" href="">Насадки и удлинители</a></li>
-<li><a class="simple-menu_li" href="">Секс куклы</a></li>
-<li><a class="simple-menu_li" href="">Эрекционные кольца</a></li>
-</ul>
-</div>
-</div>
-<div id="aa_5" class="submenu podborka">
-<div class="container">
-<ul class="simple-menu-list-column">
-<li><a class="simple-menu_li" href="">Новичкам в анальном сексе</a></li>
-<li><a class="simple-menu_li" href="">Подарок женщине</a></li>
-<li><a class="simple-menu_li" href="">Новый год</a></li>
-<li><a class="simple-menu_li" href="">День святого валентина</a></li>
-<li><a class="simple-menu_li" href="">Подарки на 23 февраля</a></li>
-<li><a class="simple-menu_li" href="">Подарки на 8 марта</a></li>
-<li><a class="simple-menu_li" href="">Лучший эротический образ</a></li>
-<li><a class="simple-menu_li" href="">Создать романтику</a></li>
-<li><a class="simple-menu_li" href="">Попробовать ролевые игры</a></li>
-<li><a class="simple-menu_li" href="">Нет партнера. Я девушка</a></li>
-<li><a class="simple-menu_li" href="">Нет партнера. Я парень</a></li>
-<li><a class="simple-menu_li" href="">Подарок мужчине</a></li>
-<li><a class="simple-menu_li" href="">Хочу поиметь мужчину</a></li>
-<li><a class="simple-menu_li" href="">Интимные массажеры</a></li>
-<li><a class="simple-menu_li" href="">Подарки и приколы</a></li>
-<li><a class="simple-menu_li" href="">Подборка 50 отенков серого</a></li>
-<li><a class="simple-menu_li" href="">Попробовать БДСМ</a></li>
-<li><a class="simple-menu_li" href="">Разнообразить жизнь парам</a></li>
-<li><a class="simple-menu_li" href="">Секс игрушки для пар</a></li>
-<li><a class="simple-menu_li" href="">Стимуляция груди</a></li>
-<li><a class="simple-menu_li" href="">Стимуляция клитора</a></li>
-<li><a class="simple-menu_li" href="">Увеличение члена</a></li>
-<li><a class="simple-menu_li" href="">Хочу порнозвезду</a></li>
-</ul>
-</div>
-</div>
-<div id="aa_2" class="submenu for-fem">
-<div class="container flex-row p-3">
-<ul class="simple-menu-list-column">
-<li><a class="sm-li_main" href="">Анальные игрушки</a></li>
-<li><a class="simple-menu_li" href="">Анальные вибраторы</a></li>
-<li><a class="simple-menu_li" href="">Анальные пробки</a></li>
-<li><a class="simple-menu_li" href="">Анальные пробки с хвостами</a></li>
-<li><a class="simple-menu_li" href="">Анальные стимуляторы без вибрации</a></li>
-<li><a class="simple-menu_li" href="">Анальные фаллоимитаторы</a></li>
-<li><a class="simple-menu_li" href="">Анальные шарики, цепочки</a></li>
-<li><a class="simple-menu_li" href="">Надувные расширители</a></li>
-<li><a class="simple-menu_li" href="">Стеклянные и металлические</a></li>
-</ul>
-<ul class="simple-menu-list-column">
-<li><a class="sm-li_main" href="">Вибраторы</a></li>
-<li><a class="simple-menu_li" href="">Hi-tech</a></li>
-<li><a class="simple-menu_li" href="">Анально-вагинальные</a></li>
-<li><a class="simple-menu_li" href="">Большие вибраторы</a></li>
-<li><a class="simple-menu_li" href="">Вибронаборы</a></li>
-<li><a class="simple-menu_li" href="">Вибростимуляторы, вибропульки</a></li>
-<li><a class="simple-menu_li" href="">Водонепроницаемые</a></li>
-<li><a class="simple-menu_li" href="">Вращающиеся (ротаторы)</a></li>
-<li><a class="simple-menu_li" href="">Двусторонние</a></li>
-<li><a class="simple-menu_li" href="">Для двоих</a></li>
-<li><a class="simple-menu_li" href="">Классические</a></li>
-<li><a class="simple-menu_li" href="">Компьютерного типа</a></li>
-<li><a class="simple-menu_li" href="">Реалистики</a></li>
-<li><a class="simple-menu_li" href="">С радиоуправлением</a></li>
-<li><a class="simple-menu_li" href="">Со стимулятором клитора</a></li>
-<li><a class="simple-menu_li" href="">Стимуляторы G-точки</a></li>
-</ul>
-<ul class="simple-menu-list-column">
-<li><a class="sm-li_main" href="">Секс-товары<br>для женщин</a></li>
-<li><a class="simple-menu_li" href="">Вагинальные шарики</a></li>
-<li><a class="simple-menu_li" href="">Виброяйцо</a></li>
-<li><a class="simple-menu_li" href="">Клиторальные стимуляторы</a></li>
-<li><a class="simple-menu_li" href="">Помпы для клитора</a></li>
-<li><a class="simple-menu_li" href="">Помпы и стимуляторы для груди</a></li>
-</ul>
-<ul class="simple-menu-list-column">
-<li><a class="sm-li_main" href="">Фаллоимитаторы</a></li>
-<li><a class="simple-menu_li" href="">Анально-вагинальные</a></li>
-<li><a class="simple-menu_li" href="">Вагинальные пробки</a></li>
-<li><a class="simple-menu_li" href="">Гиганты</a></li>
-<li><a class="simple-menu_li" href="">Двусторонние</a></li>
-<li><a class="simple-menu_li" href="">Классические дилдо</a></li>
-<li><a class="simple-menu_li" href="">Реалистичные</a></li>
-<li><a class="simple-menu_li" href="">Стеклянные фаллосы</a></li>
-<li><a class="simple-menu_li" href="">Стимуляторы точки G</a></li>
-</ul>
-</div>
-</div>
-<div id="aa_4" class="submenu for-fem">
-<div class="container flex-row p-3">
-<ul class="simple-menu-list-column">
-<li><a class="sm-li_main" href="">Смазки, лубриканты</a></li>
-<li><a class="simple-menu_li" href="">Анальные смазки</a></li>
-<li><a class="simple-menu_li" href="">Возбуждающие</a></li>
-<li><a class="simple-menu_li" href="">Массажные масла и свечи</a></li>
-<li><a class="simple-menu_li" href="">На водной основе</a></li>
-<li><a class="simple-menu_li" href="">Анальные фаллоимитаторы</a></li>
-<li><a class="simple-menu_li" href="">На силиконовой основе</a></li>
-<li><a class="simple-menu_li" href="">Пролонгаторы</a></li>
-<ul class="simple-menu-list-column p-0 pt-20">
-<li><a class="sm-li_main" href="">Страпоны, фаллопротезы</a></li>
-<li><a class="simple-menu_li" href="">Безремневые</a></li>
-<li><a class="simple-menu_li" href="">Женские страпоны</a></li>
-<li><a class="simple-menu_li" href="">Мужские страпоны</a></li>
-<li><a class="simple-menu_li" href="">Трусики и насадки</a></li>
-<li><a class="simple-menu_li" href="">Фаллопротезы</a></li>
-</ul>
-</ul>
-<ul class="simple-menu-list-column">
-<li><a class="sm-li_main" href="">Косметика с феромонами</a></li>
-<li><a class="simple-menu_li" href="">Духи и смазки для женщин</a></li>
-<li><a class="simple-menu_li" href="">Духи и смазки для мужчин</a></li>
-<li><a class="simple-menu_li" href="">Концентраты феромонов</a></li>
-<li><a class="simple-menu_li" href="">Средства по уходу за телом, косметика</a></li>
-</ul>
-<ul class="simple-menu-list-column">
-<li><a class="sm-li_main" href="">Приятные мелочи</a></li>
-<li><a class="simple-menu_li" href="">Вейп</a></li>
-<li><a class="simple-menu_li" href="">Возбуждающие средства (не БАДы)</a></li>
-<li><a class="simple-menu_li" href="">Дарсонваль</a></li>
-<li><a class="simple-menu_li" href="">Ёлочные игрушки</a></li>
-<li><a class="simple-menu_li" href="">Интимная гигиена</a></li>
-<li><a class="simple-menu_li" href="">Презервативы</a></li>
-<li><a class="simple-menu_li" href="">Сувениры</a></li>
-<li><a class="simple-menu_li" href="">Элементы питания и аксессуары</a></li>
-<li><a class="simple-menu_li" href="">Эротическая литература</a></li>
-<li><a class="simple-menu_li" href="">Эротические игры</a></li>
-<li><a class="simple-menu_li" href="">Эротические наборы</a></li>
-</ul>
-<ul class="simple-menu-list-column">
-<li><a class="sm-li_main" href="">Секс-мебель и качели</a></li>
-<li><a class="simple-menu_li" href="">Секс-качели</a></li>
-<li><a class="simple-menu_li" href="">Секс-машины</a></li>
-<li><a class="simple-menu_li" href="">Секс-мебель</a></li>
-<ul class="simple-menu-list-column p-0 pt-20">
-<li><a class="sm-li_main" href="">BDSM, садо-мазо товары</a></li>
-<li><a class="simple-menu_li" href="">Другие BDSM товары</a></li>
-<li><a class="simple-menu_li" href="">Интимные украшения</a></li>
-<li><a class="simple-menu_li" href="">Кнуты, плётки, хлысты</a></li>
-<li><a class="simple-menu_li" href="">Маски, кляпы</a></li>
-<li><a class="simple-menu_li" href="">Медицинский фетиш</a></li>
-<li><a class="simple-menu_li" href="">Наручники, ошейники</a></li>
-<li><a class="simple-menu_li" href="">Электростимуляторы</a></li>
-</ul>
-</ul>
-</div>
-</div>
-<div id="aa_6" class="submenu for-sale">
-<div class="container">
-<ul class="simple-menu-list-column">
-<li><a class="simple-menu_li" href="">Скидки</a></li>
-<li><a class="simple-menu_li" href="">Доставка и оплата</a></li>
-<li><a class="simple-menu_li" href="">Гарантии и возврат</a></li>
-<li><a class="simple-menu_li" href="">Конфиденциальность</a></li>
-<li><a class="simple-menu_li" href="">Читайте наш блог</a></li>
-<li><a class="simple-menu_li" href="">Отзывы о магазине</a></li>
-</ul>
-</div>
-</div>
-<div id="aa_7" class="submenu for-new">
-<div class="container">
-<ul class="simple-menu-list-column">
-<li><a class="simple-menu_li" href="">Новинки</a></li>
-<li><a class="simple-menu_li" href="">Доставка и оплата</a></li>
-<li><a class="simple-menu_li" href="">Гарантии и возврат</a></li>
-<li><a class="simple-menu_li" href="">Конфиденциальность</a></li>
-<li><a class="simple-menu_li" href="">Читайте наш блог</a></li>
-<li><a class="simple-menu_li" href="">Отзывы о магазине</a></li>
-</ul>
-</div>
-</div>
-<div id="aa_8" class="submenu for-info">
-<div class="container">
-<ul class="simple-menu-list-column">
-<li><a class="simple-menu_li" href="">Контакты</a></li>
-<li><a class="simple-menu_li" href="">Доставка и оплата</a></li>
-<li><a class="simple-menu_li" href="">Гарантии и возврат</a></li>
-<li><a class="simple-menu_li" href="">Конфиденциальность</a></li>
-<li><a class="simple-menu_li" href="">Читайте наш блог</a></li>
-<li><a class="simple-menu_li" href="">Отзывы о магазине</a></li>
-</ul>
-</div>
-</div>
-</div>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>EroBueno</title>
+		<meta name="description" content="Erabueno - Онлайн магазин">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<!-- FAVICON -->
+		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+		<!-- LINKS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+		<link href="css/number_plugin.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/media.css">
+		<link rel="stylesheet" href="css/number_plugin.css">
+		<link rel="stylesheet" href="css/header.css">
+		<!-- <link rel="stylesheet" href="css/header-blue.css"> Синий дизайн -->
+		<link rel="stylesheet" href="css/header-tablet.css">
+		<link rel="stylesheet" href="css/header-mobile.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/main-page.css">
+		<link rel="stylesheet" href="css/blog.css">
+		<link rel="stylesheet" href="css/blog-page.css">
+		<link rel="stylesheet" href="css/information.css">
+	</head>
+	<body>
+		<!-- HEADER START -->
+		<header class="header">
+			<div class="phone-popup">
+				<div class="phone-modal">
+					<p class="phone-modal-title">Обратный звонок</p>
+					<input type="text" placeholder="Введите номер...">
+					<button class="phone-submit" type="submit">Отправить</button>
+				</div>
+			</div>
+			<div class="basket-popup">
+				<img id="basket-toggle" src="img/close.png" alt="" class="close-popup">
+				<div class="basket-modal">
+					<div class="basket-number basket-num-popup"><span class=number-items>4<span></div>
+					<img id="basket-toggle" src="img/basket-red.svg" class="basket-icon icon-mobile" alt="">
+					<div class="basket-block">
+						<p id="basket-toggle" class="basket-count">В корзине <span>4</span> товара</p>
+						<a href=""><p class="basket-featured"><img src="img/hearth.svg" class="feature-icon" alt="">Избранные товары</p></a>
+						<a href=""><p class="basket-featured"><img src="img/lines-red.svg" class="feature-icon lines" alt="">Нет товаров для сравнения</p></a>
+					</div>
+				</div>
+				<div class="basket-items">
+					<div class="basket-item">
+						<img src="img/zaglushka-item.png" alt="" class="basket-item__img">
+						<div class="basket-item-block">
+							<p class="basket-item__title">Чёрная анальная втулка с синим кристаллом</p>
+							<div class="js-spcbtwn">
+								<p class="basket-item__count item-info">Кол-во: <span>23</span></p>
+								<p class="basket-item__price item-info"><span>33 509</span> руб.</p>
+							</div>
+						</div>
+					</div>
+					<div class="basket-item">
+						<img src="img/zaglushka-item.png" alt="" class="basket-item__img">
+						<div class="basket-item-block">
+							<p class="basket-item__title">Чёрная анальная втулка с синим кристаллом</p>
+							<div class="js-spcbtwn">
+								<p class="basket-item__count item-info">Кол-во: <span>23</span></p>
+								<p class="basket-item__price item-info"><span>33 509</span> руб.</p>
+							</div>
+						</div>
+					</div>
+					<div class="basket-item">
+						<img src="img/zaglushka-item.png" alt="" class="basket-item__img">
+						<div class="basket-item-block">
+							<p class="basket-item__title">Чёрная анальная втулка с синим кристаллом</p>
+							<div class="js-spcbtwn">
+								<p class="basket-item__count item-info">Кол-во: <span>23</span></p>
+								<p class="basket-item__price item-info"><span>33 509</span> руб.</p>
+							</div>
+						</div>
+					</div>
+					<div class="basket-item">
+						<img src="img/zaglushka-item.png" alt="" class="basket-item__img">
+						<div class="basket-item-block">
+							<p class="basket-item__title">Чёрная анальная втулка с синим кристаллом</p>
+							<div class="js-spcbtwn">
+								<p class="basket-item__count item-info">Кол-во: <span>23</span></p>
+								<p class="basket-item__price item-info"><span>33 509</span> руб.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="basket-total">
+					<div class="basket-total-price">
+						<p class="basket-total__desc">Итого:</p>
+						<p class="basket-total__sum"><span>22 900</span> руб</p>
+					</div>
+					<div class="basket-buttons">
+						<button class="cart-btn">В корзину</button>
+						<button class="buy-btn"><img src="img/check.svg" alt=""> Оформить</button>
+					</div>
+				</div>
+			</div>
+			<a class="header-logo" href=""><img class="header-logo" src="img/logo-small-2.png" alt=""></a>
+			<div class="navigation">
+				<div class="first-bar">
+					<nav class="nav">
+						<a href="" class="nav-link">Варианты доставки</a>
+						<a href="" class="nav-link">Как оплатить</a>
+						<a href="" class="nav-link">Гарантия анонимности</a>
+						<a href="" class="nav-link">Контакты</a>
+						<a href="" class="nav-link">О магазине</a>
+					</nav>
+					<div class="socials">
+						<a href="" class="icon vk"><img src="img/vk.svg" class="icon" alt="vk"></a>
+						<a href="" class="icon yt"><img src="img/yt.svg" class="icon" alt="youtube"></a>
+						<a href="" class="icon inst"><img src="img/inst.svg" class="icon" alt="instagram"></a>
+					</div>
+					<div class="registration">
+						<a href="" class="login link">
+							<img src="img/sign.svg" class="sign-icon" alt="">
+							Вход
+						</a>
+						<span>/</span>
+						<a href="" class="registr link">Регистрация</a>
+					</div>
+					<div class="nickname">
+						<a class="login link">Привет,
+						</a>
+						<a href="" class="name link">Иван</a>
+					</div>
+				</div>
+				<div class="second-bar">
+					<div class="burger-btn menu-toggle">
+						<img src="img/burger.svg" alt="" class="burger-img contact-img">
+					</div>
+					<div class="logo-btn">
+						<a href=""><img src="img/logo-small-2.png" alt="" class="logo-img contact-img"></a>
+					</div>
+					<div class="contact-block">
+						<a href="tel:88007761234"><img src="img/phone-circle.svg" alt="" class="phone-img contact-img"></a>
+						<div class="info">
+							<a class="phone-toggle" href="tel:88007761234"><p class="title font-bold">8 800 775 12 34</p></a>
+							<p class="desc">Бесплатно с телефонов по РФ</p>
+						</div>
+					</div>
+					<div class="contact-block">
+						<a href="mailto:shop@erobueno.ru"><img src="img/email-circle.svg" alt="" class="email-img contact-img"></a>
+						<div class="info">
+							<a href="mailto:shop@erobueno.ru"><p class="title">shop@erobueno.ru</p></a>
+							<p class="desc">Круглосуточно</p>
+						</div>
+					</div>
+					<div class="search">
+						<img src="img/search.svg" alt="" class="">
+						<input class="search-input" type="" name="" placeholder="Поиск...">
+					</div>
+					<div class="basket">
+						<div class="basket-number"><span class="number-items">4</span></div>
+						<img id="basket-toggle" src="img/basket-circle.svg" class="basket-icon basket-open" alt="">
+						<div class="basket-block hide-block">
+							<p id="basket-toggle" class="basket-count">В корзине <span>4</span> товара</p>
+							<p id="basket" class="basket-featured"><img src="img/hearth.svg" class="feature-icon" alt="">Избранные товары</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- CATEGORIES -->
+		<section class="sub-header">
+			<div class="categories">
+				<a id="a_1" href="" class="category"><img src="img/cuff.svg" alt="">Все для секса</a>
+				<a id="a_2" href="" class="category"><img src="img/female.svg" alt="">Женщинам</a>
+				<a id="a_3" href="" class="category"><img src="img/male.svg" alt="">Мужчинам</a>
+				<a id="a_4" href="" class="category"><img src="img/para.svg" alt="">Парам</a>
+				<a id="a_5" href="" class="category"><img src="img/podborka.svg" alt="">Подборки</a>
+			</div>
+			<div class="categories">
+				<a id="a_6" href="" class="promo"><img src="img/sale-circle.svg" alt="">Распродажа</a>
+				<a id="a_7" href="" class="promo"><img src="img/new-circle.svg" alt="">Новинки</a>
+				<a id="a_8" href="" class="promo"><img src="img/info-circle.svg" alt="">Информация</a>
+			</div>
+		</section>
+		<!-- MENU MOBILE -->
+		<div class="menu-mobile">
+			<div class="dark-bg-basket dark-bg-mob-menu"></div>
+			<div class="menu-adaptive">
+				<div class="registration-mobile">
+					<a href="" class="login link mobile">
+						<img src="img/sign-mobile.svg" class="sign-icon" alt="">
+						Вход
+					</a>
+					<span> / </span>
+					<a href="" class="registr link mobile">Регистрация</a>
+				</div>
+				<div class="menu-categories">
+					<div class="close-btn"><img src="img/close-menu.png" alt="" class="menu-toggle"></div>
+					<div class="categories cats-mobile">
+						<a id="l_1" href="" class="category cat-mob"><img src="img/cuff.svg" alt=""><span>Все для секса<span></a>
+						<ul id="list_1" class="simple-menu-list-column list-mobile">
+							<li><a class="simple-menu_li" href=""></i>Новичкам в анальном сексе</a></li>
+							<li><a class="simple-menu_li" href=""></i>Подарок женщине</a></li>
+							<li><a class="simple-menu_li" href=""></i>Новый год</a></li>
+							<li><a class="simple-menu_li" href=""></i>День святого валентина</a></li>
+							<li><a class="simple-menu_li" href=""></i>Подарки на 23 февраля</a></li>
+							<li><a class="simple-menu_li" href=""></i>Подарки на 8 марта</a></li>
+							<li><a class="simple-menu_li" href=""></i>Лучший эротический образ</a></li>
+							<li><a class="simple-menu_li" href=""></i>Создать романтику</a></li>
+							<li><a class="simple-menu_li" href=""></i>Попробовать ролевые игры</a></li>
+							<li><a class="simple-menu_li" href=""></i>Нет партнера. Я девушка</a></li>
+							<li><a class="simple-menu_li" href=""></i>Нет партнера. Я парень</a></li>
+							<li><a class="simple-menu_li" href=""></i>Подарок мужчине</a></li>
+							<li><a class="simple-menu_li" href=""></i>Хочу поиметь мужчину</a></li>
+							<li><a class="simple-menu_li" href=""></i>Интимные массажеры</a></li>
+							<li><a class="simple-menu_li" href=""></i>Подарки и приколы</a></li>
+						</ul>
+						<a id="l_2" href="" class="category cat-mob"><img src="img/female.svg" alt="" class="female-icon"><span class="female">Женщинам</span></a>
+						<div id="list_2" class="dropdown-titles list-mobile">
+							
+							<ul class="mar-auto"><a id="t_1" class="sm-li_main mr-auto" href=""></i>Анальные игрушки</a></li></ul>
+							<ul id="test_1" class="simple-menu-list-column list-mobile pb-3 m-0">
+								<li><a class="simple-menu_li" href=""></i>Анальные вибраторы</a></li>
+								<li><a class="simple-menu_li" href=""></i>Анальные пробки</a></li>
+								<li><a class="simple-menu_li" href=""></i>Анальные пробки с хвостами</a></li>
+								<li><a class="simple-menu_li" href=""></i>Анальные стимуляторы без вибрации</a></li>
+								<li><a class="simple-menu_li" href=""></i>Анальные фаллоимитаторы</a></li>
+								<li><a class="simple-menu_li" href=""></i>Анальные шарики, цепочки</a></li>
+								<li><a class="simple-menu_li" href=""></i>Надувные расширители</a></li>
+								<li><a class="simple-menu_li" href=""></i>Стеклянные и металлические</a></li>
+							</ul>
+							<ul class="mar-auto"><a id="t_2" class="sm-li_main mr-auto" href=""></i>Вибраторы</a></ul>
+							<ul id="test_2" class="simple-menu-list-column list-mobile pb-3 m-0">
+								<li><a class="simple-menu_li" href=""></i>Hi-tech</a></li>
+								<li><a class="simple-menu_li" href=""></i>Анально-вагинальные</a></li>
+								<li><a class="simple-menu_li" href=""></i>Большие вибраторы</a></li>
+								<li><a class="simple-menu_li" href=""></i>Вибронаборы</a></li>
+								<li><a class="simple-menu_li" href=""></i>Вибростимуляторы, вибропульки</a></li>
+								<li><a class="simple-menu_li" href=""></i>Водонепроницаемые</a></li>
+								<li><a class="simple-menu_li" href=""></i>Вращающиеся (ротаторы)</a></li>
+								<li><a class="simple-menu_li" href=""></i>Двусторонние</a></li>
+								<li><a class="simple-menu_li" href=""></i>Для двоих</a></li>
+								<li><a class="simple-menu_li" href=""></i>Классические</a></li>
+								<li><a class="simple-menu_li" href=""></i>Компьютерного типа</a></li>
+								<li><a class="simple-menu_li" href=""></i>Реалистики</a></li>
+								<li><a class="simple-menu_li" href=""></i>С радиоуправлением</a></li>
+								<li><a class="simple-menu_li" href=""></i>Со стимулятором клитора</a></li>
+								<li><a class="simple-menu_li" href=""></i>Стимуляторы G-точки</a></li>
+							</ul>
+							<ul><a id="t_3" class="sm-li_main mr-auto" href=""></i>Секс-товары для женщин</a></ul>
+							<ul id="test_3" class="simple-menu-list-column list-mobile pb-3 m-0">
+								<li><a class="simple-menu_li" href=""></i>Вагинальные шарики</a></li>
+								<li><a class="simple-menu_li" href=""></i>Виброяйцо</a></li>
+								<li><a class="simple-menu_li" href=""></i>Клиторальные стимуляторы</a></li>
+								<li><a class="simple-menu_li" href=""></i>Помпы для клитора</a></li>
+								<li><a class="simple-menu_li" href=""></i>Помпы и стимуляторы для груди</a></li>
+							</ul>
+							<ul><a id="t_4" class="sm-li_main mr-auto" href=""></i>Фаллоимитаторы</a></ul>
+							<ul id="test_4" class="simple-menu-list-column list-mobile pb-3 m-0">
+								<li><a class="simple-menu_li" href=""></i>Анально-вагинальные</a></li>
+								<li><a class="simple-menu_li" href=""></i>Вагинальные пробки</a></li>
+								<li><a class="simple-menu_li" href=""></i>Гиганты</a></li>
+								<li><a class="simple-menu_li" href=""></i>Двусторонние</a></li>
+								<li><a class="simple-menu_li" href=""></i>Классические дилдо</a></li>
+								<li><a class="simple-menu_li" href=""></i>Реалистичные</a></li>
+								<li><a class="simple-menu_li" href=""></i>Стеклянные фаллосы</a></li>
+								<li><a class="simple-menu_li" href=""></i>Стимуляторы точки G</a></li>
+							</ul>
+						</div>
+						<a id="l_3" href="" class="category cat-mob"><img src="img/male.svg" alt="" class="male-icon"><span class="male">Мужчинам</span></a>
+						<ul id="list_3" class="simple-menu-list-column list-mobile">
+							<li><a class="simple-menu_li" href=""></i>Вагины</a></li>
+							<li><a class="simple-menu_li" href=""></i>Вакуумные помпы</a></li>
+							<li><a class="simple-menu_li" href=""></i>Массажеры простаты</a></li>
+							<li><a class="simple-menu_li" href=""></i>Мастурбаторы</a></li>
+							<li><a class="simple-menu_li" href=""></i>Насадки и удлинители</a></li>
+							<li><a class="simple-menu_li" href=""></i>Секс куклы</a></li>
+							<li><a class="simple-menu_li" href=""></i>Эрекционные кольца</a></li>
+						</ul>
+						<a id="l_4" href="" class="category cat-mob"><img src="img/para.svg" alt="" class="para-icon"><span class="para">Парам</span></a>
+						<div id="list_4" class="dropdown-titles list-mobile">
+							<ul><a id="t_5" class="sm-li_main" href=""></i>Смазки, лубриканты</a></ul>
+							<ul id="test_5" class="simple-menu-list-column list-mobile pb-3 m-0">
+								<li><a class="simple-menu_li" href=""></i>Анальные смазки</a></li>
+								<li><a class="simple-menu_li" href=""></i>Возбуждающие</a></li>
+								<li><a class="simple-menu_li" href=""></i>Массажные масла и свечи</a></li>
+								<li><a class="simple-menu_li" href=""></i>На водной основе</a></li>
+								<li><a class="simple-menu_li" href=""></i>Анальные фаллоимитаторы</a></li>
+								<li><a class="simple-menu_li" href=""></i>На силиконовой основе</a></li>
+								<li><a class="simple-menu_li" href=""></i>Пролонгаторы</a></li>
+							</ul>
+							<ul><a id="t_6" class="sm-li_main" href=""></i>Страпоны, фаллопротезы</a></ul>
+							<ul id="test_6" class="simple-menu-list-column list-mobile pb-3 m-0">
+								<li><a class="simple-menu_li" href=""></i>Безремневые</a></li>
+								<li><a class="simple-menu_li" href=""></i>Женские страпоны</a></li>
+								<li><a class="simple-menu_li" href=""></i>Мужские страпоны</a></li>
+								<li><a class="simple-menu_li" href=""></i>Трусики и насадки</a></li>
+								<li><a class="simple-menu_li" href=""></i>Фаллопротезы</a></li>
+							</ul>
+							<ul><a id="t_7" class="sm-li_main" href=""></i>Косметика с феромонами</a></ul>
+							<ul id="test_7" class="simple-menu-list-column list-mobile pb-3 m-0">
+								<li><a class="simple-menu_li" href=""></i>Духи и смазки для женщин</a></li>
+								<li><a class="simple-menu_li" href=""></i>Духи и смазки для мужчин</a></li>
+								<li><a class="simple-menu_li" href=""></i>Концентраты феромонов</a></li>
+								<li><a class="simple-menu_li" href=""></i>Средства по уходу за телом, косметика</a></li>
+							</ul>
+							<ul><a id="t_8" class="sm-li_main" href=""></i>Приятные мелочи</a></ul>
+							<ul id="test_8" class="simple-menu-list-column list-mobile pb-3 m-0">
+								<li><a class="simple-menu_li" href=""></i>Вейп</a></li>
+								<li><a class="simple-menu_li" href=""></i>Возбуждающие средства (не БАДы)</a></li>
+								<li><a class="simple-menu_li" href=""></i>Дарсонваль</a></li>
+								<li><a class="simple-menu_li" href=""></i>Ёлочные игрушки</a></li>
+								<li><a class="simple-menu_li" href=""></i>Интимная гигиена</a></li>
+								<li><a class="simple-menu_li" href=""></i>Презервативы</a></li>
+								<li><a class="simple-menu_li" href=""></i>Сувениры</a></li>
+								<li><a class="simple-menu_li" href=""></i>Элементы питания и аксессуары</a></li>
+								<li><a class="simple-menu_li" href=""></i>Эротическая литература</a></li>
+								<li><a class="simple-menu_li" href=""></i>Эротические игры</a></li>
+								<li><a class="simple-menu_li" href=""></i>Эротические наборы</a></li>
+							</ul>
+							<ul><a id="t_9" class="sm-li_main" href=""></i>Секс-мебель и качели</a></ul>
+							<ul id="test_9" class="simple-menu-list-column list-mobile pb-3 m-0">
+								<li><a class="simple-menu_li" href=""></i>Секс-качели</a></li>
+								<li><a class="simple-menu_li" href=""></i>Секс-машины</a></li>
+								<li><a class="simple-menu_li" href=""></i>Секс-мебель</a></li>
+							</ul>
+							<ul><a id="t_10" class="sm-li_main" href=""></i>BDSM, садо-мазо товары</a></ul>
+							<ul id="test_10" class="simple-menu-list-column list-mobile pb-3 m-0">
+								<li><a class="simple-menu_li" href=""></i>Другие BDSM товары</a></li>
+								<li><a class="simple-menu_li" href=""></i>Интимные украшения</a></li>
+								<li><a class="simple-menu_li" href=""></i>Кнуты, плётки, хлысты</a></li>
+								<li><a class="simple-menu_li" href=""></i>Маски, кляпы</a></li>
+								<li><a class="simple-menu_li" href=""></i>Медицинский фетиш</a></li>
+								<li><a class="simple-menu_li" href=""></i>Наручники, ошейники</a></li>
+								<li><a class="simple-menu_li" href=""></i>Электростимуляторы</a></li>
+							</ul>
+						</div>
+						<a href="" id="l_5" class="category cat-mob"><img src="img/podborka.svg" alt="" class="mokup-icon"><span class="mokup">Подборки</span></a>
+						<ul id="list_5" class="simple-menu-list-column list-mobile">
+							<li><a class="simple-menu_li" href=""></i>Новичкам в анальном сексе</a></li>
+							<li><a class="simple-menu_li" href=""></i>Подарок женщине</a></li>
+							<li><a class="simple-menu_li" href=""></i>Новый год</a></li>
+							<li><a class="simple-menu_li" href=""></i>День святого валентина</a></li>
+							<li><a class="simple-menu_li" href=""></i>Подарки на 23 февраля</a></li>
+							<li><a class="simple-menu_li" href=""></i>Подарки на 8 марта</a></li>
+							<li><a class="simple-menu_li" href=""></i>Лучший эротический образ</a></li>
+							<li><a class="simple-menu_li" href=""></i>Создать романтику</a></li>
+							<li><a class="simple-menu_li" href=""></i>Попробовать ролевые игры</a></li>
+							<li><a class="simple-menu_li" href=""></i>Нет партнера. Я девушка</a></li>
+							<li><a class="simple-menu_li" href=""></i>Нет партнера. Я парень</a></li>
+							<li><a class="simple-menu_li" href=""></i>Подарок мужчине</a></li>
+							<li><a class="simple-menu_li" href=""></i>Хочу поиметь мужчину</a></li>
+							<li><a class="simple-menu_li" href=""></i>Интимные массажеры</a></li>
+							<li><a class="simple-menu_li" href=""></i>Подарки и приколы</a></li>
+							<li><a class="simple-menu_li" href=""></i>Подборка 50 отенков серого</a></li>
+							<li><a class="simple-menu_li" href=""></i>Попробовать БДСМ</a></li>
+							<li><a class="simple-menu_li" href=""></i>Разнообразить жизнь парам</a></li>
+							<li><a class="simple-menu_li" href=""></i>Секс игрушки для пар</a></li>
+							<li><a class="simple-menu_li" href=""></i>Стимуляция груди</a></li>
+							<li><a class="simple-menu_li" href=""></i>Стимуляция клитора</a></li>
+							<li><a class="simple-menu_li" href=""></i>Увеличение члена</a></li>
+							<li><a class="simple-menu_li" href=""></i>Хочу порнозвезду</a></li>
+						</ul>
+					</div>
+					<div class="more-info">
+						<a href="" id="l_8" class="promo promo-mob ml-2"><img src="img/mobile-sale.svg" alt="">Распродажа</a>
+						<ul id="list_8" class="simple-menu-list-column list-mobile">
+							<li><a class="simple-menu_li" href=""></i>Скидки</a></li>
+							<li><a class="simple-menu_li" href=""></i>Доставка и оплата</a></li>
+							<li><a class="simple-menu_li" href=""></i>Гарантии и возврат</a></li>
+							<li><a class="simple-menu_li" href=""></i>Конфиденциальность</a></li>
+							<li><a class="simple-menu_li" href=""></i>Читайте наш блог</a></li>
+							<li><a class="simple-menu_li" href=""></i>Отзывы о магазине</a></li>
+						</ul>
+						<a href="" id="l_9" class="promo promo-mob ml-2"><img src="img/mobile-new.svg" alt="">Новинки</a>
+						<ul id="list_9" class="simple-menu-list-column list-mobile">
+							<li><a class="simple-menu_li" href=""></i>Новинки</a></li>
+							<li><a class="simple-menu_li" href=""></i>Доставка и оплата</a></li>
+							<li><a class="simple-menu_li" href=""></i>Гарантии и возврат</a></li>
+							<li><a class="simple-menu_li" href=""></i>Конфиденциальность</a></li>
+							<li><a class="simple-menu_li" href=""></i>Читайте наш блог</a></li>
+							<li><a class="simple-menu_li" href=""></i>Отзывы о магазине</a></li>
+						</ul>
+					</div>
+					<nav class="nav navig-mobile">
+						<a href="" class="nav-link nav-mobile">Варианты доставки</a>
+						<a href="" class="nav-link nav-mobile">Как оплатить</a>
+						<a href="" class="nav-link nav-mobile">Гарантия анонимности</a>
+						<a href="" class="nav-link nav-mobile">Контакты</a>
+						<a href="" class="nav-link nav-mobile">О магазине</a>
+					</nav>
+					<div class="contact-mobile">
+						<div class="contact-block contact-block-mobile">
+							<a href=""><img src="img/phone-circle.svg" alt="" class="phone-img contact-img contact-img-mobile"></a>
+							<div class="info">
+								<a href=""><p class="title font-bold">8 800 775 12 34</p></a>
+								<p class="desc">Бесплатно с телефонов по РФ</p>
+							</div>
+						</div>
+						<div class="contact-block contact-block-mobile">
+							<a href=""><img src="img/email-circle.svg" alt="" class="email-img contact-img contact-img-mobile"></a>
+							<div class="info">
+								<a href=""><p class="title">shop@erobueno.ru</p></a>
+								<p class="desc">Круглосуточно</p>
+							</div>
+						</div>
+						<div class="socials socials-mobile">
+							<a href="" class="icon vk"><img src="img/vk.svg" class="icon" alt="vk"></a>
+							<a href="" class="icon yt"><img src="img/yt.svg" class="icon" alt="youtube"></a>
+							<a href="" class="icon inst"><img src="img/inst.svg" class="icon" alt="instagram"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="basket-mob">
+			<div class="dark-bg-basket"></div>
+			<div class="basket-block-mobile">
+				<div class="basket mobile-basket">
+					<div class="basket-number basket-number-popup number-mobile">4</div>
+					<img id="basket-toggle" src="img/basket-circle.svg" class="basket-icon icon-mobile" alt="">
+					<div class="basket-block hide-block basket-mobile">
+						<p id="basket-toggle" class="basket-count">В корзине <span>4</span> товара</p>
+						<a href=""><p id="basket" class="basket-go">Перейти в корзину</p></a>
+					</div>
+					<div class="basket-arrow"><img src="img/arrownext.png" alt="" class=""></div>
+				</div>
+				<div class="features-mobile">
+					<p id="basket" class="basket-featured white"><img src="img/hearth-white.svg" class="feature-icon" alt="">В избранное</p>
+					<p id="basket" class="basket-featured white"><img src="img/lines-white.png" class="feature-icon" alt="">К сравнению</p>
+				</div>
+			</div>
+		</div>
+		<div class="container pos-rel">
+			<div id="aa_1" class="submenu for-sex">
+				<div class="container">
+					<ul class="simple-menu-list-column">
+						<li><a class="simple-menu_li" href=""></i>Новичкам в анальном сексе</a></li>
+						<li><a class="simple-menu_li" href=""></i>Подарок женщине</a></li>
+						<li><a class="simple-menu_li" href=""></i>Новый год</a></li>
+						<li><a class="simple-menu_li" href=""></i>День святого валентина</a></li>
+						<li><a class="simple-menu_li" href=""></i>Подарки на 23 февраля</a></li>
+						<li><a class="simple-menu_li" href=""></i>Подарки на 8 марта</a></li>
+						<li><a class="simple-menu_li" href=""></i>Лучший эротический образ</a></li>
+						<li><a class="simple-menu_li" href=""></i>Создать романтику</a></li>
+						<li><a class="simple-menu_li" href=""></i>Попробовать ролевые игры</a></li>
+						<li><a class="simple-menu_li" href=""></i>Нет партнера. Я девушка</a></li>
+						<li><a class="simple-menu_li" href=""></i>Нет партнера. Я парень</a></li>
+						<li><a class="simple-menu_li" href=""></i>Подарок мужчине</a></li>
+						<li><a class="simple-menu_li" href=""></i>Хочу поиметь мужчину</a></li>
+						<li><a class="simple-menu_li" href=""></i>Интимные массажеры</a></li>
+						<li><a class="simple-menu_li" href=""></i>Подарки и приколы</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="aa_3" class="submenu for-men">
+				<div class="container">
+					<ul class="simple-menu-list-column">
+						<li><a class="simple-menu_li" href=""></i>Вагины</a></li>
+						<li><a class="simple-menu_li" href=""></i>Вакуумные помпы</a></li>
+						<li><a class="simple-menu_li" href=""></i>Массажеры простаты</a></li>
+						<li><a class="simple-menu_li" href=""></i>Мастурбаторы</a></li>
+						<li><a class="simple-menu_li" href=""></i>Насадки и удлинители</a></li>
+						<li><a class="simple-menu_li" href=""></i>Секс куклы</a></li>
+						<li><a class="simple-menu_li" href=""></i>Эрекционные кольца</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="aa_5" class="submenu podborka">
+				<div class="container">
+					<ul class="simple-menu-list-column">
+						<li><a class="simple-menu_li" href=""></i>Новичкам в анальном сексе</a></li>
+						<li><a class="simple-menu_li" href=""></i>Подарок женщине</a></li>
+						<li><a class="simple-menu_li" href=""></i>Новый год</a></li>
+						<li><a class="simple-menu_li" href=""></i>День святого валентина</a></li>
+						<li><a class="simple-menu_li" href=""></i>Подарки на 23 февраля</a></li>
+						<li><a class="simple-menu_li" href=""></i>Подарки на 8 марта</a></li>
+						<li><a class="simple-menu_li" href=""></i>Лучший эротический образ</a></li>
+						<li><a class="simple-menu_li" href=""></i>Создать романтику</a></li>
+						<li><a class="simple-menu_li" href=""></i>Попробовать ролевые игры</a></li>
+						<li><a class="simple-menu_li" href=""></i>Нет партнера. Я девушка</a></li>
+						<li><a class="simple-menu_li" href=""></i>Нет партнера. Я парень</a></li>
+						<li><a class="simple-menu_li" href=""></i>Подарок мужчине</a></li>
+						<li><a class="simple-menu_li" href=""></i>Хочу поиметь мужчину</a></li>
+						<li><a class="simple-menu_li" href=""></i>Интимные массажеры</a></li>
+						<li><a class="simple-menu_li" href=""></i>Подарки и приколы</a></li>
+						<li><a class="simple-menu_li" href=""></i>Подборка 50 отенков серого</a></li>
+						<li><a class="simple-menu_li" href=""></i>Попробовать БДСМ</a></li>
+						<li><a class="simple-menu_li" href=""></i>Разнообразить жизнь парам</a></li>
+						<li><a class="simple-menu_li" href=""></i>Секс игрушки для пар</a></li>
+						<li><a class="simple-menu_li" href=""></i>Стимуляция груди</a></li>
+						<li><a class="simple-menu_li" href=""></i>Стимуляция клитора</a></li>
+						<li><a class="simple-menu_li" href=""></i>Увеличение члена</a></li>
+						<li><a class="simple-menu_li" href=""></i>Хочу порнозвезду</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="aa_2" class="submenu for-fem">
+				<div class="container flex-row p-3">
+					<ul class="simple-menu-list-column">
+						<li><a class="sm-li_main" href=""></i>Анальные игрушки</a></li>
+						<li><a class="simple-menu_li" href=""></i>Анальные вибраторы</a></li>
+						<li><a class="simple-menu_li" href=""></i>Анальные пробки</a></li>
+						<li><a class="simple-menu_li" href=""></i>Анальные пробки с хвостами</a></li>
+						<li><a class="simple-menu_li" href=""></i>Анальные стимуляторы без вибрации</a></li>
+						<li><a class="simple-menu_li" href=""></i>Анальные фаллоимитаторы</a></li>
+						<li><a class="simple-menu_li" href=""></i>Анальные шарики, цепочки</a></li>
+						<li><a class="simple-menu_li" href=""></i>Надувные расширители</a></li>
+						<li><a class="simple-menu_li" href=""></i>Стеклянные и металлические</a></li>
+					</ul>
+					<ul class="simple-menu-list-column">
+						<li><a class="sm-li_main" href=""></i>Вибраторы</a></li>
+						<li><a class="simple-menu_li" href=""></i>Hi-tech</a></li>
+						<li><a class="simple-menu_li" href=""></i>Анально-вагинальные</a></li>
+						<li><a class="simple-menu_li" href=""></i>Большие вибраторы</a></li>
+						<li><a class="simple-menu_li" href=""></i>Вибронаборы</a></li>
+						<li><a class="simple-menu_li" href=""></i>Вибростимуляторы, вибропульки</a></li>
+						<li><a class="simple-menu_li" href=""></i>Водонепроницаемые</a></li>
+						<li><a class="simple-menu_li" href=""></i>Вращающиеся (ротаторы)</a></li>
+						<li><a class="simple-menu_li" href=""></i>Двусторонние</a></li>
+						<li><a class="simple-menu_li" href=""></i>Для двоих</a></li>
+						<li><a class="simple-menu_li" href=""></i>Классические</a></li>
+						<li><a class="simple-menu_li" href=""></i>Компьютерного типа</a></li>
+						<li><a class="simple-menu_li" href=""></i>Реалистики</a></li>
+						<li><a class="simple-menu_li" href=""></i>С радиоуправлением</a></li>
+						<li><a class="simple-menu_li" href=""></i>Со стимулятором клитора</a></li>
+						<li><a class="simple-menu_li" href=""></i>Стимуляторы G-точки</a></li>
+					</ul>
+					<ul class="simple-menu-list-column">
+						<li><a class="sm-li_main" href=""></i>Секс-товары<br>для женщин</a></li>
+						<li><a class="simple-menu_li" href=""></i>Вагинальные шарики</a></li>
+						<li><a class="simple-menu_li" href=""></i>Виброяйцо</a></li>
+						<li><a class="simple-menu_li" href=""></i>Клиторальные стимуляторы</a></li>
+						<li><a class="simple-menu_li" href=""></i>Помпы для клитора</a></li>
+						<li><a class="simple-menu_li" href=""></i>Помпы и стимуляторы для груди</a></li>
+					</ul>
+					<ul class="simple-menu-list-column">
+						<li><a class="sm-li_main" href=""></i>Фаллоимитаторы</a></li>
+						<li><a class="simple-menu_li" href=""></i>Анально-вагинальные</a></li>
+						<li><a class="simple-menu_li" href=""></i>Вагинальные пробки</a></li>
+						<li><a class="simple-menu_li" href=""></i>Гиганты</a></li>
+						<li><a class="simple-menu_li" href=""></i>Двусторонние</a></li>
+						<li><a class="simple-menu_li" href=""></i>Классические дилдо</a></li>
+						<li><a class="simple-menu_li" href=""></i>Реалистичные</a></li>
+						<li><a class="simple-menu_li" href=""></i>Стеклянные фаллосы</a></li>
+						<li><a class="simple-menu_li" href=""></i>Стимуляторы точки G</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="aa_4" class="submenu for-fem">
+				<div class="container flex-row p-3">
+					<ul class="simple-menu-list-column">
+						<li><a class="sm-li_main" href=""></i>Смазки, лубриканты</a></li>
+						<li><a class="simple-menu_li" href=""></i>Анальные смазки</a></li>
+						<li><a class="simple-menu_li" href=""></i>Возбуждающие</a></li>
+						<li><a class="simple-menu_li" href=""></i>Массажные масла и свечи</a></li>
+						<li><a class="simple-menu_li" href=""></i>На водной основе</a></li>
+						<li><a class="simple-menu_li" href=""></i>Анальные фаллоимитаторы</a></li>
+						<li><a class="simple-menu_li" href=""></i>На силиконовой основе</a></li>
+						<li><a class="simple-menu_li" href=""></i>Пролонгаторы</a></li>
+						<ul class="simple-menu-list-column p-0 pt-20">
+							<li><a class="sm-li_main" href=""></i>Страпоны, фаллопротезы</a></li>
+							<li><a class="simple-menu_li" href=""></i>Безремневые</a></li>
+							<li><a class="simple-menu_li" href=""></i>Женские страпоны</a></li>
+							<li><a class="simple-menu_li" href=""></i>Мужские страпоны</a></li>
+							<li><a class="simple-menu_li" href=""></i>Трусики и насадки</a></li>
+							<li><a class="simple-menu_li" href=""></i>Фаллопротезы</a></li>
+						</ul>
+					</ul>
+					<ul class="simple-menu-list-column">
+						<li><a class="sm-li_main" href=""></i>Косметика с феромонами</a></li>
+						<li><a class="simple-menu_li" href=""></i>Духи и смазки для женщин</a></li>
+						<li><a class="simple-menu_li" href=""></i>Духи и смазки для мужчин</a></li>
+						<li><a class="simple-menu_li" href=""></i>Концентраты феромонов</a></li>
+						<li><a class="simple-menu_li" href=""></i>Средства по уходу за телом, косметика</a></li>
+					</ul>
+					<ul class="simple-menu-list-column">
+						<li><a class="sm-li_main" href=""></i>Приятные мелочи</a></li>
+						<li><a class="simple-menu_li" href=""></i>Вейп</a></li>
+						<li><a class="simple-menu_li" href=""></i>Возбуждающие средства (не БАДы)</a></li>
+						<li><a class="simple-menu_li" href=""></i>Дарсонваль</a></li>
+						<li><a class="simple-menu_li" href=""></i>Ёлочные игрушки</a></li>
+						<li><a class="simple-menu_li" href=""></i>Интимная гигиена</a></li>
+						<li><a class="simple-menu_li" href=""></i>Презервативы</a></li>
+						<li><a class="simple-menu_li" href=""></i>Сувениры</a></li>
+						<li><a class="simple-menu_li" href=""></i>Элементы питания и аксессуары</a></li>
+						<li><a class="simple-menu_li" href=""></i>Эротическая литература</a></li>
+						<li><a class="simple-menu_li" href=""></i>Эротические игры</a></li>
+						<li><a class="simple-menu_li" href=""></i>Эротические наборы</a></li>
+					</ul>
+					<ul class="simple-menu-list-column">
+						<li><a class="sm-li_main" href=""></i>Секс-мебель и качели</a></li>
+						<li><a class="simple-menu_li" href=""></i>Секс-качели</a></li>
+						<li><a class="simple-menu_li" href=""></i>Секс-машины</a></li>
+						<li><a class="simple-menu_li" href=""></i>Секс-мебель</a></li>
+						<ul class="simple-menu-list-column p-0 pt-20">
+							<li><a class="sm-li_main" href=""></i>BDSM, садо-мазо товары</a></li>
+							<li><a class="simple-menu_li" href=""></i>Другие BDSM товары</a></li>
+							<li><a class="simple-menu_li" href=""></i>Интимные украшения</a></li>
+							<li><a class="simple-menu_li" href=""></i>Кнуты, плётки, хлысты</a></li>
+							<li><a class="simple-menu_li" href=""></i>Маски, кляпы</a></li>
+							<li><a class="simple-menu_li" href=""></i>Медицинский фетиш</a></li>
+							<li><a class="simple-menu_li" href=""></i>Наручники, ошейники</a></li>
+							<li><a class="simple-menu_li" href=""></i>Электростимуляторы</a></li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+			<div id="aa_6" class="submenu for-sale">
+				<div class="container">
+					<ul class="simple-menu-list-column">
+						<li><a class="simple-menu_li" href=""></i>Скидки</a></li>
+						<li><a class="simple-menu_li" href=""></i>Доставка и оплата</a></li>
+						<li><a class="simple-menu_li" href=""></i>Гарантии и возврат</a></li>
+						<li><a class="simple-menu_li" href=""></i>Конфиденциальность</a></li>
+						<li><a class="simple-menu_li" href=""></i>Читайте наш блог</a></li>
+						<li><a class="simple-menu_li" href=""></i>Отзывы о магазине</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="aa_7" class="submenu for-new">
+				<div class="container">
+					<ul class="simple-menu-list-column">
+						<li><a class="simple-menu_li" href=""></i>Новинки</a></li>
+						<li><a class="simple-menu_li" href=""></i>Доставка и оплата</a></li>
+						<li><a class="simple-menu_li" href=""></i>Гарантии и возврат</a></li>
+						<li><a class="simple-menu_li" href=""></i>Конфиденциальность</a></li>
+						<li><a class="simple-menu_li" href=""></i>Читайте наш блог</a></li>
+						<li><a class="simple-menu_li" href=""></i>Отзывы о магазине</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="aa_8" class="submenu for-info">
+				<div class="container">
+					<ul class="simple-menu-list-column">
+						<li><a class="simple-menu_li" href=""></i>Контакты</a></li>
+						<li><a class="simple-menu_li" href=""></i>Доставка и оплата</a></li>
+						<li><a class="simple-menu_li" href=""></i>Гарантии и возврат</a></li>
+						<li><a class="simple-menu_li" href=""></i>Конфиденциальность</a></li>
+						<li><a class="simple-menu_li" href=""></i>Читайте наш блог</a></li>
+						<li><a class="simple-menu_li" href=""></i>Отзывы о магазине</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- HEADER END -->
 
-<!-- HEADER END -->
 <!-- Here write code -->
-<div class="item-page" id="item-page">
-<div id="topsite"></div>
-<div class="container">
+<div class="item-page" id="item-page">	
+	<div id="topsite"></div>
+	<div class="container">
+
 <!-- 		<div class="col-12 mobile-1">
 			<div class="item-nav mobile">
 				<ul>
@@ -664,1257 +667,1343 @@
 				</ul>
 			</div>
 		</div> -->
-<div class="col-12">
-<div class="row">
-<div class="site-tree__block">
-<button class="site-tree__back">Назад</button>
-<ul class="site-tree">
-<li><a href="#">Главная</a></li>
-<li><a href="#">Каталог</a></li>
-<li><a href="#">Раздел каталога</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="row m-0">
-<div class="col-lg-9 p-0">
-<div class="item-page__content">
-<div class="item-info__block">
-<div class="item-info__block-text__main mobile-1">
-<span class="item-info__block-text__title">Новогодний комплект белья с шапочкой</span>
-<span class="item-info__block-text__article">Артикул: 05014, ID: 138061</span>
-<span class="item-info__block-text__point">Этот товар купили последний раз 2 часа назад</span>
-</div>
-<div class="item-info__block-images">
-<a data-fancybox="gallery2" href="img/item11.jpg" class="item-info__block-images__main-image"></a>
-<div class="item-info__block-images-group">
-<a data-fancybox="gallery2" class="product-photo1" href="img/item14.jpg"></a>
-<a data-fancybox="gallery2" class="product-photo2" href="img/item12.jpg"></a>
-<a data-fancybox="gallery2" class="product-photo3" href="img/item13.jpg"></a>
-<a data-fancybox="gallery2" class="product-photo4" href="img/item11.jpg"></a>
-</div>
-</div>
-<div class="item-info__block-text">
-<div class="item-info__block-text__main desktop-1">
-<span class="item-info__block-text__title">Новогодний комплект белья с шапочкой</span>
-<span class="item-info__block-text__article">Артикул: 05014, ID: 138061</span>
-<span class="item-info__block-text__point">Этот товар купили последний раз 2 часа назад</span>
-</div>
-<div class="item-info__block-text__description">
-<span>Краткое описание:</span>
-<p class="item-info__block-text__description-text">Хотите порадовать своего мужчину чем-то необычным в новогоднюю ночь? Подарите ему роскошный образ снегурочки, облаченной в эротичный комплект белья! В комплекте: бюстгальтер, пояс с подвязками</p>
-</div>
-<div class="site-advantages">
-<span class="site-advantages__title">Почему EroBueno?</span>
-<ul>
-<li class="side-advantages__anonim">Самая анонимная доставка</li>
-<li class="side-advantages__guarantee">100% гарантия сохранности</li>
-<li class="side-advantages__transportation">Доставка любым способом</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="item-page__sidebar-mobile mobile-1">
-<div class="item-page__sidebar">
-<div class="item-page__sidebar-container">
-<div class="item-page__sidebar-block">
-<div class="item-page__sidebar-block__points-block">
-<span class="points-block__point point-new">Новинка</span>
-<span class="points-block__point point-hit">Хит продаж</span>
-<span class="points-block__point">10% Скидка</span>
-<span class="points-block__point">30% Скидка</span>
-</div>
-<div class="item-page__sidebar-block__delivery">
-<span class="sidebar-pink-text sidebar-delivery-store">В магазинах
-<span class="item-page__sidebar-block__delivery-data">через 4 дня</span>
-</span>
-<span class="sidebar-pink-text sidebar-delivery-home">Доставим на дом
-<span class="item-page__sidebar-block__delivery-data">через 4 дня</span>
-</span>
-</div>
-<div class="item-page__sidebar-block__item-info">
-<span class="item-page__sidebar-block__item-info__text">В наличии</span>
-<div class="item-page__sidebar-block__item-info__price-block">
-<span class="item-page__sidebar-block__item-info__price-old">2 250 руб</span>
-<span class="item-page__sidebar-block__item-info__price">1 500 руб</span>
-</div>
-</div>
-<div class="item-page__sidebar-block__rating">
-<div class="item-rating">
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-</div>
-<a href="#">Отзывы</a>
-</div>
-<span class="item-page__sidebar-block__text">Нашли дешевле - снизим цену</span>
-<div class="item-page__sidebar-block__buy">
-<input type="number" class="item-page__sidebar-block__buy-counter numb" id="1" value="1">
-<div class="item-page__sibebar-block__buttons">
-<button class="item-page__sibebar-block__buttons-basket">В корзину</button>
-<button class="item-page__sibebar-block__buttons-buy">Купить в 1 клик</button>
-</div>
-</div>
-<div class="item-page__sidebar-block__interactive">
-<button class="sidebar-pink-text heart-icon">Запомнить товар</button>
-<a href="#" class="sidebar-pink-text analytics-icon">К сравнению</a>
-</div>
-<div class="item-page__sidebar-block__properties">
-<span class="item-page__sidebar-block__text">Выберите свойства товара:</span>
-<div class="item-page__sidebar-block__properties-block">
-<div class="catalog-filter__brand">
-<span class="sidebar-pink-text catalog-filter__title-name">Размер:</span>
-<div class="select">
-<select name="select-brand">
-<option value="1">XL</option>
-<option value="2">XLL</option>
-<option value="2">XLLL</option>
-</select>
-</div>
-</div>
-<div class="catalog-filter__colors">
-<span class="sidebar-pink-text catalog-filter__title-name">Цвет:</span>
-<div class="catalog-filter__colors-block">
-<button class="catalog-filter__colors__color color1 color-active"></button>
-<button class="catalog-filter__colors__color color2"></button>
-<button class="catalog-filter__colors__color color3"></button>
-<button class="catalog-filter__colors__color color4"></button>
-<button class="catalog-filter__colors__color color5"></button>
-<button class="catalog-filter__colors__color color6"></button>
-<button class="catalog-filter__colors__color color7"></button>
-<button class="catalog-filter__colors__color color8"></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="item-page__sidebar-block-bonus">
-<span>+90 бонусных рублей</span>
-<span>3% скидка при оплате онлайн</span>
-</div>
-</div>
-</div>
-</div>
-<div class="item-title item-kit__title" id="kits">
-<span>Комплектом дешевле</span>
-</div>
-<div class="item-kit">
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a class="kit-image1"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Краткое описание товара в две строкиКраткое описание товара в две строки </span>
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<form action="#">
-<div class="block-select">
-<div class="block-select__element">
-<span class="placeholder">Цвет</span>
-<div class="block-select__element-decor">
-<select name="color" value="Цвет">
-<option onclick="option=1" value="-1" style="display:none;"></option>
-<option value="#">Белый</option>
-<option value="#">Зелёный</option>
-<option value="#">Оранжевый</option>
-</select>
-</div>
-</div>
-<div class="block-select__element">
-<span class="placeholder">Размер</span>
-<div class="block-select__element-decor">
-<select name="color">
-<span class="placeholder">Размер</span>
-<option value="-1" style="display:none;"></option>
-<option value="#">Белый</option>
-<option value="#">Зелёный</option>
-<option value="#">Оранжевый</option>
-</select>
-</div>
-</div>
-</div>
-<label>Добавить к покупке<input type="checkbox" class="cart-button-add"></label>
-</form>
-</div>
-</div>
-<button class="item-info__button-add"></button>
-</div>
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a class="kit-image2"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Краткое описание товара в две строки</span>
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<form action="#">
-<div class="block-select">
-<div class="block-select__element block-input-color">
-<span class="placeholder"></span>
-<div class="block-select__element-decor">
-<div class="select-block__colors__input"></div>
-<div class="select-block__colors">
-<form action="#">
-<label class="input-color red">
-<input onclick='$inputColor="red"' type="radio" class="input-red" name="input-color">
-</label>
-<label class="input-color green">
-<input onclick='$inputColor="#57d586"' type="radio" class="input-green" name="input-color">
-</label>
-<label class="input-color blue">
-<input onclick='$inputColor="blue"' type="radio" class="input-blue" name="input-color">
-</label>
-</form>
-</div>
-</div>
-</div>
-<div class="block-select__element">
-<span class="placeholder">Размер</span>
-<div class="block-select__element-decor">
-<select name="color">
-<option value="-1" style="display:none;"></option>
-<option value="#">XL</option>
-<option value="#">XLL</option>
-<option value="#">XLL</option>
-</select>
-</div>
-</div>
-</div>
-<label>Добавить к покупке<input type="checkbox" class="cart-button-add"></label>
-</form>
-</div>
-</div>
-<button class="item-info__button-add"></button>
-</div>
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a class="kit-image3"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Краткое описание товара в две строки</span>
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<form action="#">
-<div class="block-select">
-<div class="block-select__element">
-<span class="placeholder">Цвет</span>
-<div class="block-select__element-decor">
-<select name="color" value="Цвет">
-<option value="-1" style="display:none;"></option>
-<option value="#">Белый</option>
-<option value="#">Зелёный</option>
-<option value="#">Оранжевый</option>
-</select>
-</div>
-</div>
-<div class="block-select__element">
-<span class="placeholder">Размер</span>
-<div class="block-select__element-decor">
-<select name="color">
-<option value="-1" style="display:none;"></option>
-<option value="#">Белый</option>
-<option value="#">Зелёный</option>
-<option value="#">Оранжевый</option>
-</select>
-</div>
-</div>
-</div>
-<label>Добавить к покупке<input type="checkbox" class="cart-button-add"></label>
-</form>
-</div>
-</div>
-<button class="item-info__button-add"></button>
-</div>
-<div class="item-offer__block item-block-pink">
-<span class="item-offer__block-title">Купи данный супер комплект из 4 предметов</span>
-<span class="item-offer__block-price">за 9 900 руб</span>
-<span class="item-offer__block-text">Скидка составит</span>
-<span class="item-offer__block-discount">28%</span>
-<span class="item-offer__block-nodiscount">Цена без скидки:<br><span class="item-offer__block-nodiscount-price">14 900 руб</span></span>
-<button class="item-offer__block-button">Купить комплект</button>
-<button class="item-offer__button"></button>
-</div>
-</div>
-<div class="site-info">
-<div class="item-nav">
-<ul>
-<li><a href="#description">Описание</a></li>
-<li><a href="#kits">Комплекты</a></li>
-<li><a href="#iframe">Видео</a></li>
-<li><a href="#sizes">Размеры</a></li>
-<li><a href="#delivery">Доставка и оплата</a></li>
-<li><a href="#guarantee">Гарантии</a></li>
-<li><a href="#confidence">Конфиденциальность</a></li>
-<li class="desktop-1" href="#feedback"><a href="#">Отзывы</a></li>
-</ul>
-</div>
-<div class="item-description" id="description">
-<div class="item-description-text">
-<div class="item-description__left">
-<div class="item-title">
-<span>Описание</span>
-</div>
-<div class="item-description__text">Хотите порадовать своего мужчину чем-то необычным в новогоднюю ночь? Подарите ему роскошный образ снегурочки, облаченной в эротичный комплект белья! В комплекте: бюстгальтер, пояс с подвязками,далее</div>
-</div>
-<div class="item-description__right">
-<ul class="item-description__char">Характеристики
-<div class="item-description__char-block">
-<li><span class="item-description__char-title">Производитель</span>Womanizer</li>
-<li><span class="item-description__char-title">Материал</span>Силикон</li>
-<li><span class="item-description__char-title">Вес</span>859 грамм</li>
-<li><span class="item-description__char-title">Длина</span>10 см</li>
-<li><span class="item-description__char-title">Диаметр</span>1-5 см</li>
-<li><span class="item-description__char-title">Вибрация</span>Да</li>
-</div>
-</ul>
-</div>
-</div>
-<iframe id="iframe" src="https://www.youtube.com/embed/kNlsbsuAhf4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<div class="mobile-1 mobile-nav-block mobile-nav-block__sizes">Размеры<span>+</span></div>
-<div class="item-sizes" id="sizes">
-<div class="item-title">
-<span>Размеры</span>
-</div>
-<div class="item-sizes__table">
-<div class="item-sizes__table-names">
-<div class="item-sizes__table-names__title">Международный (INT)</div>
-<div class="item-sizes__table-cell">XS</div>
-<div class="item-sizes__table-cell cell-soft">XS</div>
-<div class="item-sizes__table-cell">XS</div>
-<div class="item-sizes__table-cell cell-soft">XS</div>
-<div class="item-sizes__table-cell">XS</div>
-<div class="table-point"><span>Универсальный</span></div>
-</div>
-<div class="item-sizes__table-data">
-<div class="item-sizes__table-data__name">Обхват груди (см)</div>
-<div class="item-sizes__table-cell">84-86</div>
-<div class="item-sizes__table-cell cell-soft">84-86</div>
-<div class="item-sizes__table-cell">84-86</div>
-<div class="item-sizes__table-cell cell-soft">84-86</div>
-<div class="item-sizes__table-cell">84-86</div>
-</div>
-<div class="item-sizes__table-data">
-<div class="item-sizes__table-data__name">Обхват груди (см)</div>
-<div class="item-sizes__table-cell">84-86</div>
-<div class="item-sizes__table-cell cell-soft">84-86</div>
-<div class="item-sizes__table-cell">84-86</div>
-<div class="item-sizes__table-cell cell-soft">84-86</div>
-<div class="item-sizes__table-cell">84-86</div>
-</div>
-<div class="item-sizes__table-data">
-<div class="item-sizes__table-data__name">Обхват груди (см)</div>
-<div class="item-sizes__table-cell">84-86</div>
-<div class="item-sizes__table-cell cell-soft">84-86</div>
-<div class="item-sizes__table-cell">84-86</div>
-<div class="item-sizes__table-cell cell-soft">84-86</div>
-<div class="item-sizes__table-cell">84-86</div>
-</div>
-<div class="item-sizes__table-data">
-<div class="item-sizes__table-data__name">Обхват груди (см)</div>
-<div class="item-sizes__table-cell">84-86</div>
-<div class="item-sizes__table-cell cell-soft">84-86</div>
-<div class="item-sizes__table-cell">84-86</div>
-<div class="item-sizes__table-cell cell-soft">84-86</div>
-<div class="item-sizes__table-cell">84-86</div>
-</div>
-<div class="item-sizes__table-data">
-<div class="item-sizes__table-data__name">Обхват груди (см)</div>
-<div class="item-sizes__table-cell">84-86</div>
-<div class="item-sizes__table-cell cell-soft">84-86</div>
-<div class="item-sizes__table-cell">84-86</div>
-<div class="item-sizes__table-cell cell-soft">84-86</div>
-<div class="item-sizes__table-cell">84-86</div>
-</div>
-<div class="item-sizes__table-data">
-<div class="item-sizes__table-data__name">Обхват груди (см)</div>
-<div class="item-sizes__table-cell">84-86</div>
-<div class="item-sizes__table-cell cell-soft">84-86</div>
-<div class="item-sizes__table-cell">84-86</div>
-<div class="item-sizes__table-cell cell-soft">84-86</div>
-<div class="item-sizes__table-cell">84-86</div>
-</div>
-</div>
-</div>
-<div class="mobile-1 mobile-nav-block mobile-nav-block__delivery">Доставка<span>+</span></div>
-<div class="item-delivery" id="delivery">
-<div class="item-title">
-<span>Доставка и оплата</span>
-</div>
-<div class="item-delivery__info">
-<div class="item-delivery__info-delivery item-delivery__info-block">
-<span class="item-delivery__info-title">Удобная и быстрая доставка</span>
-<span class="info-text">
-<span class="color-pink">От 3 000 руб.</span> - доставка бесплатно<br>
-<span class="color-pink">До 3 000 руб.</span> - от 300 рублей<br>
-в зависимости от города
-</span>
-<span class="info-text">
-Выберите свой город<br>
-и узнайте подробнее:
-</span>
-<div class="item-delivery__info-buttons">
-<button class="info-button">Я в Москве</button>
-<button class="info-button">Я в Санкт-Петербурге</button>
-<button class="info-button">Я в регионе</button>
-</div>
-</div>
-<div class="item-delivery__info-payment item-delivery__info-block">
-<span class="item-delivery__info-title">Оплата</span>
-<p class="info-text delivery-payment1">
-Во время оформления заказа Вам будут предложены наибол удобные способы оплаты.
-</p>
-<p class="info-text delivery-payment2">
-При оплате картой на сайте - доп. скидка 3%
-</p>
-<ul class="info-text">Варианты оплаты:
-<li>Онлайн на сайте</li>
-<li>Безналичный расчёт</li>
-<li>Наличными курьеру</li>
-<li>Наложенным платежём</li>
-</ul>
-</div>
-<div class="item-delivery__info-confidential item-delivery__info-block" id="confidence">
-<span class="item-delivery__info-title">100% конфиденциальность</span>
-<span class="info-text delivery-payment3">
-Упаковка заказов максимально нейтральная. Товары, заказанные Вами, упаковываются в непрозрачный пакет, который в свою очередь помещается в пластиковую сумку.
-</span>
-<a href="#" class="item-button-simple item-delivery__info-confidential__link">Подробнее</a>
-</div>
-</div>
-<div class="item-brands">
-<img src="img/brand1.svg" alt="img">
-<img src="img/brand2.svg" alt="img">
-<img src="img/brand3.svg" alt="img">
-<img src="img/brand4.svg" alt="img">
-<img src="img/brand5.svg" alt="img">
-<img src="img/brand6.svg" alt="img">
-<img src="img/brand7.svg" alt="img">
-<img src="img/brand8.svg" alt="img">
-<img src="img/brand9.svg" alt="img">
-<img src="img/brand10.svg" alt="img">
-<img src="img/brand11.svg" alt="img">
-<img src="img/brand12.svg" alt="img">
-<img src="img/brand13.svg" alt="img">
-<img src="img/brand14.svg" alt="img">
-<img src="img/brand15.svg" alt="img">
-<img src="img/brand16.svg" alt="img">
-</div>
-</div>
-<div class="mobile-1 mobile-nav-block mobile-nav-block__guarantee">Гарантия<span>+</span></div>
-<div class="item-guarantee" id="guarantee">
-<div class="item-title">
-<span>Возврат, замена и гарантии</span>
-</div>
-<div class="info-text">
-Несмотря на то, что бракованные товары составляют менее одного процента от всего объема продаж, мы считаем необходимым проверять работоспособность каждой модели, чтобы исключить вероятность покупки бракованного товара. Перед отправкой покупателю все товары, которые не имеют защиты от вскрытия (как, например, изделия из латекса), проверяются администратором на наличие брака. Кроме визуального контроля также тестируются электрические приборы - вибраторы. Поэтому мы можем быть уверены, что вы не получите бракованный товар.<br><br>
-Если все же Вы получили товар, производственный дефект которого очевиден, мы готовы обменять его на идентичную модель в течение недели после того, как Вам доставили заказ. Для этого просьба не позднее 7 дней с даты получения заказа сообщить нам по е-мейл о бракованном товаре, с максимально подробным описанием дефекта, который Вы обнаружили. Возврат бракованных товаров производится за счет магазина.<br><br>
-Практически все товары, представленные в нашем интернет-каталоге, предназначены для интимного использования, поэтому, согласно постановлению Правительства РФ от 19.01.1998 N 55, возврату и обмену не подлежат.<br><br>
-При формировании заказов мы не заменяем без одобрения заказчика один товар другим. Замена без уведомления возможна только в том случае, если заменитель другого цвета или в иной упаковке, чем товар на фото в каталоге. Т.е. замена производится на товар, абсолютно идентичный по функциональным возможностям, составу и характеристикам.
-</div>
-</div>
-<div class="item-feedback">
-<div class="item-title">
-<span>Отзывы</span>
-<form action="#">
-<div class="select">
-<select class="item-feedback__select">
-<option value="#">Раскрыть фильтр</option>
-<option value="#">1</option>
-<option value="#">2</option>
-</select>
-</div>
-<div class="select">
-<select class="item-feedback__select">
-<option value="#">Раскрыть фильтр</option>
-<option value="#">1</option>
-<option value="#">2</option>
-</select>
-</div>
-<button class="info-button">Сбросить опции</button>
-</form>
-</div>
-<div class="item-feedback__container">
-<div class="item-feedback__block">
-<div class="item-feedback__block-header">
-<span class="item-feedback__block-header__name">Полина</span>
-<div class="item-rating">
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-</div>
-</div>
-<div class="item-feedback__block-date">
-<span class="item-feedback__block-date__date">09.10.2019</span>
-<span class="item-feedback__block-date__time">15:37</span>
-</div>
-<span class="item-feedback__block-text">
-Мой первый сатисфаер и я жалею, что не купила его еще лет сто назад. это великолепная вещь! маст хев для любой женщины. яркие, фантастические оргазмы. самое главное для меня осуществилась мечта о более быстром оргазме с партнером, теперь он не бьется по полчаса надо мной, чтобы довести меня до кульминации, пару раз даже умудрялись
-</span>
-</div>
-<div class="item-feedback__block">
-<div class="item-feedback__block-header">
-<span class="item-feedback__block-header__name">Полина</span>
-<div class="item-rating">
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-</div>
-</div>
-<div class="item-feedback__block-date">
-<span class="item-feedback__block-date__date">09.10.2019</span>
-<span class="item-feedback__block-date__time">15:37</span>
-</div>
-<span class="item-feedback__block-text">
-Мой первый сатисфаер и я жалею, что не купила его еще лет сто назад. это великолепная вещь! маст хев для любой женщины. яркие, фантастические оргазмы. самое главное для меня осуществилась мечта о более быстром оргазме с партнером, теперь он не бьется по полчаса надо мной, чтобы довести меня до кульминации, пару раз даже умудрялись
-</span>
-</div>
-<div class="item-feedback__block">
-<div class="item-feedback__block-header">
-<span class="item-feedback__block-header__name">Полина</span>
-<div class="item-rating">
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-</div>
-</div>
-<div class="item-feedback__block-date">
-<span class="item-feedback__block-date__date">09.10.2019</span>
-<span class="item-feedback__block-date__time">15:37</span>
-</div>
-<span class="item-feedback__block-text">
-Мой первый сатисфаер и я жалею, что не купила его еще лет сто назад. это великолепная вещь! маст хев для любой женщины. яркие, фантастические оргазмы. самое главное для меня осуществилась мечта о более быстром оргазме с партнером, теперь он не бьется по полчаса надо мной, чтобы довести меня до кульминации, пару раз даже умудрялись
-</span>
-</div>
-<div class="item-feedback__block">
-<div class="item-feedback__block-header">
-<span class="item-feedback__block-header__name">Полина</span>
-<div class="item-rating">
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-</div>
-</div>
-<div class="item-feedback__block-date">
-<span class="item-feedback__block-date__date">09.10.2019</span>
-<span class="item-feedback__block-date__time">15:37</span>
-</div>
-<span class="item-feedback__block-text">
-Мой первый сатисфаер и я жалею, что не купила его еще лет сто назад. это великолепная вещь! маст хев для любой женщины. яркие, фантастические оргазмы. самое главное для меня осуществилась мечта о более быстром оргазме с партнером, теперь он не бьется по полчаса надо мной, чтобы довести меня до кульминации, пару раз даже умудрялись
-</span>
-</div>
-<div class="item-feedback__block">
-<div class="item-feedback__block-header">
-<span class="item-feedback__block-header__name">Полина</span>
-<div class="item-rating">
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-</div>
-</div>
-<div class="item-feedback__block-date">
-<span class="item-feedback__block-date__date">09.10.2019</span>
-<span class="item-feedback__block-date__time">15:37</span>
-</div>
-<span class="item-feedback__block-text">
-Мой первый сатисфаер и я жалею, что не купила его еще лет сто назад. это великолепная вещь! маст хев для любой женщины. яркие, фантастические оргазмы. самое главное для меня осуществилась мечта о более быстром оргазме с партнером, теперь он не бьется по полчаса надо мной, чтобы довести меня до кульминации, пару раз даже умудрялись
-</span>
-</div>
-<div class="item-feedback__block">
-<div class="item-feedback__block-header">
-<span class="item-feedback__block-header__name">Полина</span>
-<div class="item-rating">
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-</div>
-</div>
-<div class="item-feedback__block-date">
-<span class="item-feedback__block-date__date">09.10.2019</span>
-<span class="item-feedback__block-date__time">15:37</span>
-</div>
-<span class="item-feedback__block-text">
-Мой первый сатисфаер и я жалею, что не купила его еще лет сто назад. это великолепная вещь! маст хев для любой женщины. яркие, фантастические оргазмы. самое главное для меня осуществилась мечта о более быстром оргазме с партнером, теперь он не бьется по полчаса надо мной, чтобы довести меня до кульминации, пару раз даже умудрялись
-</span>
-</div>
-</div>
-<div class="item-feedback__footer">
-<div class="catalog-pagination">
-<ul class="catalog-pagination__list">
-<li><a class="catalog-pagination__button" href="#">1</a></li>
-<hr>
-<li><a class="catalog-pagination__button" href="#">7</a></li>
-<li><a class="catalog-pagination__button catalog-pagination__button-active" href="#">8</a></li>
-<li><a class="catalog-pagination__button" href="#">9</a></li>
-<hr>
-<li><a class="catalog-pagination__button" href="#">22</a></li>
-</ul>
-</div>
-<button class="info-button">Написать отзыв</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 desktop-1">
-<div class="item-page__sidebar">
-<div class="item-page__sidebar-container">
-<div class="item-page__sidebar-block">
-<div class="item-page__sidebar-block__points-block">
-<span class="points-block__point point-new">Новинка</span>
-<span class="points-block__point point-hit">Хит продаж</span>
-<span class="points-block__point">10% Скидка</span>
-<span class="points-block__point">30% Скидка</span>
-</div>
-<div class="item-page__sidebar-block__delivery">
-<span class="sidebar-pink-text sidebar-delivery-store">В магазинах
-<span class="item-page__sidebar-block__delivery-data">через 4 дня</span>
-</span>
-<span class="sidebar-pink-text sidebar-delivery-home">Доставим на дом
-<span class="item-page__sidebar-block__delivery-data">через 4 дня</span>
-</span>
-</div>
-<div class="item-page__sidebar-block__item-info">
-<span class="item-page__sidebar-block__item-info__text">В наличии</span>
-<div class="item-page__sidebar-block__item-info__price-block">
-<span class="item-page__sidebar-block__item-info__price-old">26 999 руб</span>
-<span class="item-page__sidebar-block__item-info__price">25 900 руб</span>
-</div>
-</div>
-<div class="item-page__sidebar-block__rating">
-<div class="item-rating">
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-</div>
-<a href="#">Отзывы</a>
-</div>
-<span class="item-page__sidebar-block__text">Нашли дешевле - снизим цену</span>
-<div class="item-page__sidebar-block__buy">
-<input type="number" class="item-page__sidebar-block__buy-counter numb" id="1" value="1">
-<div class="item-page__sibebar-block__buttons">
-<button class="item-page__sibebar-block__buttons-basket">В корзину</button>
-<button class="item-page__sibebar-block__buttons-buy">Купить в 1 клик</button>
-</div>
-</div>
-<div class="item-page__sidebar-block__interactive">
-<button class="sidebar-pink-text heart-icon">Запомнить товар</button>
-<a href="#" class="sidebar-pink-text analytics-icon">К сравнению</a>
-</div>
-<div class="item-page__sidebar-block__properties">
-<span class="item-page__sidebar-block__text">Выберите свойства товара:</span>
-<div class="item-page__sidebar-block__properties-block">
-<div class="catalog-filter__brand">
-<span class="sidebar-pink-text catalog-filter__title-name">Размер:</span>
-<div class="select">
-<select name="select-brand">
-<option value="1">XL</option>
-<option value="2">XLL</option>
-<option value="2">XLLL</option>
-</select>
-</div>
-</div>
-<div class="catalog-filter__colors">
-<span class="sidebar-pink-text catalog-filter__title-name">Цвет:</span>
-<div class="catalog-filter__colors-block">
-<button class="catalog-filter__colors__color color1 color-active"></button>
-<button class="catalog-filter__colors__color color2"></button>
-<button class="catalog-filter__colors__color color3"></button>
-<button class="catalog-filter__colors__color color4"></button>
-<button class="catalog-filter__colors__color color5"></button>
-<button class="catalog-filter__colors__color color6"></button>
-<button class="catalog-filter__colors__color color7"></button>
-<button class="catalog-filter__colors__color color8"></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="item-page__sidebar-block-bonus">
-<span>+90 бонусных рублей</span>
-<span>3% скидка при оплате онлайн</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-12">
-<div class="store-info">
-<div class="nav-block-scroll">
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-<li class="nav-item">
-<button class="nav-link active" id="similar-tab" data-toggle="tab" href="#similar" role="tab" aria-controls="similar" aria-selected="true">Похожие товары</button>
-</li>
-<li class="nav-item">
-<button class="nav-link" id="hit-tab" data-toggle="tab" href="#hit" role="tab" aria-controls="hit" aria-selected="false">Хиты продаж</button>
-</li>
-<li class="nav-item">
-<button class="nav-link" id="new-tab" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="false">Новинки магазина</button>
-</li>
-</ul>
-</div>
-<div class="tab-content">
-<div class="tab-pane fade show active" id="similar" role="tabpanel" aria-labelledby="similar-tab">
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a data-fancybox href="img/item6.jpg" class="kit-image4"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Похожие товарыПохожие товарыПохожие товары</span>
-<div class="item-kit__block-content__container">
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<a href="" class="item-button-simple">Подробнее</a>
-<button class="item-button-like"></button>
-</div>
-</div>
-</div>
-</div>
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a data-fancybox href="img/item11.jpg" class="kit-image5"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Похожие товары</span>
-<div class="item-kit__block-content__container">
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<a href="#" class="item-button-simple">Подробнее</a>
-<button class="item-button-like"></button>
-</div>
-</div>
-</div>
-</div>
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a href="#"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Похожие товары</span>
-<div class="item-kit__block-content__container">
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<a href="#" class="item-button-simple">Подробнее</a>
-<button class="item-button-like"></button>
-</div>
-</div>
-</div>
-</div>
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a href="#"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Похожие товары</span>
-<div class="item-kit__block-content__container">
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<a href="#" class="item-button-simple">Подробнее</a>
-<button class="item-button-like"></button>
-</div>
-</div>
-</div>
-</div>
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a href="#"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Похожие товары</span>
-<div class="item-kit__block-content__container">
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<a href="#" class="item-button-simple">Подробнее</a>
-<button class="item-button-like"></button>
-</div>
-</div>
-</div>
-</div>
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a href="#"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Похожие товары</span>
-<div class="item-kit__block-content__container">
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<a href="#" class="item-button-simple">Подробнее</a>
-<button class="item-button-like"></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="tab-pane fade" id="hit" role="tabpanel" aria-labelledby="hit-tab">
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a href="#"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Хиты продаж</span>
-<div class="item-kit__block-content__container">
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<a href="#" class="item-button-simple">Подробнее</a>
-<button class="item-button-like"></button>
-</div>
-</div>
-</div>
-</div>
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a href="#"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Хиты продаж</span>
-<div class="item-kit__block-content__container">
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<a href="#" class="item-button-simple">Подробнее</a>
-<button class="item-button-like"></button>
-</div>
-</div>
-</div>
-</div>
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a href="#"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Хиты продаж</span>
-<div class="item-kit__block-content__container">
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<a href="#" class="item-button-simple">Подробнее</a>
-<button class="item-button-like"></button>
-</div>
-</div>
-</div>
-</div>
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a href="#"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Хиты продаж</span>
-<div class="item-kit__block-content__container">
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<a href="#" class="item-button-simple">Подробнее</a>
-<button class="item-button-like"></button>
-</div>
-</div>
-</div>
-</div>
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a href="#"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Хиты продаж</span>
-<div class="item-kit__block-content__container">
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<a href="#" class="item-button-simple">Подробнее</a>
-<button class="item-button-like"></button>
-</div>
-</div>
-</div>
-</div>
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a href="#"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Хиты продаж</span>
-<div class="item-kit__block-content__container">
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<a href="#" class="item-button-simple">Подробнее</a>
-<button class="item-button-like"></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="tab-pane fade" id="new" role="tabpanel" aria-labelledby="new-tab">
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a href="#"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Новинки магазина</span>
-<div class="item-kit__block-content__container">
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<a href="#" class="item-button-simple">Подробнее</a>
-<button class="item-button-like"></button>
-</div>
-</div>
-</div>
-</div>
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a href="#"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Новинки магазина</span>
-<div class="item-kit__block-content__container">
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<a href="#" class="item-button-simple">Подробнее</a>
-<button class="item-button-like"></button>
-</div>
-</div>
-</div>
-</div>
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a href="#"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Новинки магазина</span>
-<div class="item-kit__block-content__container">
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<a href="#" class="item-button-simple">Подробнее</a>
-<button class="item-button-like"></button>
-</div>
-</div>
-</div>
-</div>
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a href="#"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Новинки магазина</span>
-<div class="item-kit__block-content__container">
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<a href="#" class="item-button-simple">Подробнее</a>
-<button class="item-button-like"></button>
-</div>
-</div>
-</div>
-</div>
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a href="#"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Новинки магазина</span>
-<div class="item-kit__block-content__container">
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<a href="#" class="item-button-simple">Подробнее</a>
-<button class="item-button-like"></button>
-</div>
-</div>
-</div>
-</div>
-<div class="item-kit__block item-block-pink">
-<div class="item-kit__block-image">
-<a href="#"></a>
-</div>
-<div class="item-kit__block-content">
-<span class="item-kit__block-name">Новинки магазина</span>
-<div class="item-kit__block-content__container">
-<div class="item-kit__block-prices">
-<div class="item-kit__block-prices__price-old">12 900 руб</div>
-<div class="item-kit__block-prices__price">22 900 руб</div>
-</div>
-<div class="item-kit__block-buttons">
-<a href="#" class="item-button-simple">Подробнее</a>
-<button class="item-button-like"></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="news-mailing">
-<div class="news-mailing__text">
-<span class="news-mailing__text-title">Подпишитесь на нашу новостную рассылку</span>
-<span class="news-mailing__text-subtitle">Чтобы не упустить все акции нашего интернет магазина.</span>
-</div>
-<form action="#" class="news-mailing__form">
-<input type="text" placeholder="Введите Ваш e-mail">
-<button class="news-mailing__form-button">Подписаться</button>
-</form>
-</div>
-</div>
-<a href="#topsite" class="scroll-top"></a>
-</div>
-<div class="product-popup">
-<div class="product-popup__background"></div>
-<div class="product-popup__container">
-<div class="product-popup__container-block">
-<div class="item-info__block">
-<button class="product-popup__close"></button>
-<div class="item-info__block-text__main mobile-1">
-<span class="item-info__block-text__title">Новогодний комплект белья с шапочкой</span>
-<span class="item-info__block-text__article">Артикул: 05014, ID: 138061</span>
-</div>
-<div class="item-info__block-images">
-<a data-fancybox="gallery1" href="img/item14.jpg" class="item-info__block-images__main-image"></a>
-<div class="item-info__block-images-group">
-<a data-fancybox="gallery1" class="product-photo1" href="img/item14.jpg"></a>
-<a data-fancybox="gallery1" class="product-photo2" href="img/item12.jpg"></a>
-<a data-fancybox="gallery1" class="product-photo3" href="img/item13.jpg"></a>
-<a data-fancybox="gallery1" class="product-photo4" href="img/item11.jpg"></a>
-</div>
-</div>
-<div class="item-info__block-text">
-<div class="item-info__block-text__main desktop-1">
-<span class="item-info__block-text__title">Новогодний комплект белья с шапочкой</span>
-<div class="item-info__block-text__main-block">
-<span class="item-info__block-text__article">Артикул: 05014, ID: 138061</span>
-<div class="item-page__sidebar-block__rating">
-<div class="item-rating">
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-<div class="item-rating__heart"></div>
-</div>
-<a href="#">Отзывы</a>
-</div>
-</div>
-<div class="item-page__sidebar-block__interactive">
-<button class="sidebar-pink-text heart-icon">В избранное</button>
-<a href="#" class="sidebar-pink-text analytics-icon">К сравнению</a>
-</div>
-<div class="item-page__sidebar-block__delivery">
-<span class="sidebar-pink-text sidebar-delivery-store">В магазинах
-<span class="item-page__sidebar-block__delivery-data">через 4 дня</span>
-</span>
-<span class="sidebar-pink-text sidebar-delivery-home">Доставим на дом
-<span class="item-page__sidebar-block__delivery-data">через 4 дня</span>
-</span>
-</div>
-</div>
-<div class="item-info__block-text__description">
-<p class="item-info__block-text__description-text">Хотите порадовать своего мужчину чем-то необычным в новогоднюю ночь? Подарите ему роскошный образ снегурочки, облаченной в эротичный комплект белья! В комплекте: бюстгальтер, пояс с подвязками,далее</p>
-<div class="item-page__sidebar-block__item-info">
-<div class="item-page__sidebar-block__item-info__price-block">
-<span class="item-page__sidebar-block__item-info__price-old">26 999 руб</span>
-<span class="item-page__sidebar-block__item-info__price">25 900 руб</span>
-</div>
-<div class="item-page__sidebar-block__item-info__price-text">
-<span>Нашли дешевле - снизим цену</span>
-<span class="points-block__point">10% Скидка</span>
-</div>
-</div>
-</div>
-<div class="product-popup__buttons">
-<div class="item-page__sibebar-block__buttons">
-<button class="item-page__sibebar-block__buttons-basket">Добавить к комплекту</button>
-<!-- <button class="item-button-simple">Быстрая покупка</button> -->
-</div>
-</div>
-<div class="item-kit__block-buttons">
-<form action="#">
-<div class="block-select">
-<div class="block-select__element">
-<span class="placeholder">Размер</span>
-<div class="block-select__element-decor">
-<select name="size">
-<option value="-1" style="display:none;"></option>
-<option value="#">XL</option>
-<option value="#">XLL</option>
-<option value="#">XLL</option>
-</select>
-</div>
-</div>
-<div class="block-select__element block-input-color">
-<span class="placeholder"></span>
-<div class="block-select__element-decor">
-<div class="select-block__colors__input"></div>
-<div class="select-block__colors">
-<form action="#">
-<label class="input-color red">
-<input data-color-name="Красный" onclick='$inputColor="red"' type="radio" class="input-red" name="input-color">
-</label>
-<label class="input-color green">
-<input data-color-name="Зелёный" onclick='$inputColor="#57d586"' type="radio" class="input-green" name="input-color">
-</label>
-<label class="input-color blue">
-<input data-color-name="Синий" onclick='$inputColor="blue"' type="radio" class="input-blue" name="input-color">
-</label>
-</form>
-</div>
-</div>
-<span class="select-block__colors-name">Чёрный</span>
-</div>
-</div>
-</form>
-</div>
-</div>
-</div>
-<div class="product-popup__interactive">
-<a class="product-popup__interactive-button popup-more-icon" href="#">Подробнее</a>
-<button class="product-popup__interactive-button popup-close-icon">Закрыть</button>
-</div>
-</div>
-</div>
-</div>
-</div>
+
+		<div class="col-12">
+			<div class="row">
+				<div class="site-tree__block">
+					<button class="site-tree__back">Назад</button>
+					<ul class="site-tree">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Раздел каталога</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="row m-0">
+
+			<div class="col-lg-9 p-0">
+				<div class="item-page__content">
+
+					<div class="item-info__block">
+						<div class="item-info__block-text__main mobile-1">
+							<span class="item-info__block-text__title">Новогодний комплект белья с шапочкой</span>
+							<span class="item-info__block-text__article">Артикул: 05014, ID: 138061</span>
+							<span class="item-info__block-text__point">Этот товар купили последний раз 2 часа назад</span>
+						</div>
+						<div class="item-info__block-images">
+							<a data-fancybox="gallery2" href="img/item11.jpg" class="item-info__block-images__main-image "></a>
+							<div class="item-info__block-images-group">
+								<a data-fancybox="gallery2" class="product-photo1" href="img/item14.jpg"></a>
+								<a data-fancybox="gallery2" class="product-photo2" href="img/item12.jpg"></a>
+								<a data-fancybox="gallery2" class="product-photo3" href="img/item13.jpg"></a>
+								<a data-fancybox="gallery2" class="product-photo4" href="img/item11.jpg"></a>
+							</div>
+						</div>
+						<div class="item-info__block-text">
+							<div class="item-info__block-text__main desktop-1">
+								<span class="item-info__block-text__title">Новогодний комплект белья с шапочкой</span>
+								<span class="item-info__block-text__article">Артикул: 05014, ID: 138061</span>
+								<span class="item-info__block-text__point">Этот товар купили последний раз 2 часа назад</span>
+							</div>
+							<div class="item-info__block-text__description">
+								<span>Краткое описание:</span>
+								<p class="item-info__block-text__description-text">Хотите порадовать своего мужчину чем-то необычным в новогоднюю ночь? Подарите ему роскошный образ снегурочки, облаченной в эротичный комплект белья! В комплекте: бюстгальтер, пояс с подвязками</p>
+							</div>
+							<div class="site-advantages">
+								<span class="site-advantages__title">Почему EroBueno?</span>
+								<ul>
+									<li class="side-advantages__anonim">Самая анонимная доставка</li>
+									<li class="side-advantages__guarantee">100% гарантия сохранности</li>
+									<li class="side-advantages__transportation">Доставка любым способом</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="item-page__sidebar-mobile mobile-1">
+
+						<div class="item-page__sidebar">
+							<div class="item-page__sidebar-container">
+								<div class="item-page__sidebar-block">
+									<div class="item-page__sidebar-block__points-block">
+										<span class="points-block__point point-new">Новинка</span>
+										<span class="points-block__point point-hit">Хит продаж</span>
+										<span class="points-block__point">10% Скидка</span>
+										<span class="points-block__point">30% Скидка</span>
+									</div>
+									<div class="item-page__sidebar-block__delivery">
+										<span class="sidebar-pink-text sidebar-delivery-store">В магазинах
+											<span class="item-page__sidebar-block__delivery-data">через 4 дня</span>
+										</span>
+										<span class="sidebar-pink-text sidebar-delivery-home">Доставим на дом
+											<span class="item-page__sidebar-block__delivery-data">через 4 дня</span>
+										</span>
+									</div>
+									<div class="item-page__sidebar-block__item-info">
+										<span class="item-page__sidebar-block__item-info__text">В наличии</span>
+										<div class="item-page__sidebar-block__item-info__price-block">
+											<span class="item-page__sidebar-block__item-info__price-old">2 250 руб</span>
+											<span class="item-page__sidebar-block__item-info__price">1 500 руб</span>
+										</div>
+									</div>
+									<div class="item-page__sidebar-block__rating">
+										<div class="item-rating">
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+										</div>
+										<a href="#">Отзывы</a>
+									</div>
+									<span class="item-page__sidebar-block__text">Нашли дешевле - снизим цену</span>
+									<div class="item-page__sidebar-block__buy">
+										<input type="number" class="item-page__sidebar-block__buy-counter numb"id="1" value="1">
+										<div class="item-page__sibebar-block__buttons">
+											<button class="item-page__sibebar-block__buttons-basket">В корзину</button>
+											<button class="item-page__sibebar-block__buttons-buy">Купить в 1 клик</button>
+										</div>
+									</div>
+									<div class="item-page__sidebar-block__interactive">
+										<button class="sidebar-pink-text heart-icon">Запомнить товар</button>
+										<a href="#" class="sidebar-pink-text analytics-icon">К сравнению</a>
+									</div>
+									<div class="item-page__sidebar-block__properties">
+										<span class="item-page__sidebar-block__text">Выберите свойства товара:</span>
+										<div class="item-page__sidebar-block__properties-block">
+											<div class="catalog-filter__brand">
+												<span class="sidebar-pink-text catalog-filter__title-name">Размер:</span>
+												<div class="select">
+													<select name="select-brand">
+														<option value="1">XL</option>
+														<option value="2">XLL</option>
+														<option value="2">XLLL</option>
+													</select>
+												</div>
+											</div>
+											<div class="catalog-filter__colors">
+												<span class="sidebar-pink-text catalog-filter__title-name">Цвет:</span>
+												<div class="catalog-filter__colors-block">
+													<button class="catalog-filter__colors__color color1 color-active"></button>
+													<button class="catalog-filter__colors__color color2"></button>
+													<button class="catalog-filter__colors__color color3"></button>
+													<button class="catalog-filter__colors__color color4"></button>
+													<button class="catalog-filter__colors__color color5"></button>
+													<button class="catalog-filter__colors__color color6"></button>
+													<button class="catalog-filter__colors__color color7"></button>
+													<button class="catalog-filter__colors__color color8"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-page__sidebar-block-bonus">
+									<span>+90 бонусных рублей</span>
+									<span>3% скидка при оплате онлайн</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+
+					<div class="item-title item-kit__title" id="kits">
+						<span>Комплектом дешевле</span>
+					</div>
+					<div class="item-kit">
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a class="kit-image1"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Краткое описание товара в две строкиКраткое описание товара в две строки </span>
+								<div class="item-kit__block-prices">
+									<div class="item-kit__block-prices__price-old">12 900 руб</div>
+									<div class="item-kit__block-prices__price">22 900 руб</div>
+								</div>
+								<div class="item-kit__block-buttons">
+									<form action="#">
+										<div class="block-select">
+											<div class="block-select__element">
+												<span class="placeholder">Цвет</span>
+												<div class="block-select__element-decor">
+													<select name="color" value="Цвет">
+														<option onclick="option = 1" value="-1" style="display:none;"></option>
+														<option value="#">Белый</option>
+														<option value="#">Зелёный</option>
+														<option value="#">Оранжевый</option>
+													</select>
+												</div>
+											</div>
+											<div class="block-select__element">
+												<span class="placeholder">Размер</span>
+												<div class="block-select__element-decor">
+													<select name="color">
+														<span class="placeholder">Размер</span>
+														<option value="-1" style="display:none;"></option>
+														<option value="#">Белый</option>
+														<option value="#">Зелёный</option>
+														<option value="#">Оранжевый</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<label>Добавить к покупке<input type="checkbox" class="cart-button-add"></label>											
+									</form>
+								</div>
+							</div>
+							<button class="item-info__button-add"></button>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a class="kit-image2"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Краткое описание товара в две строки</span>
+								<div class="item-kit__block-prices">
+									<div class="item-kit__block-prices__price-old">12 900 руб</div>
+									<div class="item-kit__block-prices__price">22 900 руб</div>
+								</div>
+								<div class="item-kit__block-buttons">
+									<form action="#">
+										<div class="block-select">
+
+											<div class="block-select__element block-input-color">
+												<span class="placeholder"></span>
+
+												<div class="block-select__element-decor">
+													<div class="select-block__colors__input"></div>
+													<div class="select-block__colors">
+														<form action="#">
+															<label class="input-color red">
+																<input onclick="$inputColor='red'" type="radio" class="input-red" name="input-color">
+															</label>
+															<label class="input-color green">
+																<input onclick="$inputColor='#57d586'" type="radio" class="input-green" name="input-color">
+															</label>
+															<label class="input-color blue">
+																<input onclick="$inputColor='blue'" type="radio" class="input-blue" name="input-color">
+															</label>
+														</form>
+													</div>
+												</div>
+											</div>
+
+											<div class="block-select__element">
+												<span class="placeholder">Размер</span>
+												<div class="block-select__element-decor">
+													<select name="color">
+														<option value="-1" style="display:none;"></option>
+														<option value="#">XL</option>
+														<option value="#">XLL</option>
+														<option value="#">XLL</option>
+													</select>
+												</div>	
+											</div>
+										</div>
+										<label>Добавить к покупке<input type="checkbox" class="cart-button-add"></label>											
+									</form>
+								</div>
+							</div>
+							<button class="item-info__button-add"></button>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a class="kit-image3"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Краткое описание товара в две строки</span>
+								<div class="item-kit__block-prices">
+									<div class="item-kit__block-prices__price-old">12 900 руб</div>
+									<div class="item-kit__block-prices__price">22 900 руб</div>
+								</div>
+								<div class="item-kit__block-buttons">
+									<form action="#">
+										<div class="block-select">
+
+											<div class="block-select__element">
+												<span class="placeholder">Цвет</span>
+												<div class="block-select__element-decor">
+													<select name="color" value="Цвет">
+														<option value="-1" style="display:none;"></option>
+														<option value="#">Белый</option>
+														<option value="#">Зелёный</option>
+														<option value="#">Оранжевый</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="block-select__element">
+												<span class="placeholder">Размер</span>
+												<div class="block-select__element-decor">
+													<select name="color">
+														<option value="-1" style="display:none;"></option>
+														<option value="#">Белый</option>
+														<option value="#">Зелёный</option>
+														<option value="#">Оранжевый</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<label>Добавить к покупке<input type="checkbox" class="cart-button-add"></label>											
+									</form>
+								</div>
+							</div>
+							<button class="item-info__button-add"></button>
+						</div>
+
+						<div class="item-offer__block item-block-pink">
+							<span class="item-offer__block-title">Купи данный супер комплект из 4 предметов</span>
+							<span class="item-offer__block-price">за 9 900 руб</span>
+							<span class="item-offer__block-text">Скидка составит</span>
+							<span class="item-offer__block-discount">28%</span>
+							<span class="item-offer__block-nodiscount">Цена без скидки:<br><span class="item-offer__block-nodiscount-price">14 900 руб</span></span>
+							<button class="item-offer__block-button">Купить комплект</button>
+							<button class="item-offer__button"></button>
+						</div>
+					</div>
+					<div class="site-info">
+
+						<div class="item-nav">
+							<ul>
+								<li><a href="#description">Описание</a></li>
+								<li><a href="#kits">Комплекты</a></li>
+								<li><a href="#iframe">Видео</a></li>
+								<li><a href="#sizes">Размеры</a></li>
+								<li><a href="#delivery">Доставка и оплата</a></li>
+								<li><a href="#guarantee">Гарантии</a></li>
+								<li><a href="#confidence">Конфиденциальность</a></li>
+								<li class="desktop-1" href="#feedback"><a href="#">Отзывы</a></li>
+							</ul>
+						</div>
+
+						<div class="item-description" id="description">
+							<div class="item-description-text">
+								<div class="item-description__left">
+									<div class="item-title">
+										<span>Описание</span>
+									</div>
+									<div class="item-description__text">Хотите порадовать своего мужчину чем-то необычным в новогоднюю ночь? Подарите ему роскошный образ снегурочки, облаченной в эротичный комплект белья! В комплекте: бюстгальтер, пояс с подвязками,далее</div>
+								</div>
+								<div class="item-description__right">
+									<ul class="item-description__char">Характеристики
+										<div class="item-description__char-block">
+											<li><span class="item-description__char-title">Производитель</span>Womanizer</li>
+											<li><span class="item-description__char-title">Материал</span>Силикон</li>
+											<li><span class="item-description__char-title">Вес</span>859 грамм</li>
+											<li><span class="item-description__char-title">Длина</span>10 см</li>
+											<li><span class="item-description__char-title">Диаметр</span>1-5 см</li>
+											<li><span class="item-description__char-title">Вибрация</span>Да</li>
+										</div>
+									</ul>
+								</div>
+							</div>
+							<iframe id="iframe" src="https://www.youtube.com/embed/kNlsbsuAhf4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						
+						<div class="mobile-1 mobile-nav-block mobile-nav-block__sizes">Размеры<span>+</span></div>
+						<div class="item-sizes" id="sizes">
+							<div class="item-title">
+								<span>Размеры</span>
+							</div>
+							<div class="item-sizes__table">
+								<div class="item-sizes__table-names">
+									<div class="item-sizes__table-names__title">Международный (INT)</div>
+									<div class="item-sizes__table-cell">XS</div>
+									<div class="item-sizes__table-cell cell-soft">XS</div>
+									<div class="item-sizes__table-cell">XS</div>
+									<div class="item-sizes__table-cell cell-soft">XS</div>
+									<div class="item-sizes__table-cell">XS</div>
+									<div class="table-point"><span>Универсальный</span></div>
+								</div>
+								<div class="item-sizes__table-data">
+									<div class="item-sizes__table-data__name">Обхват груди (см)</div>
+									<div class="item-sizes__table-cell">84-86</div>
+									<div class="item-sizes__table-cell cell-soft">84-86</div>
+									<div class="item-sizes__table-cell">84-86</div>
+									<div class="item-sizes__table-cell cell-soft">84-86</div>
+									<div class="item-sizes__table-cell">84-86</div>
+								</div>
+								<div class="item-sizes__table-data">
+									<div class="item-sizes__table-data__name">Обхват груди (см)</div>
+									<div class="item-sizes__table-cell">84-86</div>
+									<div class="item-sizes__table-cell cell-soft">84-86</div>
+									<div class="item-sizes__table-cell">84-86</div>
+									<div class="item-sizes__table-cell cell-soft">84-86</div>
+									<div class="item-sizes__table-cell">84-86</div>
+								</div>
+								<div class="item-sizes__table-data">
+									<div class="item-sizes__table-data__name">Обхват груди (см)</div>
+									<div class="item-sizes__table-cell">84-86</div>
+									<div class="item-sizes__table-cell cell-soft">84-86</div>
+									<div class="item-sizes__table-cell">84-86</div>
+									<div class="item-sizes__table-cell cell-soft">84-86</div>
+									<div class="item-sizes__table-cell">84-86</div>
+								</div>
+								<div class="item-sizes__table-data">
+									<div class="item-sizes__table-data__name">Обхват груди (см)</div>
+									<div class="item-sizes__table-cell">84-86</div>
+									<div class="item-sizes__table-cell cell-soft">84-86</div>
+									<div class="item-sizes__table-cell">84-86</div>
+									<div class="item-sizes__table-cell cell-soft">84-86</div>
+									<div class="item-sizes__table-cell">84-86</div>
+								</div>
+								<div class="item-sizes__table-data">
+									<div class="item-sizes__table-data__name">Обхват груди (см)</div>
+									<div class="item-sizes__table-cell">84-86</div>
+									<div class="item-sizes__table-cell cell-soft">84-86</div>
+									<div class="item-sizes__table-cell">84-86</div>
+									<div class="item-sizes__table-cell cell-soft">84-86</div>
+									<div class="item-sizes__table-cell">84-86</div>
+								</div>
+								<div class="item-sizes__table-data">
+									<div class="item-sizes__table-data__name">Обхват груди (см)</div>
+									<div class="item-sizes__table-cell">84-86</div>
+									<div class="item-sizes__table-cell cell-soft">84-86</div>
+									<div class="item-sizes__table-cell">84-86</div>
+									<div class="item-sizes__table-cell cell-soft">84-86</div>
+									<div class="item-sizes__table-cell">84-86</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mobile-1 mobile-nav-block mobile-nav-block__delivery">Доставка<span>+</span></div>
+						<div class="item-delivery" id="delivery">
+							<div class="item-title">
+								<span>Доставка и оплата</span>
+							</div>
+							<div class="item-delivery__info">
+								<div class="item-delivery__info-delivery item-delivery__info-block">
+									<span class="item-delivery__info-title">Удобная и быстрая доставка</span>
+									<span class="info-text">
+										<span class="color-pink">От 3 000 руб.</span> - доставка бесплатно<br>
+										<span class="color-pink">До 3 000 руб.</span> - от 300 рублей <br>
+										в зависимости от города
+									</span>
+									<span class="info-text">
+										Выберите свой город <br>
+										и узнайте подробнее:
+									</span>
+									<div class="item-delivery__info-buttons">
+										<button class="info-button">Я в Москве</button>
+										<button class="info-button">Я в Санкт-Петербурге</button>
+										<button class="info-button">Я в регионе</button>
+									</div>
+								</div>
+
+								<div class="item-delivery__info-payment item-delivery__info-block">
+									<span class="item-delivery__info-title">Оплата</span>
+									<p class="info-text delivery-payment1">
+										Во время оформления заказа 
+										Вам будут предложены наибол	
+										удобные способы оплаты.
+									</p>
+									<p class="info-text delivery-payment2">
+										При оплате картой на сайте - 
+										доп. скидка 3%
+									</p>
+									<ul class="info-text">Варианты оплаты:
+										<li>Онлайн на сайте</li>
+										<li>Безналичный расчёт</li>
+										<li>Наличными курьеру</li>
+										<li>Наложенным платежём</li>
+									</ul>
+								</div>
+
+								<div class="item-delivery__info-confidential item-delivery__info-block" id="confidence">
+									<span class="item-delivery__info-title">100% конфиденциальность</span>
+									<span class="info-text delivery-payment3">
+										Упаковка заказов максимально 
+										нейтральная. Товары, заказанные Вами, 
+										упаковываются в непрозрачный пакет, 
+										который в свою очередь помещается 
+										в пластиковую сумку.
+									</span>
+									<a href="#" class="item-button-simple item-delivery__info-confidential__link">Подробнее</a>
+								</div>
+							</div>
+							<div class="item-brands">
+								<img src="img/brand1.svg" alt="img">
+								<img src="img/brand2.svg" alt="img">
+								<img src="img/brand3.svg" alt="img">
+								<img src="img/brand4.svg" alt="img">
+								<img src="img/brand5.svg" alt="img">
+								<img src="img/brand6.svg" alt="img">
+								<img src="img/brand7.svg" alt="img">
+								<img src="img/brand8.svg" alt="img">
+								<img src="img/brand9.svg" alt="img">
+								<img src="img/brand10.svg" alt="img">
+								<img src="img/brand11.svg" alt="img">
+								<img src="img/brand12.svg" alt="img">
+								<img src="img/brand13.svg" alt="img">
+								<img src="img/brand14.svg" alt="img">
+								<img src="img/brand15.svg" alt="img">
+								<img src="img/brand16.svg" alt="img">
+							</div>
+						</div>
+
+
+						<div class="mobile-1 mobile-nav-block mobile-nav-block__guarantee">Гарантия<span>+</span></div>
+						<div class="item-guarantee" id="guarantee">
+							<div class="item-title">
+								<span>Возврат, замена и гарантии</span>
+							</div>
+							<div class="info-text">
+								Несмотря на то, что бракованные товары составляют менее одного процента от всего объема продаж, мы считаем необходимым проверять работоспособность каждой модели, чтобы исключить вероятность покупки бракованного товара. Перед отправкой покупателю все товары, которые не имеют защиты от вскрытия (как, например, изделия из латекса), проверяются администратором на наличие брака. Кроме визуального контроля также тестируются электрические приборы - вибраторы. Поэтому мы можем быть уверены, что вы не получите бракованный товар.<br><br>
+
+								Если все же Вы получили товар, производственный дефект которого очевиден, мы готовы обменять его на идентичную модель в течение недели после того, как Вам доставили заказ. Для этого просьба не позднее 7 дней с даты получения заказа сообщить нам по е-мейл о бракованном товаре, с максимально подробным описанием дефекта, который Вы обнаружили. Возврат бракованных товаров производится за счет магазина.<br><br>
+
+								Практически все товары, представленные в нашем интернет-каталоге, предназначены для интимного использования, поэтому, согласно постановлению Правительства РФ от 19.01.1998 N 55, возврату и обмену не подлежат.<br><br>
+
+								При формировании заказов мы не заменяем без одобрения заказчика один товар другим. Замена без уведомления возможна только в том случае, если заменитель другого цвета или в иной упаковке, чем товар на фото в каталоге. Т.е. замена производится на товар, абсолютно идентичный по функциональным возможностям, составу и характеристикам.
+							</div>
+						</div>
+
+						<div class="item-feedback">
+							<div class="item-title">
+								<span>Отзывы</span>
+								<form action="#">
+									<div class="select">
+										<select class="item-feedback__select">
+											<option value="#">Раскрыть фильтр</option>
+											<option value="#">1</option>
+											<option value="#">2</option>
+										</select>
+									</div>
+									<div class="select">
+										<select class="item-feedback__select">
+											<option value="#">Раскрыть фильтр</option>
+											<option value="#">1</option>
+											<option value="#">2</option>
+										</select>
+									</div>
+									<button class="info-button">Сбросить опции</button>
+								</form>
+							</div>
+							<div class="item-feedback__container">
+								<div class="item-feedback__block">
+									<div class="item-feedback__block-header">
+										<span class="item-feedback__block-header__name">Полина</span>
+										<div class="item-rating">
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+										</div>
+									</div>
+									<div class="item-feedback__block-date">
+										<span class="item-feedback__block-date__date">09.10.2019</span>
+										<span class="item-feedback__block-date__time">15:37</span>
+									</div>
+									<span class="item-feedback__block-text">
+										Мой первый сатисфаер и я жалею, что не купила его еще лет сто назад. это великолепная вещь! маст хев для любой женщины. яркие, фантастические оргазмы. самое главное для меня осуществилась мечта о более быстром оргазме с партнером, теперь он не бьется по полчаса надо мной, чтобы довести меня до кульминации, пару раз даже умудрялись
+									</span>
+								</div>
+								<div class="item-feedback__block">
+									<div class="item-feedback__block-header">
+										<span class="item-feedback__block-header__name">Полина</span>
+										<div class="item-rating">
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+										</div>
+									</div>
+									<div class="item-feedback__block-date">
+										<span class="item-feedback__block-date__date">09.10.2019</span>
+										<span class="item-feedback__block-date__time">15:37</span>
+									</div>
+									<span class="item-feedback__block-text">
+										Мой первый сатисфаер и я жалею, что не купила его еще лет сто назад. это великолепная вещь! маст хев для любой женщины. яркие, фантастические оргазмы. самое главное для меня осуществилась мечта о более быстром оргазме с партнером, теперь он не бьется по полчаса надо мной, чтобы довести меня до кульминации, пару раз даже умудрялись
+									</span>
+								</div>
+								<div class="item-feedback__block">
+									<div class="item-feedback__block-header">
+										<span class="item-feedback__block-header__name">Полина</span>
+										<div class="item-rating">
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+										</div>
+									</div>
+									<div class="item-feedback__block-date">
+										<span class="item-feedback__block-date__date">09.10.2019</span>
+										<span class="item-feedback__block-date__time">15:37</span>
+									</div>
+									<span class="item-feedback__block-text">
+										Мой первый сатисфаер и я жалею, что не купила его еще лет сто назад. это великолепная вещь! маст хев для любой женщины. яркие, фантастические оргазмы. самое главное для меня осуществилась мечта о более быстром оргазме с партнером, теперь он не бьется по полчаса надо мной, чтобы довести меня до кульминации, пару раз даже умудрялись
+									</span>
+								</div>
+								<div class="item-feedback__block">
+									<div class="item-feedback__block-header">
+										<span class="item-feedback__block-header__name">Полина</span>
+										<div class="item-rating">
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+										</div>
+									</div>
+									<div class="item-feedback__block-date">
+										<span class="item-feedback__block-date__date">09.10.2019</span>
+										<span class="item-feedback__block-date__time">15:37</span>
+									</div>
+									<span class="item-feedback__block-text">
+										Мой первый сатисфаер и я жалею, что не купила его еще лет сто назад. это великолепная вещь! маст хев для любой женщины. яркие, фантастические оргазмы. самое главное для меня осуществилась мечта о более быстром оргазме с партнером, теперь он не бьется по полчаса надо мной, чтобы довести меня до кульминации, пару раз даже умудрялись
+									</span>
+								</div>
+								<div class="item-feedback__block">
+									<div class="item-feedback__block-header">
+										<span class="item-feedback__block-header__name">Полина</span>
+										<div class="item-rating">
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+										</div>
+									</div>
+									<div class="item-feedback__block-date">
+										<span class="item-feedback__block-date__date">09.10.2019</span>
+										<span class="item-feedback__block-date__time">15:37</span>
+									</div>
+									<span class="item-feedback__block-text">
+										Мой первый сатисфаер и я жалею, что не купила его еще лет сто назад. это великолепная вещь! маст хев для любой женщины. яркие, фантастические оргазмы. самое главное для меня осуществилась мечта о более быстром оргазме с партнером, теперь он не бьется по полчаса надо мной, чтобы довести меня до кульминации, пару раз даже умудрялись
+									</span>
+								</div>
+								<div class="item-feedback__block">
+									<div class="item-feedback__block-header">
+										<span class="item-feedback__block-header__name">Полина</span>
+										<div class="item-rating">
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+											<div class="item-rating__heart"></div>
+										</div>
+									</div>
+									<div class="item-feedback__block-date">
+										<span class="item-feedback__block-date__date">09.10.2019</span>
+										<span class="item-feedback__block-date__time">15:37</span>
+									</div>
+									<span class="item-feedback__block-text">
+										Мой первый сатисфаер и я жалею, что не купила его еще лет сто назад. это великолепная вещь! маст хев для любой женщины. яркие, фантастические оргазмы. самое главное для меня осуществилась мечта о более быстром оргазме с партнером, теперь он не бьется по полчаса надо мной, чтобы довести меня до кульминации, пару раз даже умудрялись
+									</span>
+								</div>
+							</div>
+
+							<div class="item-feedback__footer">
+								<div class="catalog-pagination">
+									<ul class="catalog-pagination__list">
+										<li><a class="catalog-pagination__button" href="#">1</a></li>
+										<hr>
+										<li><a class="catalog-pagination__button" href="#">7</a></li>
+										<li><a class="catalog-pagination__button catalog-pagination__button-active" href="#">8</a></li>
+										<li><a class="catalog-pagination__button" href="#">9</a></li>
+										<hr>
+										<li><a class="catalog-pagination__button" href="#">22</a></li>
+									</ul>
+								</div>
+								<button class="info-button">Написать отзыв</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+
+
+			<div class="col-lg-3 desktop-1">
+				<div class="item-page__sidebar">
+					<div class="item-page__sidebar-container">
+						<div class="item-page__sidebar-block">
+							<div class="item-page__sidebar-block__points-block">
+								<span class="points-block__point point-new">Новинка</span>
+								<span class="points-block__point point-hit">Хит продаж</span>
+								<span class="points-block__point">10% Скидка</span>
+								<span class="points-block__point">30% Скидка</span>
+							</div>
+							<div class="item-page__sidebar-block__delivery">
+								<span class="sidebar-pink-text sidebar-delivery-store">В магазинах
+									<span class="item-page__sidebar-block__delivery-data">через 4 дня</span>
+								</span>
+								<span class="sidebar-pink-text sidebar-delivery-home">Доставим на дом
+									<span class="item-page__sidebar-block__delivery-data">через 4 дня</span>
+								</span>
+							</div>
+							<div class="item-page__sidebar-block__item-info">
+								<span class="item-page__sidebar-block__item-info__text">В наличии</span>
+								<div class="item-page__sidebar-block__item-info__price-block">
+									<span class="item-page__sidebar-block__item-info__price-old">26 999 руб</span>
+									<span class="item-page__sidebar-block__item-info__price">25 900 руб</span>
+								</div>
+							</div>
+							<div class="item-page__sidebar-block__rating">
+								<div class="item-rating">
+									<div class="item-rating__heart"></div>
+									<div class="item-rating__heart"></div>
+									<div class="item-rating__heart"></div>
+									<div class="item-rating__heart"></div>
+									<div class="item-rating__heart"></div>
+								</div>
+								<a href="#">Отзывы</a>
+							</div>
+							<span class="item-page__sidebar-block__text">Нашли дешевле - снизим цену</span>
+							<div class="item-page__sidebar-block__buy">
+								<input type="number" class="item-page__sidebar-block__buy-counter numb"id="1" value="1">
+								<div class="item-page__sibebar-block__buttons">
+									<button class="item-page__sibebar-block__buttons-basket">В корзину</button>
+									<button class="item-page__sibebar-block__buttons-buy">Купить в 1 клик</button>
+								</div>
+							</div>
+							<div class="item-page__sidebar-block__interactive">
+								<button class="sidebar-pink-text heart-icon">Запомнить товар</button>
+								<a href="#" class="sidebar-pink-text analytics-icon">К сравнению</a>
+							</div>
+							<div class="item-page__sidebar-block__properties">
+								<span class="item-page__sidebar-block__text">Выберите свойства товара:</span>
+								<div class="item-page__sidebar-block__properties-block">
+									<div class="catalog-filter__brand">
+										<span class="sidebar-pink-text catalog-filter__title-name">Размер:</span>
+										<div class="select">
+											<select name="select-brand">
+												<option value="1">XL</option>
+												<option value="2">XLL</option>
+												<option value="2">XLLL</option>
+											</select>
+										</div>
+									</div>
+									<div class="catalog-filter__colors">
+										<span class="sidebar-pink-text catalog-filter__title-name">Цвет:</span>
+										<div class="catalog-filter__colors-block">
+											<button class="catalog-filter__colors__color color1 color-active"></button>
+											<button class="catalog-filter__colors__color color2"></button>
+											<button class="catalog-filter__colors__color color3"></button>
+											<button class="catalog-filter__colors__color color4"></button>
+											<button class="catalog-filter__colors__color color5"></button>
+											<button class="catalog-filter__colors__color color6"></button>
+											<button class="catalog-filter__colors__color color7"></button>
+											<button class="catalog-filter__colors__color color8"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-page__sidebar-block-bonus">
+							<span>+90 бонусных рублей</span>
+							<span>3% скидка при оплате онлайн</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="col-lg-12">
+
+			<div class="store-info">
+				<div class="nav-block-scroll">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<button class="nav-link active" id="similar-tab" data-toggle="tab" href="#similar" role="tab" aria-controls="similar" aria-selected="true">Похожие товары</button>
+						</li>
+						<li class="nav-item">
+							<button class="nav-link" id="hit-tab" data-toggle="tab" href="#hit" role="tab" aria-controls="hit" aria-selected="false">Хиты продаж</button>
+						</li>
+						<li class="nav-item">
+							<button class="nav-link" id="new-tab" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="false">Новинки магазина</button>
+						</li>
+					</ul>
+				</div>
+				<div class="tab-content">
+
+					<div class="tab-pane fade show active" id="similar" role="tabpanel" aria-labelledby="similar-tab">
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a data-fancybox href="img/item6.jpg" class="kit-image4"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Похожие товарыПохожие товарыПохожие товары</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a data-fancybox href="img/item11.jpg" class="kit-image5"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Похожие товары</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Похожие товары</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Похожие товары</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Похожие товары</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Похожие товары</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="hit" role="tabpanel" aria-labelledby="hit-tab">
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Хиты продаж</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Хиты продаж</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Хиты продаж</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Хиты продаж</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Хиты продаж</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Хиты продаж</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="tab-pane fade" id="new" role="tabpanel" aria-labelledby="new-tab">
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Новинки магазина</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Новинки магазина</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Новинки магазина</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Новинки магазина</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Новинки магазина</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-kit__block item-block-pink">
+							<div class="item-kit__block-image">
+								<a href="#"></a>
+							</div>
+							<div class="item-kit__block-content">
+								<span class="item-kit__block-name">Новинки магазина</span>
+								<div class="item-kit__block-content__container">
+									<div class="item-kit__block-prices">
+										<div class="item-kit__block-prices__price-old">12 900 руб</div>
+										<div class="item-kit__block-prices__price">22 900 руб</div>
+									</div>
+									<div class="item-kit__block-buttons">
+										<a href="#" class="item-button-simple">Подробнее</a>
+										<button class="item-button-like"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="news-mailing">
+				<div class="news-mailing__text">
+					<span class="news-mailing__text-title">Подпишитесь на нашу новостную рассылку</span>
+					<span class="news-mailing__text-subtitle">Чтобы не упустить все акции нашего интернет магазина.</span>
+				</div>
+				<form action="#" class="news-mailing__form">
+					<input type="text" placeholder="Введите Ваш e-mail">
+					<button class="news-mailing__form-button">Подписаться</button>
+				</form>
+			</div>
+
+		</div>
+
+		<a href="#topsite" class="scroll-top"></a>
+	</div>
+	<div class="product-popup">
+		<div class="product-popup__background"></div>
+		<div class="product-popup__container ">
+			<div class="product-popup__container-block">
+				<div class="item-info__block">
+					<button class="product-popup__close"></button>
+					<div class="item-info__block-text__main mobile-1">
+						<span class="item-info__block-text__title">Новогодний комплект белья с шапочкой</span>
+						<span class="item-info__block-text__article">Артикул: 05014, ID: 138061</span>
+					</div>
+
+					<div class="item-info__block-images">
+						<a data-fancybox="gallery1" href="img/item14.jpg" class="item-info__block-images__main-image "></a>
+						<div class="item-info__block-images-group">
+							<a data-fancybox="gallery1" class="product-photo1" href="img/item14.jpg"></a>
+							<a data-fancybox="gallery1" class="product-photo2" href="img/item12.jpg"></a>
+							<a data-fancybox="gallery1" class="product-photo3" href="img/item13.jpg"></a>
+							<a data-fancybox="gallery1" class="product-photo4" href="img/item11.jpg"></a>
+						</div>
+					</div>
+
+					<div class="item-info__block-text">
+
+						<div class="item-info__block-text__main desktop-1">
+							<span class="item-info__block-text__title">Новогодний комплект белья с шапочкой</span>
+							<div class="item-info__block-text__main-block">
+								<span class="item-info__block-text__article">Артикул: 05014, ID: 138061</span>
+								<div class="item-page__sidebar-block__rating">
+									<div class="item-rating">
+										<div class="item-rating__heart"></div>
+										<div class="item-rating__heart"></div>
+										<div class="item-rating__heart"></div>
+										<div class="item-rating__heart"></div>
+										<div class="item-rating__heart"></div>
+									</div>
+									<a href="#">Отзывы</a>
+								</div>
+							</div>
+							<div class="item-page__sidebar-block__interactive">
+								<button class="sidebar-pink-text heart-icon">В избранное</button>
+								<a href="#" class="sidebar-pink-text analytics-icon">К сравнению</a>
+							</div>
+							<div class="item-page__sidebar-block__delivery">
+								<span class="sidebar-pink-text sidebar-delivery-store">В магазинах
+									<span class="item-page__sidebar-block__delivery-data">через 4 дня</span>
+								</span>
+								<span class="sidebar-pink-text sidebar-delivery-home">Доставим на дом
+									<span class="item-page__sidebar-block__delivery-data">через 4 дня</span>
+								</span>
+							</div>
+						</div>
+
+						<div class="item-info__block-text__description">
+							<p class="item-info__block-text__description-text">Хотите порадовать своего мужчину чем-то необычным в новогоднюю ночь? Подарите ему роскошный образ снегурочки, облаченной в эротичный комплект белья! В комплекте: бюстгальтер, пояс с подвязками,далее</p>
+
+							<div class="item-page__sidebar-block__item-info">
+								<div class="item-page__sidebar-block__item-info__price-block">
+									<span class="item-page__sidebar-block__item-info__price-old">26 999 руб</span>
+									<span class="item-page__sidebar-block__item-info__price">25 900 руб</span>
+								</div>	
+								<div class="item-page__sidebar-block__item-info__price-text">
+									<span>Нашли дешевле - снизим цену</span>
+									<span class="points-block__point">10% Скидка</span>
+								</div>
+							</div>
+						</div>
+						<div class="product-popup__buttons">
+							<div class="item-page__sibebar-block__buttons">
+								<button class="item-page__sibebar-block__buttons-basket">Добавить к комплекту</button>
+								<!-- <button class="item-button-simple">Быстрая покупка</button> -->
+							</div>
+						</div>
+
+						<div class="item-kit__block-buttons">
+							<form action="#">
+								<div class="block-select">
+
+									<div class="block-select__element">
+										<span class="placeholder">Размер</span>
+										<div class="block-select__element-decor">
+											<select name="size">
+												<option value="-1" style="display:none;"></option>
+												<option value="#">XL</option>
+												<option value="#">XLL</option>
+												<option value="#">XLL</option>
+											</select>
+										</div>	
+									</div>
+
+
+									<div class="block-select__element block-input-color">
+										<span class="placeholder"></span>
+
+										<div class="block-select__element-decor">
+											<div class="select-block__colors__input"></div>
+											<div class="select-block__colors">
+												<form action="#">
+													<label class="input-color red">
+														<input data-color-name="Красный" onclick="$inputColor='red'" type="radio" class="input-red" name="input-color">
+													</label>
+													<label class="input-color green">
+														<input data-color-name="Зелёный" onclick="$inputColor='#57d586'" type="radio" class="input-green" name="input-color">
+													</label>
+													<label class="input-color blue">
+														<input data-color-name="Синий" onclick="$inputColor='blue'" type="radio" class="input-blue" name="input-color">
+													</label>
+												</form>
+											</div>
+										</div>
+
+										<span class="select-block__colors-name">Чёрный</span>
+
+									</div>
+
+								</div>
+							</form>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="product-popup__interactive">
+					<a class="product-popup__interactive-button popup-more-icon" href="#">Подробнее</a>
+					<button class="product-popup__interactive-button popup-close-icon">Закрыть</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
 <!-- FOOTER START -->
 <footer class="footer">
-<div class="footer-wrap element-one">
-<div class="footer-block">
-<img src="img/logo.png" alt="" class="footer-logo">
-<div class="socials-footer">
-<a href="" class="icon vk"><img src="img/vk.svg" class="icon" alt="vk"></a>
-<a href="" class="icon yt"><img src="img/yt.svg" class="icon" alt="youtube"></a>
-<a href="" class="icon inst"><img src="img/inst.svg" class="icon" alt="instagram"></a>
-</div>
-</div>
-<div class="footer-block mix-width">
-<div class="footer-mix">
-Широкий ассортимент товаров от эротического белья до элитных секс- игрушек способен удовлетворить, во всех смыслах этого слова, каждого покупателя.
-</div>
-</div>
-</div>
-<div class="footer-wrap element-two">
-<div class="footer-block">
-<div class="main-categories">
-<p class="cat-title">Основные разделы:
-</p>
-<a href="" class="cat-desc">Девушкам</a>
-<a href="" class="cat-desc">Парням</a>
-<a href="" class="cat-desc">Для пар</a>
-<a href="" class="cat-desc">Все для секса</a>
-<a href="" class="cat-desc">Эротическая одежда</a>
-</div>
-</div>
-<div class="footer-block">
-<div class="main-categories">
-<p class="cat-title">Информация:
-</p>
-<a href="" class="cat-desc">О компании</a>
-<a href="" class="cat-desc">Контакты</a>
-<a href="" class="cat-desc">Доставка и оплата</a>
-<a href="" class="cat-desc">Конфиденциальность</a>
-<a href="" class="cat-desc">Гарантия и возврат</a>
-</div>
-</div>
-</div>
-<div class="footer-block contact-row">
-<div class="footer-contact">
-<a href=""><img src="img/phone-circle.png" alt="" class="phone-img contact-img"></a>
-<div class="info-contact">
-<a href=""><p class="title font-bold">8 800 775 12 34</p></a>
-<p class="desc">Бесплатно с телефонов по РФ</p>
-</div>
-</div>
-<div class="footer-contact">
-<a href=""><img src="img/email-circle.png" alt="" class="email-img contact-img"></a>
-<div class="info-contact">
-<a href=""><p class="title">shop@erobueno.ru</p></a>
-<p class="desc">Круглосуточно</p>
-</div>
-</div>
-<div class="footer-contact">
-<a href=""><img src="img/geo.png" alt="" class="email-img contact-img"></a>
-<div class="info-contact">
-<a href=""><p class="title footer-title">Москва, пр. Мира 145,<br>офис 12</p></a>
-</div>
-</div>
-</div>
+	<div class="footer-wrap element-one">
+		<div class="footer-block">
+			<img src="img/logo.png" alt="" class="footer-logo">
+			<div class="socials-footer">
+				<a href="" class="icon vk"><img src="img/vk.svg" class="icon" alt="vk"></a>
+				<a href="" class="icon yt"><img src="img/yt.svg" class="icon" alt="youtube"></a>
+				<a href="" class="icon inst"><img src="img/inst.svg" class="icon" alt="instagram"></a>
+			</div>
+		</div>
+		<div class="footer-block mix-width">
+			<div class="footer-mix">
+				Широкий ассортимент
+				товаров от эротического
+				белья до элитных секс-
+				игрушек способен
+				удовлетворить, во всех
+				смыслах этого слова,
+				каждого покупателя.
+			</div>
+		</div>
+	</div>
+	<div class="footer-wrap element-two">
+		<div class="footer-block">
+			<div class="main-categories">
+				<p class="cat-title">Основные разделы:
+				</p>
+				<a href="" class="cat-desc">Девушкам</a>
+				<a href="" class="cat-desc">Парням</a>
+				<a href="" class="cat-desc">Для пар</a>
+				<a href="" class="cat-desc">Все для секса</a>
+				<a href="" class="cat-desc">Эротическая одежда</a>
+			</div>
+		</div>
+		<div class="footer-block">
+			<div class="main-categories">
+				<p class="cat-title">Информация:
+				</p>
+				<a href="" class="cat-desc">О компании</a>
+				<a href="" class="cat-desc">Контакты</a>
+				<a href="" class="cat-desc">Доставка и оплата</a>
+				<a href="" class="cat-desc">Конфиденциальность</a>
+				<a href="" class="cat-desc">Гарантия и возврат</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer-block contact-row">
+		<div class="footer-contact">
+			<a href=""><img src="img/phone-circle.png" alt="" class="phone-img contact-img"></a>
+			<div class="info-contact">
+				<a href=""><p class="title font-bold">8 800 775 12 34</p></a>
+				<p class="desc">Бесплатно с телефонов по РФ</p>
+			</div>
+		</div>
+		<div class="footer-contact">
+			<a href=""><img src="img/email-circle.png" alt="" class="email-img contact-img"></a>
+			<div class="info-contact">
+				<a href=""><p class="title">shop@erobueno.ru</p></a>
+				<p class="desc">Круглосуточно</p>
+			</div>
+		</div>
+		<div class="footer-contact">
+			<a href=""><img src="img/geo.png" alt="" class="email-img contact-img"></a>
+			<div class="info-contact">
+				<a href=""><p class="title footer-title">Москва, пр. Мира 145,<br>офис 12</p></a>
+			</div>
+		</div>
+	</div>
 </footer>
-<!-- FOOTER END -->
-<!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-<script src="https://kit.fontawesome.com/a365e4a8ae.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-<script src="js/jquery.sticky-kit.min.js"></script>
-<script src="js/number_plugin.min.js" type="text/javascript"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/jquery.ui.touch-punch.min.js"></script>
-<script src="js/jquery.matchHeight-min.js"></script>
-<script async src="js/divbox.js" type="text/javascript"></script>
-<script src="js/interactive.js"></script>
+
+	<!-- FOOTER END -->
+
+	<!-- Scripts -->
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.js"
+	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+	<script src="https://kit.fontawesome.com/a365e4a8ae.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.sticky-kit.min.js"></script>
+	<script src="js/number_plugin.min.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/jquery.matchHeight-min.js"></script>
+	<script async src="js/divbox.js" type="text/javascript"></script>
+	<script src="js/interactive.js"></script>
 </body>
 </html>
