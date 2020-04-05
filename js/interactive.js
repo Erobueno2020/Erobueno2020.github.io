@@ -28,6 +28,22 @@ $('.order-reload').click(function () {
 var width = $(window).width();
 $(document).ready(function () {
 
+    $(".select-block__colors__input").click(function(){
+     $(this).parent().find(".select-block__colors").toggleClass("flex");
+   });
+
+    // COLOR SELECT INPUT
+      $('.input-color').click(function(){
+        $(this).parent().parent().parent().parent().find(".block-input-color .placeholder").css('background', $inputColor);
+        $(this).parent().parent().find(".select-block__colors").toggleClass("flex");
+        $(this).parent().parent().parent().parent().find(".select-block__colors-name").html( $(this).find("input").attr('data-color-name') );
+      });
+
+    // SIZE INPUT HIDE PLACEHOLDER
+      $('.block-select__element select').click(function(){
+        $(this).parent().parent().find(".placeholder").css("opacity","0");
+      });
+      
   // COLOR SELECT INPUT
   $('.select2-results__option').click(function () {
     alert("HELO");
