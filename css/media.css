@@ -1749,7 +1749,7 @@
 
 @media (max-width: 900px){
     .comparison-slider .slick-track {
-            width: 450px !important;
+            width: max-content !important;
     }
     .comparison-page .slick-slide:first-child {
         margin-right: 10px;
@@ -2615,9 +2615,6 @@
     }
 
     @media (max-width: 600px){
-        .comparison-slider .slick-track {
-            width: 100% !important;
-        }
         .result-page .item-info__block-text__description {
             margin-bottom: 0px;
         }
