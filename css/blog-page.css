@@ -241,7 +241,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 500px) {
 	.blogpage-wrap {
-		width: 94%;
+		width: 95%;
 	}
 	.blogpage__img {
 		max-height: 220px;

@@ -61,6 +61,7 @@ button {
 	padding-bottom: 15px;
 	height: max-content;
 	border-radius: 10px;
+	margin-bottom: 15px;
 }
 .li-items {
 	padding-left: 10px !important;
