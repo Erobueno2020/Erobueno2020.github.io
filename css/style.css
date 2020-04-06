@@ -3346,10 +3346,9 @@ body .select-block__colors-name {
 	.big-teaser__buttons form {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
 	}
 	.big-teaser__buttons form label:first-child {
-		margin-right: 10px;
+		padding-right: 10px;
 	}
 	.big-teaser__buttons form label input,
 	.big-teaser__buttons form label button {
@@ -3414,7 +3413,7 @@ body .select-block__colors-name {
 	.result-page .catalog-description {
 		text-align: left;
 	}
-	.result-page .select-block__colors {
+	.select-block__colors {
 	    max-width: 128px;
 	}
 	.catalog-sort__container {
