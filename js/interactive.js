@@ -308,9 +308,11 @@ $(document).ready(function () {
 
   // POPUPS CLOSE ON ESCAPE
   document.addEventListener('keydown', function (e) {
-    if (e.keyCode === 27) $('.basket-popup, .phone-popup').removeClass('show-popup');
+    if (e.keyCode === 27) { 
+      $('.basket-popup, .phone-popup').removeClass('show-popup');
+      $('.product-popup').fadeOut();
+    }
   });
-
 
   // FIXED HEADER
 
@@ -591,22 +593,22 @@ $(document).ready(function () {
   });
 
   // MENU
-  if (width < 992) {
+  // if (width < 992) {
 
-    $('.item-nav').stick_in_parent({
-      // Отступ сверху
-      offset_top: 0
-    });
-    $('.item-nav').css({
-      "margin": "0",
-      "background": "white",
-      "z-index": "999999999",
-    });
-    $(".item-nav ul").css({
-      "border-bottom": "1px solid",
-    });
-    $(".item-nav ul li").css("padding-top", "10px");
-  };
+  //   $('.item-nav').stick_in_parent({
+  //     // Отступ сверху
+  //     offset_top: 0
+  //   });
+  //   $('.item-nav').css({
+  //     "margin": "0",
+  //     "background": "white",
+  //     "z-index": "999999999",
+  //   });
+  //   $(".item-nav ul").css({
+  //     "border-bottom": "1px solid",
+  //   });
+  //   $(".item-nav ul li").css("padding-top", "10px");
+  // };
 
 
   // HOVER COLORS
