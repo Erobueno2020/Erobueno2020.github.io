@@ -2615,6 +2615,9 @@
     }
 
     @media (max-width: 600px){
+        .comparison-slider .slick-track {
+            width: 100% !important;
+        }
         .result-page .item-info__block-text__description {
             margin-bottom: 0px;
         }
