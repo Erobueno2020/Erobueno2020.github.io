@@ -1747,7 +1747,13 @@
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
+    .comparison-slider .slick-track {
+            width: 450px !important;
+    }
+    .comparison-page .slick-slide:first-child {
+        margin-right: 10px;
+    }
     .comparison-slider .slick-arrow.slick-disabled:before {
         background: url(../img/sidebar-arrow-active.svg) no-repeat 100% 100%/contain;
     }
