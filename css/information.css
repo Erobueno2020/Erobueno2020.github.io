@@ -1150,6 +1150,9 @@
 	background-color: transparent;
 	border: 2px solid #fff;
 }
+.blogpage__header .item-sizes__table-cell {
+	font-size: 20px !important;
+}
 .my-order__coupon {
 	background-color: #fff;
 }
@@ -1634,6 +1637,9 @@ input {
 		flex-direction: row !important;
 		padding: 0;
 		margin: 0 auto;
+	}
+	.blogpage__header .item-sizes__table-cell {
+		font-size: 16px !important;
 	}
 	.blue-order-title {
 		font-size: 12px !important;
@@ -2338,6 +2344,9 @@ input {
 @media screen and (min-width: 320px) and (max-width: 350px) {
 	.info-main__title {
 		font-size: 22px;
+	}
+	.favorited-all {
+		margin-bottom: 15px;
 	}
 	.select2-container {
 		max-width: 550px;
