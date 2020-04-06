@@ -1747,7 +1747,13 @@
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
+    .comparison-slider .slick-track {
+            width: 450px !important;
+    }
+    .comparison-page .slick-slide:first-child {
+        margin-right: 10px;
+    }
     .comparison-slider .slick-arrow.slick-disabled:before {
         background: url(../img/sidebar-arrow-active.svg) no-repeat 100% 100%/contain;
     }
@@ -2609,6 +2615,9 @@
     }
 
     @media (max-width: 600px){
+        .comparison-slider .slick-track {
+            width: 100% !important;
+        }
         .result-page .item-info__block-text__description {
             margin-bottom: 0px;
         }
