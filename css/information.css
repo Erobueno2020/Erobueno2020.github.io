@@ -2143,6 +2143,9 @@ input {
 		padding: 10px !important;
 		padding-top: 5px !important;
 	}
+	.orders-breadcrumbs {
+		margin-left: 10px !important;
+	}
 }
 
 @media screen and (max-width: 500px) {
