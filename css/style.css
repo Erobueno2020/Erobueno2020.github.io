@@ -2677,6 +2677,7 @@ ul.info-text li:before {
 	font-size: 19px;
 	background: #f7a98f url(../img/scroll-top.png) no-repeat 50% 50%/contain;
 	transition: 0.4s;
+	display: none;
 	cursor: pointer;
 	animation: scrolltop 2s infinite 0s linear;
 }

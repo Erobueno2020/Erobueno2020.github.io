@@ -1576,6 +1576,7 @@ font-family: "ProximaNova-SemiBold";
   }
   .top-block-name__title {
     font-size: 24px;
+    line-height: 26px;
   }
   .top-block-name__price {
     font-size: 16px;

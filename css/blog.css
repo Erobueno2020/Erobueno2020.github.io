@@ -281,9 +281,9 @@ button {
 		width: 100%;
 	}
 	.adapt-blog {
-	display: flex !important;
-	padding-bottom: 15px;
-	margin-top: 15px;
+	display: block !important;
+	padding-bottom: 0px;
+	margin-top: 15px !important;
 	}
 	.mobile-flex {
 		justify-content: center;

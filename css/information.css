@@ -163,6 +163,7 @@
 }
 .blog-tree {
 	margin-top: 25px;
+	margin-left: 0;
 	margin-bottom: 25px;
 }
 
@@ -623,9 +624,18 @@
 
 .catalog-sort span {
 	margin-right: 0 !important;
-
 }
-
+.catalog-pagination span {
+	margin-right: 0 !important;
+}
+.catalog-pagination span {
+    color: #7f5c47;
+    font-family: "ProximaNova-Regular";
+    margin-right: 13px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
 .select2-container--default {
 	padding: 6px !important;
 }
@@ -1031,7 +1041,9 @@
 	padding-bottom: 25px;
 	margin-right: 20px;
 }
-
+.mobile-nav-block span {
+	top: -1px !important;
+}
 .my-order-basket {
 	border-radius: 10px;
 	border: 1px solid #eccdba;
@@ -1345,10 +1357,20 @@
 .blue-order {
 	color: #1f7aac;
 }
+.blogpage__add_item {
+	font-size: 14px !important;
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+	justify-content: space-between;
+}
+.mobile-flex {
+	border-bottom: 1px solid #f3e5dc;
+	padding-bottom: 30px;
+}
 .blue-order-title {
 	color: #56b2e4;
 }
-.blue-border {
+.blue-bg {
 	background-color: #7fc7ef;
 }
 .column-mobile-your-order {
@@ -1484,6 +1506,12 @@
 	border: 1px solid #eccdba;
 	text-align: center;
 
+}
+.blogpage-wrap .item-block-pink {
+	min-height: max-content;
+}
+.blogpage .block-select__element-decor:after {
+	display: block !important;
 }
 
 .min-btn {
@@ -1624,12 +1652,16 @@ input {
 		justify-content: space-between;
 		padding-left: 15px;
 		padding-right: 15px;
-		padding-top: 3px;
+		align-items: center;
 	}
+
 	.info-links {
-		border-radius: 30px;
+		border-radius: 25px;
 		padding: 10px;
 		box-shadow: 0px 5px 24px 0px rgba(255,99,0,0.1);
+	}
+	.border-rads {
+		border-radius: 10px;
 	}
 	.blog-tree {
 		margin-top: 25px;
@@ -1870,6 +1902,17 @@ input {
 		max-height: 500px;
 		top: 45%;
 	}
+
+	.blogpage .block-select select {
+		width: 100%;
+		max-width: 500px;
+	}
+	.blogpage .block-select__element {
+		width: 100%;
+	}
+	.blogpage .block-select {
+		flex-direction: column;
+	}
 	.close-popup-btns {
 		margin-top: 248px;
 	}
@@ -2093,6 +2136,12 @@ input {
 @media screen and (max-width: 500px) {
 	.favorited-big .select2-container {
 		max-width: 300px !important;
+	}
+	.big-block-img {
+		margin-top: 45px;
+	}
+	.cube-img {
+		margin-top: 55px;
 	}
 }
 
