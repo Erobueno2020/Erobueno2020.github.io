@@ -84,7 +84,10 @@
 	color: #56b2e4 !important;
 	opacity: 1;
 }
-.cart-button-add:before {
+.blogpage .cart-button-add:before {
+	background-color: #56b2e4 !important;
+}
+.your-order__add-more .cart-button-add:before {
 	background-color: #56b2e4 !important;
 }
 .blogpage__add_btn {
