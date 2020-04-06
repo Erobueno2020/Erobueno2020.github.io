@@ -1313,6 +1313,9 @@
 	max-width: 680px;
 
 }
+.blogpage .catalog-pagination__button {
+	margin-right: 8px;
+}
 .before-selected {
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -2070,6 +2073,9 @@ input {
 		margin-bottom: 10px;
 		font-size: 14px;
 		line-height: 16px;
+	}
+	.blogpage .catalog-pagination__button {
+		margin-right: 0px;
 	}
 	.your-order__title {
 		margin-bottom: 10px;
