@@ -33,6 +33,66 @@ $(document).ready(function () {
  });
 
 
+  // FILTER OPEN CHILD
+  $(".child-name").click(function () {
+    $(this).parent().find(".child").toggleClass("child-open");
+  });
+  $(".child-name__second").click(function () {
+    $(this).parent().find(".child-second").toggleClass("child-open");
+  });
+  // Ползунки у Range Sliders
+  $(function () {
+    $("#slider-range1").slider({
+      range: true,
+      min: 0,
+      max: 50000,
+      values: [0, 50000],
+      slide: function (event, ui) {
+        $("#amount1").val(ui.values[0] + " руб");
+        $("#amount2").val(ui.values[1] + " руб");
+      }
+    });
+    $("#amount1").val($("#slider-range1").slider("values", 0) + " руб");
+    $("#amount2").val($("#slider-range1").slider("values", 1) + " руб");
+
+  });
+
+  $(function () {
+    $("#slider-range2").slider({
+      range: true,
+      min: 0,
+      max: 50,
+      values: [0, 50],
+      slide: function (event, ui) {
+        $("#amount3").val(ui.values[0] + " см");
+        $("#amount4").val(ui.values[1] + " см");
+      }
+    });
+    $("#amount3").val($("#slider-range2").slider("values", 0) + " см");
+    $("#amount4").val($("#slider-range2").slider("values", 1) + " см");
+  });
+
+  $(function () {
+    $("#slider-range3").slider({
+      range: true,
+      min: 0,
+      max: 50,
+      values: [0, 50],
+      slide: function (event, ui) {
+        $("#amount5").val(ui.values[0] + " см");
+        $("#amount6").val(ui.values[1] + " см");
+      }
+    });
+
+    $("#amount5").val($("#slider-range3").slider("values", 0) + " см");
+    $("#amount6").val($("#slider-range3").slider("values", 1) + " см");
+  });
+
+  // // Чтобы можно было перемещать ползунки на мобилке свайпом
+  // $('#slider-range1').draggable();
+  // $('#slider-range2').draggable();
+  // $('#slider-range3').draggable();
+
      $(document).mouseup(function (e){ // событие клика по веб-документу
         var div = $(".block-input-color .block-select__element-decor"); // тут указываем ID элемента
         if (!div.is(e.target) // если клик был не по нашему блоку
@@ -149,65 +209,8 @@ $(document).ready(function () {
 
   };
 
-  // Ползунки у Range Sliders
-  $(function () {
-    $("#slider-range1").slider({
-      range: true,
-      min: 0,
-      max: 50000,
-      values: [0, 50000],
-      slide: function (event, ui) {
-        $("#amount1").val(ui.values[0] + " руб");
-        $("#amount2").val(ui.values[1] + " руб");
-      }
-    });
-    $("#amount1").val($("#slider-range1").slider("values", 0) + " руб");
-    $("#amount2").val($("#slider-range1").slider("values", 1) + " руб");
-
-  });
-
-  $(function () {
-    $("#slider-range2").slider({
-      range: true,
-      min: 0,
-      max: 50,
-      values: [0, 50],
-      slide: function (event, ui) {
-        $("#amount3").val(ui.values[0] + " см");
-        $("#amount4").val(ui.values[1] + " см");
-      }
-    });
-    $("#amount3").val($("#slider-range2").slider("values", 0) + " см");
-    $("#amount4").val($("#slider-range2").slider("values", 1) + " см");
-  });
-
-  $(function () {
-    $("#slider-range3").slider({
-      range: true,
-      min: 0,
-      max: 50,
-      values: [0, 50],
-      slide: function (event, ui) {
-        $("#amount5").val(ui.values[0] + " см");
-        $("#amount6").val(ui.values[1] + " см");
-      }
-    });
-
-    $("#amount5").val($("#slider-range3").slider("values", 0) + " см");
-    $("#amount6").val($("#slider-range3").slider("values", 1) + " см");
-  });
 
 
-  // // Чтобы можно было перемещать ползунки на мобилке свайпом
-  // $('#slider-range1').draggable();
-  // $('#slider-range2').draggable();
-  // $('#slider-range3').draggable();
-
-
-  // FILTER OPEN CHILD
-  $(".catalog-filter__nav li").click(function () {
-    $(this).find(".child").toggleClass("child-open");
-  });
 
 });
 // END OF DOCUMENT READY
