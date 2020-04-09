@@ -2088,7 +2088,9 @@ body {
     .banners-bottom {
       padding-left: 20px;
       padding-right: 20px;
-      margin-top: 20px;
+      margin-top: 0px;
+      padding-bottom: 25px;
+      padding-top: 15px;
     }
 
     .top-block-btn__button {
