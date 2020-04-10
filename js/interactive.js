@@ -124,10 +124,6 @@ $(document).ready(function () {
     $(this).css('background', $inputColor);
   });
 
-  $(".select2-selection__rendered").click(function () {
-    alert("XUY");
-  });
-
   $(".select-size select").select2({
     placeholder: "Размер",
     minimumResultsForSearch: -1,
