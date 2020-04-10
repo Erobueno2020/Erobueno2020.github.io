@@ -3748,7 +3748,7 @@ body .select-block__colors-name {
 	}
 	.slider-mobile__arrows__left:before {
 		content: ' ';
-		background: url("../img/sidebar-arrow.svg") no-repeat 100% 100%/contain;
+		background: url("../img/sidebar-arrow.png") no-repeat 100% 100%/contain;
 		width: 30px;
 		height: 15px;
 		width: 27px;
@@ -3768,7 +3768,7 @@ body .select-block__colors-name {
 	}
 	.slider-mobile__arrows__right:before {
 		content: ' ';
-		background: url("../img/sidebar-arrow.svg") no-repeat 100% 100%/contain;
+		background: url("../img/sidebar-arrow.png") no-repeat 100% 100%/contain;
 		width: 30px;
 		height: 15px;
 		width: 27px;
