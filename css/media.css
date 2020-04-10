@@ -938,6 +938,9 @@
     }
 }
 @media (max-width: 400px){
+    .order-detail .site-tree__block {
+        margin-left: 0 !important;
+    }
     .result-page {
         margin: 0 10px !important;
     }
