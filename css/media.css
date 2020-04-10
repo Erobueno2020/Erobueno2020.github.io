@@ -201,6 +201,9 @@
     }
 }
 @media (max-width: 992px) {
+    .catalog-filter__buttons {
+        padding-bottom: 20px !important;
+    }
     .product-popup .parameters-cloud {
         left: 70%;
     }
@@ -2725,6 +2728,7 @@
     }
 
     @media (max-width: 530px){
+        
         .text-simple-pink, .text-simple-pink * {
             font-size: 14px !important;
         }
@@ -2734,7 +2738,6 @@
         .comparison-title {
             font-size: 22px;
             margin-right: 22px;
-            margin-bottom: 10px;
         }
         .comparison-page__container__categories-block {
             margin-top: 10px;

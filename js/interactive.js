@@ -24,6 +24,10 @@ $('.order-reload').click(function () {
   $(this).addClass('delivery-here-selected');
 });
 
+$(".catalog-filter__title-block").click(function(){
+  $(".catalog-filter__container").toggleClass("filterHeight");
+  $(".catalog-filter__title-block").toggleClass("filterButtonBorderRad");
+});
 
 var width = $(window).width();
 $(document).ready(function () {

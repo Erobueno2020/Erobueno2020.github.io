@@ -29,6 +29,12 @@ h2, h4 {
 .slick-disabled {
 	display: none !important;
 }
+.filterHeight {
+	height: auto !important;
+}
+.filterButtonBorderRad {
+	border-radius: 25px 25px 0 0 !important;
+}
 .container, .container-lg, .container-md, .container-sm, .container-xl {
 	max-width: 1180px !important;
 	padding: 0;
@@ -2879,10 +2885,10 @@ body .select-block__colors-name {
 	color: #1f7aac;
 }
 .blue-version .classic .plus_plugin_number {
-	border-bottom: 7px solid #1f7aac;
+	border-bottom: 7px solid #1f7aac !important;
 }
 .blue-version .classic .minus_plugin_number {
-	border-top: 7px solid #1f7aac;
+	border-top: 7px solid #1f7aac !important;
 }
 .blue-version .item-page__sidebar-block__buy-counter, .blue-version .input_plugin_number {
 	color: #1f7aac;
@@ -2909,7 +2915,7 @@ body .select-block__colors-name {
 	color: #1f7aac;
 }
 .blue-version .cart-button-add::before {
-	background-color: #82c9ea;
+	background-color: #82c9ea !important;
 }
 .blue-version .color-pink {
 	color: #1f7aac;
