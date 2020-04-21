@@ -473,29 +473,29 @@ $(document).ready(function () {
   $(window).resize(function () {
     var innerWidth = $(window).width();
     if (innerWidth < 600) {
-    $('.slider-mp').slick({
-      settings: "unslick",
-      infinite: true,
-      slidesToScroll: 2,
-      slidesToShow: 2,
-      autoplay: true,
-      arrows: false,
-      dots: true,
-      responsive: [
-      {
-        breakpoint: 3000,
-        settings: "unslick"
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      ]
-    });
-  };
+      $('.slider-mp').slick({
+        settings: "unslick",
+        infinite: true,
+        slidesToScroll: 2,
+        slidesToShow: 2,
+        autoplay: true,
+        arrows: false,
+        dots: true,
+        responsive: [
+        {
+          breakpoint: 3000,
+          settings: "unslick"
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        ]
+      });
+    };
   });
 
 
@@ -618,23 +618,38 @@ $(document).ready(function () {
     offset_top: 10
   });
 
-  // MENU
-  // if (width < 992) {
+    $('.item-nav').stick_in_parent({
+     // offset_top: 101.9,
+   });
 
-  //   $('.item-nav').stick_in_parent({
-  //     // Отступ сверху
-  //     offset_top: 0
-  //   });
-  //   $('.item-nav').css({
-  //     "margin": "0",
-  //     "background": "white",
-  //     "z-index": "999999999",
-  //   });
-  //   $(".item-nav ul").css({
-  //     "border-bottom": "1px solid",
-  //   });
-  //   $(".item-nav ul li").css("padding-top", "10px");
-  // };
+  // MENU
+// $(document).ready(function(){
+//  $navigationHeight = $(".navigation").css("height");
+//     if (width < 768) {
+//       $('.item-nav').stick_in_parent({
+//        offset_top: 61.9,
+//      });
+//     } else if (width < 992) {
+//       $('.item-nav').stick_in_parent({
+//        offset_top: 101.9,
+//      });
+//     }
+// });
+
+
+  $('.item-nav').css({
+    "top": "$navigationHeight",
+    "margin": "0",
+    "background": "white",
+    "z-index": "999999999",
+      // "max-width": "676px",
+      "padding": "0 20px !important",
+
+    });
+  $(".item-nav ul").css({
+    "border-bottom": "1px solid",
+  });
+  $(".item-nav ul li").css("padding-top", "10px");
 
 
   // HOVER COLORS
@@ -786,21 +801,21 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function(){   
+  $(document).ready(function(){   
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 600) {
-            $('.scroll-top').fadeIn('slow');
-        } else {
-            $('.scroll-top').fadeOut('slow');
-        }
+      if ($(this).scrollTop() > 600) {
+        $('.scroll-top').fadeIn('slow');
+      } else {
+        $('.scroll-top').fadeOut('slow');
+      }
     });
     $('.scroll-top').click(function () {
-        $('body, html').animate({
-            scrollTop: 0
-        }, 300);
-        return false;
+      $('body, html').animate({
+        scrollTop: 0
+      }, 300);
+      return false;
     });
-});
+  });
 
   $('[data-fancybox]').fancybox({
     thumbs: {

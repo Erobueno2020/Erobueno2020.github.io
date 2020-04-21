@@ -201,6 +201,9 @@
     }
 }
 @media (max-width: 992px) {
+    .item-page__sidebar-block-bonus span:last-child {
+        border-bottom: 1px solid lightgray;
+    }
     .catalog-filter__buttons {
         padding-bottom: 20px !important;
     }
@@ -1644,6 +1647,7 @@
         font-family: "ProximaNova-Regular";
     }
 
+
     .item-sizes {
         display: none;
     }
@@ -1748,6 +1752,9 @@
 }
 
 @media (max-width: 992px){
+    .item-nav {
+        top: 101.9px !important;
+    }
     .catalog-sort select {
         padding: 5px 30px 5px 15px;
         height: 35px;
@@ -1803,9 +1810,6 @@
         }
         body .slick-arrow2 {
             display: none !important;
-        }
-        .catalog-sort__main span {
-            margin-bottom: 7px !important;
         }
         .catalog-sort .catalog-pagination {
             margin-top: 20px;
@@ -2368,6 +2372,9 @@
         }
     }
     @media (max-width: 768px){
+        .item-nav {
+            top: 61.9px !important;
+        }
         .product-popup__container-block { 
             margin-bottom: 80px;
         }
@@ -3011,9 +3018,6 @@
         .parameters-kit__title {
             padding: 5px 0;
         }
-        .comparison-title {
-            margin-bottom: 15px;
-        }
         .comparison-page__container__categories-block {
             margin-top: 5px;
             margin-bottom: 10px;
@@ -3080,6 +3084,12 @@
     @media (max-width: 1024px){
         .big-teaser__buttons form label {
             font-size: 12px;
+        }
+    }
+
+    @media (max-width: 370px){
+        .comparison-title {
+            margin-bottom: 8px;
         }
     }
 /*CART MEDIA END
