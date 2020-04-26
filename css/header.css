@@ -3,6 +3,9 @@
 	--contact-link: #7F5C47;
 	--box-shadow: 0 0px 8px 0 rgba(255, 99, 0, 0.07);
 }
+html {
+		scroll-behavior: smooth;	
+}
 body {
 	box-sizing: border-box;
 	margin: 0;
