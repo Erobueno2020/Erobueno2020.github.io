@@ -619,7 +619,6 @@
 	color: #fff;
 	font-family: 'ProximaNova-Regular';
 	font-size: 16px;
-	max-width: 270px;
 }
 
 .catalog-sort span {
@@ -2180,9 +2179,6 @@ input {
 	.blue-order-title {
 		font-size: 18px !important;
 	}
-	.select2-container {
-		max-width: 550px;
-	}
 	.sort-text {
 		display: none;
 	}
@@ -2356,9 +2352,6 @@ input {
 	}
 	.favorited-all {
 		margin-bottom: 15px;
-	}
-	.select2-container {
-		max-width: 550px;
 	}
 	.sort-text {
 		display: none;

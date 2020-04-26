@@ -194,6 +194,9 @@
     .order-page__main-data__buttons {
         padding-top: 10px;
     }
+    .your-order .block-select__element-decoration {
+        width: 100%;
+    }
 }
 @media (max-width: 940px){
     .catalog-sort .catalog-pagination {
@@ -946,6 +949,9 @@
 @media (max-width: 400px){
     .order-detail .site-tree__block {
         margin-left: 0 !important;
+    }
+    .your-order .block-select__element-decoration {
+        width: 100%;
     }
     .result-page {
         margin: 0 10px !important;
@@ -2424,6 +2430,7 @@
         }
         .catalog-sort__main .select {
             padding-right: 0;
+            width: 100%;
         }
         .catalog-sort select {
             width: 100%;
