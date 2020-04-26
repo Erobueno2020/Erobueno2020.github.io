@@ -1,6 +1,6 @@
 @media (max-width: 1200px) {
     .child-name::after {
-        top: 3px;
+        top: 3px; 
     }
     .catalog-sort .catalog-pagination {
         margin-top: 15px;
