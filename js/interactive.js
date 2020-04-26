@@ -618,30 +618,28 @@ $(document).ready(function () {
     offset_top: 10
   });
 
-    $('.item-nav').stick_in_parent({
-     // offset_top: 101.9,
-   });
-
   // MENU
-// $(document).ready(function(){
-//  $navigationHeight = $(".navigation").css("height");
-//     if (width < 768) {
-//       $('.item-nav').stick_in_parent({
-//        offset_top: 61.9,
-//      });
-//     } else if (width < 992) {
-//       $('.item-nav').stick_in_parent({
-//        offset_top: 101.9,
-//      });
-//     }
-// });
+
+  $(document).ready(function(){
+    let optionsF = $(".navigation").css("height");
+    if (width < 768) {
+      $('.item-nav').stick_in_parent({
+       offset_top: 61.9,
+     });
+    }; 
+    if (width < 992) {
+      $('.item-nav').stick_in_parent({
+       offset_top: 101.9,
+     });
+    };
+  });
 
 
   $('.item-nav').css({
     "top": "$navigationHeight",
     "margin": "0",
     "background": "white",
-    "z-index": "999999999",
+    "z-index": "10004",
       // "max-width": "676px",
       "padding": "0 20px !important",
 

@@ -1753,7 +1753,7 @@
 
 @media (max-width: 992px){
     .item-nav {
-        top: 101.9px !important;
+        /*top: 101.9px !important;*/
     }
     .catalog-sort select {
         padding: 5px 30px 5px 15px;
@@ -2374,6 +2374,9 @@
     @media (max-width: 768px){
         .item-nav {
             top: 61.9px !important;
+        }
+        .item-nav ul {
+            border-bottom: 2px solid !important;
         }
         .product-popup__container-block { 
             margin-bottom: 80px;
